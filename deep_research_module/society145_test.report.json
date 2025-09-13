@@ -2,59 +2,52 @@
   "hard_blocks": [],
   "approval_flags": [
     {
-      "type": "environmental_permits_mitigation",
-      "evidence_ids": ["e001"],
-      "description": "Site requires detailed environmental assessment, particularly regarding potential flood risk zones under EU Directive 2007/60/CE, and may necessitate environmental permits and mitigation plans.",
-      "source_urls": ["https://sniambgeoogc.apambiente.pt/getogc/rest/services/SNIAmb/Diretiva200760CE_2c/MapServer"]
+      "type": "needs_land_severance_approval",
+      "evidence_ids": ["e002"],
+      "description": "Proposed development may require land severance (consent) if new lots or changes to property boundaries/easements are involved.",
+      "source_urls": ["http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents"]
     },
     {
-      "type": "environmental_permits_mitigation",
-      "evidence_ids": ["e006"],
-      "description": "Compliance with local environmental policies and potential requirement for environmental permits and impact studies due to municipal focus on environmental indices.",
-      "source_urls": ["https://www.lisboa.pt/atualidade/noticias/detalhe/carta-municipal-de-desenvolvimento-local-divulga-indices-ambientais/"]
+      "type": "needs_grca_permit",
+      "evidence_ids": ["e004", "e002"],
+      "description": "Development activities within areas regulated by the Grand River Conservation Authority (e.g., floodplains, wetlands, slopes) will require a GRCA permit.",
+      "source_urls": ["https://www.grandriver.ca/planning-development/map-your-property/", "http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents"]
     },
     {
-      "type": "needs_urban_planning_permits",
-      "evidence_ids": ["e002", "e004"],
-      "description": "A 'Pedido de Informação Prévia' (Request for Prior Information) is essential to determine specific urbanistic requirements, permissible uses, and building parameters. General municipal urban planning regulations apply, necessitating compliance with the Plano Diretor Municipal (PDM) and specific zoning by-laws, which may lead to requirements for zoning amendments or site plan approval.",
-      "source_urls": [
-        "https://informacoeseservicos.lisboa.pt/servicos/detalhe/pedido-de-informacao-previa",
-        "https://informacoeseservicos.lisboa.pt/servicos/perguntas-frequentes/urbanismo"
-      ]
+      "type": "needs_zba_or_minor_variance",
+      "evidence_ids": ["e002"],
+      "description": "Proposed land use, density, or dimensions for community amenity development may require a Zoning By-law Amendment or Minor Variance to align with local planning policies.",
+      "source_urls": ["http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents"]
     },
     {
-      "type": "heritage_permits_conditions",
-      "evidence_ids": ["e003"],
-      "description": "Any proposed 'conservation works' or modifications may require a specific license under the Legal Regime for Urbanization and Building, potentially involving heritage assessments and specific conditions.",
-      "source_urls": ["https://informacoeseservicos.lisboa.pt/servicos/detalhe/obras-de-conservacao-licenca"]
+      "type": "needs_utility_connection_agreements_and_upgrades",
+      "evidence_ids": ["e002", "e007"],
+      "description": "Adequacy of water supply and sewage disposal must be ensured for the proposed development, requiring formal utility connection agreements and potential infrastructure upgrades.",
+      "source_urls": ["http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents", "https://www.grandriver.ca/our-watershed/water/wastewater/wastewater-optimization/"]
     },
     {
-      "type": "site_plan_approval",
-      "evidence_ids": ["e012"],
-      "description": "Detailed 'Projetos de Especialidades' (specialty technical projects like structural, water, electrical) must be prepared and approved as part of the overall site plan and building permit process.",
-      "source_urls": ["https://informacoeseservicos.lisboa.pt/servicos/detalhe/projetos-de-especialidades"]
+      "type": "needs_environmental_permits_and_mitigation_plans",
+      "evidence_ids": ["e002", "e007"],
+      "description": "General environmental permits (e.g., for septic systems, if applicable) and mitigation plans, particularly concerning wastewater discharge and its impact on the Grand River watershed, will be required.",
+      "source_urls": ["http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents", "https://www.grandriver.ca/our-watershed/water/wastewater/wastewater-optimization/"]
     },
     {
-      "type": "utility_connection_agreements",
-      "evidence_ids": ["e007", "e008", "e009", "e010", "e011"],
-      "description": "New water supply connections require adherence to EPAL's 'Manual de Redes Prediais,' submission of specific project elements, and obtaining a 'Certificado de Exploração da Instalação de Águas' (Certificate of Operation).",
-      "source_urls": [
-        "https://www.epal.pt/EPAL",
-        "https://epal.pt/EPAL/menu/clientes/novos-abastecimentos/certificado-de-explora%C3%A7%C3%A3o",
-        "https://www.epal.pt/EPAL/menu/clientes/novos-abastecimentos/projeto-de-redes-prediais/manual-de-redes-prediais",
-        "https://www.epal.pt/EPAL/menu/clientes/novos-abastecimentos/projeto-de-redes-prediais/elementos-de-um-processo-de-abastecimento",
-        "https://www.epal.pt/EPAL/menu/clientes/faq/novos-abastecimentos"
-      ]
+      "type": "needs_heritage_permit",
+      "evidence_ids": ["e002"],
+      "description": "Should the property be subject to heritage designation, conservation district policies, or a heritage easement, a separate heritage permit will be required.",
+      "source_urls": ["http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents"]
     }
   ],
   "demand_metrics": {
-    "transit_frequency": "Not available from evidence",
-    "traffic_volume": "Not available from evidence",
-    "parking_requirements": "Not available from evidence"
+    "transit_frequency": "Not available in provided evidence",
+    "traffic_volume": "Not available in provided evidence",
+    "parking_requirements": "Not available in provided evidence"
   },
   "notes": [
-    "No automatic rejection criteria met based on the provided evidence, specifically due to the lack of explicit prohibitions from primary sources in the snippets and all evidence items being flagged 'is_primary: false'.",
-    "Further detailed investigation into the site's specific zoning, the Plano Diretor Municipal (PDM) of Lisbon, and the Apambiente flood maps is crucial.",
-    "The 'Pedido de Informação Prévia' [e002] is the recommended initial step to clarify specific municipal requirements for the proposed land use."
+    "Further investigation into the specific legal title and any existing easements or covenants for 'society145' is required through the OnLand application [e001: http://www.ontario.ca/page/overview-land-registry, e003: http://www.ontario.ca/page/search-land-property-records].",
+    "The exact boundaries and regulatory status of 'society145' relative to Grand River Conservation Authority (GRCA) regulated areas (floodplains, wetlands, slopes) must be confirmed using the GRCA 'Map Your Property' tool, as regulations apply whether mapped or not [e004: https://www.grandriver.ca/planning-development/map-your-property/].",
+    "The precise nature and scale of the proposed 'community amenity development' for 'society145' are not detailed in the provided evidence, which limits specific assessment of zoning compliance and exact permit needs. This will significantly influence the scope of required approvals.",
+    "Direct consultation with City of Waterloo planning staff and the relevant consent-granting authority is highly recommended early in the process to understand specific local requirements, official plan conformity, and supporting material needed for any applications [e002: http://www.ontario.ca/document/citizens-guide-land-use-planning/land-severances-consents].",
+    "While Laurel Creek Conservation Area is a significant community amenity in Waterloo [e005: https://www.grandriver.ca/outdoor-recreation/conservation-areas/laurel-creek/], there is no evidence to suggest that 'society145' is located within its boundaries. If 'society145' is adjacent, potential impacts on the conservation area or its trails (Waterloo trails, Walter Bean Grand River Trail) would need to be addressed through site plan approval and environmental mitigation plans."
   ]
 }
