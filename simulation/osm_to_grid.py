@@ -187,12 +187,13 @@ def build_physics_arrays(H, W):
     return semantic, walkable, cost, feature_id
 
 def set_walk_cost(semantic, walkable, cost):
-    walkable[(semantic==SIDEWALK)|(semantic==FOOTPATH)|(semantic==PLAZA)|(semantic==CROSSING)|(semantic==PARKING)] = 1
+    walkable[(semantic==SIDEWALK)|(semantic==FOOTPATH)|(semantic==PLAZA)|(semantic==CROSSING)|(semantic==PARKING)|(semantic==ROAD)] = 1
     cost[semantic==SIDEWALK]  = 10
     cost[semantic==FOOTPATH]  = 12
     cost[semantic==PLAZA]     = 8
     cost[semantic==CROSSING]  = 12
     cost[semantic==PARKING]   = 18
+    cost[semantic==ROAD]      = 20
 
 def save_semantic_preview(semantic: np.ndarray, out_png: str):
     H, W = semantic.shape

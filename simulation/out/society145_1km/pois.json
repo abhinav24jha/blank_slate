@@ -1,0 +1,2332 @@
+[
+  {
+    "type": "cafe",
+    "iy": 125,
+    "ix": 146,
+    "lon": -80.5451992,
+    "lat": 43.4712821,
+    "name": "Tim Hortons",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housename": "Student Life Centre",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "brand": "Tim Hortons",
+      "brand:wikidata": "Q175106",
+      "brand:wikipedia": "en:Tim Hortons",
+      "cuisine": "coffee_shop",
+      "drive_through": "no",
+      "level": "0",
+      "name": "Tim Hortons",
+      "opening_hours": "Mo-Fr 08:30-16:30",
+      "outdoor_seating": "no",
+      "payment:amex": "no",
+      "payment:coins": "yes",
+      "payment:debit_cards": "yes",
+      "payment:notes": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "yes",
+      "website": "https://www.timhortons.com/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 124,
+      "ix": 147
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 287,
+    "ix": 312,
+    "lon": -80.5429665,
+    "lat": 43.4728712,
+    "name": "Chatime",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housename": "Davis Centre",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "brand": "Chatime",
+      "brand:en": "Chatime",
+      "brand:wikidata": "Q16829306",
+      "brand:wikipedia": "en:Chatime",
+      "brand:zh": "\u65e5\u51fa\u8336\u592a",
+      "cuisine": "bubble_tea",
+      "level": "0",
+      "level:ref": "1",
+      "name": "Chatime",
+      "name:en": "Chatime",
+      "name:zh": "\u65e5\u51fa\u8336\u592a",
+      "opening_hours": "Mo-Th 09:00-20:30; Fr 09:00-19:00; Sa-Su closed",
+      "payment:amex": "no",
+      "payment:cash": "yes",
+      "payment:mastercard": "yes",
+      "payment:visa": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 269,
+      "ix": 294
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 130,
+    "ix": 129,
+    "lon": -80.5454297,
+    "lat": 43.4713308,
+    "name": "Flock Stop",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housename": "Student Life Centre",
+      "addr:housenumber": "200",
+      "addr:postcode": "N2L 3G1",
+      "addr:street": "University Avenue West",
+      "addr:unit": "Room 1116",
+      "name": "Flock Stop",
+      "opening_hours": "24/7",
+      "operator": "WUSA",
+      "shop": "convenience",
+      "website": "https://wusa.ca/services/food-retail/flock-stop/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 130,
+      "ix": 129
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 208,
+    "ix": 146,
+    "lon": -80.5452043,
+    "lat": 43.472094,
+    "name": "Subway",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "fast_food",
+      "brand": "Subway",
+      "brand:wikidata": "Q244457",
+      "brand:wikipedia": "en:Subway (restaurant)",
+      "cuisine": "sandwich",
+      "delivery": "no",
+      "drive_through": "no",
+      "level": "0",
+      "name": "Subway",
+      "name:zh": "\u8d5b\u767e\u5473",
+      "opening_hours": "Mo-Fr 10:00-19:30; Sa-Su closed",
+      "outdoor_seating": "yes",
+      "payment:debit_cards": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 208,
+      "ix": 146
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 199,
+    "ix": 134,
+    "lon": -80.5453572,
+    "lat": 43.4720044,
+    "name": "Brubakers",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "fast_food",
+      "delivery": "no",
+      "drive_through": "no",
+      "level": "0",
+      "name": "Brubakers",
+      "opening_hours": "Mo-Th 09:00-19:00; Fr 09:00-17:00; Sa-Su closed",
+      "outdoor_seating": "no",
+      "payment:cash": "yes",
+      "payment:coins": "yes",
+      "payment:debit_cards": "yes",
+      "payment:mastercard": "yes",
+      "payment:notes": "yes",
+      "payment:visa": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "only",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 199,
+      "ix": 134
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 688,
+    "ix": 433,
+    "lon": -80.5413313,
+    "lat": 43.4767907,
+    "name": "Mambella's Italian Kitchen",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "160",
+      "addr:postcode": "N2L 3L3",
+      "addr:street": "Columbia Street West",
+      "amenity": "restaurant",
+      "capacity": "25",
+      "cuisine": "sandwich;pasta",
+      "name": "Mambella's Italian Kitchen",
+      "opening_hours": "Mo-Fr 08:00-15:00",
+      "phone": "+1-519-885-2244",
+      "takeaway": "yes",
+      "website": "https://www.mambellas.com/"
+    },
+    "snapped": {
+      "iy": 688,
+      "ix": 433
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 695,
+    "ix": 584,
+    "lon": -80.5392973,
+    "lat": 43.4768612,
+    "name": "Tim Hortons",
+    "tags": {
+      "addr:housenumber": "151",
+      "addr:postcode": "N2L 3L2",
+      "addr:street": "Columbia Street West",
+      "amenity": "cafe",
+      "brand": "Tim Hortons",
+      "brand:wikidata": "Q175106",
+      "brand:wikipedia": "en:Tim Hortons",
+      "cuisine": "coffee_shop",
+      "drive_through": "yes",
+      "name": "Tim Hortons",
+      "opening_hours": "Mo-Sa 06:00-23:00, Su 07:00-23:00",
+      "payment:amex": "no",
+      "payment:coins": "yes",
+      "payment:notes": "yes",
+      "phone": "+1-519-886-8965",
+      "takeaway": "yes",
+      "website": "https://www.timhortons.com/"
+    },
+    "snapped": {
+      "iy": 694,
+      "ix": 583
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 188,
+    "ix": 267,
+    "lon": -80.5435624,
+    "lat": 43.4718958,
+    "name": "Math CnD",
+    "tags": {
+      "alt_name": "Math C&D",
+      "amenity": "cafe",
+      "internet_access": "wlan",
+      "level": "2",
+      "name": "Math CnD",
+      "opening_hours": "Mo-Th 08:00-19:00, Fr 08:00-16:30",
+      "operator": "University of Waterloo Mathematics Society",
+      "outdoor_seating": "yes",
+      "website": "https://mathsoc.uwaterloo.ca/mathcnd/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 179,
+      "ix": 276
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 171,
+    "ix": 165,
+    "lon": -80.5449437,
+    "lat": 43.4717314,
+    "name": "Wasabi",
+    "tags": {
+      "amenity": "restaurant",
+      "brand": "Wasabi",
+      "brand:wikidata": "Q23891278",
+      "brand:wikipedia": "en:Wasabi (restaurant)",
+      "cuisine": "japanese",
+      "name": "Wasabi",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 171,
+      "ix": 165
+    }
+  },
+  {
+    "type": "pharmacy",
+    "iy": 194,
+    "ix": 137,
+    "lon": -80.5453206,
+    "lat": 43.4719566,
+    "name": "Student Health Pharmacy",
+    "tags": {
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "healthcare": "pharmacy",
+      "level": "-1",
+      "name": "Student Health Pharmacy",
+      "source": "local_knowledge",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 194,
+      "ix": 137
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 863,
+    "ix": 874,
+    "lon": -80.5353949,
+    "lat": 43.4785019,
+    "name": "Columbia / Albert",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Columbia / Albert",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2523",
+      "route_ref": "31",
+      "shelter": "no",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 861,
+      "ix": 876
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 894,
+    "ix": 893,
+    "lon": -80.5351266,
+    "lat": 43.4788044,
+    "name": "Columbia / Albert",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Columbia / Albert",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2513",
+      "route_ref": "31",
+      "shelter": "no",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 893,
+      "ix": 894
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1094,
+    "ix": 1298,
+    "lon": -80.5296699,
+    "lat": 43.4807577,
+    "name": "Columbia / Holly",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Columbia / Holly",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2511",
+      "route_ref": "31",
+      "shelter": "no",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 1090,
+      "ix": 1294
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 466,
+    "ix": 609,
+    "lon": -80.5389543,
+    "lat": 43.4746147,
+    "name": "University of Waterloo Terminal",
+    "tags": {
+      "bus": "yes",
+      "contact:website": "https://www.gotransit.com/find-a-station-or-stop/02799/station-details",
+      "highway": "bus_stop",
+      "local_ref": "6B",
+      "name": "University of Waterloo Terminal",
+      "name:fr": "Universit\u00e9 de Waterloo",
+      "name:zh": "\u6ed1\u94c1\u5362\u5927\u5b66",
+      "network": "GO Transit",
+      "network:wikidata": "Q1357727",
+      "network:wikipedia": "en:GO Transit",
+      "operator": "Metrolinx",
+      "operator:wikidata": "Q3307451",
+      "operator:wikipedia": "en:Metrolinx",
+      "public_transport": "platform",
+      "ref": "102818",
+      "route_ref": "25;25C;30",
+      "shelter": "yes",
+      "tactile_paving": "no",
+      "website": "https://www.gotransit.com/find-a-station-or-stop/02799/station-details"
+    },
+    "snapped": {
+      "iy": 469,
+      "ix": 613
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 60,
+    "ix": 603,
+    "lon": -80.5390423,
+    "lat": 43.4706524,
+    "name": "Engineering Coffee & Doughnut Shop",
+    "tags": {
+      "amenity": "cafe",
+      "level": "0",
+      "name": "Engineering Coffee & Doughnut Shop",
+      "opening_hours": "Mo-Th 08:00-18:00, Fr 08:00-17:00",
+      "website": "https://www.engsoc.uwaterloo.ca/services/cd-2/"
+    },
+    "snapped": {
+      "iy": 60,
+      "ix": 603
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 400,
+    "ix": 98,
+    "lon": -80.545852,
+    "lat": 43.4739701,
+    "name": "Ring Rd. / U.W. - B.C. Matthews Hall",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Ring Rd. / U.W. - B.C. Matthews Hall",
+      "network": "GRT;CampusBus",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit;Great Canadian Coaches",
+      "public_transport": "platform",
+      "ref": "2519"
+    },
+    "snapped": {
+      "iy": 400,
+      "ix": 98
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 98,
+    "ix": 306,
+    "lon": -80.5430459,
+    "lat": 43.4710194,
+    "name": "Science C&D",
+    "tags": {
+      "amenity": "cafe",
+      "floor": "1",
+      "level": "1",
+      "name": "Science C&D",
+      "wheelchair": "yes"
+    },
+    "snapped": null
+  },
+  {
+    "type": "cafe",
+    "iy": 265,
+    "ix": 363,
+    "lon": -80.5422694,
+    "lat": 43.4726558,
+    "name": "Tim Hortons",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "brand": "Tim Hortons",
+      "brand:wikidata": "Q175106",
+      "brand:wikipedia": "en:Tim Hortons",
+      "check_date:opening_hours": "2025-07-26",
+      "cuisine": "coffee_shop",
+      "drive_through": "no",
+      "level": "0",
+      "level:ref": "1",
+      "name": "Tim Hortons",
+      "name:zh": "\u8482\u59c6\u00b7\u970d\u987f\u65af\u5feb\u9012\u5e97",
+      "opening_hours": "Mo-Th 07:30-21:00; Fr 07:30-19:30; Sa-Su closed",
+      "outdoor_seating": "no",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 264,
+      "ix": 362
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 455,
+    "ix": 41,
+    "lon": -80.5466187,
+    "lat": 43.474512,
+    "name": "Columbia / University of Waterloo",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Columbia / University of Waterloo",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3899",
+      "route_ref": "201;13;31;92"
+    },
+    "snapped": {
+      "iy": 455,
+      "ix": 41
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 794,
+    "ix": 1274,
+    "lon": -80.53,
+    "lat": 43.4778289,
+    "name": "Hazel / Hickory",
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Hazel / Hickory",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1168",
+      "route_ref": "19",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 791,
+      "ix": 1271
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 806,
+    "ix": 1255,
+    "lon": -80.5302616,
+    "lat": 43.4779434,
+    "name": "Hazel / Hickory",
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Hazel / Hickory",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1163",
+      "route_ref": "19",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 802,
+      "ix": 1251
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 911,
+    "ix": 1196,
+    "lon": -80.5310465,
+    "lat": 43.4789655,
+    "name": "Hazel / Waterloo Collegiate Institute",
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "covered": "no",
+      "highway": "bus_stop",
+      "name": "Hazel / Waterloo Collegiate Institute",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1162",
+      "route_ref": "19",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 916,
+      "ix": 1201
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1019,
+    "ix": 1187,
+    "lon": -80.5311759,
+    "lat": 43.4800241,
+    "name": "Columbia / Hazel",
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "check_date:shelter": "2023-05-26",
+      "covered": "no",
+      "highway": "bus_stop",
+      "name": "Columbia / Hazel",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2524",
+      "route_ref": "31",
+      "shelter": "no",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 1019,
+      "ix": 1187
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 978,
+    "ix": 1170,
+    "lon": -80.5314071,
+    "lat": 43.4796221,
+    "name": "Hazel / Columbia",
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "covered": "no",
+      "highway": "bus_stop",
+      "name": "Hazel / Columbia",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1171",
+      "route_ref": "19",
+      "shelter": "no",
+      "surface": "grass"
+    },
+    "snapped": {
+      "iy": 979,
+      "ix": 1169
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1023,
+    "ix": 1132,
+    "lon": -80.5319154,
+    "lat": 43.4800657,
+    "name": "Hazel / Columbia",
+    "tags": {
+      "bench": "no",
+      "bus": "yes",
+      "covered": "no",
+      "highway": "bus_stop",
+      "name": "Hazel / Columbia",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3623",
+      "route_ref": "19",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 1016,
+      "ix": 1139
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1023,
+    "ix": 1155,
+    "lon": -80.5315969,
+    "lat": 43.4800655,
+    "name": "Columbia / Hazel",
+    "tags": {
+      "bench": "no",
+      "bin": "yes",
+      "bus": "yes",
+      "check_date:bin": "2024-03-24",
+      "covered": "no",
+      "highway": "bus_stop",
+      "name": "Columbia / Hazel",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2512",
+      "route_ref": "31",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 1022,
+      "ix": 1154
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1182,
+    "ix": 1053,
+    "lon": -80.5329713,
+    "lat": 43.4816219,
+    "name": "Hazel / Austin",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Hazel / Austin",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1172",
+      "route_ref": "19"
+    },
+    "snapped": {
+      "iy": 1182,
+      "ix": 1053
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1170,
+    "ix": 1049,
+    "lon": -80.5330292,
+    "lat": 43.4814991,
+    "name": "Hazel / Austin",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Hazel / Austin",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1161",
+      "route_ref": "19"
+    },
+    "snapped": {
+      "iy": 1178,
+      "ix": 1058
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 284,
+    "ix": 302,
+    "lon": -80.5430994,
+    "lat": 43.4728396,
+    "name": "DC BYTES",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "asian",
+      "delivery": "no",
+      "drive_through": "no",
+      "fast_food": "cafeteria",
+      "level": "0",
+      "level:ref": "1",
+      "name": "DC BYTES",
+      "opening_hours": "Mo-Th 10:00-19:30; Fr 10:00-17:00; Sa-Su closed",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "website": "https://uwaterloo.ca/food-services/content/dc-bytes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 271,
+      "ix": 289
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 793,
+    "ix": 731,
+    "lon": -80.5373097,
+    "lat": 43.4778157,
+    "name": "Columbia / Lester",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Columbia / Lester",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2522",
+      "route_ref": "31",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 790,
+      "ix": 728
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 810,
+    "ix": 725,
+    "lon": -80.5374011,
+    "lat": 43.4779779,
+    "name": "Columbia / Lester",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Columbia / Lester",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2514",
+      "route_ref": "31",
+      "shelter": "no"
+    },
+    "snapped": {
+      "iy": 811,
+      "ix": 727
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 247,
+    "ix": 978,
+    "lon": -80.5339937,
+    "lat": 43.4724771,
+    "name": "CoCo Fresh Tea & Juice",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "203",
+      "addr:postcode": "N2L 3E6",
+      "addr:street": "Lester Street",
+      "addr:unit": "3",
+      "amenity": "cafe",
+      "brand": "CoCo",
+      "brand:wikidata": "Q65084369",
+      "brand:wikipedia": "en:CoCo Fresh Tea & Juice",
+      "cuisine": "bubble_tea",
+      "level": "0",
+      "name": "CoCo Fresh Tea & Juice",
+      "opening_hours": "Mo-Su 12:00-24:00",
+      "short_name": "CoCo",
+      "smoking": "no",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 237,
+      "ix": 988
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 142,
+    "ix": 373,
+    "lon": -80.542134,
+    "lat": 43.4714532,
+    "name": "CEIT Caf\u00e9",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "cuisine": "cafe",
+      "internet_access": "yes",
+      "internet_access:fee": "no",
+      "internet_access:ssid": "eduroam",
+      "level": "1",
+      "name": "CEIT Caf\u00e9",
+      "opening_hours": "Mo-Fr 08:00-15:30; Sa-Su closed",
+      "outdoor_seating": "no",
+      "payment:debit_cards": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours"
+    },
+    "snapped": {
+      "iy": 142,
+      "ix": 373
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 553,
+    "ix": 118,
+    "lon": -80.5455798,
+    "lat": 43.4754643,
+    "name": "Eye Opener Caf\u00e9",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "cuisine": "cafe",
+      "internet_access": "yes",
+      "internet_access:fee": "no",
+      "internet_access:ssid": "eduroam",
+      "name": "Eye Opener Caf\u00e9",
+      "opening_hours": "Mo-Fr 08:00-14:00; Sa-Su closed",
+      "outdoor_seating": "no",
+      "payment:debit_cards": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours"
+    },
+    "snapped": {
+      "iy": 553,
+      "ix": 118
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 372,
+    "ix": 144,
+    "lon": -80.5452208,
+    "lat": 43.4737,
+    "name": "FRSH",
+    "tags": {
+      "amenity": "cafe",
+      "cuisine": "cafe",
+      "internet_access": "yes",
+      "internet_access:fee": "no",
+      "internet_access:ssid": "eduroam",
+      "level": "0",
+      "name": "FRSH",
+      "opening_hours": "Mo-Th 11:00-18:00; Fr 11:00-16:00; Sa-Su closed",
+      "outdoor_seating": "no",
+      "payment:interac": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours"
+    },
+    "snapped": {
+      "iy": 372,
+      "ix": 144
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 342,
+    "ix": 79,
+    "lon": -80.546098,
+    "lat": 43.4734105,
+    "name": "Starbucks",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "brand": "Starbucks",
+      "brand:wikidata": "Q37158",
+      "brand:wikipedia": "en:Starbucks",
+      "cuisine": "coffee_shop",
+      "name": "Starbucks",
+      "official_name": "Starbucks Coffee",
+      "opening_hours": "Mo-Th 08:00-19:00; Fr 08:00-17:00; Sa-Su closed",
+      "payment:interac": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "yes",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 342,
+      "ix": 79
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 37,
+    "ix": 291,
+    "lon": -80.5432497,
+    "lat": 43.4704203,
+    "name": "Starbucks",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "cafe",
+      "brand": "Starbucks",
+      "brand:wikidata": "Q37158",
+      "brand:wikipedia": "en:Starbucks",
+      "cuisine": "coffee_shop",
+      "level": "0",
+      "name": "Starbucks",
+      "official_name": "Starbucks Coffee",
+      "opening_hours": "Mo-Th 08:00-19:00; Fr 08:00-17:00; Sa 01:00-16:00; Su closed",
+      "outdoor_seating": "no",
+      "payment:debit_cards": "yes",
+      "smoking": "outside",
+      "source": "https://uwaterloo.ca/food-services/locations-and-hours",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": null
+  },
+  {
+    "type": "restaurant",
+    "iy": 358,
+    "ix": 744,
+    "lon": -80.537141,
+    "lat": 43.473558,
+    "name": "Ken Sushi",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "256",
+      "addr:postcode": "N2L 0W3",
+      "addr:street": "Phillip Street",
+      "air_conditioning": "yes",
+      "amenity": "restaurant",
+      "cuisine": "japanese;sushi",
+      "delivery": "yes",
+      "name": "Ken Sushi",
+      "opening_hours": "Mo-Fr 11:30-15:00,16:00-22:00; Sa 12:00-15:00,16:00-22:00; Su 12:00-15:00,16:00-21:00",
+      "outdoor_seating": "no",
+      "phone": "+1 519 883 7272",
+      "takeaway": "yes",
+      "website": "https://www.kensushihouse.ca/",
+      "website:menu": "https://www.kensushihouse.ca/menu"
+    },
+    "snapped": {
+      "iy": 366,
+      "ix": 736
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 27,
+    "ix": 851,
+    "lon": -80.5356971,
+    "lat": 43.4703296,
+    "name": "Booster Juice",
+    "tags": {
+      "amenity": "fast_food",
+      "brand": "Booster Juice",
+      "brand:wikidata": "Q4943796",
+      "brand:wikipedia": "en:Booster Juice",
+      "cuisine": "juice",
+      "drive_through": "no",
+      "name": "Booster Juice",
+      "opening_hours": "Mo-Fr 07:30-22:30, Sa-Su 09:00-22:30",
+      "operator": "Food Services",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 21,
+      "ix": 853
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 36,
+    "ix": 839,
+    "lon": -80.5358574,
+    "lat": 43.4704128,
+    "name": "The Market At UWP",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "pizza;italian;burger;mexican;sandwich;asian;sushi;international",
+      "drive_through": "yes",
+      "name": "The Market At UWP",
+      "opening_hours": "Mo-Fr 07:30-22:30, Sa-Su 09:00-22:30",
+      "operator": "Food Services",
+      "takeaway": "only"
+    },
+    "snapped": {
+      "iy": 21,
+      "ix": 853
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 256,
+    "ix": 977,
+    "lon": -80.533995,
+    "lat": 43.4725625,
+    "name": "Foodie Fruitie",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "203",
+      "addr:postcode": "N2L 3E6",
+      "addr:street": "Lester Street",
+      "addr:unit": "7",
+      "amenity": "restaurant",
+      "cuisine": "chinese;japanese;asian",
+      "level": "1",
+      "name": "Foodie Fruitie",
+      "opening_hours": "Mo-Su 11:30-23:30",
+      "outdoor_seating": "no",
+      "smoking": "no",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 242,
+      "ix": 991
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 256,
+    "ix": 972,
+    "lon": -80.5340745,
+    "lat": 43.4725617,
+    "name": "Chinese Lamian",
+    "tags": {
+      "amenity": "restaurant",
+      "cuisine": "chinese",
+      "delivery": "yes",
+      "level": "0",
+      "name": "Chinese Lamian",
+      "opening_hours": "We-Mo 11:30-00:00",
+      "takeaway": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 271,
+      "ix": 988
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 586,
+    "ix": 856,
+    "lon": -80.5356284,
+    "lat": 43.4757894,
+    "name": "Charminar House",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "280",
+      "addr:postcode": "N2L 3W5",
+      "addr:street": "Lester Street",
+      "addr:unit": "114",
+      "amenity": "restaurant",
+      "cuisine": "indian",
+      "name": "Charminar House",
+      "opening_hours": "Mo-Tu 11:00-00:00; Su, We-Fr 08:00-02:00; Sa 08:00-00:00",
+      "phone": "+1 519 725 2722",
+      "self_service": "no"
+    },
+    "snapped": {
+      "iy": 591,
+      "ix": 851
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 582,
+    "ix": 850,
+    "lon": -80.5357126,
+    "lat": 43.4757575,
+    "name": "Student's Smart Shop",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "280",
+      "addr:postcode": "N2L 3W6",
+      "addr:street": "Hickory Street West",
+      "addr:unit": "113",
+      "name": "Student's Smart Shop",
+      "opening_hours": "Mo-Fr 09:00-22:00, Sa-Su 09:00-21:00",
+      "shop": "convenience"
+    },
+    "snapped": {
+      "iy": 583,
+      "ix": 847
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 545,
+    "ix": 856,
+    "lon": -80.5356372,
+    "lat": 43.4753938,
+    "name": "Top Chicken",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "280",
+      "addr:postcode": "N2L 3W6",
+      "addr:street": "Lester Street",
+      "addr:unit": "105",
+      "amenity": "restaurant",
+      "name": "Top Chicken",
+      "opening_hours": "Su-Th 16:00-24:00; Fr-Sa 16:00-01:00"
+    },
+    "snapped": {
+      "iy": 564,
+      "ix": 837
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 550,
+    "ix": 853,
+    "lon": -80.5356777,
+    "lat": 43.4754442,
+    "name": "Now Tea",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "280",
+      "addr:postcode": "N2L 3W5",
+      "addr:street": "Lester Street",
+      "addr:unit": "106",
+      "amenity": "cafe",
+      "cuisine": "bubble_tea",
+      "name": "Now Tea",
+      "opening_hours": "Mo-Su 11:00-23:30"
+    },
+    "snapped": {
+      "iy": 564,
+      "ix": 837
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 541,
+    "ix": 858,
+    "lon": -80.5356072,
+    "lat": 43.4753505,
+    "name": "LooBapBap",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "140-280",
+      "addr:postcode": "N2L 3W6",
+      "addr:street": "Lester Street",
+      "addr:unit": "104",
+      "amenity": "restaurant",
+      "cuisine": "korean",
+      "email": "loobapbap@gmail.com",
+      "name": "LooBapBap",
+      "opening_hours": "Sa-Su 11:30-21:00; Mo-Fr 11:30-21:30",
+      "phone": "(519) 883-4747",
+      "website": "https://www.loobapbap.ca/",
+      "website:menu": "https://www.loobapbap.ca/Menu/1"
+    },
+    "snapped": null
+  },
+  {
+    "type": "restaurant",
+    "iy": 579,
+    "ix": 844,
+    "lon": -80.5357973,
+    "lat": 43.4757229,
+    "name": "Circle Food",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "280",
+      "addr:postcode": "N2L 3W6",
+      "addr:street": "Lester Street",
+      "addr:unit": "112",
+      "amenity": "restaurant",
+      "name": "Circle Food"
+    },
+    "snapped": {
+      "iy": 579,
+      "ix": 844
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 403,
+    "ix": 1158,
+    "lon": -80.531561,
+    "lat": 43.4740052,
+    "name": "Kuro",
+    "tags": {
+      "addr:housenumber": "222",
+      "addr:street": "Albert Street",
+      "amenity": "restaurant",
+      "name": "Kuro",
+      "phone": "+1-519-722-8787",
+      "website": "www.kuro.ca"
+    },
+    "snapped": {
+      "iy": 403,
+      "ix": 1158
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 492,
+    "ix": 1162,
+    "lon": -80.5315078,
+    "lat": 43.4748763,
+    "name": "Toma\u2019s Pizza",
+    "tags": {
+      "addr:housenumber": "251",
+      "addr:street": "Hemlock Street",
+      "addr:unit": "110",
+      "amenity": "fast_food",
+      "cuisine": "pizza",
+      "name": "Toma\u2019s Pizza",
+      "phone": "+1-519-342-1933",
+      "website": "https://tomaspizza.ca/",
+      "website:orders": "https://tomaspizza.ca/order/"
+    },
+    "snapped": {
+      "iy": 492,
+      "ix": 1162
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 485,
+    "ix": 1166,
+    "lon": -80.5314541,
+    "lat": 43.4748004,
+    "name": "Oka Sushi",
+    "tags": {
+      "addr:housenumber": "251",
+      "addr:postcode": "N2L 3R4",
+      "addr:street": "Hemlock Street",
+      "amenity": "fast_food",
+      "cuisine": "sushi",
+      "name": "Oka Sushi",
+      "phone": "+1-226-647-6888",
+      "website": "https://okasushi.app/"
+    },
+    "snapped": {
+      "iy": 485,
+      "ix": 1166
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 639,
+    "ix": 1275,
+    "lon": -80.5299827,
+    "lat": 43.4763128,
+    "name": "Fiddleheads Smoothie Bar",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "64",
+      "addr:street": "Balsam Street",
+      "amenity": "restaurant",
+      "cuisine": "smoothie",
+      "name": "Fiddleheads Smoothie Bar"
+    },
+    "snapped": {
+      "iy": 653,
+      "ix": 1259
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 637,
+    "ix": 1272,
+    "lon": -80.5300272,
+    "lat": 43.4762861,
+    "name": "Sticks & Scones",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "64",
+      "addr:street": "Balsam Street",
+      "name": "Sticks & Scones",
+      "shop": "bakery"
+    },
+    "snapped": {
+      "iy": 651,
+      "ix": 1258
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 642,
+    "ix": 1281,
+    "lon": -80.5299038,
+    "lat": 43.4763385,
+    "name": "Bogda",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "62",
+      "addr:postcode": "N2L 3H2",
+      "addr:street": "Balsam Street",
+      "amenity": "restaurant",
+      "cuisine": "uyghur",
+      "name": "Bogda",
+      "opening_hours": "Mo-Sa 11:00-22:00",
+      "website": "https://www.bogda.ca/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 659,
+      "ix": 1262
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 660,
+    "ix": 1274,
+    "lon": -80.5300034,
+    "lat": 43.4765166,
+    "name": "Bao Sandwich Bar",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "62",
+      "addr:postcode": "N2L 3H2",
+      "addr:street": "Balsam Street",
+      "amenity": "restaurant",
+      "cuisine": "vietnamese;taiwanese",
+      "name": "Bao Sandwich Bar",
+      "opening_hours": "Mo-Sa 11:00-15:00, Mo-Sa 17:00-21:00",
+      "outdoor_seating": "yes",
+      "phone": "+1-519-208-1226",
+      "website": "https://www.baosandwichbar.com/",
+      "wikidata": "Q111945296",
+      "wikipedia": "en:Bao Sandwich Bar"
+    },
+    "snapped": {
+      "iy": 663,
+      "ix": 1278
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 730,
+    "ix": 1207,
+    "lon": -80.5309025,
+    "lat": 43.4771956,
+    "name": "Exclamation",
+    "tags": {
+      "addr:housenumber": "63",
+      "addr:street": "Hickory Street West",
+      "amenity": "restaurant",
+      "name": "Exclamation",
+      "opening_hours": "Mo,We-Fr 11:00-22:00; Sa,Su 12:00-22:00",
+      "phone": "+1-519-954-8866",
+      "website": "https://www.exclamationfusion.com/"
+    },
+    "snapped": {
+      "iy": 733,
+      "ix": 1211
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 266,
+    "ix": 564,
+    "lon": -80.539561,
+    "lat": 43.4726613,
+    "name": "E7 Coffee & Doughnut Shop",
+    "tags": {
+      "amenity": "cafe",
+      "cuisine": "coffee_shop;sandwich",
+      "internet_access": "wlan",
+      "internet_access:fee": "no",
+      "name": "E7 Coffee & Doughnut Shop",
+      "opening_hours": "Mo-Fr 08:00-18:00",
+      "outdoor_seating": "no",
+      "website": "https://www.engsoc.uwaterloo.ca/about-us/student-spaces/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 255,
+      "ix": 553
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 888,
+    "ix": 738,
+    "lon": -80.5372258,
+    "lat": 43.4787484,
+    "name": "Chef On Call",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "130",
+      "addr:postcode": "N2L 0G6",
+      "addr:street": "Columbia Street West",
+      "addr:unit": "812",
+      "amenity": "fast_food",
+      "cuisine": "italian;burger;sandwich",
+      "drive_through": "no",
+      "name": "Chef On Call",
+      "opening_hours": "Su-Th 12:00-02:00, Fr,Sa 12:00-04:00"
+    },
+    "snapped": {
+      "iy": 884,
+      "ix": 734
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 870,
+    "ix": 698,
+    "lon": -80.5377588,
+    "lat": 43.4785688,
+    "name": "Kung Fu Mart",
+    "tags": {
+      "name": "Kung Fu Mart",
+      "shop": "convenience"
+    },
+    "snapped": {
+      "iy": 870,
+      "ix": 698
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 828,
+    "ix": 725,
+    "lon": -80.5373907,
+    "lat": 43.4781572,
+    "name": "ZenQ",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "130-111",
+      "addr:postcode": "N2L 3L1",
+      "addr:street": "Columbia Street West",
+      "amenity": "restaurant",
+      "name": "ZenQ",
+      "opening_hours": "Mo-Su 12:00-00:00",
+      "phone": "+1-226-476-5968"
+    },
+    "snapped": {
+      "iy": 824,
+      "ix": 729
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 218,
+    "ix": 595,
+    "lon": -80.5391492,
+    "lat": 43.4721897,
+    "name": "Hazukido",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "name": "Hazukido",
+      "opening_hours": "Mo-Su 12:00-21:00",
+      "outdoor_seating": "yes",
+      "shop": "bakery",
+      "website": "https://www.hazukido.com/en/store-detail/512/",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 223,
+      "ix": 590
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 619,
+    "ix": 823,
+    "lon": -80.5360805,
+    "lat": 43.4761158,
+    "name": "Rong Natural Food Store",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "308",
+      "addr:street": "Lester Street",
+      "name": "Rong Natural Food Store",
+      "shop": "supermarket"
+    },
+    "snapped": null
+  },
+  {
+    "type": "cafe",
+    "iy": 447,
+    "ix": 1128,
+    "lon": -80.531966,
+    "lat": 43.4744281,
+    "name": "Together Boba",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "228",
+      "addr:postcode": "N2L 3T6",
+      "addr:province": "Ontario",
+      "addr:street": "Albert Street",
+      "addr:unit": "1",
+      "amenity": "cafe",
+      "cuisine": "bubble_tea",
+      "name": "Together Boba",
+      "outdoor_seating": "no"
+    },
+    "snapped": {
+      "iy": 459,
+      "ix": 1140
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 602,
+    "ix": 618,
+    "lon": -80.5388399,
+    "lat": 43.4759514,
+    "name": "Popular Pizza",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "pizza",
+      "name": "Popular Pizza",
+      "phone": "+1-226-753-4242"
+    },
+    "snapped": {
+      "iy": 599,
+      "ix": 615
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 717,
+    "ix": 1207,
+    "lon": -80.5309042,
+    "lat": 43.4770742,
+    "name": "India Food and Grocery",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "272",
+      "addr:postcode": "N2L 3R3",
+      "addr:province": "Ontario",
+      "addr:street": "Larch Street",
+      "name": "India Food and Grocery",
+      "payment:visa": "yes",
+      "shop": "supermarket"
+    },
+    "snapped": {
+      "iy": 710,
+      "ix": 1200
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 240,
+    "ix": 135,
+    "lon": -80.5453447,
+    "lat": 43.4724084,
+    "name": "Jugo Juice",
+    "tags": {
+      "amenity": "fast_food",
+      "brand": "Jugo Juice",
+      "brand:wikidata": "Q119705456",
+      "cuisine": "juice",
+      "name": "Jugo Juice",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 240,
+      "ix": 135
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 215,
+    "ix": 145,
+    "lon": -80.5452079,
+    "lat": 43.4721599,
+    "name": "Teriyaki Experience",
+    "tags": {
+      "amenity": "fast_food",
+      "brand": "Teriyaki Experience",
+      "brand:wikidata": "Q7702453",
+      "cuisine": "japanese",
+      "name": "Teriyaki Experience",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 215,
+      "ix": 145
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 218,
+    "ix": 143,
+    "lon": -80.545237,
+    "lat": 43.4721922,
+    "name": "Smokehouse",
+    "tags": {
+      "amenity": "fast_food",
+      "name": "Smokehouse"
+    },
+    "snapped": {
+      "iy": 218,
+      "ix": 143
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 206,
+    "ix": 142,
+    "lon": -80.5452528,
+    "lat": 43.4720744,
+    "name": "Quesada",
+    "tags": {
+      "amenity": "fast_food",
+      "brand": "Quesada",
+      "brand:wikidata": "Q66070360",
+      "cuisine": "mexican",
+      "name": "Quesada",
+      "official_name": "Quesada Burritos & Tacos",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 206,
+      "ix": 142
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 203,
+    "ix": 138,
+    "lon": -80.5453042,
+    "lat": 43.4720442,
+    "name": "Shawarma Hub",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "shawarma",
+      "name": "Shawarma Hub"
+    },
+    "snapped": {
+      "iy": 203,
+      "ix": 138
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 388,
+    "ix": 429,
+    "lon": -80.5413839,
+    "lat": 43.473858,
+    "name": "University of Waterloo Station",
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "University of Waterloo Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1260",
+      "route_ref": "31;201",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 388,
+      "ix": 428
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 406,
+    "ix": 463,
+    "lon": -80.5409241,
+    "lat": 43.4740364,
+    "name": "University of Waterloo Station",
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "University of Waterloo Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1262",
+      "route_ref": "30",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 406,
+      "ix": 463
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 408,
+    "ix": 500,
+    "lon": -80.5404298,
+    "lat": 43.4740482,
+    "name": "University of Waterloo Station",
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "University of Waterloo Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1223",
+      "route_ref": "201;19;31",
+      "shelter": "yes"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 444,
+    "ix": 533,
+    "lon": -80.5399872,
+    "lat": 43.4743988,
+    "name": "University of Waterloo Station",
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "University of Waterloo Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1264",
+      "route_ref": "9;30;301R",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 459,
+      "ix": 548
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 444,
+    "ix": 566,
+    "lon": -80.5395392,
+    "lat": 43.4743997,
+    "name": "University of Waterloo Station",
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "University of Waterloo Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1078",
+      "route_ref": "9;13",
+      "shelter": "yes",
+      "tactile_paving": "no",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 452,
+      "ix": 572
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 449,
+    "ix": 504,
+    "lon": -80.5403798,
+    "lat": 43.4744556,
+    "name": "University of Waterloo Terminal",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "7",
+      "name": "University of Waterloo Terminal",
+      "name:fr": "Universit\u00e9 de Waterloo",
+      "name:zh": "\u6ed1\u94c1\u5362\u5927\u5b66",
+      "network": "GO Transit",
+      "network:wikidata": "Q1357727",
+      "network:wikipedia": "en:GO Transit",
+      "operator": "Metrolinx",
+      "operator:wikidata": "Q3307451",
+      "operator:wikipedia": "en:Metrolinx",
+      "public_transport": "stop_position",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 460,
+      "ix": 491
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 154,
+    "ix": 652,
+    "lon": -80.538385,
+    "lat": 43.4715651,
+    "name": "Indian Sweet Master",
+    "tags": {
+      "addr:unit": "1B",
+      "amenity": "fast_food",
+      "cuisine": "indian",
+      "drive_through": "no",
+      "name": "Indian Sweet Master",
+      "opening_hours": "Mo-Su 10:00-01:00",
+      "phone": "+1 548 889 3491",
+      "takeaway": "yes",
+      "website": "https://ismwaterloo.com/"
+    },
+    "snapped": {
+      "iy": 154,
+      "ix": 652
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 149,
+    "ix": 657,
+    "lon": -80.5383173,
+    "lat": 43.4715174,
+    "name": "Hakka Nation",
+    "tags": {
+      "addr:unit": "1A",
+      "air_conditioning": "yes",
+      "alcohol": "yes",
+      "amenity": "fast_food",
+      "brand": "Hakka Nation",
+      "brand:website": "https://hakkanation.ca/",
+      "cuisine": "Hakka Nation",
+      "drive_through": "no",
+      "name": "Hakka Nation",
+      "opening_hours": "Mo-Su 11:30-01:00",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 150,
+      "ix": 658
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 208,
+    "ix": 589,
+    "lon": -80.5392346,
+    "lat": 43.4720999,
+    "name": "Pho Ahn Vu Waterloo",
+    "tags": {
+      "amenity": "restaurant",
+      "brand": "Pho Ahn Vu",
+      "brand:website": "https://phoanhvu.com/",
+      "contact:phone": "+1-226-647-8800",
+      "cuisine": "vietnamese",
+      "name": "Pho Ahn Vu Waterloo",
+      "opening_hours": "Mo-Th 11:30-21:00; Fri-Su 11:30-21:30",
+      "outdoor_seating": "yes",
+      "website": "https://phoanhvu.com/waterloo/"
+    },
+    "snapped": {
+      "iy": 211,
+      "ix": 584
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 172,
+    "ix": 630,
+    "lon": -80.5386727,
+    "lat": 43.4717388,
+    "name": "Mengami",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "persian",
+      "name": "Mengami",
+      "outdoor_seating": "no",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 171,
+      "ix": 629
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 165,
+    "ix": 637,
+    "lon": -80.5385788,
+    "lat": 43.4716726,
+    "name": "Izna Poke Plus",
+    "tags": {
+      "addr:unit": "6B",
+      "amenity": "fast_food",
+      "cuisine": "asian",
+      "name": "Izna Poke Plus",
+      "outdoor_seating": "no",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 165,
+      "ix": 637
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 737,
+    "ix": 637,
+    "lon": -80.5385767,
+    "lat": 43.4772679,
+    "name": "Starbucks",
+    "tags": {
+      "addr:housenumber": "145",
+      "addr:postcode": "N2L 0K7",
+      "addr:street": "Columbia Street West",
+      "amenity": "cafe",
+      "brand": "Starbucks",
+      "brand:wikidata": "Q37158",
+      "cuisine": "coffee_shop",
+      "drive_through": "no",
+      "name": "Starbucks",
+      "official_name": "Starbucks Coffee",
+      "opening_hours": "Mo-Su 07:00-19:00",
+      "outdoor_seating": "no",
+      "phone": "+1-519-746-9116",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 739,
+      "ix": 639
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 303,
+    "ix": 774,
+    "lon": -80.5367355,
+    "lat": 43.4730219,
+    "name": "Tahini\u2019s",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "shawarma",
+      "name": "Tahini\u2019s",
+      "opening_hours": "Mo-Su 11:00-02:00",
+      "phone": "+1 226-812-0532",
+      "takeaway": "yes",
+      "website": "https://tahinis.com",
+      "website:menu": "https://smooth.menu/tahinis/menu/"
+    },
+    "snapped": {
+      "iy": 290,
+      "ix": 786
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 311,
+    "ix": 771,
+    "lon": -80.5367792,
+    "lat": 43.4731045,
+    "name": "Hi Yogurt",
+    "tags": {
+      "air_conditioning": "yes",
+      "amenity": "fast_food",
+      "drive_through": "no",
+      "internet_access": "yes",
+      "name": "Hi Yogurt",
+      "opening_hours": "Mo-Su 11:30-22:30",
+      "takeaway": "yes",
+      "website": "https://hiyogurt.com",
+      "website:menu": "https://hiyogurt.com/menu/"
+    },
+    "snapped": {
+      "iy": 294,
+      "ix": 788
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 375,
+    "ix": 735,
+    "lon": -80.5372684,
+    "lat": 43.4737254,
+    "name": "Myung-GA Korean Restaurant",
+    "tags": {
+      "air_conditioning": "yes",
+      "amenity": "restaurant",
+      "cuisine": "korean",
+      "delivery": "yes",
+      "name": "Myung-GA Korean Restaurant",
+      "opening_hours": "We-Mo 10:30-22:00",
+      "phone": "+1 519 208 8818",
+      "takeaway": "yes",
+      "website": "https://myunggakorean.com",
+      "website:menu": "https://myunggakorean.com/"
+    },
+    "snapped": {
+      "iy": 375,
+      "ix": 735
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 239,
+    "ix": 983,
+    "lon": -80.5339191,
+    "lat": 43.4723989,
+    "name": "Perfect Meat Bowl",
+    "tags": {
+      "amenity": "restaurant",
+      "cuisine": "chinese",
+      "name": "Perfect Meat Bowl",
+      "website": "https://perfectmeatbowl.com",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 235,
+      "ix": 987
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 248,
+    "ix": 989,
+    "lon": -80.5338414,
+    "lat": 43.4724839,
+    "name": "Yang Yum",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "korean",
+      "name": "Yang Yum"
+    },
+    "snapped": {
+      "iy": 244,
+      "ix": 992
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 251,
+    "ix": 974,
+    "lon": -80.5340364,
+    "lat": 43.4725194,
+    "name": "Hey Chefz",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "chinese",
+      "name": "Hey Chefz"
+    },
+    "snapped": {
+      "iy": 237,
+      "ix": 988
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 218,
+    "ix": 731,
+    "lon": -80.5373127,
+    "lat": 43.4721894,
+    "name": "Cluck Clucks",
+    "tags": {
+      "amenity": "fast_food",
+      "cuisine": "chicken",
+      "name": "Cluck Clucks",
+      "website": "https://www.cluckcluckschicken.com/waterloo"
+    },
+    "snapped": {
+      "iy": 218,
+      "ix": 731
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 613,
+    "ix": 614,
+    "lon": -80.5388989,
+    "lat": 43.4760579,
+    "name": "TSUJIRI Waterloo",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "330",
+      "addr:postcode": "N2L 3W9",
+      "addr:province": "ON",
+      "addr:street": "Phillip Street",
+      "addr:unit": "3",
+      "amenity": "cafe",
+      "cuisine": "cake;ice_cream;japanese;soba;tea",
+      "name": "TSUJIRI Waterloo",
+      "opening_hours": "Tu-Fr 12:00-21:30; Sa-Su 13:00-21:00",
+      "phone": "+1 226 666 9955",
+      "website": "https://www.tsujiri.ca/",
+      "website:menu": "https://www.order-tsujiri.ca/ordering/restaurant/menu?restaurant_uid=e1b6b42f-ad54-4183-9af8-0af0c1598bc4"
+    },
+    "snapped": {
+      "iy": 611,
+      "ix": 612
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 246,
+    "ix": 813,
+    "lon": -80.5362112,
+    "lat": 43.4724664,
+    "name": "Ye House",
+    "tags": {
+      "amenity": "restaurant",
+      "name": "Ye House"
+    },
+    "snapped": {
+      "iy": 239,
+      "ix": 820
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 594,
+    "ix": 623,
+    "lon": -80.5387743,
+    "lat": 43.4758687,
+    "name": "Gong Cha",
+    "tags": {
+      "amenity": "cafe",
+      "brand": "Gong Cha",
+      "brand:wikidata": "Q5581670",
+      "brand:zh": "\u8ca2\u8336",
+      "cuisine": "bubble_tea",
+      "int_name": "Gong Cha",
+      "name": "Gong Cha",
+      "name:zh": "\u8ca2\u8336",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 594,
+      "ix": 623
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 659,
+    "ix": 569,
+    "lon": -80.5394934,
+    "lat": 43.4765035,
+    "name": "Phillip / Columbia",
+    "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "name": "Phillip / Columbia",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3887",
+      "route_ref": "31;201"
+    },
+    "snapped": {
+      "iy": 659,
+      "ix": 569
+    }
+  }
+]
