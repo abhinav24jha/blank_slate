@@ -1,5 +1,46 @@
 [
   {
+    "type": "transit",
+    "iy": 706,
+    "ix": 572,
+    "lon": -80.5394539,
+    "lat": 43.4769637,
+    "name": "Petro-Canada",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Petro-Canada",
+      "brand:wikidata": "Q1208279",
+      "brand:wikipedia": "en:Petro-Canada",
+      "compressed_air": "yes",
+      "name": "Petro-Canada",
+      "opening_hours": "Mo-Su 06:00-23:00"
+    },
+    "snapped": {
+      "iy": 705,
+      "ix": 571
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 744,
+    "ix": 558,
+    "lon": -80.539653,
+    "lat": 43.4773416,
+    "name": "Shell",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Shell",
+      "brand:wikidata": "Q110716465",
+      "brand:wikipedia": "en:Royal Dutch Shell",
+      "name": "Shell",
+      "self_service": "yes"
+    },
+    "snapped": {
+      "iy": 744,
+      "ix": 558
+    }
+  },
+  {
     "type": "cafe",
     "iy": 125,
     "ix": 146,
@@ -31,7 +72,7 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 124,
+      "iy": 122,
       "ix": 147
     }
   },
@@ -95,8 +136,8 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 130,
-      "ix": 129
+      "iy": 127,
+      "ix": 126
     }
   },
   {
@@ -128,8 +169,8 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 208,
-      "ix": 146
+      "iy": 205,
+      "ix": 145
     }
   },
   {
@@ -161,8 +202,8 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 199,
-      "ix": 134
+      "iy": 196,
+      "ix": 131
     }
   },
   {
@@ -187,8 +228,8 @@
       "website": "https://www.mambellas.com/"
     },
     "snapped": {
-      "iy": 688,
-      "ix": 433
+      "iy": 686,
+      "ix": 436
     }
   },
   {
@@ -218,8 +259,50 @@
       "website": "https://www.timhortons.com/"
     },
     "snapped": {
-      "iy": 694,
-      "ix": 583
+      "iy": 692,
+      "ix": 581
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1095,
+    "ix": 811,
+    "lon": -80.5362433,
+    "lat": 43.4807682,
+    "name": "Mader's Massage Therapy Clinic",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "392",
+      "addr:postcode": "N2L 3V1",
+      "addr:street": "Albert Street",
+      "name": "Mader's Massage Therapy Clinic",
+      "phone": "+1-519-885-0721",
+      "shop": "massage"
+    },
+    "snapped": {
+      "iy": 1092,
+      "ix": 808
+    }
+  },
+  {
+    "type": "health",
+    "iy": 1100,
+    "ix": 800,
+    "lon": -80.5363841,
+    "lat": 43.4808163,
+    "name": "Dr. John Lu",
+    "tags": {
+      "addr:housenumber": "81",
+      "addr:postcode": "N2L 3Y9",
+      "addr:street": "Cardill Crescent",
+      "amenity": "doctors",
+      "healthcare": "doctor",
+      "name": "Dr. John Lu",
+      "phone": "+1-519-884-3800"
+    },
+    "snapped": {
+      "iy": 1099,
+      "ix": 800
     }
   },
   {
@@ -263,8 +346,136 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 171,
-      "ix": 165
+      "iy": 168,
+      "ix": 162
+    }
+  },
+  {
+    "type": "education",
+    "iy": 242,
+    "ix": 384,
+    "lon": -80.5419973,
+    "lat": 43.4724277,
+    "name": "Davis Centre Library",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3G1",
+      "amenity": "library",
+      "internet_access": "yes",
+      "internet_access:fee": "no",
+      "internet_access:ssid": "Eduroam",
+      "name": "Davis Centre Library",
+      "name:fr": "Biblioth\u00e8que de Centre Davis",
+      "name:zh": "\u6234\u7ef4\u65af\u4e2d\u5fc3\u56fe\u4e66\u9986",
+      "opening_hours": "Mo-Fr 08:00-00:00; Sa-Su 11:00-00:00",
+      "operator": "University of Waterloo",
+      "operator:type": "university",
+      "source": "bing/knowledge;http://www.lib.uwaterloo.ca/calendars.php#dc",
+      "wheelchair": "yes",
+      "wikidata": "Q72934935"
+    },
+    "snapped": {
+      "iy": 242,
+      "ix": 384
+    }
+  },
+  {
+    "type": "other",
+    "iy": 438,
+    "ix": 330,
+    "lon": -80.5427185,
+    "lat": 43.4743473,
+    "name": "University of Waterloo Campus Police Station",
+    "tags": {
+      "amenity": "police",
+      "check_date": "2023-03-10",
+      "email": "uwscs@uwaterloo.ca",
+      "level": "0",
+      "name": "University of Waterloo Campus Police Station",
+      "opening_hours": "24/7",
+      "phone": "+1 5198884911",
+      "website": "https://uwaterloo.ca/special-constable-service/"
+    },
+    "snapped": {
+      "iy": 438,
+      "ix": 330
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1295,
+    "ix": 698,
+    "lon": -80.5377589,
+    "lat": 43.4827262,
+    "name": "Artistic Landscaping",
+    "tags": {
+      "addr:street": "Albert Street",
+      "name": "Artistic Landscaping",
+      "shop": "garden_centre",
+      "source": "local_knowledge"
+    },
+    "snapped": {
+      "iy": 1282,
+      "ix": 685
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 759,
+    "ix": 543,
+    "lon": -80.539843,
+    "lat": 43.4774869,
+    "name": null,
+    "tags": {
+      "amenity": "car_wash",
+      "automated": "yes",
+      "self_service": "no"
+    },
+    "snapped": {
+      "iy": 759,
+      "ix": 543
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1332,
+    "ix": 701,
+    "lon": -80.5377267,
+    "lat": 43.4830823,
+    "name": "Northdale Auto Body Ontario",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "430",
+      "addr:postcode": "N2L 3V3",
+      "addr:street": "Albert Street",
+      "name": "Northdale Auto Body Ontario",
+      "opening_hours": "Mo-Th 07:30-17:00; Fr 07:30-16:00",
+      "service:vehicle:car_repair": "yes",
+      "service:vehicle:repairs": "yes",
+      "shop": "car_repair"
+    },
+    "snapped": null
+  },
+  {
+    "type": "retail",
+    "iy": 302,
+    "ix": 333,
+    "lon": -80.5426826,
+    "lat": 43.473019,
+    "name": null,
+    "tags": {
+      "amenity": "atm",
+      "cash_in": "no",
+      "check_date": "2023-08-01",
+      "level": "0",
+      "level:ref": "1",
+      "operator": "Canadian Imperial Bank of Commerce",
+      "source": "local_knowledge",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 307,
+      "ix": 338
     }
   },
   {
@@ -284,8 +495,72 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 194,
-      "ix": 137
+      "iy": 191,
+      "ix": 134
+    }
+  },
+  {
+    "type": "retail",
+    "iy": 153,
+    "ix": 117,
+    "lon": -80.5455923,
+    "lat": 43.4715608,
+    "name": "CIBC",
+    "tags": {
+      "amenity": "bank",
+      "atm": "yes",
+      "brand": "CIBC",
+      "brand:wikidata": "Q666694",
+      "brand:wikipedia": "en:Canadian Imperial Bank of Commerce",
+      "floor": "0",
+      "name": "CIBC",
+      "opening_hours": "Mo-We 09:30-17:00, Th,Fr 09:30-18:00, Sa 09:00-16:00",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 150,
+      "ix": 114
+    }
+  },
+  {
+    "type": "other",
+    "iy": 145,
+    "ix": 118,
+    "lon": -80.5455755,
+    "lat": 43.4714789,
+    "name": "Turnkey Desk",
+    "tags": {
+      "amenity": "reception_desk",
+      "email": "turnkeys@uwaterloo.ca",
+      "name": "Turnkey Desk",
+      "opening_hours": "Mo-Fr 07:30-19:00",
+      "phone": "+1-519-888-4434",
+      "shop": "ticket",
+      "tickets:public_transport": "yes",
+      "website": "https://uwaterloo.ca/student-life-centre/turnkey-desk",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 142,
+      "ix": 115
+    }
+  },
+  {
+    "type": "other",
+    "iy": 349,
+    "ix": 433,
+    "lon": -80.5413296,
+    "lat": 43.4734728,
+    "name": "University of Waterloo",
+    "tags": {
+      "light_rail": "yes",
+      "name": "University of Waterloo",
+      "public_transport": "stop_position",
+      "railway": "stop"
+    },
+    "snapped": {
+      "iy": 349,
+      "ix": 433
     }
   },
   {
@@ -373,9 +648,24 @@
       "shelter": "no",
       "tactile_paving": "no"
     },
+    "snapped": null
+  },
+  {
+    "type": "other",
+    "iy": 826,
+    "ix": 147,
+    "lon": -80.5451908,
+    "lat": 43.4781358,
+    "name": "Grand River CarShare",
+    "tags": {
+      "amenity": "car_sharing",
+      "capacity": "1",
+      "name": "Grand River CarShare",
+      "url": "GrandRiverCarShare.ca"
+    },
     "snapped": {
-      "iy": 1090,
-      "ix": 1294
+      "iy": 827,
+      "ix": 147
     }
   },
   {
@@ -412,6 +702,22 @@
     }
   },
   {
+    "type": "other",
+    "iy": 62,
+    "ix": 515,
+    "lon": -80.5402249,
+    "lat": 43.4706691,
+    "name": "Engineering 2 Fountain",
+    "tags": {
+      "amenity": "fountain",
+      "name": "Engineering 2 Fountain"
+    },
+    "snapped": {
+      "iy": 47,
+      "ix": 529
+    }
+  },
+  {
     "type": "cafe",
     "iy": 60,
     "ix": 603,
@@ -426,9 +732,65 @@
       "website": "https://www.engsoc.uwaterloo.ca/services/cd-2/"
     },
     "snapped": {
-      "iy": 60,
-      "ix": 603
+      "iy": 57,
+      "ix": 601
     }
+  },
+  {
+    "type": "other",
+    "iy": 220,
+    "ix": 454,
+    "lon": -80.541051,
+    "lat": 43.4722101,
+    "name": "Davis Centre",
+    "tags": {
+      "amenity": "taxi",
+      "name": "Davis Centre",
+      "name:en": "Davis Centre",
+      "name:fr": "Centre Davis",
+      "name:zh": "\u6234\u7ef4\u65af\u4e2d\u5fc3"
+    },
+    "snapped": {
+      "iy": 223,
+      "ix": 460
+    }
+  },
+  {
+    "type": "other",
+    "iy": 61,
+    "ix": 583,
+    "lon": -80.5393071,
+    "lat": 43.4706599,
+    "name": "POETS",
+    "tags": {
+      "addr:housename": "Carl A. Pollock Hall",
+      "addr:housenumber": "200",
+      "addr:street": "University Avenue West",
+      "amenity": "lounge",
+      "name": "POETS",
+      "website": "https://www.engsoc.uwaterloo.ca/about-us/student-spaces/"
+    },
+    "snapped": {
+      "iy": 58,
+      "ix": 585
+    }
+  },
+  {
+    "type": "other",
+    "iy": 234,
+    "ix": 232,
+    "lon": -80.5440417,
+    "lat": 43.472347,
+    "name": "Computing Help & Information Place",
+    "tags": {
+      "name": "Computing Help & Information Place",
+      "opening_hours": "Mo-Fr 08:00-16:30; Sa-Su off",
+      "ref": "MC 1052",
+      "shop": "computer",
+      "short_name": "CHIP",
+      "website": "http://ist.uwaterloo.ca/cs/chip/"
+    },
+    "snapped": null
   },
   {
     "type": "transit",
@@ -471,6 +833,41 @@
     "snapped": null
   },
   {
+    "type": "other",
+    "iy": 222,
+    "ix": 221,
+    "lon": -80.5441928,
+    "lat": 43.4722276,
+    "name": "WStore Essentials",
+    "tags": {
+      "name": "WStore Essentials",
+      "old_name": "MediaDoc",
+      "opening_hours": "Mo-Fr 09:00-17:00",
+      "shop": "copyshop",
+      "website": "http://newmediaservices.uwaterloo.ca/mediadoc/"
+    },
+    "snapped": null
+  },
+  {
+    "type": "other",
+    "iy": 185,
+    "ix": 135,
+    "lon": -80.5453504,
+    "lat": 43.4718714,
+    "name": "W Store Essentials - Student Life Centre",
+    "tags": {
+      "name": "W Store Essentials - Student Life Centre",
+      "opening_hours": "Mo-Fr 09:00-17:00",
+      "shop": "stationery",
+      "website": "https://wstore.uwaterloo.ca/location-hours",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 182,
+      "ix": 132
+    }
+  },
+  {
     "type": "cafe",
     "iy": 265,
     "ix": 363,
@@ -499,8 +896,33 @@
       "wheelchair": "yes"
     },
     "snapped": {
-      "iy": 264,
-      "ix": 362
+      "iy": 262,
+      "ix": 361
+    }
+  },
+  {
+    "type": "other",
+    "iy": 792,
+    "ix": 529,
+    "lon": -80.5400313,
+    "lat": 43.4778063,
+    "name": "YouPackWeStore",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "368",
+      "addr:postcode": "N2L 5J1",
+      "addr:street": "Phillip Street",
+      "check_date": "2024-03-05",
+      "currency:XBT": "yes",
+      "email": "hello@youpackwestore.com",
+      "name": "YouPackWeStore",
+      "phone": "+1-855-722-5488",
+      "shop": "storage_rental",
+      "website": "https://YouPackWeStore.com"
+    },
+    "snapped": {
+      "iy": 789,
+      "ix": 526
     }
   },
   {
@@ -556,10 +978,7 @@
       "route_ref": "19",
       "shelter": "no"
     },
-    "snapped": {
-      "iy": 791,
-      "ix": 1271
-    }
+    "snapped": null
   },
   {
     "type": "transit",
@@ -836,6 +1255,24 @@
   },
   {
     "type": "transit",
+    "iy": 177,
+    "ix": 926,
+    "lon": -80.5346851,
+    "lat": 43.4717913,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "layer": "-1",
+      "parking": "underground"
+    },
+    "snapped": {
+      "iy": 164,
+      "ix": 913
+    }
+  },
+  {
+    "type": "transit",
     "iy": 793,
     "ix": 731,
     "lon": -80.5373097,
@@ -861,6 +1298,26 @@
     "snapped": {
       "iy": 790,
       "ix": 728
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1156,
+    "ix": 703,
+    "lon": -80.5376917,
+    "lat": 43.4813688,
+    "name": "Mat's Auto",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "413",
+      "addr:street": "Albert Street",
+      "name": "Mat's Auto",
+      "phone": "+1-519-745-5273",
+      "shop": "car"
+    },
+    "snapped": {
+      "iy": 1153,
+      "ix": 700
     }
   },
   {
@@ -924,6 +1381,83 @@
     }
   },
   {
+    "type": "transit",
+    "iy": 338,
+    "ix": 437,
+    "lon": -80.5412782,
+    "lat": 43.473362,
+    "name": "University of Waterloo",
+    "tags": {
+      "light_rail": "yes",
+      "name": "University of Waterloo",
+      "network": "Ion",
+      "network:wikidata": "Q106676138",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "public_transport": "station",
+      "railway": "station",
+      "ref": "6004;6120",
+      "rolling_stock": "Bombardier Flexity Freedom",
+      "station": "light_rail",
+      "train": "light_rail",
+      "wheelchair": "yes",
+      "wikidata": "Q28162890",
+      "wikimedia_commons": "Category:University of Waterloo station",
+      "wikipedia": "en:University of Waterloo station"
+    },
+    "snapped": {
+      "iy": 338,
+      "ix": 437
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1151,
+    "ix": 147,
+    "lon": -80.545182,
+    "lat": 43.4813199,
+    "name": "Research and Technology",
+    "tags": {
+      "light_rail": "yes",
+      "name": "Research and Technology",
+      "public_transport": "stop_position",
+      "railway": "stop"
+    },
+    "snapped": {
+      "iy": 1133,
+      "ix": 164
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1163,
+    "ix": 150,
+    "lon": -80.5451413,
+    "lat": 43.4814378,
+    "name": "Research and Technology",
+    "tags": {
+      "light_rail": "yes",
+      "name": "Research and Technology",
+      "network": "Ion",
+      "network:wikidata": "Q106676138",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "public_transport": "station",
+      "railway": "station",
+      "station": "light_rail",
+      "wheelchair": "yes",
+      "wikidata": "Q28162887",
+      "wikimedia_commons": "Category:Research and Technology station",
+      "wikipedia": "en:Research and Technology station"
+    },
+    "snapped": {
+      "iy": 1143,
+      "ix": 170
+    }
+  },
+  {
     "type": "cafe",
     "iy": 142,
     "ix": 373,
@@ -947,8 +1481,8 @@
       "source": "https://uwaterloo.ca/food-services/locations-and-hours"
     },
     "snapped": {
-      "iy": 142,
-      "ix": 373
+      "iy": 139,
+      "ix": 370
     }
   },
   {
@@ -974,8 +1508,8 @@
       "source": "https://uwaterloo.ca/food-services/locations-and-hours"
     },
     "snapped": {
-      "iy": 553,
-      "ix": 118
+      "iy": 550,
+      "ix": 115
     }
   },
   {
@@ -1000,8 +1534,8 @@
       "source": "https://uwaterloo.ca/food-services/locations-and-hours"
     },
     "snapped": {
-      "iy": 372,
-      "ix": 144
+      "iy": 369,
+      "ix": 141
     }
   },
   {
@@ -1029,8 +1563,8 @@
       "wheelchair": "limited"
     },
     "snapped": {
-      "iy": 342,
-      "ix": 79
+      "iy": 339,
+      "ix": 76
     }
   },
   {
@@ -1091,6 +1625,34 @@
     }
   },
   {
+    "type": "retail",
+    "iy": 366,
+    "ix": 739,
+    "lon": -80.5372017,
+    "lat": 43.4736447,
+    "name": "The UPS Store",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "256C",
+      "addr:postcode": "N2L 6B6",
+      "addr:street": "Phillip Street",
+      "amenity": "post_office",
+      "brand": "The UPS Store",
+      "brand:wikidata": "Q7771029",
+      "brand:wikipedia": "en:The UPS Store",
+      "name": "The UPS Store",
+      "opening_hours": "Mo-Th 09:00-19:00, Fr 09:00-18:30, Sa 10:00-15:00",
+      "operator": "UPS",
+      "phone": "+1-226-647-4995",
+      "shop": "copyshop",
+      "short_name": "UPS"
+    },
+    "snapped": {
+      "iy": 366,
+      "ix": 736
+    }
+  },
+  {
     "type": "cafe",
     "iy": 27,
     "ix": 851,
@@ -1133,6 +1695,29 @@
     "snapped": {
       "iy": 21,
       "ix": 853
+    }
+  },
+  {
+    "type": "retail",
+    "iy": 704,
+    "ix": 575,
+    "lon": -80.5394115,
+    "lat": 43.4769498,
+    "name": "TD Canada Trust",
+    "tags": {
+      "amenity": "atm",
+      "brand": "TD Canada Trust",
+      "brand:wikidata": "Q1080670",
+      "brand:wikipedia": "en:TD Canada Trust",
+      "currency:CAD": "yes",
+      "name": "TD Canada Trust",
+      "operator": "TD Canada Trust",
+      "operator:wikidata": "Q1080670",
+      "operator:wikipedia": "en:TD Canada Trust"
+    },
+    "snapped": {
+      "iy": 703,
+      "ix": 576
     }
   },
   {
@@ -1186,6 +1771,26 @@
     }
   },
   {
+    "type": "health",
+    "iy": 247,
+    "ix": 983,
+    "lon": -80.5339217,
+    "lat": 43.4724751,
+    "name": "Andrew Nuri Hair Studio",
+    "tags": {
+      "email": "info@andrewnuri.com",
+      "level": "1",
+      "name": "Andrew Nuri Hair Studio",
+      "shop": "hairdresser",
+      "website": "https://www.andrewnuri.com/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 240,
+      "ix": 990
+    }
+  },
+  {
     "type": "restaurant",
     "iy": 586,
     "ix": 856,
@@ -1230,6 +1835,27 @@
     "snapped": {
       "iy": 583,
       "ix": 847
+    }
+  },
+  {
+    "type": "health",
+    "iy": 573,
+    "ix": 842,
+    "lon": -80.535821,
+    "lat": 43.475662,
+    "name": "Lester Medical And Educational Centre",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:postcode": "N2L 3W6",
+      "addr:unit": "109-110",
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Lester Medical And Educational Centre",
+      "opening_hours": "Mo-Fr 10:00-18:00, Sa-Su 10:00-14:00"
+    },
+    "snapped": {
+      "iy": 573,
+      "ix": 842
     }
   },
   {
@@ -1302,6 +1928,25 @@
     "snapped": null
   },
   {
+    "type": "other",
+    "iy": 536,
+    "ix": 860,
+    "lon": -80.5355737,
+    "lat": 43.4753058,
+    "name": "Petalk",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "280",
+      "addr:postcode": "N2L 3W6",
+      "addr:street": "Lester Street",
+      "addr:unit": "103",
+      "name": "Petalk",
+      "shop": "pet",
+      "website": "https://petalkcanada.com/"
+    },
+    "snapped": null
+  },
+  {
     "type": "restaurant",
     "iy": 579,
     "ix": 844,
@@ -1318,8 +1963,8 @@
       "name": "Circle Food"
     },
     "snapped": {
-      "iy": 579,
-      "ix": 844
+      "iy": 576,
+      "ix": 841
     }
   },
   {
@@ -1337,9 +1982,24 @@
       "phone": "+1-519-722-8787",
       "website": "www.kuro.ca"
     },
+    "snapped": null
+  },
+  {
+    "type": "retail",
+    "iy": 157,
+    "ix": 637,
+    "lon": -80.5385839,
+    "lat": 43.4715937,
+    "name": null,
+    "tags": {
+      "amenity": "atm",
+      "check_date": "2024-04-15",
+      "currency:XBT": "yes",
+      "website": "https://hodlservices.ca/bitcoin-atms/ontario/waterloo/farah-foods/"
+    },
     "snapped": {
-      "iy": 403,
-      "ix": 1158
+      "iy": 159,
+      "ix": 640
     }
   },
   {
@@ -1360,10 +2020,7 @@
       "website": "https://tomaspizza.ca/",
       "website:orders": "https://tomaspizza.ca/order/"
     },
-    "snapped": {
-      "iy": 492,
-      "ix": 1162
-    }
+    "snapped": null
   },
   {
     "type": "cafe",
@@ -1382,9 +2039,25 @@
       "phone": "+1-226-647-6888",
       "website": "https://okasushi.app/"
     },
+    "snapped": null
+  },
+  {
+    "type": "other",
+    "iy": 646,
+    "ix": 1289,
+    "lon": -80.5298038,
+    "lat": 43.476377,
+    "name": "Wacky Tabacky",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "64",
+      "addr:street": "Balsam Street",
+      "name": "Wacky Tabacky",
+      "shop": "tobacco"
+    },
     "snapped": {
-      "iy": 485,
-      "ix": 1166
+      "iy": 661,
+      "ix": 1282
     }
   },
   {
@@ -1478,6 +2151,36 @@
     }
   },
   {
+    "type": "other",
+    "iy": 135,
+    "ix": 112,
+    "lon": -80.5456543,
+    "lat": 43.4713861,
+    "name": "Bike Centre",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "200",
+      "addr:postcode": "N2L 3G1",
+      "addr:street": "University Avenue West",
+      "addr:unit": "RM 0101",
+      "level": "-1",
+      "name": "Bike Centre",
+      "opening_hours": "Mo-Th 10:00-20:00; Fr 10:00-19:00",
+      "operator": "WUSA",
+      "service:bicycle:diy": "yes",
+      "service:bicycle:parts": "yes",
+      "service:bicycle:pump": "yes",
+      "service:bicycle:rental": "yes",
+      "service:bicycle:retail": "no",
+      "shop": "bicycle",
+      "website": "https://wusa.ca/services/student-run-services/bike-centre/"
+    },
+    "snapped": {
+      "iy": 132,
+      "ix": 109
+    }
+  },
+  {
     "type": "restaurant",
     "iy": 730,
     "ix": 1207,
@@ -1557,8 +2260,8 @@
       "shop": "convenience"
     },
     "snapped": {
-      "iy": 870,
-      "ix": 698
+      "iy": 867,
+      "ix": 695
     }
   },
   {
@@ -1584,6 +2287,22 @@
     }
   },
   {
+    "type": "other",
+    "iy": 272,
+    "ix": 578,
+    "lon": -80.5393821,
+    "lat": 43.4727194,
+    "name": "Ridgidware",
+    "tags": {
+      "name": "Ridgidware",
+      "shop": "radiotechnics"
+    },
+    "snapped": {
+      "iy": 281,
+      "ix": 588
+    }
+  },
+  {
     "type": "grocery",
     "iy": 218,
     "ix": 595,
@@ -1603,6 +2322,89 @@
     "snapped": {
       "iy": 223,
       "ix": 590
+    }
+  },
+  {
+    "type": "other",
+    "iy": 310,
+    "ix": 361,
+    "lon": -80.5423042,
+    "lat": 43.4730908,
+    "name": "Turnkey@DC",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housename": "Davis Centre",
+      "amenity": "reception_desk",
+      "check_date": "2023-03-10",
+      "email": "turnkeys@wusa.ca",
+      "level": "0",
+      "level:ref": "1",
+      "name": "Turnkey@DC",
+      "opening_hours": "Mo-We 12:00-20:30; Th-Fr 10:00-20:30; Sa 08:30-14:30; Su closed",
+      "operator": "Waterloo Undergraduate Student Association",
+      "shop": "ticket",
+      "tickets:public_transport": "yes",
+      "website": "https://wusa.ca/services/turnkey-desk/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 307,
+      "ix": 358
+    }
+  },
+  {
+    "type": "other",
+    "iy": 261,
+    "ix": 407,
+    "lon": -80.5416808,
+    "lat": 43.4726145,
+    "name": "IT Service Desk",
+    "tags": {
+      "amenity": "reception_desk",
+      "level": "0",
+      "level:ref": "1",
+      "name": "IT Service Desk"
+    },
+    "snapped": {
+      "iy": 258,
+      "ix": 404
+    }
+  },
+  {
+    "type": "other",
+    "iy": 256,
+    "ix": 381,
+    "lon": -80.5420388,
+    "lat": 43.472567,
+    "name": "Library Help",
+    "tags": {
+      "amenity": "reception_desk",
+      "level": "0",
+      "level:ref": "1",
+      "name": "Library Help"
+    },
+    "snapped": {
+      "iy": 253,
+      "ix": 378
+    }
+  },
+  {
+    "type": "health",
+    "iy": 642,
+    "ix": 810,
+    "lon": -80.5362523,
+    "lat": 43.4763386,
+    "name": "Fashion Salon",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "308",
+      "addr:street": "Lester Street",
+      "name": "Fashion Salon",
+      "shop": "hairdresser"
+    },
+    "snapped": {
+      "iy": 657,
+      "ix": 810
     }
   },
   {
@@ -1640,9 +2442,24 @@
       "name": "Together Boba",
       "outdoor_seating": "no"
     },
+    "snapped": null
+  },
+  {
+    "type": "retail",
+    "iy": 261,
+    "ix": 826,
+    "lon": -80.5360307,
+    "lat": 43.4726157,
+    "name": "Live Switchboard",
+    "tags": {
+      "amenity": "post_office",
+      "brand": "DHL;FedEx;Purolator",
+      "name": "Live Switchboard",
+      "note": "seperate node from rest of business to not conflate brand tags"
+    },
     "snapped": {
-      "iy": 459,
-      "ix": 1140
+      "iy": 248,
+      "ix": 822
     }
   },
   {
@@ -1701,8 +2518,8 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 240,
-      "ix": 135
+      "iy": 237,
+      "ix": 132
     }
   },
   {
@@ -1721,8 +2538,8 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 215,
-      "ix": 145
+      "iy": 212,
+      "ix": 142
     }
   },
   {
@@ -1737,8 +2554,8 @@
       "name": "Smokehouse"
     },
     "snapped": {
-      "iy": 218,
-      "ix": 143
+      "iy": 215,
+      "ix": 140
     }
   },
   {
@@ -1758,8 +2575,8 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 206,
-      "ix": 142
+      "iy": 203,
+      "ix": 141
     }
   },
   {
@@ -1775,9 +2592,31 @@
       "name": "Shawarma Hub"
     },
     "snapped": {
-      "iy": 203,
-      "ix": 138
+      "iy": 200,
+      "ix": 137
     }
+  },
+  {
+    "type": "other",
+    "iy": 429,
+    "ix": 516,
+    "lon": -80.5402109,
+    "lat": 43.4742536,
+    "name": "University of Waterloo Station",
+    "tags": {
+      "alt_name": "University of Waterloo Terminal",
+      "amenity": "bus_station",
+      "bus": "yes",
+      "check_date": "2023-03-13",
+      "internet_access": "no",
+      "name": "University of Waterloo Station",
+      "network": "GRT",
+      "operator": "Grand River Transit",
+      "public_transport": "station",
+      "wikidata": "Q28162890",
+      "wikipedia": "en:University of Waterloo station"
+    },
+    "snapped": null
   },
   {
     "type": "transit",
@@ -1958,6 +2797,27 @@
     }
   },
   {
+    "type": "other",
+    "iy": 488,
+    "ix": 582,
+    "lon": -80.5393203,
+    "lat": 43.4748298,
+    "name": "FLO",
+    "tags": {
+      "amenity": "charging_station",
+      "brand": "FLO",
+      "brand:wikidata": "Q64971203",
+      "capacity": "3",
+      "name": "FLO",
+      "operator": "FLO",
+      "operator:wikidata": "Q64971203"
+    },
+    "snapped": {
+      "iy": 488,
+      "ix": 582
+    }
+  },
+  {
     "type": "cafe",
     "iy": 154,
     "ix": 652,
@@ -1976,8 +2836,8 @@
       "website": "https://ismwaterloo.com/"
     },
     "snapped": {
-      "iy": 154,
-      "ix": 652
+      "iy": 152,
+      "ix": 655
     }
   },
   {
@@ -2001,8 +2861,8 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 150,
-      "ix": 658
+      "iy": 149,
+      "ix": 660
     }
   },
   {
@@ -2043,8 +2903,8 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 171,
-      "ix": 629
+      "iy": 169,
+      "ix": 627
     }
   },
   {
@@ -2063,8 +2923,44 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 165,
-      "ix": 637
+      "iy": 162,
+      "ix": 634
+    }
+  },
+  {
+    "type": "other",
+    "iy": 299,
+    "ix": 460,
+    "lon": -80.5409709,
+    "lat": 43.4729806,
+    "name": "University of Waterloo",
+    "tags": {
+      "light_rail": "yes",
+      "name": "University of Waterloo",
+      "public_transport": "stop_position",
+      "railway": "stop"
+    },
+    "snapped": {
+      "iy": 299,
+      "ix": 460
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1216,
+    "ix": 151,
+    "lon": -80.5451372,
+    "lat": 43.4819486,
+    "name": "Research and Technology",
+    "tags": {
+      "light_rail": "yes",
+      "name": "Research and Technology",
+      "public_transport": "stop_position",
+      "railway": "stop"
+    },
+    "snapped": {
+      "iy": 1216,
+      "ix": 151
     }
   },
   {
@@ -2091,8 +2987,40 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 739,
-      "ix": 639
+      "iy": 734,
+      "ix": 640
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 91,
+    "ix": 1097,
+    "lon": -80.5323806,
+    "lat": 43.4709534,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "layer": "-1",
+      "parking": "underground"
+    },
+    "snapped": null
+  },
+  {
+    "type": "retail",
+    "iy": 157,
+    "ix": 646,
+    "lon": -80.5384615,
+    "lat": 43.4715925,
+    "name": null,
+    "tags": {
+      "amenity": "post_office",
+      "opening_hours": "Mo-Fr 10:00-21:00; Sa-Su 09:00-18:00-00",
+      "operator": "Canada Post",
+      "operator:wikidata": "Q1032001"
+    },
+    "snapped": {
+      "iy": 157,
+      "ix": 646
     }
   },
   {
@@ -2160,8 +3088,8 @@
       "website:menu": "https://myunggakorean.com/"
     },
     "snapped": {
-      "iy": 375,
-      "ix": 735
+      "iy": 372,
+      "ix": 732
     }
   },
   {
@@ -2181,6 +3109,24 @@
     "snapped": {
       "iy": 235,
       "ix": 987
+    }
+  },
+  {
+    "type": "retail",
+    "iy": 250,
+    "ix": 979,
+    "lon": -80.5339686,
+    "lat": 43.4725024,
+    "name": "ATM Plus",
+    "tags": {
+      "amenity": "atm",
+      "indoor": "yes",
+      "level": "0",
+      "name": "ATM Plus"
+    },
+    "snapped": {
+      "iy": 239,
+      "ix": 989
     }
   },
   {
@@ -2218,6 +3164,83 @@
     }
   },
   {
+    "type": "health",
+    "iy": 487,
+    "ix": 1165,
+    "lon": -80.5314667,
+    "lat": 43.4748198,
+    "name": "City Style Barber Shop",
+    "tags": {
+      "name": "City Style Barber Shop",
+      "phone": "+1-519-208-4799",
+      "shop": "hairdresser"
+    },
+    "snapped": null
+  },
+  {
+    "type": "retail",
+    "iy": 489,
+    "ix": 1164,
+    "lon": -80.5314818,
+    "lat": 43.4748394,
+    "name": "Waterloo Cell Phones & Electronics",
+    "tags": {
+      "addr:housenumber": "251",
+      "addr:postcode": "N2L 3R4",
+      "addr:street": "Hemlock Street",
+      "addr:unit": "111",
+      "name": "Waterloo Cell Phones & Electronics",
+      "phone": "+1-519-778-9616;+1-226-206-1998",
+      "shop": "electronics",
+      "website": "https://waterloocellphones.com/"
+    },
+    "snapped": null
+  },
+  {
+    "type": "health",
+    "iy": 831,
+    "ix": 922,
+    "lon": -80.5347459,
+    "lat": 43.4781854,
+    "name": "Hair Plus",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "338",
+      "addr:postcode": "N2L 3T8",
+      "addr:province": "ON",
+      "addr:street": "Albert Street",
+      "addr:unit": "101",
+      "name": "Hair Plus",
+      "opening_hours": "Mo-Fr 10:00-19:00; Sa 11:00-19:00; Su 10:00-19:00",
+      "payment:cash": "yes",
+      "payment:credit_cards": "no",
+      "payment:debit_cards": "yes",
+      "phone": "+1 519-745-5556",
+      "shop": "hairdresser",
+      "website": "https://hairplus.gettimely.com"
+    },
+    "snapped": {
+      "iy": 819,
+      "ix": 922
+    }
+  },
+  {
+    "type": "other",
+    "iy": 206,
+    "ix": 742,
+    "lon": -80.5371686,
+    "lat": 43.4720785,
+    "name": "Hooka House",
+    "tags": {
+      "amenity": "hookah_lounge",
+      "name": "Hooka House"
+    },
+    "snapped": {
+      "iy": 206,
+      "ix": 742
+    }
+  },
+  {
     "type": "cafe",
     "iy": 218,
     "ix": 731,
@@ -2231,8 +3254,29 @@
       "website": "https://www.cluckcluckschicken.com/waterloo"
     },
     "snapped": {
-      "iy": 218,
-      "ix": 731
+      "iy": 217,
+      "ix": 734
+    }
+  },
+  {
+    "type": "health",
+    "iy": 635,
+    "ix": 607,
+    "lon": -80.5389805,
+    "lat": 43.4762734,
+    "name": "City Style Salon & Barber Shop",
+    "tags": {
+      "addr:housenumber": "108-330",
+      "addr:postcode": "N2L 3W9",
+      "name": "City Style Salon & Barber Shop",
+      "opening_hours": "Mo-Th 10:00-20:00; Fr-Sa 10:00-21:30; Su 11:00-18:00",
+      "phone": "5199140166",
+      "shop": "hairdresser",
+      "website": "https://www.citystylebarbershop.ca/"
+    },
+    "snapped": {
+      "iy": 632,
+      "ix": 604
     }
   },
   {
@@ -2258,8 +3302,26 @@
       "website:menu": "https://www.order-tsujiri.ca/ordering/restaurant/menu?restaurant_uid=e1b6b42f-ad54-4183-9af8-0af0c1598bc4"
     },
     "snapped": {
-      "iy": 611,
-      "ix": 612
+      "iy": 610,
+      "ix": 611
+    }
+  },
+  {
+    "type": "other",
+    "iy": 263,
+    "ix": 153,
+    "lon": -80.5451086,
+    "lat": 43.4726352,
+    "name": "Sk\u00e9n:nen Tsi N\u00f3n:we Tewaya\u2019tar\u00f3roks",
+    "tags": {
+      "amenity": "shelter",
+      "name": "Sk\u00e9n:nen Tsi N\u00f3n:we Tewaya\u2019tar\u00f3roks",
+      "shelter_type": "gazebo",
+      "website": "https://uwaterloo.ca/indigenous/community/indigenous-spaces-campus/outdoor-gathering-space"
+    },
+    "snapped": {
+      "iy": 263,
+      "ix": 148
     }
   },
   {
@@ -2297,7 +3359,23 @@
       "takeaway": "yes"
     },
     "snapped": {
-      "iy": 594,
+      "iy": 591,
+      "ix": 626
+    }
+  },
+  {
+    "type": "health",
+    "iy": 587,
+    "ix": 626,
+    "lon": -80.5387278,
+    "lat": 43.4758059,
+    "name": "Premier Optical",
+    "tags": {
+      "name": "Premier Optical",
+      "shop": "optician"
+    },
+    "snapped": {
+      "iy": 584,
       "ix": 623
     }
   },
@@ -2327,6 +3405,5491 @@
     "snapped": {
       "iy": 659,
       "ix": 569
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 227,
+    "ix": 766,
+    "lon": -80.5368504,
+    "lat": 43.4722832,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "fee": "no",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 227,
+      "ix": 766
+    }
+  },
+  {
+    "type": "health",
+    "iy": 214,
+    "ix": 774,
+    "lon": -80.5367415,
+    "lat": 43.4721512,
+    "name": "Best Value Optical",
+    "tags": {
+      "addr:housenumber": "158",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "2",
+      "building": "retail",
+      "building:levels": "1",
+      "name": "Best Value Optical",
+      "phone": "+1-519-888-6655",
+      "shop": "optician"
+    },
+    "snapped": {
+      "iy": 215,
+      "ix": 771
+    }
+  },
+  {
+    "type": "other",
+    "iy": 217,
+    "ix": 780,
+    "lon": -80.5366623,
+    "lat": 43.4721794,
+    "name": "Popeye's Supplements",
+    "tags": {
+      "addr:housenumber": "158",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "3",
+      "brand": "Popeye's Supplements",
+      "brand:wikidata": "Q71096495",
+      "building": "retail",
+      "building:levels": "1",
+      "name": "Popeye's Supplements",
+      "shop": "nutrition_supplements",
+      "website": "https://www.popeyescanada.com/loc_ontario_waterloo.html"
+    },
+    "snapped": {
+      "iy": 218,
+      "ix": 781
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 202,
+    "ix": 748,
+    "lon": -80.5370917,
+    "lat": 43.4720416,
+    "name": "Rooster's Fried Chicken",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "17A",
+      "amenity": "restaurant",
+      "building": "retail",
+      "building:levels": "1",
+      "cuisine": "chicken;pizza",
+      "email": "info@roosterschicken.ca",
+      "name": "Rooster's Fried Chicken",
+      "opening_hours": "Mo-Su 00:00-01:00,11:00-24:00",
+      "outdoor_seating": "yes",
+      "phone": "+1-519-954-3434",
+      "website": "https://roosterschicken.ca/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 201,
+      "ix": 749
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 221,
+    "ix": 735,
+    "lon": -80.5372567,
+    "lat": 43.4722234,
+    "name": "Aunty's Kitchen",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:street": "University Avenue West",
+      "addr:unit": "16",
+      "amenity": "restaurant",
+      "building": "retail",
+      "building:levels": "1",
+      "cuisine": "indian",
+      "diet:halal": "only",
+      "name": "Aunty's Kitchen",
+      "opening_hours": "Mo-Sa 11:30-23:00, Su 13:00-22:00",
+      "website": "https://www.auntyskitchen.ca/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 221,
+      "ix": 735
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 245,
+    "ix": 744,
+    "lon": -80.537135,
+    "lat": 43.4724592,
+    "name": "Yu Xiao Shan",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "name": "Yu Xiao Shan",
+      "opening_hours": "Mo-Su 11:00-21:30",
+      "phone": "+1 519 208 2988",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 245,
+      "ix": 744
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 253,
+    "ix": 741,
+    "lon": -80.5371868,
+    "lat": 43.4725342,
+    "name": "Northern Chinese Restaurant",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:street": "Phillip Street",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "name": "Northern Chinese Restaurant",
+      "opening_hours": "Mo-Su 11:00-21:00",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 253,
+      "ix": 741
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 260,
+    "ix": 737,
+    "lon": -80.5372344,
+    "lat": 43.4726034,
+    "name": "Kismet",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "20",
+      "amenity": "restaurant",
+      "building": "retail",
+      "building:levels": "1",
+      "cuisine": "indian",
+      "diet:halal": "only",
+      "diet:vegetarian": "yes",
+      "name": "Kismet",
+      "opening_hours": "Mo-Sa 12:00-22:00",
+      "website": "https://kismetwaterloo.com/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 254,
+      "ix": 741
+    }
+  },
+  {
+    "type": "other",
+    "iy": 300,
+    "ix": 730,
+    "lon": -80.5373253,
+    "lat": 43.4729959,
+    "name": "Molly Bloom's Irish Pub",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "amenity": "pub",
+      "brewery": "various",
+      "building": "retail",
+      "building:levels": "1",
+      "check_date": "2023-03-10",
+      "contact:instagram": "https://www.instagram.com/mollyswaterloo",
+      "cuisine": "irish",
+      "fixme": "addr:unit",
+      "name": "Molly Bloom's Irish Pub",
+      "outdoor_seating": "yes",
+      "payment:mastercard": "yes",
+      "payment:visa": "yes",
+      "phone": "+1 5198850892",
+      "website": "https://www.mollyblooms.online",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 308,
+      "ix": 722
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 246,
+    "ix": 729,
+    "lon": -80.537343,
+    "lat": 43.4724703,
+    "name": "Morals Village",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "19",
+      "amenity": "restaurant",
+      "building": "retail",
+      "building:levels": "1",
+      "cuisine": "hotpot;chinese",
+      "name": "Morals Village",
+      "opening_hours": "Mo-Su 12:00-23:00",
+      "outdoor_seating": "no",
+      "smoking": "no",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 240,
+      "ix": 734
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 246,
+    "ix": 719,
+    "lon": -80.5374843,
+    "lat": 43.4724657,
+    "name": "d spot dessert cafe",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "160",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "14",
+      "amenity": "fast_food",
+      "building": "retail",
+      "building:levels": "1",
+      "name": "d spot dessert cafe",
+      "phone": "+1-226-896-0099",
+      "website": "https://dspotdessert.com/location/waterloo",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 239,
+      "ix": 712
+    }
+  },
+  {
+    "type": "other",
+    "iy": 243,
+    "ix": 713,
+    "lon": -80.5375559,
+    "lat": 43.4724397,
+    "name": "Akkila Dental Clinic",
+    "tags": {
+      "addr:unit": "12",
+      "amenity": "dentist",
+      "building": "office",
+      "building:levels": "1",
+      "healthcare": "dentist",
+      "name": "Akkila Dental Clinic",
+      "website": "https://akkiladental.com/"
+    },
+    "snapped": {
+      "iy": 240,
+      "ix": 712
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 240,
+    "ix": 708,
+    "lon": -80.537629,
+    "lat": 43.4724133,
+    "name": "Home Garden",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:street": "University Avenue West",
+      "addr:unit": "11",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "asian",
+      "name": "Home Garden"
+    },
+    "snapped": {
+      "iy": 237,
+      "ix": 711
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 238,
+    "ix": 702,
+    "lon": -80.5377021,
+    "lat": 43.4723868,
+    "name": "Yummy Chongqin",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:street": "University Avenue West",
+      "addr:unit": "0",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "delivery": "yes",
+      "name": "Yummy Chongqin",
+      "opening_hours": "Mo-Fr 11:30-21:30; Sa-Su 12; 00:00-21:30",
+      "outdoor_seating": "no",
+      "takeaway": "yes",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 232,
+      "ix": 708
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 235,
+    "ix": 697,
+    "lon": -80.5377739,
+    "lat": 43.4723608,
+    "name": "Nuri Village",
+    "tags": {
+      "addr:unit": "7,8",
+      "air_conditioning": "yes",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "korean",
+      "delivery": "yes",
+      "name": "Nuri Village",
+      "opening_hours": "Mo-Tu 11:00-22:00; We-Su 11:00-00:00",
+      "outdoor_seating": "no"
+    },
+    "snapped": {
+      "iy": 228,
+      "ix": 690
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 232,
+    "ix": 691,
+    "lon": -80.5378545,
+    "lat": 43.4723316,
+    "name": "Subway",
+    "tags": {
+      "addr:unit": "5,6",
+      "amenity": "fast_food",
+      "brand": "Subway",
+      "brand:wikidata": "Q244457",
+      "brand:wikipedia": "en:Subway (restaurant)",
+      "building": "retail",
+      "cuisine": "sandwich",
+      "diet:vegetarian": "yes",
+      "internet_access:fee": "no",
+      "name": "Subway",
+      "name:zh": "\u8d5b\u767e\u5473",
+      "opening_hours": "24/7",
+      "takeaway": "yes",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 229,
+      "ix": 688
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 228,
+    "ix": 682,
+    "lon": -80.537978,
+    "lat": 43.4722867,
+    "name": "Shinwa Asian Cuisine",
+    "tags": {
+      "addr:unit": "3,4",
+      "air_conditioning": "yes",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "delivery": "yes",
+      "name": "Shinwa Asian Cuisine",
+      "opening_hours": "Mo-Sa 11:00-23:00; Su 12:00-11:00",
+      "outdoor_seating": "no",
+      "phone": "+1-519-588-7777",
+      "takeaway": "yes",
+      "toilets": "yes",
+      "website": "http://www.shinwa.ca",
+      "website:menu": "http://www.shinwa.ca/images/2023_09_09_online.jpg",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 231,
+      "ix": 685
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 223,
+    "ix": 673,
+    "lon": -80.5380919,
+    "lat": 43.4722455,
+    "name": "Campus Pizza",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:street": "University Avenue West",
+      "addr:unit": "2",
+      "amenity": "fast_food",
+      "building": "retail",
+      "building:levels": "1",
+      "check_date": "2023-03-10",
+      "cuisine": "pizza",
+      "delivery": "yes",
+      "drive_through": "no",
+      "email": "info@campuspizza.ca",
+      "highchair": "no",
+      "internet_access": "no",
+      "name": "Campus Pizza",
+      "name:zh": "\u6821\u56ed\u6bd4\u8428\u997c",
+      "opening_hours": "Mo-Su 11:00-04:00",
+      "payment:debit_cards": "yes",
+      "payment:mastercard": "yes",
+      "payment:visa": "yes",
+      "phone": "+1 5197479888",
+      "smoking": "no",
+      "takeaway": "yes",
+      "website": "http://www.campuspizza.ca/",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 232,
+      "ix": 683
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 221,
+    "ix": 668,
+    "lon": -80.5381614,
+    "lat": 43.4722203,
+    "name": "Chungchun",
+    "tags": {
+      "addr:unit": "1",
+      "amenity": "fast_food",
+      "brand": "Chungchun Rice Dog",
+      "brand:en": "Chungchun Rice Dog",
+      "brand:ko": "\uccad\ucd98\uac10\uc131\uc300\ud56b\ub3c4\uadf8",
+      "brand:website": "https://www.chungchunricedog.ca/",
+      "brand:wikidata": "Q115803477",
+      "building": "yes",
+      "cuisine": "hot_dog;korean",
+      "name": "Chungchun",
+      "name:en": "Chungchun",
+      "name:ko": "\uccad\ucd98\uac10\uc131\uc300\ud56b\ub3c4\uadf8",
+      "takeaway": "yes",
+      "was:amenity": "fast_food",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 233,
+      "ix": 681
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 276,
+    "ix": 683,
+    "lon": -80.5379576,
+    "lat": 43.472763,
+    "name": "Fresh Burrito",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "addr:unit": "31",
+      "amenity": "fast_food",
+      "brand": "Fresh Burrito",
+      "brand:website": "https://freshburrito.ca/",
+      "building": "retail",
+      "building:levels": "1",
+      "cuisine": "mexican",
+      "name": "Fresh Burrito",
+      "wheelchair": "limited"
+    },
+    "snapped": null
+  },
+  {
+    "type": "cafe",
+    "iy": 261,
+    "ix": 660,
+    "lon": -80.5382723,
+    "lat": 43.4726115,
+    "name": "Super Chicken",
+    "tags": {
+      "addr:unit": "26",
+      "air_conditioning": "yes",
+      "amenity": "fast_food",
+      "building": "retail",
+      "cuisine": "chicken",
+      "name": "Super Chicken",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 253,
+      "ix": 652
+    }
+  },
+  {
+    "type": "other",
+    "iy": 268,
+    "ix": 667,
+    "lon": -80.538173,
+    "lat": 43.4726776,
+    "name": "Phoenix Cannabis",
+    "tags": {
+      "addr:unit": "27",
+      "brand": "Phoenix Cannabis",
+      "brand:website": "https://phoenixcannabis.ca/",
+      "building": "retail",
+      "name": "Phoenix Cannabis",
+      "shop": "cannabis",
+      "website": "https://170univavew.phoenixcannabis.ca/"
+    },
+    "snapped": {
+      "iy": 253,
+      "ix": 652
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 284,
+    "ix": 696,
+    "lon": -80.5377831,
+    "lat": 43.472835,
+    "name": "Waterloo Star",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "name": "Waterloo Star",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 285,
+      "ix": 707
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 279,
+    "ix": 689,
+    "lon": -80.5378846,
+    "lat": 43.4727928,
+    "name": "Slap Burger",
+    "tags": {
+      "addr:unit": "32",
+      "amenity": "fast_food",
+      "building": "retail",
+      "cuisine": "burger",
+      "drive_through": "no",
+      "name": "Slap Burger",
+      "old_name": "Kick-off",
+      "opening_hours": "Mo-Su 11:00-23:00",
+      "was:amenity": "bar",
+      "website": "https://www.slapburgers.ca/",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 285,
+      "ix": 707
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 288,
+    "ix": 704,
+    "lon": -80.5376854,
+    "lat": 43.472875,
+    "name": "Yunshang Rice Noodle",
+    "tags": {
+      "addr:unit": "35",
+      "air_conditioning": "yes",
+      "amenity": "restaurant",
+      "bar": "no",
+      "brand": "Yunshang Rice Noodle",
+      "brand:wikidata": "Q109381268",
+      "building": "retail",
+      "cuisine": "noodle",
+      "name": "Yunshang Rice Noodle",
+      "name:en": "Yunshang Rice Noodle",
+      "name:zh": "\u4e91\u5c1a\u8fc7\u6865\u7c73\u7ebf",
+      "name:zh-Hans": "\u4e91\u5c1a\u8fc7\u6865\u7c73\u7ebf",
+      "name:zh-Hant": "\u96f2\u5c1a\u904e\u6a4b\u7c73\u7dab",
+      "opening_hours": "Mo-Su 11:00-21:00",
+      "outdoor_seating": "no",
+      "payment:credit_cards": "no",
+      "phone": "+1 519-208-0988",
+      "takeaway": "yes",
+      "website": "https://yunshang.ca",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 285,
+      "ix": 707
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 271,
+    "ix": 674,
+    "lon": -80.5380842,
+    "lat": 43.4727106,
+    "name": "Baba Chicken Grill",
+    "tags": {
+      "addr:unit": "29",
+      "amenity": "fast_food",
+      "building": "retail",
+      "cuisine": "asian",
+      "name": "Baba Chicken Grill",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 251,
+      "ix": 654
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 274,
+    "ix": 679,
+    "lon": -80.5380191,
+    "lat": 43.4727388,
+    "name": "University Convenience",
+    "tags": {
+      "addr:unit": "30",
+      "building": "retail",
+      "name": "University Convenience",
+      "shop": "convenience",
+      "wheelchair": "limited"
+    },
+    "snapped": null
+  },
+  {
+    "type": "restaurant",
+    "iy": 295,
+    "ix": 717,
+    "lon": -80.5375097,
+    "lat": 43.4729484,
+    "name": "Fantastic Wok!",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "delivery": "yes",
+      "name": "Fantastic Wok!",
+      "outdoor_seating": "no",
+      "smoking": "no",
+      "takeaway": "yes",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 296,
+      "ix": 716
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 233,
+    "ix": 614,
+    "lon": -80.5388973,
+    "lat": 43.4723389,
+    "name": "Seoul Soul",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "addr:unit": "20",
+      "amenity": "fast_food",
+      "building:part": "retail",
+      "cuisine": "korean",
+      "drive_through": "no",
+      "name": "Seoul Soul",
+      "opening_hours": "Mo 11:30-22:30; Tu Closed; We-Su 11:30-22:30",
+      "website": "https://seoulsoul.ca/",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 249,
+      "ix": 597
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 237,
+    "ix": 620,
+    "lon": -80.5388076,
+    "lat": 43.4723748,
+    "name": "iPotato",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "addr:unit": "21",
+      "amenity": "fast_food",
+      "building:levels": "1",
+      "building:part": "retail",
+      "contact:instagram": "https://www.instagram.com/ipotatouniversityplaza/",
+      "cuisine": "shawarma",
+      "drive_through": "no",
+      "name": "iPotato",
+      "opening_hours": "Mo-Su 11:00-00:00",
+      "phone": "+1 519 885 4966"
+    },
+    "snapped": {
+      "iy": 218,
+      "ix": 638
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 229,
+    "ix": 607,
+    "lon": -80.5389869,
+    "lat": 43.4723032,
+    "name": "Reni Chettinand",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "addr:unit": "19",
+      "amenity": "fast_food",
+      "building:part": "retail",
+      "cuisine": "indian",
+      "drive_through": "no",
+      "internet_access": "no",
+      "name": "Reni Chettinand",
+      "opening_hours": "Mo,Tu 12:00-00:00; We-Su 09:00-02:00",
+      "payment:mastercard": "yes",
+      "payment:visa": "yes",
+      "website": "https://ranichettinad.ca/",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 235,
+      "ix": 596
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 240,
+    "ix": 627,
+    "lon": -80.538718,
+    "lat": 43.4724105,
+    "name": "Lazeez Shawarma",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "addr:unit": "22-23",
+      "amenity": "fast_food",
+      "brand": "Lazeez Shawarma",
+      "brand:website": "https://www.lazeezshawarma.com",
+      "building:levels": "1",
+      "building:part": "retail",
+      "cuisine": "mediterranean;shawarma",
+      "diet:halal": "only",
+      "name": "Lazeez Shawarma",
+      "opening_hours": "Mo-Su 11:00-00:00",
+      "website": "https://www.lazeezshawarma.com/#university-phillip"
+    },
+    "snapped": {
+      "iy": 225,
+      "ix": 642
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 244,
+    "ix": 634,
+    "lon": -80.5386284,
+    "lat": 43.4724463,
+    "name": "Williams Fresh Cafe",
+    "tags": {
+      "air_conditioning": "yes",
+      "amenity": "cafe",
+      "brand": "Williams Fresh Cafe",
+      "brand:wikidata": "Q106195633",
+      "building:part": "retail",
+      "cuisine": "coffee_shop",
+      "internet_access": "wlan",
+      "internet_access:fee": "no",
+      "name": "Williams Fresh Cafe",
+      "opening_hours": "Mo-Sa 08:00-22:00; Su 09:00-22:00",
+      "outdoor_seating": "yes",
+      "website": "https://williamsfreshcafe.com/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 255,
+      "ix": 644
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 192,
+    "ix": 596,
+    "lon": -80.5391346,
+    "lat": 43.4719351,
+    "name": "Sweet Dreams Teashop",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:street": "University Avenue West",
+      "addr:unit": "14",
+      "amenity": "cafe",
+      "building:levels": "1",
+      "building:part": "retail",
+      "cuisine": "bubble_tea",
+      "name": "Sweet Dreams Teashop",
+      "opening_hours": "Su-We 11:00-23:00; Th-Sa 11:00-00:00",
+      "outdoor_seating": "yes",
+      "website": "https://sweetdreamsteashop.com/",
+      "wheelchair": "limited"
+    },
+    "snapped": {
+      "iy": 191,
+      "ix": 596
+    }
+  },
+  {
+    "type": "health",
+    "iy": 186,
+    "ix": 602,
+    "lon": -80.5390492,
+    "lat": 43.4718841,
+    "name": "Waterloo Walk-in Clinic",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "13",
+      "amenity": "doctors",
+      "building:levels": "1",
+      "building:part": "retail",
+      "fax": "+1-519-725-5137",
+      "healthcare": "doctor",
+      "name": "Waterloo Walk-in Clinic",
+      "opening_hours": "Mo-Fr 09:00-20:00; Sa,Su 10:00-15:00",
+      "phone": "+1-519-725-1514",
+      "walk-in": "yes",
+      "website": "https://waterlooclinic.com",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 185,
+      "ix": 601
+    }
+  },
+  {
+    "type": "pharmacy",
+    "iy": 181,
+    "ix": 609,
+    "lon": -80.5389592,
+    "lat": 43.4718304,
+    "name": "Pharmasave",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L3E9",
+      "addr:street": "University Avenue West",
+      "amenity": "pharmacy",
+      "brand": "Pharmasave",
+      "brand:wikidata": "Q17093822",
+      "brand:wikipedia": "en:Pharmasave",
+      "building:levels": "1",
+      "building:part": "retail",
+      "dispensing": "yes",
+      "email": "pharmassave723@gmail.com",
+      "healthcare": "pharmacy",
+      "name": "Pharmasave",
+      "opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-15:00",
+      "phone": "5198862420",
+      "website": "http://pharmassavecampus.com",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 181,
+      "ix": 609
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 175,
+    "ix": 616,
+    "lon": -80.5388692,
+    "lat": 43.4717766,
+    "name": "Sowon",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "11",
+      "amenity": "restaurant",
+      "building:levels": "1",
+      "building:part": "retail",
+      "cuisine": "korean",
+      "delivery": "yes",
+      "name": "Sowon",
+      "opening_hours": "Mo-Su 09:00-21:00",
+      "takeaway": "yes",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 175,
+      "ix": 616
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 170,
+    "ix": 622,
+    "lon": -80.5387792,
+    "lat": 43.471723,
+    "name": "Harvey's",
+    "tags": {
+      "addr:unit": "10",
+      "amenity": "fast_food",
+      "brand": "Harvey's",
+      "brand:wikidata": "Q1466184",
+      "brand:wikipedia": "en:Harvey's",
+      "building:part": "retail",
+      "cuisine": "burger",
+      "diet:vegetarian": "yes",
+      "drive_through": "no",
+      "name": "Harvey's",
+      "opening_hours": "Mo-Su 10:30-06:00",
+      "takeaway": "yes",
+      "website": "https://www.harveys.ca/en/locations/on/waterloo/170-university-ave-w",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 169,
+      "ix": 621
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 153,
+    "ix": 642,
+    "lon": -80.5385092,
+    "lat": 43.4715617,
+    "name": "Farah's Food Mart",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "brand": "Farah Food Mark",
+      "brand:website": "https://www.farahfoods.ca/",
+      "building:levels": "1",
+      "building:part": "retail",
+      "fixme": "addr:unit",
+      "name": "Farah's Food Mart",
+      "opening_hours": "24/7",
+      "phone": "+1-519-886-9933",
+      "shop": "convenience",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 156,
+      "ix": 646
+    }
+  },
+  {
+    "type": "education",
+    "iy": 288,
+    "ix": 1277,
+    "lon": -80.5299644,
+    "lat": 43.4728736,
+    "name": "Laurier Library",
+    "tags": {
+      "amenity": "library",
+      "building": "university",
+      "building:colour": "red",
+      "building:levels": "7",
+      "building:material": "brick",
+      "canvec:CODE": "2010252",
+      "name": "Laurier Library",
+      "operator": "Wilfrid Laurier University",
+      "operator:type": "university",
+      "source": "CanVec_Import_2009",
+      "toilets:wheelchair": "yes",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 278,
+      "ix": 1287
+    }
+  },
+  {
+    "type": "health",
+    "iy": 44,
+    "ix": 81,
+    "lon": -80.5460762,
+    "lat": 43.4704948,
+    "name": "Health Services",
+    "tags": {
+      "amenity": "doctors",
+      "attribution": "Natural Resources Canada",
+      "building": "university",
+      "building:levels": "2",
+      "canvec:CODE": "2010252",
+      "healthcare": "doctor",
+      "healthcare:speciality": "general",
+      "name": "Health Services",
+      "name:fr": "Services de sant\u00e9",
+      "name:zh": "\u5065\u5eb7\u4e2d\u5fc3",
+      "opening_hours": "Mo-Th 08:30-19:30; Fr 08:30-16:30; Sa-Su off",
+      "phone": "+1 5198884096",
+      "ref": "HS",
+      "source": "CanVec_Import_2009",
+      "website": "https://uwaterloo.ca/campus-wellness/health-services",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 44,
+      "ix": 81
+    }
+  },
+  {
+    "type": "education",
+    "iy": 480,
+    "ix": 1228,
+    "lon": -80.5306204,
+    "lat": 43.4747593,
+    "name": "Saint Michael's Catholic Church",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "240",
+      "addr:street": "Hemlock Street",
+      "amenity": "place_of_worship",
+      "building": "church",
+      "building:colour": "grey",
+      "building:levels": "1",
+      "building:material": "stone",
+      "denomination": "roman_catholic",
+      "name": "Saint Michael's Catholic Church",
+      "official_name": "St. Michael's Catholic Church",
+      "religion": "christian"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 144,
+    "ix": 912,
+    "lon": -80.5348797,
+    "lat": 43.4714683,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 146,
+      "ix": 915
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 161,
+    "ix": 75,
+    "lon": -80.5461599,
+    "lat": 43.4716385,
+    "name": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "parking",
+      "capacity": "9",
+      "parking": "surface",
+      "wheelchair": "2"
+    },
+    "snapped": {
+      "iy": 161,
+      "ix": 75
+    }
+  },
+  {
+    "type": "other",
+    "iy": 1310,
+    "ix": 619,
+    "lon": -80.5388201,
+    "lat": 43.4828701,
+    "name": "Meetz' Small Engines",
+    "tags": {
+      "building": "retail",
+      "name": "Meetz' Small Engines",
+      "repair": "yes",
+      "shop": "groundskeeping",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 1317,
+      "ix": 627
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 368,
+    "ix": 499,
+    "lon": -80.5404447,
+    "lat": 43.4736629,
+    "name": "Lot B",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "name": "Lot B",
+      "name:fr": "Parc de stationnement B",
+      "name:zh": "B\u505c\u8f66\u573a",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 399,
+    "ix": 8,
+    "lon": -80.5470631,
+    "lat": 43.4739606,
+    "name": "Lot R",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "name": "Lot R",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 399,
+      "ix": 8
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 490,
+    "ix": 191,
+    "lon": -80.544588,
+    "lat": 43.4748509,
+    "name": "Lot N",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "name": "Lot N",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 434,
+    "ix": 224,
+    "lon": -80.5441488,
+    "lat": 43.4743055,
+    "name": "Lot L",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "name": "Lot L",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 434,
+      "ix": 224
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 618,
+    "ix": 241,
+    "lon": -80.5439225,
+    "lat": 43.4761028,
+    "name": "Lot OV",
+    "tags": {
+      "access": "permissive",
+      "amenity": "parking",
+      "name": "Lot OV",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 629,
+      "ix": 238
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 774,
+    "ix": 129,
+    "lon": -80.5454242,
+    "lat": 43.4776275,
+    "name": "Lot X",
+    "tags": {
+      "access": "permissive",
+      "amenity": "parking",
+      "name": "Lot X",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 755,
+      "ix": 148
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 667,
+    "ix": 212,
+    "lon": -80.5443112,
+    "lat": 43.4765807,
+    "name": "Lot O",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "name": "Lot O",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 667,
+      "ix": 212
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 693,
+    "ix": 30,
+    "lon": -80.5467625,
+    "lat": 43.4768402,
+    "name": "Lot X",
+    "tags": {
+      "access": "permissive",
+      "amenity": "parking",
+      "name": "Lot X",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 684,
+      "ix": 21
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 835,
+    "ix": 1208,
+    "lon": -80.5308898,
+    "lat": 43.4782285,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 843,
+      "ix": 1210
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 902,
+    "ix": 1170,
+    "lon": -80.5314015,
+    "lat": 43.4788862,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 904,
+      "ix": 1168
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 323,
+    "ix": 25,
+    "lon": -80.5468356,
+    "lat": 43.4732214,
+    "name": "Lot M",
+    "tags": {
+      "access": "permissive",
+      "amenity": "parking",
+      "name": "Lot M",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 323,
+      "ix": 25
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 18,
+    "ix": 967,
+    "lon": -80.5341385,
+    "lat": 43.4702413,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 19,
+      "ix": 966
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 99,
+    "ix": 830,
+    "lon": -80.535979,
+    "lat": 43.4710338,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 99,
+      "ix": 830
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 196,
+    "ix": 864,
+    "lon": -80.5355248,
+    "lat": 43.4719808,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 196,
+      "ix": 864
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 88,
+    "ix": 1057,
+    "lon": -80.5329267,
+    "lat": 43.4709231,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 102,
+    "ix": 987,
+    "lon": -80.5338629,
+    "lat": 43.4710613,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 98,
+      "ix": 983
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 131,
+    "ix": 752,
+    "lon": -80.5370353,
+    "lat": 43.4713457,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 131,
+      "ix": 752
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 95,
+    "ix": 893,
+    "lon": -80.5351297,
+    "lat": 43.4709943,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 95,
+      "ix": 893
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 285,
+    "ix": 914,
+    "lon": -80.5348472,
+    "lat": 43.4728505,
+    "name": "mochi mochi",
+    "tags": {
+      "amenity": "cafe",
+      "building": "retail",
+      "cuisine": "bubble_tea",
+      "name": "mochi mochi",
+      "opening_hours": "Mo-Su 12:00-22:00"
+    },
+    "snapped": {
+      "iy": 284,
+      "ix": 915
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 613,
+    "ix": 497,
+    "lon": -80.540468,
+    "lat": 43.476051,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 607,
+      "ix": 502
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 562,
+    "ix": 486,
+    "lon": -80.5406153,
+    "lat": 43.475554,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 562,
+      "ix": 486
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 14,
+    "ix": 90,
+    "lon": -80.5459599,
+    "lat": 43.4702021,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "fee": "yes",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 14,
+      "ix": 90
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 437,
+    "ix": 601,
+    "lon": -80.5390743,
+    "lat": 43.4743353,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "operator": "Gravel Parking Lot",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 430,
+      "ix": 621
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 820,
+    "ix": 610,
+    "lon": -80.5389495,
+    "lat": 43.4780774,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 820,
+      "ix": 610
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 883,
+    "ix": 829,
+    "lon": -80.5359902,
+    "lat": 43.4786927,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 897,
+      "ix": 826
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1174,
+    "ix": 425,
+    "lon": -80.5414336,
+    "lat": 43.4815378,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 1169,
+      "ix": 420
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1246,
+    "ix": 462,
+    "lon": -80.5409393,
+    "lat": 43.4822492,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 1245,
+      "ix": 461
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 557,
+    "ix": 382,
+    "lon": -80.5420252,
+    "lat": 43.4755034,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 557,
+      "ix": 382
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 644,
+    "ix": 333,
+    "lon": -80.5426758,
+    "lat": 43.476363,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 639,
+      "ix": 337
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 669,
+    "ix": 387,
+    "lon": -80.5419498,
+    "lat": 43.4766025,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 669,
+      "ix": 387
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 997,
+    "ix": 451,
+    "lon": -80.5410865,
+    "lat": 43.4798119,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 979,
+      "ix": 469
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 398,
+    "ix": 313,
+    "lon": -80.5429487,
+    "lat": 43.4739492,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 398,
+      "ix": 313
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 429,
+    "ix": 301,
+    "lon": -80.5431041,
+    "lat": 43.474252,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 429,
+      "ix": 301
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 449,
+    "ix": 318,
+    "lon": -80.5428869,
+    "lat": 43.4744532,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing"
+    },
+    "snapped": {
+      "iy": 449,
+      "ix": 318
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 327,
+    "ix": 337,
+    "lon": -80.5426294,
+    "lat": 43.4732571,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "13",
+      "parking": "surface",
+      "source": "Bing;local_knowledge"
+    },
+    "snapped": {
+      "iy": 327,
+      "ix": 337
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 222,
+    "ix": 353,
+    "lon": -80.542414,
+    "lat": 43.472233,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "6",
+      "parking": "surface",
+      "source": "local_knowledge"
+    },
+    "snapped": {
+      "iy": 220,
+      "ix": 355
+    }
+  },
+  {
+    "type": "other",
+    "iy": 173,
+    "ix": 287,
+    "lon": -80.5432933,
+    "lat": 43.4717485,
+    "name": "Break",
+    "tags": {
+      "alt_name": "Egg Fountain",
+      "amenity": "fountain",
+      "artist": "Bruce Watson",
+      "artist_name": "Bruce Watson",
+      "name": "Break",
+      "natural": "water",
+      "start_date": "1971",
+      "tourism": "artwork"
+    },
+    "snapped": {
+      "iy": 173,
+      "ix": 287
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 264,
+    "ix": 442,
+    "lon": -80.5412113,
+    "lat": 43.472646,
+    "name": null,
+    "tags": {
+      "bench": "yes",
+      "bin": "yes",
+      "highway": "platform",
+      "lit": "yes",
+      "public_transport": "platform",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 264,
+      "ix": 442
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1197,
+    "ix": 775,
+    "lon": -80.5367216,
+    "lat": 43.481769,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "72",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1192,
+      "ix": 771
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1233,
+    "ix": 876,
+    "lon": -80.5353584,
+    "lat": 43.4821189,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1235,
+      "ix": 879
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1254,
+    "ix": 747,
+    "lon": -80.5371042,
+    "lat": 43.4823189,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1252,
+      "ix": 748
+    }
+  },
+  {
+    "type": "education",
+    "iy": 835,
+    "ix": 1126,
+    "lon": -80.5319979,
+    "lat": 43.4782304,
+    "name": "Wilfrid Laurier Universty - Northdale Campus",
+    "tags": {
+      "addr:housenumber": "66",
+      "addr:street": "Hickory Street West",
+      "amenity": "university",
+      "name": "Wilfrid Laurier Universty - Northdale Campus",
+      "operator": "Wilfrid Laurier University",
+      "operator:type": "university",
+      "source": "survey"
+    },
+    "snapped": {
+      "iy": 835,
+      "ix": 1126
+    }
+  },
+  {
+    "type": "education",
+    "iy": 947,
+    "ix": 1295,
+    "lon": -80.5297177,
+    "lat": 43.4793228,
+    "name": "Waterloo Collegiate Institute",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "300",
+      "addr:postcode": "N2L 3P2",
+      "addr:street": "Hazel Street",
+      "amenity": "school",
+      "fax": "+1-519-884-6274",
+      "isced:level": "3",
+      "name": "Waterloo Collegiate Institute",
+      "operator": "Waterloo Region District School Board",
+      "operator:short": "WRDSB",
+      "operator:type": "public",
+      "operator:wikidata": "Q69406620",
+      "phone": "+1-519-884-9590",
+      "school:language": "english",
+      "toilets:wheelchair": "no",
+      "website": "https://wci.wrdsb.ca/",
+      "wheelchair": "no",
+      "wikidata": "Q7974221",
+      "wikipedia": "en:Waterloo Collegiate Institute"
+    },
+    "snapped": null
+  },
+  {
+    "type": "other",
+    "iy": 191,
+    "ix": 1096,
+    "lon": -80.5324011,
+    "lat": 43.4719271,
+    "name": "The Beckett School",
+    "tags": {
+      "addr:housenumber": "190",
+      "addr:street": "Lester Street",
+      "amenity": "music_school",
+      "building": "apartments",
+      "building:levels": "3",
+      "name": "The Beckett School",
+      "operator": "Wilfrid Laurier University",
+      "source": "Bing",
+      "website": "https://www.beckettschool.ca/",
+      "wheelchair": "no"
+    },
+    "snapped": {
+      "iy": 199,
+      "ix": 1096
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 235,
+    "ix": 850,
+    "lon": -80.5357177,
+    "lat": 43.4723613,
+    "name": "University Ave. / Phillip",
+    "tags": {
+      "bench": "yes",
+      "bin": "yes",
+      "highway": "platform",
+      "name": "University Ave. / Phillip",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2675",
+      "route_ref": "12;19;29;202",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 223,
+      "ix": 862
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 211,
+    "ix": 845,
+    "lon": -80.5357773,
+    "lat": 43.4721232,
+    "name": "University Ave. / Phillip",
+    "tags": {
+      "bench": "yes",
+      "highway": "platform",
+      "name": "University Ave. / Phillip",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3943",
+      "route_ref": "202;29;12;19",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 205,
+      "ix": 839
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 412,
+    "ix": 1245,
+    "lon": -80.5303896,
+    "lat": 43.4740914,
+    "name": "University Ave. / Hemlock",
+    "tags": {
+      "bench": "no",
+      "highway": "platform",
+      "name": "University Ave. / Hemlock",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2783",
+      "route_ref": "12;19;29",
+      "shelter": "no"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 431,
+    "ix": 1238,
+    "lon": -80.5304853,
+    "lat": 43.4742721,
+    "name": "University Ave. / Hemlock",
+    "tags": {
+      "bench": "no",
+      "highway": "platform",
+      "name": "University Ave. / Hemlock",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2673",
+      "route_ref": "12;19;29",
+      "shelter": "yes"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 223,
+    "ix": 687,
+    "lon": -80.537911,
+    "lat": 43.4722465,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "fee": "no",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 227,
+      "ix": 691
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 689,
+    "ix": 692,
+    "lon": -80.5378453,
+    "lat": 43.4767993,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 685,
+      "ix": 696
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 812,
+    "ix": 658,
+    "lon": -80.5382989,
+    "lat": 43.4779994,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 817,
+      "ix": 652
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 530,
+    "ix": 1220,
+    "lon": -80.5307334,
+    "lat": 43.4752428,
+    "name": "Lot 18 - Gold Permit",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "100",
+      "name": "Lot 18 - Gold Permit",
+      "note": "Gold Permits Only",
+      "park_ride": "no",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 530,
+      "ix": 1220
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 783,
+    "ix": 758,
+    "lon": -80.5369539,
+    "lat": 43.4777182,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 780,
+      "ix": 761
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 921,
+    "ix": 646,
+    "lon": -80.5384662,
+    "lat": 43.4790659,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 908,
+      "ix": 633
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 843,
+    "ix": 527,
+    "lon": -80.540066,
+    "lat": 43.4783068,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 833,
+      "ix": 517
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 840,
+    "ix": 357,
+    "lon": -80.5423614,
+    "lat": 43.4782741,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 831,
+      "ix": 366
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1329,
+    "ix": 214,
+    "lon": -80.5442844,
+    "lat": 43.4830586,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1328,
+      "ix": 214
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1196,
+    "ix": 243,
+    "lon": -80.5438937,
+    "lat": 43.4817546,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1184,
+      "ix": 254
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1241,
+    "ix": 365,
+    "lon": -80.5422423,
+    "lat": 43.4821937,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1249,
+      "ix": 374
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 157,
+    "ix": 958,
+    "lon": -80.5342602,
+    "lat": 43.471594,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 156,
+      "ix": 959
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 50,
+    "ix": 1184,
+    "lon": -80.531216,
+    "lat": 43.470546,
+    "name": "9 Gold or White Permit Parking",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "69",
+      "capacity:disabled": "2",
+      "name": "9 Gold or White Permit Parking",
+      "operator": "Wilfrid Laurier University",
+      "operator:type": "university",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 50,
+      "ix": 1183
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1275,
+    "ix": 951,
+    "lon": -80.5343483,
+    "lat": 43.4825285,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1275,
+      "ix": 951
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1308,
+    "ix": 922,
+    "lon": -80.5347424,
+    "lat": 43.4828501,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1310,
+      "ix": 925
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 313,
+    "ix": 1228,
+    "lon": -80.5306143,
+    "lat": 43.4731257,
+    "name": "Lot 12 - Gold Permit",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "15",
+      "name": "Lot 12 - Gold Permit",
+      "operator": "Wilfrid Laurier University",
+      "park_ride": "no",
+      "parking": "surface",
+      "source": "Bing",
+      "supervised": "yes",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 311,
+      "ix": 1229
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 906,
+    "ix": 1050,
+    "lon": -80.5330167,
+    "lat": 43.478919,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 901,
+      "ix": 1054
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 515,
+    "ix": 54,
+    "lon": -80.5464322,
+    "lat": 43.4751007,
+    "name": "Hagey / University of Waterloo",
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "highway": "platform",
+      "lit": "yes",
+      "name": "Hagey / University of Waterloo",
+      "name:zh": "\u6ed1\u94c1\u5362\u5927\u5b66 - \u54e5\u4f26\u6bd4\u4e9a",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "4074",
+      "route_ref": "9",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 513,
+      "ix": 52
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 453,
+    "ix": 35,
+    "lon": -80.5466899,
+    "lat": 43.4744874,
+    "name": null,
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "bus": "yes",
+      "check_date:shelter": "2023-09-05",
+      "highway": "platform",
+      "public_transport": "platform",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 453,
+      "ix": 35
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 567,
+    "ix": 1,
+    "lon": -80.5471521,
+    "lat": 43.4756022,
+    "name": "Hagey / U.W. - Columbia Ice Field",
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "highway": "platform",
+      "name": "Hagey / U.W. - Columbia Ice Field",
+      "name:zh": "\u6ed1\u94c1\u5362\u5927\u5b66 - \u54e5\u4f26\u6bd4\u4e9a",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3872",
+      "route_ref": "9;91",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 555,
+      "ix": 0
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 704,
+    "ix": 506,
+    "lon": -80.5403447,
+    "lat": 43.4769447,
+    "name": "Columbia / Phillip",
+    "tags": {
+      "bench": "yes",
+      "highway": "platform",
+      "name": "Columbia / Phillip",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "passenger_information_display": "yes",
+      "public_transport": "platform",
+      "ref": "1093",
+      "route_ref": "9;13",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 702,
+      "ix": 511
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 307,
+    "ix": 917,
+    "lon": -80.5348094,
+    "lat": 43.4730625,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 308,
+      "ix": 915
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 264,
+    "ix": 799,
+    "lon": -80.5363979,
+    "lat": 43.4726442,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 266,
+      "ix": 797
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 296,
+    "ix": 841,
+    "lon": -80.5358271,
+    "lat": 43.4729603,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 298,
+      "ix": 828
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 505,
+    "ix": 92,
+    "lon": -80.5459273,
+    "lat": 43.4750028,
+    "name": null,
+    "tags": {
+      "bench": "yes",
+      "bus": "yes",
+      "highway": "platform",
+      "public_transport": "platform",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 505,
+      "ix": 92
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 304,
+    "ix": 312,
+    "lon": -80.5429641,
+    "lat": 43.4730352,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "4",
+      "parking": "surface",
+      "source": "Bing;local_knowledge"
+    },
+    "snapped": {
+      "iy": 315,
+      "ix": 322
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 317,
+    "ix": 673,
+    "lon": -80.538097,
+    "lat": 43.4731597,
+    "name": "Lot B",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "fee": "yes",
+      "name": "Lot B",
+      "opening_hours": "06:00-03:00",
+      "operator": "University of Waterloo",
+      "owner": "University of Waterloo",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 1099,
+    "ix": 735,
+    "lon": -80.5372647,
+    "lat": 43.480811,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "fee": "no",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1099,
+      "ix": 735
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1098,
+    "ix": 820,
+    "lon": -80.5361174,
+    "lat": 43.4807962,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1102,
+      "ix": 824
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1149,
+    "ix": 802,
+    "lon": -80.5363616,
+    "lat": 43.4813004,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1147,
+      "ix": 800
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 402,
+    "ix": 1100,
+    "lon": -80.5323435,
+    "lat": 43.4739907,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 405,
+      "ix": 1096
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 787,
+    "ix": 1222,
+    "lon": -80.5306974,
+    "lat": 43.4777566,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 787,
+      "ix": 1222
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 340,
+    "ix": 902,
+    "lon": -80.5350175,
+    "lat": 43.4733887,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 370,
+    "ix": 887,
+    "lon": -80.5352144,
+    "lat": 43.473683,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 402,
+    "ix": 871,
+    "lon": -80.5354296,
+    "lat": 43.4739893,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 403,
+      "ix": 869
+    }
+  },
+  {
+    "type": "other",
+    "iy": 716,
+    "ix": 165,
+    "lon": -80.5449424,
+    "lat": 43.4770668,
+    "name": "Bright Starts Co-operative Early Learning Centre",
+    "tags": {
+      "amenity": "childcare",
+      "building": "university",
+      "building:colour": "white",
+      "building:levels": "1",
+      "name": "Bright Starts Co-operative Early Learning Centre",
+      "operator": "University of Waterloo"
+    },
+    "snapped": {
+      "iy": 708,
+      "ix": 157
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 468,
+    "ix": 787,
+    "lon": -80.5365578,
+    "lat": 43.4746372,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "40",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 458,
+      "ix": 777
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 473,
+    "ix": 728,
+    "lon": -80.5373586,
+    "lat": 43.4746842,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "30",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 471,
+      "ix": 726
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 421,
+    "ix": 761,
+    "lon": -80.5369137,
+    "lat": 43.4741822,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 421,
+      "ix": 761
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 958,
+    "ix": 737,
+    "lon": -80.5372324,
+    "lat": 43.4794306,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "multi-storey"
+    },
+    "snapped": {
+      "iy": 966,
+      "ix": 729
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 939,
+    "ix": 786,
+    "lon": -80.5365683,
+    "lat": 43.4792475,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "fee": "yes",
+      "operator": "Park Property Management Inc.",
+      "operator:type": "private",
+      "parking": "surface",
+      "payment:credit_cards": "yes",
+      "surface": "paved"
+    },
+    "snapped": {
+      "iy": 939,
+      "ix": 786
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 964,
+    "ix": 781,
+    "lon": -80.536648,
+    "lat": 43.4794864,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "fee": "yes",
+      "operator": "Park Property Management Inc.",
+      "operator:type": "private",
+      "parking": "surface",
+      "payment:credit_cards": "yes",
+      "surface": "paved"
+    },
+    "snapped": {
+      "iy": 961,
+      "ix": 778
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 496,
+    "ix": 461,
+    "lon": -80.5409547,
+    "lat": 43.474908,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 496,
+      "ix": 461
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 506,
+    "ix": 442,
+    "lon": -80.5412044,
+    "lat": 43.4750062,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 506,
+      "ix": 442
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 502,
+    "ix": 451,
+    "lon": -80.5410834,
+    "lat": 43.4749718,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 502,
+      "ix": 451
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 228,
+    "ix": 1151,
+    "lon": -80.5316586,
+    "lat": 43.4722954,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 228,
+      "ix": 1151
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 166,
+    "ix": 1195,
+    "lon": -80.5310659,
+    "lat": 43.4716868,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 171,
+      "ix": 1210
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 166,
+    "ix": 1123,
+    "lon": -80.5320351,
+    "lat": 43.471687,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 153,
+      "ix": 1110
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 251,
+    "ix": 1058,
+    "lon": -80.5329086,
+    "lat": 43.4725186,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 568,
+    "ix": 711,
+    "lon": -80.5375811,
+    "lat": 43.4756144,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 568,
+      "ix": 711
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 590,
+    "ix": 173,
+    "lon": -80.5448363,
+    "lat": 43.4758269,
+    "name": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "parking",
+      "fee": "yes",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 589,
+      "ix": 172
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 596,
+    "ix": 170,
+    "lon": -80.5448778,
+    "lat": 43.4758901,
+    "name": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "parking",
+      "fee": "yes",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 592,
+      "ix": 166
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 282,
+    "ix": 1257,
+    "lon": -80.5302344,
+    "lat": 43.4728186,
+    "name": "Lot 12 - Gold Permit",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "13",
+      "name": "Lot 12 - Gold Permit",
+      "operator": "Wilfrid Laurier University",
+      "park_ride": "no",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 281,
+      "ix": 1256
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 168,
+    "ix": 1281,
+    "lon": -80.5298997,
+    "lat": 43.4717038,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "operator": "Wilfrid Laurier University",
+      "operator:type": "university",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 168,
+      "ix": 1281
+    }
+  },
+  {
+    "type": "other",
+    "iy": 203,
+    "ix": 1257,
+    "lon": -80.5302335,
+    "lat": 43.4720495,
+    "name": "The Delton Glebe Counselling Centre",
+    "tags": {
+      "addr:housenumber": "177",
+      "addr:street": "Albert Street",
+      "amenity": "office",
+      "building": "house",
+      "building:levels": "2",
+      "healthcare": "counselling",
+      "name": "The Delton Glebe Counselling Centre",
+      "operator": "Martin Luther University College",
+      "roof:levels": "0"
+    },
+    "snapped": {
+      "iy": 188,
+      "ix": 1242
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 202,
+    "ix": 1216,
+    "lon": -80.5307746,
+    "lat": 43.4720383,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 201,
+      "ix": 1215
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 518,
+    "ix": 1200,
+    "lon": -80.5309969,
+    "lat": 43.4751267,
+    "name": "Saint Michael's Catholic Church parking",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "12",
+      "name": "Saint Michael's Catholic Church parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 530,
+      "ix": 1210
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 685,
+    "ix": 1248,
+    "lon": -80.5303473,
+    "lat": 43.4767571,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 679,
+      "ix": 1254
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 378,
+    "ix": 1079,
+    "lon": -80.532628,
+    "lat": 43.4737619,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 378,
+      "ix": 1079
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 772,
+    "ix": 534,
+    "lon": -80.5399735,
+    "lat": 43.4776119,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "source": "Bing",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 772,
+      "ix": 534
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 792,
+    "ix": 433,
+    "lon": -80.541334,
+    "lat": 43.4778031,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 791,
+      "ix": 434
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 727,
+    "ix": 419,
+    "lon": -80.5415218,
+    "lat": 43.4771686,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 727,
+      "ix": 419
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 700,
+    "ix": 462,
+    "lon": -80.5409418,
+    "lat": 43.4769025,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 705,
+      "ix": 456
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 730,
+    "ix": 442,
+    "lon": -80.5412087,
+    "lat": 43.4771969,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 730,
+      "ix": 442
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 754,
+    "ix": 379,
+    "lon": -80.5420602,
+    "lat": 43.4774363,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 747,
+      "ix": 386
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 669,
+    "ix": 349,
+    "lon": -80.5424605,
+    "lat": 43.4766081,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 669,
+      "ix": 349
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 718,
+    "ix": 345,
+    "lon": -80.5425175,
+    "lat": 43.4770854,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 718,
+      "ix": 345
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 777,
+    "ix": 347,
+    "lon": -80.5424848,
+    "lat": 43.4776575,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 773,
+      "ix": 351
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 725,
+    "ix": 306,
+    "lon": -80.5430491,
+    "lat": 43.4771508,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 724,
+      "ix": 305
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 391,
+    "ix": 780,
+    "lon": -80.5366569,
+    "lat": 43.4738806,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 391,
+      "ix": 780
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 565,
+    "ix": 1256,
+    "lon": -80.5302421,
+    "lat": 43.475584,
+    "name": "Lot 33 - Gold Permit",
+    "tags": {
+      "access": "permit",
+      "addr:city": "Waterloo",
+      "addr:housenumber": "76",
+      "addr:street": "University Avenue West",
+      "amenity": "parking",
+      "capacity": "35",
+      "charge": "3 CAD / hour",
+      "fee": "yes",
+      "name": "Lot 33 - Gold Permit",
+      "operator": "Wilfrid Laurier University",
+      "park_ride": "no",
+      "parking": "surface",
+      "supervised": "yes",
+      "surface": "asphalt",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 567,
+      "ix": 1256
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 830,
+    "ix": 1115,
+    "lon": -80.532145,
+    "lat": 43.4781821,
+    "name": "Lot 37 - White Permit",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "149",
+      "name": "Lot 37 - White Permit",
+      "operator": "Wilfrid Laurier University",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 827,
+      "ix": 1118
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 828,
+    "ix": 1174,
+    "lon": -80.5313465,
+    "lat": 43.4781563,
+    "name": "Lot 37 - Gold Permit",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "36",
+      "name": "Lot 37 - Gold Permit",
+      "operator": "Wilfrid Laurier University",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 828,
+      "ix": 1173
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 773,
+    "ix": 1193,
+    "lon": -80.5310856,
+    "lat": 43.4776179,
+    "name": "Lot 37",
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "16",
+      "name": "Lot 37",
+      "operator": "Wilfrid Laurier University",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 773,
+      "ix": 1193
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 585,
+    "ix": 1297,
+    "lon": -80.5296905,
+    "lat": 43.4757823,
+    "name": "Lot 32 - Gold Permit",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "85",
+      "charge": "3 CAD / hour",
+      "fee": "yes",
+      "name": "Lot 32 - Gold Permit",
+      "operator": "Wilfrid Laurier University",
+      "parking": "surface",
+      "supervised": "yes",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 585,
+      "ix": 1296
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 214,
+    "ix": 742,
+    "lon": -80.5371733,
+    "lat": 43.4721588,
+    "name": "Shawerma Plus",
+    "tags": {
+      "addr:housenumber": "160",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "17B",
+      "amenity": "fast_food",
+      "building": "retail",
+      "building:levels": "1",
+      "cuisine": "mediterranean;shawarma",
+      "delivery": "yes",
+      "diet:halal": "only",
+      "email": "jawadghabra@gmail.com",
+      "name": "Shawerma Plus",
+      "opening_hours": "Mo-Sa 11:00-22:00",
+      "website": "https://shawermaplus.com/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 214,
+      "ix": 742
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 325,
+    "ix": 445,
+    "lon": -80.5411737,
+    "lat": 43.4732353,
+    "name": "Platform 1",
+    "tags": {
+      "bench": "yes",
+      "bicycle": "dismount",
+      "bin": "yes",
+      "light_rail": "yes",
+      "lit": "yes",
+      "local_ref": "1",
+      "name": "Platform 1",
+      "public_transport": "platform",
+      "railway": "platform",
+      "ref": "6004",
+      "shelter": "yes",
+      "surface": "concrete",
+      "tactile_paving": "yes"
+    },
+    "snapped": {
+      "iy": 325,
+      "ix": 445
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 297,
+    "ix": 859,
+    "lon": -80.5355971,
+    "lat": 43.4729698,
+    "name": "Mel's Diner",
+    "tags": {
+      "air_conditioning": "yes",
+      "amenity": "restaurant",
+      "building": "retail",
+      "delivery": "yes",
+      "name": "Mel's Diner",
+      "takeaway": "yes"
+    },
+    "snapped": null
+  },
+  {
+    "type": "restaurant",
+    "iy": 301,
+    "ix": 866,
+    "lon": -80.5354909,
+    "lat": 43.4730072,
+    "name": "Onnuri",
+    "tags": {
+      "amenity": "restaurant",
+      "bar": "yes",
+      "building": "retail",
+      "cuisine": "korean",
+      "name": "Onnuri"
+    },
+    "snapped": null
+  },
+  {
+    "type": "restaurant",
+    "iy": 305,
+    "ix": 874,
+    "lon": -80.5353937,
+    "lat": 43.4730414,
+    "name": "momo",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "140",
+      "addr:postcode": "N2L 6J3",
+      "addr:street": "University Avenue West",
+      "addr:unit": "6A",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "japanese;ramen",
+      "delivery": "no",
+      "name": "momo",
+      "outdoor_seating": "no",
+      "takeaway": "yes",
+      "toilets": "yes"
+    },
+    "snapped": null
+  },
+  {
+    "type": "cafe",
+    "iy": 235,
+    "ix": 818,
+    "lon": -80.5361385,
+    "lat": 43.4723602,
+    "name": "Pizza Nova",
+    "tags": {
+      "amenity": "fast_food",
+      "brand": "Pizza Nova",
+      "brand:wikidata": "Q7199971",
+      "brand:wikipedia": "en:Pizza Nova",
+      "building": "retail",
+      "cuisine": "pizza",
+      "name": "Pizza Nova",
+      "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 11:00-00:00",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 235,
+      "ix": 818
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 245,
+    "ix": 832,
+    "lon": -80.5359495,
+    "lat": 43.4724563,
+    "name": "Mr. Yin",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "name": "Mr. Yin"
+    },
+    "snapped": {
+      "iy": 243,
+      "ix": 829
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 248,
+    "ix": 838,
+    "lon": -80.5358802,
+    "lat": 43.4724886,
+    "name": "The Bingsu Cafe",
+    "tags": {
+      "amenity": "cafe",
+      "brand:wikipedia": "en:Second Cup",
+      "building": "retail",
+      "cuisine": "coffee_shop",
+      "name": "The Bingsu Cafe",
+      "opening_hours": "Mo-Fr 13:00-22:00; Sa-Su 12:00-22:00"
+    },
+    "snapped": {
+      "iy": 243,
+      "ix": 829
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 250,
+    "ix": 842,
+    "lon": -80.5358213,
+    "lat": 43.4725027,
+    "name": "Campus Convenience",
+    "tags": {
+      "building": "retail",
+      "name": "Campus Convenience",
+      "opening_hours": "Mo-Su 10:00-22:00",
+      "shop": "convenience"
+    },
+    "snapped": {
+      "iy": 243,
+      "ix": 829
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 254,
+    "ix": 851,
+    "lon": -80.5356948,
+    "lat": 43.4725492,
+    "name": "Burger King",
+    "tags": {
+      "addr:housenumber": "150",
+      "addr:postcode": "N2L 3E4",
+      "addr:street": "University Avenue West",
+      "amenity": "fast_food",
+      "brand": "Burger King",
+      "brand:wikidata": "Q177054",
+      "brand:wikipedia": "en:Burger King",
+      "building": "retail",
+      "cuisine": "burger",
+      "name": "Burger King",
+      "phone": "+1-519-884-4426",
+      "takeaway": "yes"
+    },
+    "snapped": {
+      "iy": 235,
+      "ix": 869
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 252,
+    "ix": 821,
+    "lon": -80.5361094,
+    "lat": 43.4725295,
+    "name": "Kabob Shack",
+    "tags": {
+      "addr:unit": "5B",
+      "amenity": "restaurant",
+      "building": "yes",
+      "cuisine": "persian",
+      "name": "Kabob Shack",
+      "opening_hours": "Mo-Su 11:30-21:30",
+      "outdoor_seating": "no",
+      "phone": "+1 (519) 208-0404",
+      "website": "https://kabobshack.ca"
+    },
+    "snapped": {
+      "iy": 248,
+      "ix": 822
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 270,
+    "ix": 818,
+    "lon": -80.5361396,
+    "lat": 43.4727014,
+    "name": "Gol's Lanzhou Noodle",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese;noodle",
+      "disused": "yes",
+      "disused:amenity": "restaurant",
+      "name": "Gol's Lanzhou Noodle",
+      "outdoor_seating": "no"
+    },
+    "snapped": {
+      "iy": 274,
+      "ix": 814
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 275,
+    "ix": 811,
+    "lon": -80.5362427,
+    "lat": 43.4727489,
+    "name": "Mizu Restaurant",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "name": "Mizu Restaurant",
+      "website": "https://www.mizurestaurantonline.com/"
+    },
+    "snapped": {
+      "iy": 275,
+      "ix": 812
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 279,
+    "ix": 819,
+    "lon": -80.5361247,
+    "lat": 43.4727923,
+    "name": "Asakusa",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "chinese",
+      "name": "Asakusa",
+      "opening_hours": "Mo-Su 11:00-22:00"
+    },
+    "snapped": {
+      "iy": 276,
+      "ix": 816
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 264,
+    "ix": 821,
+    "lon": -80.5361,
+    "lat": 43.4726448,
+    "name": "iPho",
+    "tags": {
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "vietnamese",
+      "name": "iPho",
+      "opening_hours": "Mo-Su 11:00-21:00",
+      "phone": "(226) 317-2995",
+      "website": "https://www.iphowaterloo.com/",
+      "website:menu": "https://www.iphowaterloo.com/menu"
+    },
+    "snapped": {
+      "iy": 274,
+      "ix": 813
+    }
+  },
+  {
+    "type": "other",
+    "iy": 260,
+    "ix": 829,
+    "lon": -80.5359914,
+    "lat": 43.4725995,
+    "name": "Live Switchboard",
+    "tags": {
+      "addr:housenumber": "150",
+      "addr:postcode": "N2L 3E4",
+      "addr:street": "University Avenue West",
+      "addr:unit": "5A",
+      "amenity": "driving_school",
+      "building": "retail",
+      "name": "Live Switchboard",
+      "note": "This business serves a pretty wide variety of services, making appropriate tagging difficult",
+      "office": "notary;tax_advisor;tutoring",
+      "repair": "electronics;computer",
+      "shop": "copyshop",
+      "short_name": "LSI",
+      "website": "https://www.lsistudents.com/"
+    },
+    "snapped": {
+      "iy": 248,
+      "ix": 822
+    }
+  },
+  {
+    "type": "grocery",
+    "iy": 303,
+    "ix": 895,
+    "lon": -80.5351101,
+    "lat": 43.4730278,
+    "name": "Waterloo Central Supermarket",
+    "tags": {
+      "addr:street": "University Avenue West",
+      "building": "retail",
+      "name": "Waterloo Central Supermarket",
+      "opening_hours": "Mo-Su 09:00-23:00",
+      "payment:cash": "yes",
+      "payment:credit_cards": "yes",
+      "payment:debit_cards": "yes",
+      "payment:visa": "yes",
+      "shop": "supermarket"
+    },
+    "snapped": {
+      "iy": 294,
+      "ix": 903
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 252,
+    "ix": 982,
+    "lon": -80.5339399,
+    "lat": 43.472521,
+    "name": "Linden Square",
+    "tags": {
+      "amenity": "food_court",
+      "name": "Linden Square",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 242,
+      "ix": 991
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 340,
+    "ix": 970,
+    "lon": -80.5340921,
+    "lat": 43.473391,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 333,
+    "ix": 988,
+    "lon": -80.5338559,
+    "lat": 43.4733165,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 226,
+    "ix": 986,
+    "lon": -80.5338781,
+    "lat": 43.4722725,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 228,
+      "ix": 984
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 21,
+    "ix": 305,
+    "lon": -80.5430533,
+    "lat": 43.4702697,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "10",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 511,
+    "ix": 900,
+    "lon": -80.5350326,
+    "lat": 43.4750591,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 508,
+      "ix": 902
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 547,
+    "ix": 885,
+    "lon": -80.5352404,
+    "lat": 43.4754128,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 430,
+    "ix": 959,
+    "lon": -80.5342448,
+    "lat": 43.4742659,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 429,
+      "ix": 958
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 6,
+    "ix": 99,
+    "lon": -80.5458371,
+    "lat": 43.4701188,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "street_side"
+    },
+    "snapped": {
+      "iy": 6,
+      "ix": 99
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 164,
+    "ix": 629,
+    "lon": -80.5386892,
+    "lat": 43.4716691,
+    "name": "Kabob Hut",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "9",
+      "amenity": "restaurant",
+      "building:levels": "1",
+      "building:part": "retail",
+      "cuisine": "persian",
+      "name": "Kabob Hut",
+      "opening_hours": "Mo-Sa 10:00-22:00,Su Closed",
+      "website": "https://kabobhutcanada.com/",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 164,
+      "ix": 630
+    }
+  },
+  {
+    "type": "cafe",
+    "iy": 159,
+    "ix": 636,
+    "lon": -80.5385992,
+    "lat": 43.4716155,
+    "name": "The Alley",
+    "tags": {
+      "addr:housenumber": "170",
+      "addr:postcode": "N2L 3E9",
+      "addr:street": "University Avenue West",
+      "addr:unit": "7-8",
+      "amenity": "cafe",
+      "brand": "The Alley",
+      "brand:website": "https://www.the-alley.ca/",
+      "building:levels": "1",
+      "building:part": "retail",
+      "cuisine": "bubble_tea",
+      "internet_access": "wlan",
+      "name": "The Alley",
+      "name:zh": "\u9e7f\u89d2\u5df7",
+      "opening_hours": "Mo-Su 11:30-23:00",
+      "wheelchair": "yes"
+    },
+    "snapped": {
+      "iy": 160,
+      "ix": 638
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 633,
+    "ix": 643,
+    "lon": -80.5385057,
+    "lat": 43.4762471,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 636,
+      "ix": 632
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 641,
+    "ix": 740,
+    "lon": -80.5371932,
+    "lat": 43.4763314,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 644,
+      "ix": 743
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 569,
+    "ix": 778,
+    "lon": -80.5366793,
+    "lat": 43.4756256,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 561,
+      "ix": 770
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 545,
+    "ix": 1013,
+    "lon": -80.5335113,
+    "lat": 43.4753941,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 558,
+      "ix": 1027
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 515,
+    "ix": 1130,
+    "lon": -80.5319408,
+    "lat": 43.4751002,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 607,
+    "ix": 1284,
+    "lon": -80.5298662,
+    "lat": 43.4759937,
+    "name": null,
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "4",
+      "charge": "3 CAD / hour",
+      "covered": "yes",
+      "fee": "yes",
+      "operator": "Wilfrid Laurier University",
+      "park_ride": "no",
+      "parking": "carports",
+      "supervised": "yes",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 599,
+      "ix": 1292
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 477,
+    "ix": 1262,
+    "lon": -80.5301613,
+    "lat": 43.4747251,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "36",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 1183,
+    "ix": 149,
+    "lon": -80.5451551,
+    "lat": 43.4816284,
+    "name": null,
+    "tags": {
+      "bench": "yes",
+      "bicycle": "dismount",
+      "bin": "yes",
+      "check_date:bench": "2023-05-05",
+      "departures_board": "realtime",
+      "highway": "footway",
+      "light_rail": "yes",
+      "lit": "yes",
+      "network": "ION",
+      "public_transport": "platform",
+      "railway": "platform",
+      "shelter": "yes",
+      "surface": "concrete",
+      "tactile_paving": "yes"
+    },
+    "snapped": {
+      "iy": 1201,
+      "ix": 167
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1058,
+    "ix": 50,
+    "lon": -80.5464957,
+    "lat": 43.4804106,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1060,
+      "ix": 48
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 753,
+    "ix": 1003,
+    "lon": -80.5336505,
+    "lat": 43.477424,
+    "name": null,
+    "tags": {
+      "access": "permissive",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 755,
+      "ix": 1001
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 845,
+    "ix": 968,
+    "lon": -80.5341188,
+    "lat": 43.4783289,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 848,
+      "ix": 970
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 685,
+    "ix": 894,
+    "lon": -80.5351165,
+    "lat": 43.4767608,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 698,
+      "ix": 907
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 101,
+    "ix": 1280,
+    "lon": -80.5299124,
+    "lat": 43.4710476,
+    "name": "9 Gold or White Permit Parking",
+    "tags": {
+      "access": "permit",
+      "amenity": "parking",
+      "capacity": "38",
+      "name": "9 Gold or White Permit Parking",
+      "operator": "Wilfrid Laurier University",
+      "operator:type": "university",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 97,
+      "ix": 1290
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 245,
+    "ix": 813,
+    "lon": -80.5362065,
+    "lat": 43.4724576,
+    "name": "Meet Fresh",
+    "tags": {
+      "addr:housenumber": "150",
+      "addr:street": "University Street West",
+      "amenity": "restaurant",
+      "brand": "Meet Fresh",
+      "brand:wikidata": "Q11172707",
+      "brand:wikipedia": "en:Meet Fresh",
+      "building": "retail",
+      "cuisine": "taiwanese",
+      "name": "Meet Fresh",
+      "opening_hours": "Mo-Th,Su 12:00-23:00,09:00-18:00; Fr,Sa 12:00-00:00",
+      "phone": "+1-519-208-8890"
+    },
+    "snapped": {
+      "iy": 238,
+      "ix": 820
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 326,
+    "ix": 1035,
+    "lon": -80.5332177,
+    "lat": 43.4732471,
+    "name": "University Ave. / Sunview",
+    "tags": {
+      "bench": "yes",
+      "highway": "platform",
+      "lit": "no",
+      "name": "University Ave. / Sunview",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2674",
+      "route_ref": "12;19;29",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 331,
+    "ix": 1083,
+    "lon": -80.5325748,
+    "lat": 43.4732937,
+    "name": "University Ave. / Sunview",
+    "tags": {
+      "bench": "yes",
+      "highway": "platform",
+      "name": "University Ave. / Sunview",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3945",
+      "route_ref": "12;19;29",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 336,
+      "ix": 1084
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1314,
+    "ix": 101,
+    "lon": -80.5458072,
+    "lat": 43.4829109,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1314,
+      "ix": 101
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1094,
+    "ix": 301,
+    "lon": -80.5431126,
+    "lat": 43.4807588,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 1103,
+      "ix": 310
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 998,
+    "ix": 1220,
+    "lon": -80.5307203,
+    "lat": 43.4798248,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1013,
+      "ix": 1204
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 996,
+    "ix": 1205,
+    "lon": -80.5309256,
+    "lat": 43.4797998,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1004,
+      "ix": 1197
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1003,
+    "ix": 1233,
+    "lon": -80.530548,
+    "lat": 43.4798737,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 1021,
+    "ix": 1243,
+    "lon": -80.5304206,
+    "lat": 43.4800499,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 1039,
+      "ix": 1225
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1041,
+    "ix": 1289,
+    "lon": -80.5297949,
+    "lat": 43.4802432,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 1234,
+    "ix": 1329,
+    "lon": -80.5292625,
+    "lat": 43.482126,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 458,
+    "ix": 491,
+    "lon": -80.5405554,
+    "lat": 43.4745448,
+    "name": "Platform 7",
+    "tags": {
+      "area": "yes",
+      "covered": "no",
+      "departures_board": "no",
+      "highway": "platform",
+      "local_ref": "7",
+      "name": "Platform 7",
+      "network": "GO Transit",
+      "operator": "Metrolinx",
+      "public_transport": "platform"
+    },
+    "snapped": {
+      "iy": 458,
+      "ix": 490
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 454,
+    "ix": 434,
+    "lon": -80.5413145,
+    "lat": 43.4745046,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 454,
+      "ix": 434
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 394,
+    "ix": 478,
+    "lon": -80.540724,
+    "lat": 43.4739115,
+    "name": null,
+    "tags": {
+      "area": "yes",
+      "bench": "yes",
+      "covered": "yes",
+      "highway": "platform",
+      "passenger_information_display": "yes",
+      "public_transport": "platform",
+      "ref": "4",
+      "shelter": "yes",
+      "surface": "concrete"
+    },
+    "snapped": {
+      "iy": 405,
+      "ix": 466
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 407,
+    "ix": 460,
+    "lon": -80.540969,
+    "lat": 43.474041,
+    "name": null,
+    "tags": {
+      "area": "yes",
+      "bench": "yes",
+      "covered": "yes",
+      "highway": "platform",
+      "passenger_information_display": "yes",
+      "public_transport": "platform",
+      "ref": "3",
+      "shelter": "yes",
+      "surface": "concrete"
+    },
+    "snapped": {
+      "iy": 405,
+      "ix": 462
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 450,
+    "ix": 583,
+    "lon": -80.539314,
+    "lat": 43.4744653,
+    "name": null,
+    "tags": {
+      "area": "yes",
+      "bench": "yes",
+      "covered": "yes",
+      "highway": "platform",
+      "passenger_information_display": "yes",
+      "public_transport": "platform",
+      "ref": "6",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 456,
+      "ix": 576
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 463,
+    "ix": 564,
+    "lon": -80.5395613,
+    "lat": 43.4745877,
+    "name": null,
+    "tags": {
+      "area": "yes",
+      "bench": "yes",
+      "covered": "yes",
+      "highway": "platform",
+      "passenger_information_display": "yes",
+      "public_transport": "platform",
+      "ref": "5",
+      "shelter": "yes",
+      "surface": "concrete"
+    },
+    "snapped": {
+      "iy": 469,
+      "ix": 557
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 326,
+    "ix": 446,
+    "lon": -80.5411548,
+    "lat": 43.4732449,
+    "name": "Platform 2",
+    "tags": {
+      "bench": "yes",
+      "bicycle": "dismount",
+      "bin": "yes",
+      "light_rail": "yes",
+      "lit": "yes",
+      "local_ref": "2",
+      "name": "Platform 2",
+      "public_transport": "platform",
+      "railway": "platform",
+      "ref": "6120",
+      "shelter": "yes",
+      "surface": "concrete",
+      "tactile_paving": "yes"
+    },
+    "snapped": {
+      "iy": 326,
+      "ix": 446
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 55,
+    "ix": 206,
+    "lon": -80.5443847,
+    "lat": 43.4705965,
+    "name": "Ring Rd. / U.W. - Quantum Nano Centre",
+    "tags": {
+      "bench": "no",
+      "bin": "yes",
+      "highway": "platform",
+      "name": "Ring Rd. / U.W. - Quantum Nano Centre",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "old_name": "UW - Biology",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2530",
+      "shelter": "no",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 55,
+      "ix": 206
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 161,
+    "ix": 1189,
+    "lon": -80.5311471,
+    "lat": 43.4716319,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 141,
+      "ix": 1189
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 192,
+    "ix": 1243,
+    "lon": -80.5304182,
+    "lat": 43.4719369,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "operator": "Wilfrid Laurier University",
+      "operator:type": "university",
+      "parking": "surface"
+    },
+    "snapped": {
+      "iy": 189,
+      "ix": 1240
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 100,
+    "ix": 1179,
+    "lon": -80.5312841,
+    "lat": 43.4710428,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 102,
+      "ix": 1181
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 554,
+    "ix": 192,
+    "lon": -80.544582,
+    "lat": 43.4754829,
+    "name": "Columbia / U.W. - Optometry",
+    "tags": {
+      "bench": "no",
+      "bin": "no",
+      "highway": "platform",
+      "lit": "yes",
+      "name": "Columbia / U.W. - Optometry",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "1094",
+      "route_ref": "9;13",
+      "shelter": "no",
+      "surface": "concrete",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 554,
+      "ix": 191
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 33,
+    "ix": 1122,
+    "lon": -80.5320474,
+    "lat": 43.4703806,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "capacity": "22",
+      "capacity:disabled": "1",
+      "operator": "City of Waterloo",
+      "operator:type": "government",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 23,
+      "ix": 1112
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 657,
+    "ix": 813,
+    "lon": -80.5362076,
+    "lat": 43.4764822,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 658,
+      "ix": 812
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 936,
+    "ix": 1084,
+    "lon": -80.5325579,
+    "lat": 43.4792105,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 936,
+      "ix": 1084
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1246,
+    "ix": 984,
+    "lon": -80.5339024,
+    "lat": 43.4822432,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 1246,
+      "ix": 984
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 1240,
+    "ix": 986,
+    "lon": -80.5338735,
+    "lat": 43.482185,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 1240,
+      "ix": 986
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 523,
+    "ix": 932,
+    "lon": -80.5346009,
+    "lat": 43.4751742,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "note": "Aerial hasn't updated, this is rough from ground pictures."
+    },
+    "snapped": {
+      "iy": 525,
+      "ix": 929
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 340,
+    "ix": 864,
+    "lon": -80.5355268,
+    "lat": 43.4733823,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 340,
+      "ix": 851
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 323,
+    "ix": 833,
+    "lon": -80.5359361,
+    "lat": 43.4732201,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 327,
+      "ix": 829
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 371,
+    "ix": 854,
+    "lon": -80.5356576,
+    "lat": 43.4736877,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 371,
+      "ix": 854
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 402,
+    "ix": 837,
+    "lon": -80.5358846,
+    "lat": 43.4739912,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 397,
+      "ix": 842
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 397,
+    "ix": 851,
+    "lon": -80.5356969,
+    "lat": 43.4739484,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 396,
+      "ix": 852
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 423,
+    "ix": 806,
+    "lon": -80.5363055,
+    "lat": 43.4741948,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 424,
+      "ix": 807
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 175,
+    "ix": 1021,
+    "lon": -80.533412,
+    "lat": 43.471776,
+    "name": null,
+    "tags": {
+      "amenity": "parking",
+      "building": "yes",
+      "fixme": "This multilevel parking starts on the surface and goes underground.",
+      "parking": "multi-storey"
+    },
+    "snapped": {
+      "iy": 178,
+      "ix": 1025
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 120,
+    "ix": 1070,
+    "lon": -80.5327453,
+    "lat": 43.4712309,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 139,
+      "ix": 1050
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 200,
+    "ix": 568,
+    "lon": -80.5395144,
+    "lat": 43.4720144,
+    "name": null,
+    "tags": {
+      "amenity": "parking"
+    },
+    "snapped": {
+      "iy": 200,
+      "ix": 568
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 290,
+    "ix": 708,
+    "lon": -80.537626,
+    "lat": 43.4728999,
+    "name": "Yang\u2019s Braised Chicken Rice",
+    "tags": {
+      "addr:unit": "36",
+      "amenity": "restaurant",
+      "brand": "Yang\u2019s Braised Chicken Rice",
+      "brand:website": "https://yangschicken.ca/",
+      "building": "retail",
+      "cuisine": "asian",
+      "name": "Yang\u2019s Braised Chicken Rice",
+      "opening_hours": "Mo-Su 11:00-22:00"
+    },
+    "snapped": {
+      "iy": 289,
+      "ix": 709
+    }
+  },
+  {
+    "type": "other",
+    "iy": 292,
+    "ix": 712,
+    "lon": -80.5375754,
+    "lat": 43.472921,
+    "name": "The Friendly Vapour",
+    "tags": {
+      "addr:unit": "37",
+      "building": "retail",
+      "name": "The Friendly Vapour",
+      "opening_hours": "Mo-Su 09:00-24:00",
+      "shop": "e-cigarette"
+    },
+    "snapped": {
+      "iy": 292,
+      "ix": 712
+    }
+  },
+  {
+    "type": "restaurant",
+    "iy": 300,
+    "ix": 945,
+    "lon": -80.5344307,
+    "lat": 43.473,
+    "name": "bb.q VILLAGE",
+    "tags": {
+      "addr:city": "Waterloo",
+      "addr:housenumber": "140",
+      "addr:postcode": "N2L 6J3",
+      "addr:province": "Ontario",
+      "addr:street": "University Avenue West",
+      "addr:unit": "A1",
+      "amenity": "restaurant",
+      "building": "retail",
+      "cuisine": "korean",
+      "name": "bb.q VILLAGE",
+      "opening_hours": "Mo-Su 11:00-23:00",
+      "phone": "+15197465759",
+      "website": "https://bbqchickenca.com/"
+    },
+    "snapped": {
+      "iy": 296,
+      "ix": 941
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 634,
+    "ix": 1162,
+    "lon": -80.53151,
+    "lat": 43.4762637,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 633,
+      "ix": 1161
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 668,
+    "ix": 1183,
+    "lon": -80.5312318,
+    "lat": 43.4765955,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 667,
+      "ix": 1182
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 678,
+    "ix": 1150,
+    "lon": -80.5316711,
+    "lat": 43.4766962,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 677,
+      "ix": 1151
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 683,
+    "ix": 1130,
+    "lon": -80.5319425,
+    "lat": 43.4767434,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "2",
+      "capacity:disabled": "1",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 674,
+      "ix": 1121
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 216,
+    "ix": 955,
+    "lon": -80.5342993,
+    "lat": 43.4721738,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 202,
+      "ix": 969
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 429,
+    "ix": 1153,
+    "lon": -80.5316338,
+    "lat": 43.4742563,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "surface",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 1221,
+    "ix": 92,
+    "lon": -80.5459198,
+    "lat": 43.4820023,
+    "name": "Research and Technology Station",
+    "tags": {
+      "bench": "yes",
+      "bin": "yes",
+      "highway": "platform",
+      "lit": "no",
+      "name": "Research and Technology Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3866",
+      "route_ref": "9;301R",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 1218,
+      "ix": 92
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 661,
+    "ix": 550,
+    "lon": -80.539758,
+    "lat": 43.4765258,
+    "name": "Phillip / Columbia",
+    "tags": {
+      "bench": "yes",
+      "highway": "platform",
+      "name": "Phillip / Columbia",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3889",
+      "route_ref": "9;31;201",
+      "shelter": "yes"
+    },
+    "snapped": {
+      "iy": 661,
+      "ix": 548
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 543,
+    "ix": 218,
+    "lon": -80.5442234,
+    "lat": 43.4753749,
+    "name": "Columbia / U.W. - Optometry",
+    "tags": {
+      "highway": "platform",
+      "name": "Columbia / U.W. - Optometry",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2520",
+      "route_ref": "9",
+      "shelter": "no"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 1218,
+    "ix": 81,
+    "lon": -80.5460719,
+    "lat": 43.481972,
+    "name": "Research and Technology Station",
+    "tags": {
+      "bench": "yes",
+      "bin": "no",
+      "highway": "platform",
+      "lit": "yes",
+      "name": "Research and Technology Station",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "3869",
+      "route_ref": "9;301R",
+      "shelter": "yes",
+      "tactile_paving": "no"
+    },
+    "snapped": {
+      "iy": 1215,
+      "ix": 84
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 468,
+    "ix": 17,
+    "lon": -80.5469382,
+    "lat": 43.4746419,
+    "name": "Columbia / University of Waterloo",
+    "tags": {
+      "highway": "platform",
+      "name": "Columbia / University of Waterloo",
+      "network": "Grand River Transit",
+      "network:short": "GRT",
+      "network:wikidata": "Q3459117",
+      "network:wikipedia": "en:Grand River Transit",
+      "operator": "Grand River Transit",
+      "operator:short": "GRT",
+      "operator:wikidata": "Q3459117",
+      "operator:wikipedia": "en:Grand River Transit",
+      "public_transport": "platform",
+      "ref": "2531",
+      "route_ref": "201;13;31"
+    },
+    "snapped": {
+      "iy": 468,
+      "ix": 17
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 467,
+    "ix": 1145,
+    "lon": -80.5317313,
+    "lat": 43.4746311,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "orientation": "perpendicular",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 503,
+    "ix": 1126,
+    "lon": -80.5319941,
+    "lat": 43.4749774,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "orientation": "perpendicular",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 539,
+    "ix": 1106,
+    "lon": -80.5322566,
+    "lat": 43.4753284,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "orientation": "perpendicular",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": null
+  },
+  {
+    "type": "transit",
+    "iy": 592,
+    "ix": 1090,
+    "lon": -80.5324845,
+    "lat": 43.4758474,
+    "name": null,
+    "tags": {
+      "access": "customers",
+      "amenity": "parking",
+      "orientation": "perpendicular",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 593,
+      "ix": 1088
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 852,
+    "ix": 1048,
+    "lon": -80.5330379,
+    "lat": 43.4783968,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "25",
+      "capacity:disabled": "1",
+      "lit": "yes",
+      "parking": "surface",
+      "supervised": "yes",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 861,
+      "ix": 1037
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 623,
+    "ix": 1183,
+    "lon": -80.5312258,
+    "lat": 43.4761494,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 623,
+      "ix": 1183
+    }
+  },
+  {
+    "type": "transit",
+    "iy": 696,
+    "ix": 1121,
+    "lon": -80.5320634,
+    "lat": 43.4768651,
+    "name": null,
+    "tags": {
+      "access": "private",
+      "amenity": "parking",
+      "capacity": "2",
+      "parking": "street_side",
+      "surface": "asphalt"
+    },
+    "snapped": {
+      "iy": 696,
+      "ix": 1121
     }
   }
 ]

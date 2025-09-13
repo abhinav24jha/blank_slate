@@ -1,0 +1,3663 @@
+[
+  {
+    "text": "Strauss Lake",
+    "iy": 1248,
+    "ix": 99,
+    "source": "feature",
+    "class": "water"
+  },
+  {
+    "text": "Lot B",
+    "iy": 964,
+    "ix": 499,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot R",
+    "iy": 925,
+    "ix": 28,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot N",
+    "iy": 841,
+    "ix": 193,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot L",
+    "iy": 897,
+    "ix": 223,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot OV",
+    "iy": 715,
+    "ix": 242,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot X",
+    "iy": 557,
+    "ix": 128,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot O",
+    "iy": 667,
+    "ix": 216,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot X",
+    "iy": 640,
+    "ix": 32,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot M",
+    "iy": 1008,
+    "ix": 27,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot W",
+    "iy": 839,
+    "ix": 6,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot 18 - Gold Permit",
+    "iy": 801,
+    "ix": 1222,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "9 Gold or White Permit Parking",
+    "iy": 1310,
+    "ix": 1152,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Lot B",
+    "iy": 1015,
+    "ix": 672,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "University Club",
+    "iy": 1048,
+    "ix": 0,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Saint Michael's Catholic Church parking",
+    "iy": 815,
+    "ix": 1199,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Seagram Parking Lot: Section D",
+    "iy": 1330,
+    "ix": 1057,
+    "source": "feature",
+    "class": "parking"
+  },
+  {
+    "text": "Campus Court",
+    "iy": 1046,
+    "ix": 853,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "University Shops Plaza",
+    "iy": 1115,
+    "ix": 680,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "Waterloo Technology Campus",
+    "iy": 81,
+    "ix": 814,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "Factory Square",
+    "iy": 149,
+    "ix": 369,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "Charlie & Son Auto Service",
+    "iy": 625,
+    "ix": 608,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "The Hub",
+    "iy": 457,
+    "ix": 746,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "David Johnston Research and Technology Park",
+    "iy": 274,
+    "ix": 78,
+    "source": "feature",
+    "class": "plaza"
+  },
+  {
+    "text": "Best Value Optical",
+    "iy": 1119,
+    "ix": 773,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Popeye's Supplements",
+    "iy": 1116,
+    "ix": 779,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Rooster's Fried Chicken",
+    "iy": 1130,
+    "ix": 747,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Aunty's Kitchen",
+    "iy": 1111,
+    "ix": 736,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Yu Xiao Shan",
+    "iy": 1088,
+    "ix": 744,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Northern Chinese Restaurant",
+    "iy": 1080,
+    "ix": 740,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Kismet",
+    "iy": 1073,
+    "ix": 737,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Molly Bloom's Irish Pub",
+    "iy": 1032,
+    "ix": 730,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Morals Village",
+    "iy": 1086,
+    "ix": 728,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "d spot dessert cafe",
+    "iy": 1087,
+    "ix": 718,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Akkila Dental Clinic",
+    "iy": 1089,
+    "ix": 713,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Home Garden",
+    "iy": 1092,
+    "ix": 707,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Yummy Chongqin",
+    "iy": 1095,
+    "ix": 702,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Nuri Village",
+    "iy": 1097,
+    "ix": 697,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Subway",
+    "iy": 1100,
+    "ix": 691,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Shinwa Asian Cuisine",
+    "iy": 1105,
+    "ix": 681,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Campus Pizza",
+    "iy": 1109,
+    "ix": 673,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Chungchun",
+    "iy": 1112,
+    "ix": 668,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Fresh Burrito",
+    "iy": 1056,
+    "ix": 683,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Super Chicken",
+    "iy": 1071,
+    "ix": 659,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Phoenix Cannabis",
+    "iy": 1065,
+    "ix": 667,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Waterloo Star",
+    "iy": 1049,
+    "ix": 696,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Slap Burger",
+    "iy": 1053,
+    "ix": 688,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Yunshang Rice Noodle",
+    "iy": 1045,
+    "ix": 703,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Baba Chicken Grill",
+    "iy": 1062,
+    "ix": 673,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "University Convenience",
+    "iy": 1059,
+    "ix": 678,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Fantastic Wok!",
+    "iy": 1037,
+    "ix": 716,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Physical Activities Complex",
+    "iy": 1101,
+    "ix": 77,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Engineering 2",
+    "iy": 1244,
+    "ix": 511,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Engineering 3",
+    "iy": 1172,
+    "ix": 475,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "J. R. Coutts Engineering Lecture Hall",
+    "iy": 1310,
+    "ix": 478,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Health Services",
+    "iy": 1290,
+    "ix": 79,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "University Club",
+    "iy": 1095,
+    "ix": 0,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Ira G. Needles Hall",
+    "iy": 1322,
+    "ix": 247,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Student Life Centre",
+    "iy": 1144,
+    "ix": 138,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Biology 2",
+    "iy": 1259,
+    "ix": 255,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Earth Sciences & Chemistry",
+    "iy": 1203,
+    "ix": 326,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mathematics & Computer",
+    "iy": 1127,
+    "ix": 242,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Physics",
+    "iy": 1258,
+    "ix": 413,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Biology 1",
+    "iy": 1261,
+    "ix": 308,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Chemistry 2",
+    "iy": 1127,
+    "ix": 312,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Carl A. Pollock Hall",
+    "iy": 1241,
+    "ix": 580,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "School of Optometry & Vision Science",
+    "iy": 744,
+    "ix": 116,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Central Services Building",
+    "iy": 954,
+    "ix": 255,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Commisary",
+    "iy": 915,
+    "ix": 315,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "B.C. Matthews Hall",
+    "iy": 966,
+    "ix": 123,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "East Campus Hall",
+    "iy": 959,
+    "ix": 629,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "A3",
+    "iy": 813,
+    "ix": 670,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "A1",
+    "iy": 836,
+    "ix": 715,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Saint Michael's Catholic Church",
+    "iy": 856,
+    "ix": 1228,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WIW",
+    "iy": 593,
+    "ix": 473,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "East Campus 1",
+    "iy": 709,
+    "ix": 509,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "East Campus 3",
+    "iy": 765,
+    "ix": 373,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "East Campus 2",
+    "iy": 873,
+    "ix": 431,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Lakes Software",
+    "iy": 612,
+    "ix": 367,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Bauer Warehouse",
+    "iy": 3,
+    "ix": 110,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "East Campus 4",
+    "iy": 844,
+    "ix": 547,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Eby Hall",
+    "iy": 1280,
+    "ix": 863,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Engineering 5",
+    "iy": 1046,
+    "ix": 529,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "East Campus 5",
+    "iy": 778,
+    "ix": 485,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WCRI Hammar",
+    "iy": 1131,
+    "ix": 892,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Ford",
+    "iy": 448,
+    "ix": 270,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "FleetComplete",
+    "iy": 660,
+    "ix": 320,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Valley Blades",
+    "iy": 307,
+    "ix": 272,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Prica Global Enterprises",
+    "iy": 400,
+    "ix": 524,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Meetz' Small Engines",
+    "iy": 23,
+    "ix": 619,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Sandvine Incorporated",
+    "iy": 139,
+    "ix": 796,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WCRI - Kershaw",
+    "iy": 876,
+    "ix": 731,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WCRI-Clayfield",
+    "iy": 858,
+    "ix": 800,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WCRI-Carver",
+    "iy": 902,
+    "ix": 746,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Bell Canada CO",
+    "iy": 293,
+    "ix": 744,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Lyle S. Hallman Institute for Health Promotion",
+    "iy": 1018,
+    "ix": 82,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "UW Place Grand Commons",
+    "iy": 1268,
+    "ix": 891,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Beck Hall",
+    "iy": 1264,
+    "ix": 924,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Wilmot Court",
+    "iy": 1234,
+    "ix": 783,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Wellesley Court",
+    "iy": 1184,
+    "ix": 856,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Waterloo Court",
+    "iy": 1317,
+    "ix": 909,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Woolwich Court",
+    "iy": 1275,
+    "ix": 1015,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "St. David Catholic Secondary School",
+    "iy": 9,
+    "ix": 1249,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "mochi mochi",
+    "iy": 1047,
+    "ix": 913,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Douglas Wright Engineering Building",
+    "iy": 1315,
+    "ix": 588,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "KW Granite Club",
+    "iy": 1320,
+    "ix": 1102,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Energy Research Centre",
+    "iy": 967,
+    "ix": 206,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Engineering 6",
+    "iy": 1033,
+    "ix": 629,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "innoTECH Building",
+    "iy": 520,
+    "ix": 2,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "RIM 21 (Columbia Place)",
+    "iy": 557,
+    "ix": 607,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Columbia Crossing",
+    "iy": 441,
+    "ix": 847,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mike & Ophelia Lazaridis Quantum Nano Centre",
+    "iy": 1213,
+    "ix": 225,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Break",
+    "iy": 1160,
+    "ix": 287,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Centre for Environmental and Information Technology",
+    "iy": 1184,
+    "ix": 378,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Wilfrid Laurier Universty - Northdale Campus",
+    "iy": 499,
+    "ix": 1127,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Waterloo Collegiate Institute",
+    "iy": 419,
+    "ix": 1247,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Waterloo Tennis Club",
+    "iy": 1327,
+    "ix": 1162,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "V.I.P Student Housing",
+    "iy": 993,
+    "ix": 1011,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Chabad Lubavitch of the Waterloo Region",
+    "iy": 839,
+    "ix": 1053,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Wilfrid Laurier University",
+    "iy": 1088,
+    "ix": 1233,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Lazaridis Hall",
+    "iy": 818,
+    "ix": 1302,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Solarium",
+    "iy": 931,
+    "ix": 1330,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "General Services Complex",
+    "iy": 975,
+    "ix": 317,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Bright Starts Co-operative Early Learning Centre",
+    "iy": 617,
+    "ix": 166,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Science Teaching Complex",
+    "iy": 1282,
+    "ix": 277,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Applied Health Sciences Expansion Building",
+    "iy": 978,
+    "ix": 69,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Engineering 7",
+    "iy": 1037,
+    "ix": 565,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Claudette Millar Hall",
+    "iy": 1307,
+    "ix": 839,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "The Delton Glebe Counselling Centre",
+    "iy": 1130,
+    "ix": 1256,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Blair House",
+    "iy": 965,
+    "ix": 750,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Northdale Greenhouse",
+    "iy": 453,
+    "ix": 1067,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Shawerma Plus",
+    "iy": 1118,
+    "ix": 741,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Sage 5",
+    "iy": 777,
+    "ix": 863,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Icon",
+    "iy": 707,
+    "ix": 624,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mel's Diner",
+    "iy": 1035,
+    "ix": 858,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Onnuri",
+    "iy": 1031,
+    "ix": 866,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "momo",
+    "iy": 1028,
+    "ix": 873,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Pizza Nova",
+    "iy": 1097,
+    "ix": 818,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Accommod8u",
+    "iy": 1093,
+    "ix": 825,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mr. Yin",
+    "iy": 1088,
+    "ix": 831,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "The Bingsu Cafe",
+    "iy": 1084,
+    "ix": 837,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Campus Convenience",
+    "iy": 1083,
+    "ix": 841,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Burger King",
+    "iy": 1078,
+    "ix": 851,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Kabob Shack",
+    "iy": 1080,
+    "ix": 821,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Gol's Lanzhou Noodle",
+    "iy": 1063,
+    "ix": 818,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mizu Restaurant",
+    "iy": 1058,
+    "ix": 810,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Asakusa",
+    "iy": 1053,
+    "ix": 819,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "iPho",
+    "iy": 1068,
+    "ix": 821,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Live Switchboard",
+    "iy": 1074,
+    "ix": 830,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Waterloo Central Supermarket",
+    "iy": 1029,
+    "ix": 894,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Linden Square",
+    "iy": 1080,
+    "ix": 982,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Sage 6",
+    "iy": 808,
+    "ix": 1145,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Ivytowns",
+    "iy": 787,
+    "ix": 1033,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Arts Building - A Wing",
+    "iy": 959,
+    "ix": 1255,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Arts Building - C Wing",
+    "iy": 959,
+    "ix": 1287,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Arts Building - E Wing",
+    "iy": 947,
+    "ix": 1320,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Classen House",
+    "iy": 1191,
+    "ix": 1239,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Lucinda House",
+    "iy": 1201,
+    "ix": 1311,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WCRI Fenwick",
+    "iy": 781,
+    "ix": 734,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Rez One Fergus House",
+    "iy": 932,
+    "ix": 811,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "evolv1",
+    "iy": 229,
+    "ix": 44,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Autonomous Vehicle Research and Intelligence Lab",
+    "iy": 919,
+    "ix": 556,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "A2",
+    "iy": 832,
+    "ix": 693,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "A4",
+    "iy": 792,
+    "ix": 675,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "U-Haul Neighborhood Dealer",
+    "iy": 620,
+    "ix": 613,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Meet Fresh",
+    "iy": 1088,
+    "ix": 813,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "R&T Park Interlocking",
+    "iy": 166,
+    "ix": 135,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Univ of Waterloo Interlocking",
+    "iy": 1014,
+    "ix": 436,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Society 145",
+    "iy": 648,
+    "ix": 656,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Elora House",
+    "iy": 1013,
+    "ix": 776,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Yang\u2019s Braised Chicken Rice",
+    "iy": 1042,
+    "ix": 708,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "The Friendly Vapour",
+    "iy": 1040,
+    "ix": 711,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "bb.q VILLAGE",
+    "iy": 1032,
+    "ix": 945,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "UniClaw",
+    "iy": 1040,
+    "ix": 929,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mathematics 3",
+    "iy": 1013,
+    "ix": 229,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Tim Hortons",
+    "iy": 1208,
+    "ix": 146,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Chatime",
+    "iy": 1046,
+    "ix": 311,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Flock Stop",
+    "iy": 1203,
+    "ix": 129,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Subway",
+    "iy": 1124,
+    "ix": 146,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Brubakers",
+    "iy": 1134,
+    "ix": 133,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mambella's Italian Kitchen",
+    "iy": 645,
+    "ix": 433,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Tim Hortons",
+    "iy": 637,
+    "ix": 584,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mader's Massage Therapy Clinic",
+    "iy": 238,
+    "ix": 810,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Math CnD",
+    "iy": 1145,
+    "ix": 267,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Wasabi",
+    "iy": 1162,
+    "ix": 165,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Davis Centre Library",
+    "iy": 1091,
+    "ix": 383,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Artistic Landscaping",
+    "iy": 38,
+    "ix": 698,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Northdale Auto Body Ontario",
+    "iy": 2,
+    "ix": 700,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Student Health Pharmacy",
+    "iy": 1139,
+    "ix": 137,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "CIBC",
+    "iy": 1180,
+    "ix": 117,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Turnkey Desk",
+    "iy": 1188,
+    "ix": 118,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Engineering Coffee & Doughnut Shop",
+    "iy": 1272,
+    "ix": 603,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Computing Help & Information Place",
+    "iy": 1099,
+    "ix": 232,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Science C&D",
+    "iy": 1235,
+    "ix": 306,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "WStore Essentials",
+    "iy": 1111,
+    "ix": 220,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "W Store Essentials - Student Life Centre",
+    "iy": 1148,
+    "ix": 135,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Tim Hortons",
+    "iy": 1068,
+    "ix": 363,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "YouPackWeStore",
+    "iy": 541,
+    "ix": 529,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "DC BYTES",
+    "iy": 1049,
+    "ix": 302,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mat's Auto",
+    "iy": 176,
+    "ix": 703,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "CoCo Fresh Tea & Juice",
+    "iy": 1086,
+    "ix": 977,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "CEIT Caf\u00e9",
+    "iy": 1191,
+    "ix": 373,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Eye Opener Caf\u00e9",
+    "iy": 780,
+    "ix": 118,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "FRSH",
+    "iy": 961,
+    "ix": 144,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Starbucks",
+    "iy": 990,
+    "ix": 79,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Starbucks",
+    "iy": 1296,
+    "ix": 290,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Ken Sushi",
+    "iy": 975,
+    "ix": 744,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "The UPS Store",
+    "iy": 966,
+    "ix": 739,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Booster Juice",
+    "iy": 1305,
+    "ix": 851,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "The Market At UWP",
+    "iy": 1297,
+    "ix": 839,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Foodie Fruitie",
+    "iy": 1076,
+    "ix": 977,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Chinese Lamian",
+    "iy": 1076,
+    "ix": 971,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Andrew Nuri Hair Studio",
+    "iy": 1086,
+    "ix": 983,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Charminar House",
+    "iy": 747,
+    "ix": 856,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Student's Smart Shop",
+    "iy": 750,
+    "ix": 850,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Lester Medical And Educational Centre",
+    "iy": 760,
+    "ix": 842,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Top Chicken",
+    "iy": 787,
+    "ix": 855,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Now Tea",
+    "iy": 782,
+    "ix": 852,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "LooBapBap",
+    "iy": 792,
+    "ix": 858,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Petalk",
+    "iy": 797,
+    "ix": 860,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Circle Food",
+    "iy": 754,
+    "ix": 844,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Kuro",
+    "iy": 930,
+    "ix": 1158,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Toma\u2019s Pizza",
+    "iy": 840,
+    "ix": 1161,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Oka Sushi",
+    "iy": 849,
+    "ix": 1166,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Wacky Tabacky",
+    "iy": 687,
+    "ix": 1288,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Fiddleheads Smoothie Bar",
+    "iy": 693,
+    "ix": 1275,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Sticks & Scones",
+    "iy": 696,
+    "ix": 1272,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Bogda",
+    "iy": 691,
+    "ix": 1281,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Bao Sandwich Bar",
+    "iy": 673,
+    "ix": 1274,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Bike Centre",
+    "iy": 1197,
+    "ix": 112,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Exclamation",
+    "iy": 603,
+    "ix": 1207,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "E7 Coffee & Doughnut Shop",
+    "iy": 1067,
+    "ix": 564,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Chef On Call",
+    "iy": 444,
+    "ix": 738,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Kung Fu Mart",
+    "iy": 463,
+    "ix": 698,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "ZenQ",
+    "iy": 505,
+    "ix": 725,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Ridgidware",
+    "iy": 1061,
+    "ix": 578,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Hazukido",
+    "iy": 1115,
+    "ix": 595,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Turnkey@DC",
+    "iy": 1023,
+    "ix": 361,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Fashion Salon",
+    "iy": 691,
+    "ix": 810,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Rong Natural Food Store",
+    "iy": 713,
+    "ix": 822,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Together Boba",
+    "iy": 886,
+    "ix": 1128,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Live Switchboard",
+    "iy": 1072,
+    "ix": 826,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Popular Pizza",
+    "iy": 731,
+    "ix": 618,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "India Food and Grocery",
+    "iy": 615,
+    "ix": 1206,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Jugo Juice",
+    "iy": 1093,
+    "ix": 135,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Teriyaki Experience",
+    "iy": 1119,
+    "ix": 145,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Smokehouse",
+    "iy": 1115,
+    "ix": 143,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Quesada",
+    "iy": 1126,
+    "ix": 142,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Shawarma Hub",
+    "iy": 1130,
+    "ix": 138,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Indian Sweet Master",
+    "iy": 1179,
+    "ix": 651,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Hakka Nation",
+    "iy": 1184,
+    "ix": 657,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Pho Ahn Vu Waterloo",
+    "iy": 1124,
+    "ix": 588,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Mengami",
+    "iy": 1161,
+    "ix": 630,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Izna Poke Plus",
+    "iy": 1168,
+    "ix": 637,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Starbucks",
+    "iy": 596,
+    "ix": 637,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Tahini\u2019s",
+    "iy": 1030,
+    "ix": 774,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Hi Yogurt",
+    "iy": 1022,
+    "ix": 771,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Myung-GA Korean Restaurant",
+    "iy": 958,
+    "ix": 734,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Perfect Meat Bowl",
+    "iy": 1094,
+    "ix": 983,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Yang Yum",
+    "iy": 1085,
+    "ix": 989,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Hey Chefz",
+    "iy": 1081,
+    "ix": 974,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "City Style Barber Shop",
+    "iy": 847,
+    "ix": 1165,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Waterloo Cell Phones & Electronics",
+    "iy": 844,
+    "ix": 1164,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Hair Plus",
+    "iy": 502,
+    "ix": 922,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Cluck Clucks",
+    "iy": 1115,
+    "ix": 731,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "City Style Salon & Barber Shop",
+    "iy": 698,
+    "ix": 607,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "TSUJIRI Waterloo",
+    "iy": 720,
+    "ix": 613,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Ye House",
+    "iy": 1087,
+    "ix": 813,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Gong Cha",
+    "iy": 739,
+    "ix": 623,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Premier Optical",
+    "iy": 745,
+    "ix": 626,
+    "source": "feature",
+    "class": "building"
+  },
+  {
+    "text": "Petro-Canada",
+    "iy": 705,
+    "ix": 571,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Shell",
+    "iy": 744,
+    "ix": 558,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Tim Hortons",
+    "iy": 122,
+    "ix": 147,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Chatime",
+    "iy": 269,
+    "ix": 294,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Flock Stop",
+    "iy": 127,
+    "ix": 126,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Subway",
+    "iy": 205,
+    "ix": 145,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Brubakers",
+    "iy": 196,
+    "ix": 131,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Mambella's Italian Kitchen",
+    "iy": 686,
+    "ix": 436,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Tim Hortons",
+    "iy": 692,
+    "ix": 581,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Mader's Massage Therapy Clinic",
+    "iy": 1092,
+    "ix": 808,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Dr. John Lu",
+    "iy": 1099,
+    "ix": 800,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Math CnD",
+    "iy": 179,
+    "ix": 276,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Wasabi",
+    "iy": 168,
+    "ix": 162,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Davis Centre Library",
+    "iy": 242,
+    "ix": 384,
+    "source": "poi",
+    "type": "education"
+  },
+  {
+    "text": "University of Waterloo Campus Police Station",
+    "iy": 438,
+    "ix": 330,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Artistic Landscaping",
+    "iy": 1282,
+    "ix": 685,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Northdale Auto Body Ontario",
+    "iy": 1332,
+    "ix": 701,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Student Health Pharmacy",
+    "iy": 191,
+    "ix": 134,
+    "source": "poi",
+    "type": "pharmacy"
+  },
+  {
+    "text": "CIBC",
+    "iy": 150,
+    "ix": 114,
+    "source": "poi",
+    "type": "retail"
+  },
+  {
+    "text": "Turnkey Desk",
+    "iy": 142,
+    "ix": 115,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "University of Waterloo",
+    "iy": 349,
+    "ix": 433,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Columbia / Albert",
+    "iy": 861,
+    "ix": 876,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / Albert",
+    "iy": 893,
+    "ix": 894,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / Holly",
+    "iy": 1094,
+    "ix": 1298,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Grand River CarShare",
+    "iy": 827,
+    "ix": 147,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "University of Waterloo Terminal",
+    "iy": 469,
+    "ix": 613,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Engineering 2 Fountain",
+    "iy": 47,
+    "ix": 529,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Engineering Coffee & Doughnut Shop",
+    "iy": 57,
+    "ix": 601,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Davis Centre",
+    "iy": 223,
+    "ix": 460,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "POETS",
+    "iy": 58,
+    "ix": 585,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Computing Help & Information Place",
+    "iy": 234,
+    "ix": 232,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Ring Rd. / U.W. - B.C. Matthews Hall",
+    "iy": 400,
+    "ix": 98,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Science C&D",
+    "iy": 98,
+    "ix": 306,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "WStore Essentials",
+    "iy": 222,
+    "ix": 221,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "W Store Essentials - Student Life Centre",
+    "iy": 182,
+    "ix": 132,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Tim Hortons",
+    "iy": 262,
+    "ix": 361,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "YouPackWeStore",
+    "iy": 789,
+    "ix": 526,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Columbia / University of Waterloo",
+    "iy": 455,
+    "ix": 41,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Hickory",
+    "iy": 794,
+    "ix": 1274,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Hickory",
+    "iy": 802,
+    "ix": 1251,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Waterloo Collegiate Institute",
+    "iy": 916,
+    "ix": 1201,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / Hazel",
+    "iy": 1019,
+    "ix": 1187,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Columbia",
+    "iy": 979,
+    "ix": 1169,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Columbia",
+    "iy": 1016,
+    "ix": 1139,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / Hazel",
+    "iy": 1022,
+    "ix": 1154,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Austin",
+    "iy": 1182,
+    "ix": 1053,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hazel / Austin",
+    "iy": 1178,
+    "ix": 1058,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "DC BYTES",
+    "iy": 271,
+    "ix": 289,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Columbia / Lester",
+    "iy": 790,
+    "ix": 728,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Mat's Auto",
+    "iy": 1153,
+    "ix": 700,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Columbia / Lester",
+    "iy": 811,
+    "ix": 727,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "CoCo Fresh Tea & Juice",
+    "iy": 237,
+    "ix": 988,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "University of Waterloo",
+    "iy": 338,
+    "ix": 437,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Research and Technology",
+    "iy": 1133,
+    "ix": 164,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Research and Technology",
+    "iy": 1143,
+    "ix": 170,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "CEIT Caf\u00e9",
+    "iy": 139,
+    "ix": 370,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Eye Opener Caf\u00e9",
+    "iy": 550,
+    "ix": 115,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "FRSH",
+    "iy": 369,
+    "ix": 141,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Starbucks",
+    "iy": 339,
+    "ix": 76,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Starbucks",
+    "iy": 37,
+    "ix": 291,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Ken Sushi",
+    "iy": 366,
+    "ix": 736,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "The UPS Store",
+    "iy": 366,
+    "ix": 736,
+    "source": "poi",
+    "type": "retail"
+  },
+  {
+    "text": "Booster Juice",
+    "iy": 21,
+    "ix": 853,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "The Market At UWP",
+    "iy": 21,
+    "ix": 853,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "TD Canada Trust",
+    "iy": 703,
+    "ix": 576,
+    "source": "poi",
+    "type": "retail"
+  },
+  {
+    "text": "Foodie Fruitie",
+    "iy": 242,
+    "ix": 991,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Chinese Lamian",
+    "iy": 271,
+    "ix": 988,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Andrew Nuri Hair Studio",
+    "iy": 240,
+    "ix": 990,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Charminar House",
+    "iy": 591,
+    "ix": 851,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Student's Smart Shop",
+    "iy": 583,
+    "ix": 847,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Lester Medical And Educational Centre",
+    "iy": 573,
+    "ix": 842,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Top Chicken",
+    "iy": 564,
+    "ix": 837,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Now Tea",
+    "iy": 564,
+    "ix": 837,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "LooBapBap",
+    "iy": 541,
+    "ix": 858,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Petalk",
+    "iy": 536,
+    "ix": 860,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Circle Food",
+    "iy": 576,
+    "ix": 841,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Kuro",
+    "iy": 403,
+    "ix": 1158,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Toma\u2019s Pizza",
+    "iy": 492,
+    "ix": 1162,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Oka Sushi",
+    "iy": 485,
+    "ix": 1166,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Wacky Tabacky",
+    "iy": 661,
+    "ix": 1282,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Fiddleheads Smoothie Bar",
+    "iy": 653,
+    "ix": 1259,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Sticks & Scones",
+    "iy": 651,
+    "ix": 1258,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Bogda",
+    "iy": 659,
+    "ix": 1262,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Bao Sandwich Bar",
+    "iy": 663,
+    "ix": 1278,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Bike Centre",
+    "iy": 132,
+    "ix": 109,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Exclamation",
+    "iy": 733,
+    "ix": 1211,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "E7 Coffee & Doughnut Shop",
+    "iy": 255,
+    "ix": 553,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Chef On Call",
+    "iy": 884,
+    "ix": 734,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Kung Fu Mart",
+    "iy": 867,
+    "ix": 695,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "ZenQ",
+    "iy": 824,
+    "ix": 729,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Ridgidware",
+    "iy": 281,
+    "ix": 588,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Hazukido",
+    "iy": 223,
+    "ix": 590,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Turnkey@DC",
+    "iy": 307,
+    "ix": 358,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "IT Service Desk",
+    "iy": 258,
+    "ix": 404,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Library Help",
+    "iy": 253,
+    "ix": 378,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Fashion Salon",
+    "iy": 657,
+    "ix": 810,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Rong Natural Food Store",
+    "iy": 619,
+    "ix": 823,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Together Boba",
+    "iy": 447,
+    "ix": 1128,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Live Switchboard",
+    "iy": 248,
+    "ix": 822,
+    "source": "poi",
+    "type": "retail"
+  },
+  {
+    "text": "Popular Pizza",
+    "iy": 599,
+    "ix": 615,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "India Food and Grocery",
+    "iy": 710,
+    "ix": 1200,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Jugo Juice",
+    "iy": 237,
+    "ix": 132,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Teriyaki Experience",
+    "iy": 212,
+    "ix": 142,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Smokehouse",
+    "iy": 215,
+    "ix": 140,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Quesada",
+    "iy": 203,
+    "ix": 141,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Shawarma Hub",
+    "iy": 200,
+    "ix": 137,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "University of Waterloo Station",
+    "iy": 429,
+    "ix": 516,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "University of Waterloo Station",
+    "iy": 388,
+    "ix": 428,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University of Waterloo Station",
+    "iy": 406,
+    "ix": 463,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University of Waterloo Station",
+    "iy": 408,
+    "ix": 500,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University of Waterloo Station",
+    "iy": 459,
+    "ix": 548,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University of Waterloo Station",
+    "iy": 452,
+    "ix": 572,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University of Waterloo Terminal",
+    "iy": 460,
+    "ix": 491,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "FLO",
+    "iy": 488,
+    "ix": 582,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Indian Sweet Master",
+    "iy": 152,
+    "ix": 655,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Hakka Nation",
+    "iy": 149,
+    "ix": 660,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Pho Ahn Vu Waterloo",
+    "iy": 211,
+    "ix": 584,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Mengami",
+    "iy": 169,
+    "ix": 627,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Izna Poke Plus",
+    "iy": 162,
+    "ix": 634,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "University of Waterloo",
+    "iy": 299,
+    "ix": 460,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Research and Technology",
+    "iy": 1216,
+    "ix": 151,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Starbucks",
+    "iy": 734,
+    "ix": 640,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Tahini\u2019s",
+    "iy": 290,
+    "ix": 786,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Hi Yogurt",
+    "iy": 294,
+    "ix": 788,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Myung-GA Korean Restaurant",
+    "iy": 372,
+    "ix": 732,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Perfect Meat Bowl",
+    "iy": 235,
+    "ix": 987,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "ATM Plus",
+    "iy": 239,
+    "ix": 989,
+    "source": "poi",
+    "type": "retail"
+  },
+  {
+    "text": "Yang Yum",
+    "iy": 244,
+    "ix": 992,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Hey Chefz",
+    "iy": 237,
+    "ix": 988,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "City Style Barber Shop",
+    "iy": 487,
+    "ix": 1165,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Waterloo Cell Phones & Electronics",
+    "iy": 489,
+    "ix": 1164,
+    "source": "poi",
+    "type": "retail"
+  },
+  {
+    "text": "Hair Plus",
+    "iy": 819,
+    "ix": 922,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Hooka House",
+    "iy": 206,
+    "ix": 742,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Cluck Clucks",
+    "iy": 217,
+    "ix": 734,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "City Style Salon & Barber Shop",
+    "iy": 632,
+    "ix": 604,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "TSUJIRI Waterloo",
+    "iy": 610,
+    "ix": 611,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Sk\u00e9n:nen Tsi N\u00f3n:we Tewaya\u2019tar\u00f3roks",
+    "iy": 263,
+    "ix": 148,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Ye House",
+    "iy": 239,
+    "ix": 820,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Gong Cha",
+    "iy": 591,
+    "ix": 626,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Premier Optical",
+    "iy": 584,
+    "ix": 623,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Phillip / Columbia",
+    "iy": 659,
+    "ix": 569,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Best Value Optical",
+    "iy": 215,
+    "ix": 771,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Popeye's Supplements",
+    "iy": 218,
+    "ix": 781,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Rooster's Fried Chicken",
+    "iy": 201,
+    "ix": 749,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Aunty's Kitchen",
+    "iy": 221,
+    "ix": 735,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Yu Xiao Shan",
+    "iy": 245,
+    "ix": 744,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Northern Chinese Restaurant",
+    "iy": 253,
+    "ix": 741,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Kismet",
+    "iy": 254,
+    "ix": 741,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Molly Bloom's Irish Pub",
+    "iy": 308,
+    "ix": 722,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Morals Village",
+    "iy": 240,
+    "ix": 734,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "d spot dessert cafe",
+    "iy": 239,
+    "ix": 712,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Akkila Dental Clinic",
+    "iy": 240,
+    "ix": 712,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Home Garden",
+    "iy": 237,
+    "ix": 711,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Yummy Chongqin",
+    "iy": 232,
+    "ix": 708,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Nuri Village",
+    "iy": 228,
+    "ix": 690,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Subway",
+    "iy": 229,
+    "ix": 688,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Shinwa Asian Cuisine",
+    "iy": 231,
+    "ix": 685,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Campus Pizza",
+    "iy": 232,
+    "ix": 683,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Chungchun",
+    "iy": 233,
+    "ix": 681,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Fresh Burrito",
+    "iy": 276,
+    "ix": 683,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Super Chicken",
+    "iy": 253,
+    "ix": 652,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Phoenix Cannabis",
+    "iy": 253,
+    "ix": 652,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Waterloo Star",
+    "iy": 285,
+    "ix": 707,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Slap Burger",
+    "iy": 285,
+    "ix": 707,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Yunshang Rice Noodle",
+    "iy": 285,
+    "ix": 707,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Baba Chicken Grill",
+    "iy": 251,
+    "ix": 654,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "University Convenience",
+    "iy": 274,
+    "ix": 679,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Fantastic Wok!",
+    "iy": 296,
+    "ix": 716,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Seoul Soul",
+    "iy": 249,
+    "ix": 597,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "iPotato",
+    "iy": 218,
+    "ix": 638,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Reni Chettinand",
+    "iy": 235,
+    "ix": 596,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Lazeez Shawarma",
+    "iy": 225,
+    "ix": 642,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Williams Fresh Cafe",
+    "iy": 255,
+    "ix": 644,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Sweet Dreams Teashop",
+    "iy": 191,
+    "ix": 596,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Waterloo Walk-in Clinic",
+    "iy": 185,
+    "ix": 601,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Pharmasave",
+    "iy": 181,
+    "ix": 609,
+    "source": "poi",
+    "type": "pharmacy"
+  },
+  {
+    "text": "Sowon",
+    "iy": 175,
+    "ix": 616,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Harvey's",
+    "iy": 169,
+    "ix": 621,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Farah's Food Mart",
+    "iy": 156,
+    "ix": 646,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Laurier Library",
+    "iy": 278,
+    "ix": 1287,
+    "source": "poi",
+    "type": "education"
+  },
+  {
+    "text": "Health Services",
+    "iy": 44,
+    "ix": 81,
+    "source": "poi",
+    "type": "health"
+  },
+  {
+    "text": "Saint Michael's Catholic Church",
+    "iy": 480,
+    "ix": 1228,
+    "source": "poi",
+    "type": "education"
+  },
+  {
+    "text": "Meetz' Small Engines",
+    "iy": 1317,
+    "ix": 627,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Lot B",
+    "iy": 368,
+    "ix": 499,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot R",
+    "iy": 399,
+    "ix": 8,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot N",
+    "iy": 490,
+    "ix": 191,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot L",
+    "iy": 434,
+    "ix": 224,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot OV",
+    "iy": 629,
+    "ix": 238,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot X",
+    "iy": 755,
+    "ix": 148,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot O",
+    "iy": 667,
+    "ix": 212,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot X",
+    "iy": 684,
+    "ix": 21,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot M",
+    "iy": 323,
+    "ix": 25,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "mochi mochi",
+    "iy": 284,
+    "ix": 915,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Break",
+    "iy": 173,
+    "ix": 287,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Wilfrid Laurier Universty - Northdale Campus",
+    "iy": 835,
+    "ix": 1126,
+    "source": "poi",
+    "type": "education"
+  },
+  {
+    "text": "Waterloo Collegiate Institute",
+    "iy": 947,
+    "ix": 1295,
+    "source": "poi",
+    "type": "education"
+  },
+  {
+    "text": "The Beckett School",
+    "iy": 199,
+    "ix": 1096,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "University Ave. / Phillip",
+    "iy": 223,
+    "ix": 862,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University Ave. / Phillip",
+    "iy": 205,
+    "ix": 839,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University Ave. / Hemlock",
+    "iy": 412,
+    "ix": 1245,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University Ave. / Hemlock",
+    "iy": 431,
+    "ix": 1238,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 18 - Gold Permit",
+    "iy": 530,
+    "ix": 1220,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "9 Gold or White Permit Parking",
+    "iy": 50,
+    "ix": 1183,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 12 - Gold Permit",
+    "iy": 311,
+    "ix": 1229,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hagey / University of Waterloo",
+    "iy": 513,
+    "ix": 52,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Hagey / U.W. - Columbia Ice Field",
+    "iy": 555,
+    "ix": 0,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / Phillip",
+    "iy": 702,
+    "ix": 511,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot B",
+    "iy": 317,
+    "ix": 673,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Bright Starts Co-operative Early Learning Centre",
+    "iy": 708,
+    "ix": 157,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Lot 12 - Gold Permit",
+    "iy": 281,
+    "ix": 1256,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "The Delton Glebe Counselling Centre",
+    "iy": 188,
+    "ix": 1242,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Saint Michael's Catholic Church parking",
+    "iy": 530,
+    "ix": 1210,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 33 - Gold Permit",
+    "iy": 567,
+    "ix": 1256,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 37 - White Permit",
+    "iy": 827,
+    "ix": 1118,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 37 - Gold Permit",
+    "iy": 828,
+    "ix": 1173,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 37",
+    "iy": 773,
+    "ix": 1193,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Lot 32 - Gold Permit",
+    "iy": 585,
+    "ix": 1296,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Shawerma Plus",
+    "iy": 214,
+    "ix": 742,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Platform 1",
+    "iy": 325,
+    "ix": 445,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Mel's Diner",
+    "iy": 297,
+    "ix": 859,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Onnuri",
+    "iy": 301,
+    "ix": 866,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "momo",
+    "iy": 305,
+    "ix": 874,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Pizza Nova",
+    "iy": 235,
+    "ix": 818,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Mr. Yin",
+    "iy": 243,
+    "ix": 829,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "The Bingsu Cafe",
+    "iy": 243,
+    "ix": 829,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Campus Convenience",
+    "iy": 243,
+    "ix": 829,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Burger King",
+    "iy": 235,
+    "ix": 869,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "Kabob Shack",
+    "iy": 248,
+    "ix": 822,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Gol's Lanzhou Noodle",
+    "iy": 274,
+    "ix": 814,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Mizu Restaurant",
+    "iy": 275,
+    "ix": 812,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Asakusa",
+    "iy": 276,
+    "ix": 816,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "iPho",
+    "iy": 274,
+    "ix": 813,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Live Switchboard",
+    "iy": 248,
+    "ix": 822,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "Waterloo Central Supermarket",
+    "iy": 294,
+    "ix": 903,
+    "source": "poi",
+    "type": "grocery"
+  },
+  {
+    "text": "Linden Square",
+    "iy": 242,
+    "ix": 991,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Kabob Hut",
+    "iy": 164,
+    "ix": 630,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "The Alley",
+    "iy": 160,
+    "ix": 638,
+    "source": "poi",
+    "type": "cafe"
+  },
+  {
+    "text": "9 Gold or White Permit Parking",
+    "iy": 97,
+    "ix": 1290,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Meet Fresh",
+    "iy": 238,
+    "ix": 820,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "University Ave. / Sunview",
+    "iy": 326,
+    "ix": 1035,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "University Ave. / Sunview",
+    "iy": 336,
+    "ix": 1084,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Platform 7",
+    "iy": 458,
+    "ix": 490,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Platform 2",
+    "iy": 326,
+    "ix": 446,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Ring Rd. / U.W. - Quantum Nano Centre",
+    "iy": 55,
+    "ix": 206,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / U.W. - Optometry",
+    "iy": 554,
+    "ix": 191,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Yang\u2019s Braised Chicken Rice",
+    "iy": 289,
+    "ix": 709,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "The Friendly Vapour",
+    "iy": 292,
+    "ix": 712,
+    "source": "poi",
+    "type": "other"
+  },
+  {
+    "text": "bb.q VILLAGE",
+    "iy": 296,
+    "ix": 941,
+    "source": "poi",
+    "type": "restaurant"
+  },
+  {
+    "text": "Research and Technology Station",
+    "iy": 1218,
+    "ix": 92,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Phillip / Columbia",
+    "iy": 661,
+    "ix": 548,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / U.W. - Optometry",
+    "iy": 543,
+    "ix": 218,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Research and Technology Station",
+    "iy": 1215,
+    "ix": 84,
+    "source": "poi",
+    "type": "transit"
+  },
+  {
+    "text": "Columbia / University of Waterloo",
+    "iy": 468,
+    "ix": 17,
+    "source": "poi",
+    "type": "transit"
+  }
+]

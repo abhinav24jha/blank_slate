@@ -1,0 +1,381 @@
+{
+  "tileSize": 16,
+  "variants": 3,
+  "classes": [
+    "void",
+    "building",
+    "sidewalk",
+    "footpath",
+    "parking",
+    "plaza",
+    "green",
+    "water",
+    "road",
+    "crossing"
+  ],
+  "class_to_base_index": {
+    "void": 0,
+    "building": 3,
+    "sidewalk": 6,
+    "footpath": 9,
+    "parking": 12,
+    "plaza": 15,
+    "green": 18,
+    "water": 21,
+    "road": 24,
+    "crossing": 27
+  },
+  "atlas": {
+    "image": "atlas.png",
+    "width": 48,
+    "height": 160,
+    "frames": [
+      {
+        "name": "void_v0",
+        "class": "void",
+        "class_id": 0,
+        "variant": 0,
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "tile_index": 0
+      },
+      {
+        "name": "void_v1",
+        "class": "void",
+        "class_id": 0,
+        "variant": 1,
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "tile_index": 1
+      },
+      {
+        "name": "void_v2",
+        "class": "void",
+        "class_id": 0,
+        "variant": 2,
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16,
+        "tile_index": 2
+      },
+      {
+        "name": "building_v0",
+        "class": "building",
+        "class_id": 1,
+        "variant": 0,
+        "x": 0,
+        "y": 16,
+        "w": 16,
+        "h": 16,
+        "tile_index": 3
+      },
+      {
+        "name": "building_v1",
+        "class": "building",
+        "class_id": 1,
+        "variant": 1,
+        "x": 16,
+        "y": 16,
+        "w": 16,
+        "h": 16,
+        "tile_index": 4
+      },
+      {
+        "name": "building_v2",
+        "class": "building",
+        "class_id": 1,
+        "variant": 2,
+        "x": 32,
+        "y": 16,
+        "w": 16,
+        "h": 16,
+        "tile_index": 5
+      },
+      {
+        "name": "sidewalk_v0",
+        "class": "sidewalk",
+        "class_id": 2,
+        "variant": 0,
+        "x": 0,
+        "y": 32,
+        "w": 16,
+        "h": 16,
+        "tile_index": 6
+      },
+      {
+        "name": "sidewalk_v1",
+        "class": "sidewalk",
+        "class_id": 2,
+        "variant": 1,
+        "x": 16,
+        "y": 32,
+        "w": 16,
+        "h": 16,
+        "tile_index": 7
+      },
+      {
+        "name": "sidewalk_v2",
+        "class": "sidewalk",
+        "class_id": 2,
+        "variant": 2,
+        "x": 32,
+        "y": 32,
+        "w": 16,
+        "h": 16,
+        "tile_index": 8
+      },
+      {
+        "name": "footpath_v0",
+        "class": "footpath",
+        "class_id": 3,
+        "variant": 0,
+        "x": 0,
+        "y": 48,
+        "w": 16,
+        "h": 16,
+        "tile_index": 9
+      },
+      {
+        "name": "footpath_v1",
+        "class": "footpath",
+        "class_id": 3,
+        "variant": 1,
+        "x": 16,
+        "y": 48,
+        "w": 16,
+        "h": 16,
+        "tile_index": 10
+      },
+      {
+        "name": "footpath_v2",
+        "class": "footpath",
+        "class_id": 3,
+        "variant": 2,
+        "x": 32,
+        "y": 48,
+        "w": 16,
+        "h": 16,
+        "tile_index": 11
+      },
+      {
+        "name": "parking_v0",
+        "class": "parking",
+        "class_id": 4,
+        "variant": 0,
+        "x": 0,
+        "y": 64,
+        "w": 16,
+        "h": 16,
+        "tile_index": 12
+      },
+      {
+        "name": "parking_v1",
+        "class": "parking",
+        "class_id": 4,
+        "variant": 1,
+        "x": 16,
+        "y": 64,
+        "w": 16,
+        "h": 16,
+        "tile_index": 13
+      },
+      {
+        "name": "parking_v2",
+        "class": "parking",
+        "class_id": 4,
+        "variant": 2,
+        "x": 32,
+        "y": 64,
+        "w": 16,
+        "h": 16,
+        "tile_index": 14
+      },
+      {
+        "name": "plaza_v0",
+        "class": "plaza",
+        "class_id": 5,
+        "variant": 0,
+        "x": 0,
+        "y": 80,
+        "w": 16,
+        "h": 16,
+        "tile_index": 15
+      },
+      {
+        "name": "plaza_v1",
+        "class": "plaza",
+        "class_id": 5,
+        "variant": 1,
+        "x": 16,
+        "y": 80,
+        "w": 16,
+        "h": 16,
+        "tile_index": 16
+      },
+      {
+        "name": "plaza_v2",
+        "class": "plaza",
+        "class_id": 5,
+        "variant": 2,
+        "x": 32,
+        "y": 80,
+        "w": 16,
+        "h": 16,
+        "tile_index": 17
+      },
+      {
+        "name": "green_v0",
+        "class": "green",
+        "class_id": 6,
+        "variant": 0,
+        "x": 0,
+        "y": 96,
+        "w": 16,
+        "h": 16,
+        "tile_index": 18
+      },
+      {
+        "name": "green_v1",
+        "class": "green",
+        "class_id": 6,
+        "variant": 1,
+        "x": 16,
+        "y": 96,
+        "w": 16,
+        "h": 16,
+        "tile_index": 19
+      },
+      {
+        "name": "green_v2",
+        "class": "green",
+        "class_id": 6,
+        "variant": 2,
+        "x": 32,
+        "y": 96,
+        "w": 16,
+        "h": 16,
+        "tile_index": 20
+      },
+      {
+        "name": "water_v0",
+        "class": "water",
+        "class_id": 7,
+        "variant": 0,
+        "x": 0,
+        "y": 112,
+        "w": 16,
+        "h": 16,
+        "tile_index": 21
+      },
+      {
+        "name": "water_v1",
+        "class": "water",
+        "class_id": 7,
+        "variant": 1,
+        "x": 16,
+        "y": 112,
+        "w": 16,
+        "h": 16,
+        "tile_index": 22
+      },
+      {
+        "name": "water_v2",
+        "class": "water",
+        "class_id": 7,
+        "variant": 2,
+        "x": 32,
+        "y": 112,
+        "w": 16,
+        "h": 16,
+        "tile_index": 23
+      },
+      {
+        "name": "road_v0",
+        "class": "road",
+        "class_id": 8,
+        "variant": 0,
+        "x": 0,
+        "y": 128,
+        "w": 16,
+        "h": 16,
+        "tile_index": 24
+      },
+      {
+        "name": "road_v1",
+        "class": "road",
+        "class_id": 8,
+        "variant": 1,
+        "x": 16,
+        "y": 128,
+        "w": 16,
+        "h": 16,
+        "tile_index": 25
+      },
+      {
+        "name": "road_v2",
+        "class": "road",
+        "class_id": 8,
+        "variant": 2,
+        "x": 32,
+        "y": 128,
+        "w": 16,
+        "h": 16,
+        "tile_index": 26
+      },
+      {
+        "name": "crossing_v0",
+        "class": "crossing",
+        "class_id": 9,
+        "variant": 0,
+        "x": 0,
+        "y": 144,
+        "w": 16,
+        "h": 16,
+        "tile_index": 27
+      },
+      {
+        "name": "crossing_v1",
+        "class": "crossing",
+        "class_id": 9,
+        "variant": 1,
+        "x": 16,
+        "y": 144,
+        "w": 16,
+        "h": 16,
+        "tile_index": 28
+      },
+      {
+        "name": "crossing_v2",
+        "class": "crossing",
+        "class_id": 9,
+        "variant": 2,
+        "x": 32,
+        "y": 144,
+        "w": 16,
+        "h": 16,
+        "tile_index": 29
+      }
+    ]
+  },
+  "grid": {
+    "binary": "tile_grid.bin",
+    "format": "LE_uint16_rowmajor_TGRD_v1",
+    "width": 1334,
+    "height": 1334
+  },
+  "physics": {
+    "walkable": "../navgraph.npz#walkable",
+    "cost": "../navgraph.npz#cost",
+    "origin": [
+      -8966470.25568412,
+      5383795.1624826705
+    ],
+    "cell_m": 1.5,
+    "pois": "../pois.json"
+  }
+}

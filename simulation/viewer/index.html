@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent Map Viewer</title>
+    <style>
+      html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #0e0f10; }
+      #app { width: 100%; height: 100%; }
+
+      /* Global UI */
+      .ui { position: absolute; pointer-events: none; inset: 0; }
+      .panel { pointer-events: auto; backdrop-filter: blur(4px); background: rgba(18,19,20,0.6); border: 1px solid rgba(255,255,255,0.08); color: #e6e7e8; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.35); }
+      .toolbar { position: absolute; top: 16px; left: 16px; display: flex; gap: 8px; align-items: center; padding: 8px; }
+      .toolbar .btn { width: 36px; height: 36px; display: grid; place-items: center; background: #1a1c1f; border: 1px solid rgba(255,255,255,0.08); color: #e6e7e8; border-radius: 8px; cursor: pointer; transition: background 120ms ease, transform 80ms ease; }
+      .toolbar .btn:hover { background: #22252a; }
+      .toolbar .btn:active { transform: translateY(1px); }
+      .toolbar .label { padding: 0 8px; opacity: 0.8; font-size: 12px; }
+
+      /* Search */
+      .search { position: relative; display: flex; align-items: center; }
+      #searchBox { width: 260px; height: 36px; box-sizing: border-box; padding: 0 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); background: #1a1c1f; color: #e6e7e8; outline: none; font-size: 13px; }
+      #searchBox::placeholder { color: #9aa3af; }
+      #searchResults { position: absolute; top: 40px; left: 0; width: 320px; max-height: 260px; overflow: auto; background: rgba(17,18,20,0.92); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; box-shadow: 0 10px 24px rgba(0,0,0,0.45); padding: 6px 6px; display: none; }
+      #searchResults .item { padding: 8px 10px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 13px; }
+      #searchResults .item:hover, #searchResults .item.active { background: #23262b; }
+      #searchResults .pill { font-size: 11px; padding: 2px 6px; border-radius: 999px; background: #2b2f36; color: #bfc6d1; }
+
+      .legend { position: absolute; top: 16px; right: 16px; padding: 0; width: 248px; overflow: hidden; }
+      .legend header { display:flex; align-items:center; justify-content:space-between; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .legend h3 { margin: 0; font-size: 13px; letter-spacing: 0.4px; opacity: 0.9; }
+      .legend .actions { display:flex; gap:8px; }
+      .legend .actions .mini { font-size:11px; padding:4px 6px; border-radius:6px; background:#1a1c1f; border:1px solid rgba(255,255,255,0.08); cursor:pointer; color:#cbd5e1; }
+      .legend .body { padding: 8px 10px; display:grid; grid-template-columns: 1fr; gap: 4px; max-height: 420px; overflow:auto; }
+      .legend .row { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: 8px; transition: background 120ms ease, transform 60ms ease; }
+      .legend .row:hover { background: #23262b; }
+      .legend .row:active { transform: translateY(1px); }
+      .swatch { width: 12px; height: 12px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.25); box-shadow: 0 0 0 2px rgba(0,0,0,0.15) inset; }
+      .legend label { display:flex; align-items:center; gap:8px; font-size: 13px; flex: 1; }
+      .legend input[type="checkbox"] { width: 16px; height: 16px; margin: 0; border-radius: 4px; background: #1a1c1f; border: 1px solid rgba(255,255,255,0.1); }
+      .legend .hint { font-size: 11px; opacity: 0.65; padding: 8px 12px 10px; border-top: 1px solid rgba(255,255,255,0.08); }
+
+      .hud { position: absolute; left: 16px; bottom: 16px; padding: 8px 10px; font-size: 12px; }
+      .hud code { color: #9ccaff; }
+
+      /* Minimap */
+      .minimap { position: absolute; right: 16px; bottom: 16px; padding: 8px; display: grid; gap: 8px; }
+      #minimapCanvas { width: 200px; height: 200px; image-rendering: crisp-edges; image-rendering: pixelated; background: #0b0c0d; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); }
+      .minimap .caption { text-align: center; font-size: 11px; opacity: 0.7; }
+
+      /* Scale bar */
+      .scalebar { position: absolute; left: 16px; bottom: 64px; padding: 6px 8px; display: inline-flex; align-items: center; gap: 8px; }
+      .scale-track { height: 6px; background: linear-gradient(90deg, #6b7280, #cbd5e1); border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.4); }
+      .scale-label { font-size: 12px; opacity: 0.85; }
+
+      .btn, label { user-select: none; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <div class="ui">
+      <div class="toolbar panel">
+        <div class="btn" id="btnZoomIn" title="Zoom in">+</div>
+        <div class="btn" id="btnZoomOut" title="Zoom out">−</div>
+        <div class="btn" id="btnCenter" title="Center on POI">◎</div>
+        <div class="btn" id="btnFit" title="Fit whole map">▢</div>
+        <div class="label">Zoom: <code id="hudZoom">—</code> | Grid: <code id="hudTiles">—</code></div>
+        <div class="search">
+          <input id="searchBox" type="text" placeholder="Search buildings, shops..." />
+          <div id="searchResults"></div>
+        </div>
+      </div>
+
+      <div class="legend panel">
+        <header>
+          <h3>Points of Interest</h3>
+          <div class="actions"><button id="fltAll" class="mini">All</button><button id="fltNone" class="mini">None</button></div>
+        </header>
+        <div class="body">
+          <div class="row"><span class="swatch" style="background:#22C55E"></span><label><input type="checkbox" id="fltGrocery" checked style="accent-color:#22C55E" /> Grocery</label></div>
+          <div class="row"><span class="swatch" style="background:#F472B6"></span><label><input type="checkbox" id="fltPharmacy" checked style="accent-color:#F472B6" /> Pharmacy</label></div>
+          <div class="row"><span class="swatch" style="background:#F59E0B"></span><label><input type="checkbox" id="fltCafe" checked style="accent-color:#F59E0B" /> Cafe</label></div>
+          <div class="row"><span class="swatch" style="background:#BB6BD9"></span><label><input type="checkbox" id="fltRestaurant" checked style="accent-color:#BB6BD9" /> Restaurant</label></div>
+          <div class="row"><span class="swatch" style="background:#0EA5E9"></span><label><input type="checkbox" id="fltTransit" checked style="accent-color:#0EA5E9" /> Transit</label></div>
+          <div class="row"><span class="swatch" style="background:#6366F1"></span><label><input type="checkbox" id="fltEducation" checked style="accent-color:#6366F1" /> Education</label></div>
+          <div class="row"><span class="swatch" style="background:#EF4444"></span><label><input type="checkbox" id="fltHealth" checked style="accent-color:#EF4444" /> Health</label></div>
+          <div class="row"><span class="swatch" style="background:#06B6D4"></span><label><input type="checkbox" id="fltRetail" checked style="accent-color:#06B6D4" /> Retail</label></div>
+          <div class="row"><span class="swatch" style="background:#94A3B8"></span><label><input type="checkbox" id="fltOther" checked style="accent-color:#94A3B8" /> Other</label></div>
+        </div>
+        <div class="hint">Toggle categories to dim markers rather than hide them.</div>
+      </div>
+
+      <div class="hud panel">
+        Wheel to zoom, drag to pan
+      </div>
+
+      <div class="minimap panel">
+        <canvas id="minimapCanvas" width="200" height="200"></canvas>
+        <div class="caption">Minimap</div>
+      </div>
+
+      <div class="scalebar panel">
+        <div id="scaleTrack" class="scale-track" style="width: 120px"></div>
+        <div id="scaleLabel" class="scale-label">100 m</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.4.0/dist/pixi.min.js"></script>
+    <script src="viewer.js"></script>
+  </body>
+</html>

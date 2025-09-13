@@ -51,6 +51,7 @@ PALETTE = {
 
 # ---------- Tag → class ----------
 def class_for(tags: Dict, geom_type: str) -> int:
+    # Keep semantics faithful to OSM: only explicit building tags become buildings
     if "building" in tags: return BUILDING
     if tags.get("highway") in ("footway","path","steps","pedestrian"):
         return SIDEWALK if tags.get("footway") == "sidewalk" else FOOTPATH
@@ -73,10 +74,12 @@ def fetch_osm(bbox: Tuple[float,float,float,float]) -> Dict:
       way["building"]({s},{w},{n},{e});
       way["highway"]({s},{w},{n},{e});
       way["amenity"]({s},{w},{n},{e});
+      way["shop"]({s},{w},{n},{e});
       way["landuse"]({s},{w},{n},{e});
       way["natural"]({s},{w},{n},{e});
       way["waterway"]({s},{w},{n},{e});
       node["amenity"]({s},{w},{n},{e});
+      node["shop"]({s},{w},{n},{e});
     );
     (._;>;);
     out body;
@@ -109,6 +112,8 @@ def _make_valid(geom):
 def osm_to_features(osm_json: Dict, transformer) -> List[OSMFeature]:
     nodes = {el["id"]:(el["lon"], el["lat"]) for el in osm_json.get("elements", []) if el["type"] == "node"}
     feats: List[OSMFeature] = []
+    
+    # Process ways first
     for el in osm_json.get("elements", []):
         if el.get("type") != "way":
             continue
@@ -124,10 +129,52 @@ def osm_to_features(osm_json: Dict, transformer) -> List[OSMFeature]:
             geom = {"type": "LineString", "coordinates": coords}
             shp = transform(transformer, shape(geom))
             feats.append(OSMFeature(el["id"], "LineString", shp, tags))
-    logging.info("[step2] normalized features: %d (polys=%d, lines=%d)",
+    
+    # Process nodes with shop/amenity tags - create building footprints for commercial POIs
+    poi_nodes = [el for el in osm_json.get("elements", []) 
+                 if el.get("type") == "node" and 
+                 (el.get("tags", {}).get("shop") or el.get("tags", {}).get("amenity"))]
+    
+    for el in poi_nodes:
+        tags = el.get("tags", {})
+        amenity = tags.get("amenity", "")
+        shop = tags.get("shop", "")
+        
+        # Only create buildings for commercial/service POIs
+        is_commercial = (
+            shop or  # Any shop
+            amenity in ("restaurant", "cafe", "fast_food", "pharmacy", "bank", "post_office", 
+                       "library", "clinic", "hospital", "school", "university", "college")
+        )
+        
+        if not is_commercial:
+            continue
+            
+        lon, lat = float(el["lon"]), float(el["lat"])
+        point = transform(transformer, Point(lon, lat))
+        
+        # Larger footprint for important POIs
+        if amenity in ("university", "school", "hospital", "library"):
+            radius = 8.0  # 16m x 16m for major buildings
+        elif shop in ("supermarket", "department_store", "mall"):
+            radius = 6.0  # 12m x 12m for large shops
+        else:
+            radius = 4.0  # 8m x 8m for regular shops
+            
+        building_footprint = point.buffer(radius, cap_style=3)
+        
+        # Add synthetic building tag
+        building_tags = tags.copy()
+        building_tags["building"] = "commercial" if shop else "public"
+        building_tags["_synthetic"] = "poi_footprint"
+        
+        feats.append(OSMFeature(el["id"] + 1000000, "Polygon", building_footprint, building_tags))
+    
+    logging.info("[step2] normalized features: %d (polys=%d, lines=%d, poi_buildings=%d)",
                  len(feats),
                  sum(1 for f in feats if f.geom_type == "Polygon"),
-                 sum(1 for f in feats if f.geom_type == "LineString"))
+                 sum(1 for f in feats if f.geom_type == "LineString"),
+                 len(poi_nodes))
     return feats
 
 # ---------- Grid ----------
@@ -265,6 +312,8 @@ def run_step2_from_step1(step1: Dict, out_dir: str, cell_m: float = 1.5, radius_
     bmask = rasterize_feats(H, W, origin, cell_m, polys, BUILDING, width_m=0.0)
     semantic[bmask == 1] = BUILDING
     logging.info("[step2] painted class=%s (override)", CLASS_NAMES[BUILDING])
+    
+    # 4) No post-process semantic expansion: preserve plaza/road semantics faithfully
 
     # -------- FEATURE-ID PASS (polygons only; same z-order) --------
     aff = _affine_from_origin(origin, H, cell_m)
