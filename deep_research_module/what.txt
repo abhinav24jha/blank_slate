@@ -1,0 +1,77 @@
+"""
+Factors on deciding whether a hypothesis for change is meant to be considered or not:
+
+- Ownership / Rights -> If something prevents the change of that property for that reason, regardless of request, then autorejected as making a change at that specific place.
+
+- Environment (Floodway / Contamination) - If the site lies in a regulated floodway where development is explicitly prohibited.
+
+- Utilities (Non-Extendable) - If water, wastewater, or electricity providers state that connection or capacity is not feasible at all within the planning horizon.
+
+Other things provided are indications to the user, as to what would be required to go ahead with proposing this change, which are things such as:
+
+- approvals/permits required
+- political diagreeance - council minutes, news, or surveys show opposition, it’s flagged, not fatal.
+- changes to the original-use agreement with the city - you need either a site plan amendment (if it affects private land requirements) or an encroachment permit (if it affects city-owned land).
+
+or precisely as follows:
+
+The only valid auto-rejects (tightened)
+
+Reject only if all three parts are true: (a) primary source, (b) explicit prohibition/denial wording, (c) no credible path within horizon (18–24 mo).
+
+Land control & legal access — UNSOLVABLE
+
+Reject if: A primary document (title/parcel register, easement/heritage easement, court order, or Planning Act frontage/access ruling) explicitly says you cannot use or access the land (e.g., “no right of access,” “development prohibited by covenant/easement,” “no legal frontage”) and there’s no realistic path to acquire/modify rights in horizon.
+
+Otherwise: Flag as acquisition/rights to secure (lease, easement, consent).
+
+Regulatory “no-build” overlay — PROHIBITED
+
+Reject if: Conservation/flood authority or statute uses prohibitive language for the exact parcel (e.g., regulated floodway where development is prohibited, heritage conservation easement prohibiting new structures, provincially significant wetland/no encroachment, source-protection policy with “prohibited activity”).
+
+Otherwise: Treat as approval/mitigation required (e.g., floodproofing, setbacks, risk-management plan).
+
+Utilities — CONNECTION DENIED (no plan)
+
+Reject if: A utility denial/position or official plan says connection/capacity is not feasible and there is no capital project or alternative (onsite generation, storage, septic exception) inside horizon.
+
+Otherwise: Approval flag (servicing upgrade/connection study).
+
+🔎 Proof standard: The text must contain strong verbs like “prohibited,” “not permitted,” “cannot,” “denied,” “no capacity / not feasible.” Secondary blogs/news never qualify. If the language is weaker (“discouraged,” “requires permit/variance,” “insufficient today”), it’s not an auto-reject.
+
+Things that must never auto-reject (permission levers)
+
+Zoning/by-law mismatches → needs ZBA/variance/site plan.
+
+Parking/ROW/encroachment rules → permit or amendment.
+
+Heritage designation (without prohibitive easement) → heritage permit/conditions.
+
+Political/community pushback → engage + mitigation package.
+
+Contamination with an approved remediation path → phase II + RSC timeline, not reject.
+
+“Utilities require upgrades” (but feasible) → servicing plan, not reject.
+"""
+
+"""
+Deep Research Pipeline (locale-aware, iterative reflect loop)
+
+Implements your diagram:
+Research Topic -> Plan -> Search Queries -> [Search/Read]* -> Information Sources
+-> Evaluate -> (if Incomplete) Reflect -> Update Queries -> repeat -> Write -> Report
+
+Key features:
+- Locale parsing from natural-language user answer (site/city/region/country)
+- Dynamic authoritative-source hints from locale (e.g., city.ca / .gov)
+- Reflect loop that proposes site-restricted queries to fill missing required slots
+- Strict auto-reject: conservative JUDGE with negation/scope + LLM entailment over exact sentence
+- Loud debugging: no silent [] returns; all failures log with context
+
+APIs:
+- Tavily (search) — env: TAVILY_API_KEY
+- Jina Reader (HTML extraction) — env: JINA_API_KEY (optional, falls back to free service)
+- pdfplumber (optional) — PDF text
+- Gemini (LLM for parse/plan/reflect/synthesize/judge) — env: GEMINI_API_KEY
+- Cohere (LLM alternative for parse/plan/reflect/synthesize/judge) — env: COHERE_API_KEY
+"""

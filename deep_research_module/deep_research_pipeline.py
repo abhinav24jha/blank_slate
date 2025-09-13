@@ -1,90 +1,28 @@
-"""
-Factors on deciding whether a hypothesis for change is meant to be considered or not:
-
-- Ownership / Rights -> If something prevents the change of that property for that reason, regardless of request, then autorejected as making a change at that specific place.
-
-- Environment (Floodway / Contamination) - If the site lies in a regulated floodway where development is explicitly prohibited.
-
-- Utilities (Non-Extendable) - If water, wastewater, or electricity providers state that connection or capacity is not feasible at all within the planning horizon.
-
-Other things provided are indications to the user, as to what would be required to go ahead with proposing this change, which are things such as:
-
-- approvals/permits required
-- political diagreeance - council minutes, news, or surveys show opposition, it’s flagged, not fatal.
-- changes to the original-use agreement with the city - you need either a site plan amendment (if it affects private land requirements) or an encroachment permit (if it affects city-owned land).
-
-or precisely as follows:
-
-The only valid auto-rejects (tightened)
-
-Reject only if all three parts are true: (a) primary source, (b) explicit prohibition/denial wording, (c) no credible path within horizon (18–24 mo).
-
-Land control & legal access — UNSOLVABLE
-
-Reject if: A primary document (title/parcel register, easement/heritage easement, court order, or Planning Act frontage/access ruling) explicitly says you cannot use or access the land (e.g., “no right of access,” “development prohibited by covenant/easement,” “no legal frontage”) and there’s no realistic path to acquire/modify rights in horizon.
-
-Otherwise: Flag as acquisition/rights to secure (lease, easement, consent).
-
-Regulatory “no-build” overlay — PROHIBITED
-
-Reject if: Conservation/flood authority or statute uses prohibitive language for the exact parcel (e.g., regulated floodway where development is prohibited, heritage conservation easement prohibiting new structures, provincially significant wetland/no encroachment, source-protection policy with “prohibited activity”).
-
-Otherwise: Treat as approval/mitigation required (e.g., floodproofing, setbacks, risk-management plan).
-
-Utilities — CONNECTION DENIED (no plan)
-
-Reject if: A utility denial/position or official plan says connection/capacity is not feasible and there is no capital project or alternative (onsite generation, storage, septic exception) inside horizon.
-
-Otherwise: Approval flag (servicing upgrade/connection study).
-
-🔎 Proof standard: The text must contain strong verbs like “prohibited,” “not permitted,” “cannot,” “denied,” “no capacity / not feasible.” Secondary blogs/news never qualify. If the language is weaker (“discouraged,” “requires permit/variance,” “insufficient today”), it’s not an auto-reject.
-
-Things that must never auto-reject (permission levers)
-
-Zoning/by-law mismatches → needs ZBA/variance/site plan.
-
-Parking/ROW/encroachment rules → permit or amendment.
-
-Heritage designation (without prohibitive easement) → heritage permit/conditions.
-
-Political/community pushback → engage + mitigation package.
-
-Contamination with an approved remediation path → phase II + RSC timeline, not reject.
-
-“Utilities require upgrades” (but feasible) → servicing plan, not reject.
-"""
-
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Open-Style Deep Research Pipeline (locale-aware, iterative reflect loop)
-
-Implements your diagram:
-Research Topic -> Plan -> Search Queries -> [Search/Read]* -> Information Sources
--> Evaluate -> (if Incomplete) Reflect -> Update Queries -> repeat -> Write -> Report
-
-Key features:
-- Locale parsing from natural-language user answer (site/city/region/country)
-- Dynamic authoritative-source hints from locale (e.g., city.ca / .gov)
-- Reflect loop that proposes site-restricted queries to fill missing required slots
-- Strict auto-reject: conservative JUDGE with negation/scope + LLM entailment over exact sentence
-- Loud debugging: no silent [] returns; all failures log with context
-
-APIs:
-- Tavily (search) — env: TAVILY_API_KEY
-- Jina Reader (HTML extraction) — no key
-- pdfplumber (optional) — PDF text
-- Gemini (LLM for parse/plan/reflect/synthesize/judge) — env: GEMINI_API_KEY
-- Cohere (LLM alternative for parse/plan/reflect/synthesize/judge) — env: COHERE_API_KEY
-"""
-
 import os, re, io, json, logging, argparse
+import time
 from dataclasses import dataclass, asdict, field
 from typing import List, Dict, Optional, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
+from config import (
+    TAVILY_API_KEY, GEMINI_API_KEY, COHERE_API_KEY, JINA_API_KEY,
+    MAX_URLS_PER_ROUND, MAX_ROUNDS, REQUIRED_SLOTS, HEADERS,
+    SLOT_PATTERNS, PROHIBIT_RX, SUBJECT_RX, NEGATION_RX,
+    PARSE_LOCALE_PROMPT, PLANNER_PROMPT, REFLECT_PROMPT, SYNTH_PROMPT,
+    get_fallback_queries, get_site_restricted_queries
+)
+
+# ---------- Prompt utils ----------
+def fill_prompt(template: str, values: Dict[str, str]) -> str:
+    """Safely substitute only our placeholders like {key} without touching other braces.
+
+    This avoids str.format KeyError when prompts contain literal JSON braces such as {"site": ...}.
+    """
+    out = template
+    for key, val in values.items():
+        out = out.replace("{" + key + "}", val)
+    return out
 
 # ---------- Optional deps ----------
 try:
@@ -93,8 +31,9 @@ try:
 except Exception:
     HAVE_PDFPLUMBER = False
 
+# LLM SDK availability
 try:
-    import google.generativeai as genai  # type: ignore
+    from google import genai as google_genai  # type: ignore
     HAVE_GEMINI = True
 except Exception:
     HAVE_GEMINI = False
@@ -105,14 +44,17 @@ try:
 except Exception:
     HAVE_COHERE = False
 
-# ---------- Config ----------
-TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-COHERE_API_KEY = os.getenv("COHERE_API_KEY", "")
-MAX_URLS_PER_ROUND = 30
-MAX_ROUNDS = 3
-REQUIRED_SLOTS = ["environment", "utilities", "zoning_landuse"]
-HEADERS = {"User-Agent": "OpenDeepResearch/0.4"}
+# Tavily SDK (optional)
+try:
+    from tavily import TavilyClient  # type: ignore
+    HAVE_TAVILY = True
+except Exception:
+    HAVE_TAVILY = False
+
+if HAVE_TAVILY and TAVILY_API_KEY:
+    tavily_client = TavilyClient(api_key=TAVILY_API_KEY)
+else:
+    tavily_client = None
 
 # ---------- Data Models ----------
 @dataclass
@@ -146,315 +88,22 @@ class ReportBundle:
     demand_metrics: Dict
     notes: List[str] = field(default_factory=list)
 
-# ---------- LLM helpers ----------
-def get_model(api_provider="gemini"):
-    """Get LLM model instance for specified provider.
-    
-    Args:
-        api_provider (str): Either 'gemini' or 'cohere'
-    
-    Returns:
-        Model instance or None if not available
-    """
-    if api_provider == "gemini" and HAVE_GEMINI and GEMINI_API_KEY:
-        genai.configure(api_key=GEMINI_API_KEY)
-        return genai.GenerativeModel("gemini-2.0-flash")
-    elif api_provider == "cohere" and HAVE_COHERE and COHERE_API_KEY:
-        return cohere.Client(COHERE_API_KEY)
-    
-    available_providers = []
-    if HAVE_GEMINI and GEMINI_API_KEY:
-        available_providers.append("gemini")
-    if HAVE_COHERE and COHERE_API_KEY:
-        available_providers.append("cohere")
-    
-    if available_providers:
-        fallback = available_providers[0]
-        logging.warning(f"[llm] {api_provider} not configured; falling back to {fallback}")
-        return get_model(fallback)
-    
-    logging.warning("[llm] No LLM providers configured; using deterministic fallbacks where possible.")
-    return None
-
-PARSE_LOCALE_PROMPT = """
-## ROLE
-You are a geographic information extraction specialist for land-use research systems.
-
-## TASK
-Extract structured location data from user responses about specific sites or properties.
-
-## INPUT
-Question: {question}
-User Response: {answer}
-
-## EXTRACTION REQUIREMENTS
-Extract the following fields with high accuracy:
-- site: Specific property address, building name, or location identifier
-- city: Municipal jurisdiction name
-- region_or_state: Province, state, or equivalent administrative division
-- country: Country name (full name or ISO-3 code)
-
-## OUTPUT FORMAT
-Return ONLY valid JSON with the exact keys specified above. No additional text or explanation.
-
-## EXAMPLE
-Input: "Let's look at 123 Main Street in Toronto, Ontario"
-Output: {"site": "123 Main Street", "city": "Toronto", "region_or_state": "Ontario", "country": "Canada"}
-
-## CRITICAL REQUIREMENTS
-- If information is missing, use empty string ""
-- Do not guess or infer missing data
-- Ensure JSON is valid and parseable
-- Return only the JSON object, no markdown formatting
-"""
-
-PLANNER_PROMPT = """
-## ROLE
-You are a strategic research coordinator specializing in municipal planning and land-use feasibility studies.
-
-## OBJECTIVE
-Generate comprehensive search queries to gather authoritative information for land-use change feasibility analysis.
-
-## CONTEXT
-Research Target: {topic}
-Location: {site}
-Municipality: {city}
-Administrative Region: {region}
-Country: {country}
-
-## SEARCH STRATEGY
-Prioritize official government and institutional sources in this order:
-1. Municipal government websites (cityname.gov, cityname.ca, cityname.org)
-2. Provincial/state government planning departments
-3. Official utility company documentation
-4. Conservation authority and environmental agencies
-5. Transportation authority websites
-6. Heritage and cultural preservation offices
-
-## RESEARCH DOMAINS
-Generate queries across these critical areas:
-
-### PROPERTY RIGHTS & LEGAL ACCESS
-- Title searches, easements, covenants, right-of-way agreements
-- Land ownership verification, access restrictions
-
-### ENVIRONMENTAL CONSTRAINTS
-- Floodplain designations, conservation areas, contaminated sites
-- Environmental impact assessments, source water protection
-
-### UTILITY INFRASTRUCTURE
-- Water and wastewater capacity, connection feasibility
-- Electrical service availability, transformer capacity
-- Gas line accessibility, telecommunications infrastructure
-
-### ZONING & REGULATORY COMPLIANCE
-- Current zoning designations, permitted uses
-- Official plan policies, development standards
-- Variance requirements, site plan approval processes
-
-### HERITAGE & CULTURAL CONSERVATION
-- Heritage designations, cultural significance
-- Encroachment permits, right-of-way requirements
-
-### TRANSPORTATION & ACCESSIBILITY
-- Transit service levels, route frequency
-- Traffic volumes (AADT), parking requirements
-- Pedestrian and cycling infrastructure
-
-### PRECEDENT ANALYSIS
-- Recent approvals, variance decisions
-- Committee of adjustment rulings, council decisions
-
-## OUTPUT SPECIFICATIONS
-- Generate exactly 12 search queries
-- Use specific site addresses where applicable
-- Include document type specifications (PDF, by-law, minutes)
-- Target official government domains when possible
-- Return as JSON array of strings only
-
-## EXAMPLE QUERY FORMATS
-- "site:waterloo.ca zoning by-law permitted uses {site}"
-- "{city} floodplain map conservation authority PDF"
-- "{city} wastewater capacity study {site} connection"
-- "{city} council minutes variance approval {site}"
-
-## QUALITY STANDARDS
-- Each query must target specific, actionable information
-- Avoid overly broad or generic search terms
-- Include location-specific identifiers
-- Prioritize recent and authoritative sources
-"""
-
-REFLECT_PROMPT = """
-## ROLE
-You are a research quality assurance specialist for municipal planning feasibility studies.
-
-## OBJECTIVE
-Analyze research coverage and identify gaps requiring additional targeted investigation.
-
-## CURRENT RESEARCH STATUS
-{coverage}
-
-## ANALYSIS FRAMEWORK
-Evaluate research completeness across three critical dimensions:
-
-### COVERAGE ASSESSMENT
-- **Environment**: Floodplain status, conservation areas, contamination
-- **Utilities**: Water/wastewater capacity, electrical service availability
-- **Zoning**: Current designation, permitted uses, development standards
-
-### EVIDENCE QUALITY EVALUATION
-- **Source Authority**: Official government vs. secondary sources
-- **Document Type**: Legislative (by-laws, official plans) vs. interpretive
-- **Recency**: Current regulations vs. outdated information
-- **Specificity**: Site-specific vs. general area information
-
-### GAP IDENTIFICATION
-Identify missing or insufficient information requiring targeted follow-up queries.
-
-## QUERY GENERATION STRATEGY
-For identified gaps, create precise search queries using:
-- **Site-specific targeting**: site:domain.com "specific address"
-- **Document type specification**: PDF, by-law, minutes, capacity study
-- **Official source emphasis**: Municipal, provincial, utility company domains
-- **Temporal relevance**: Recent approvals, current regulations
-
-## OUTPUT SPECIFICATIONS
-Return structured JSON with:
-- **missing_or_weak**: Array of insufficient research areas
-- **new_queries**: Array of up to 6 targeted search queries
-- **notes**: Array of strategic recommendations
-
-## EXAMPLE OUTPUT
-{
-  "missing_or_weak": ["utilities capacity study", "heritage designation status"],
-  "new_queries": [
-    "site:waterloo.ca wastewater capacity study {site} connection",
-    "site:waterloo.ca heritage register {site} designation"
-  ],
-  "notes": ["Prioritize official utility capacity reports", "Verify heritage status impacts"]
-}
-
-## QUALITY STANDARDS
-- Maximum 6 additional queries to maintain focus
-- Each query must address specific identified gap
-- Prioritize official government sources
-- Include site-specific targeting where applicable
-"""
-
-SYNTH_PROMPT = """
-## ROLE
-You are a senior municipal planning consultant preparing a comprehensive feasibility assessment for land-use change proposals.
-
-## OBJECTIVE
-Analyze collected evidence and provide a structured decision framework with clear recommendations and supporting documentation.
-
-## DECISION FRAMEWORK
-Apply conservative, evidence-based analysis using these criteria:
-
-### AUTOMATIC REJECTION CRITERIA
-Reject proposals ONLY when PRIMARY official sources explicitly state absolute prohibition:
-
-#### LAND ACCESS & PROPERTY RIGHTS
-- Legal access denial (no right of access, blocked frontage)
-- Prohibitive easements or covenants preventing development
-- Court orders or legal restrictions on property use
-
-#### ENVIRONMENTAL PROHIBITIONS
-- Regulated floodway designations with explicit development prohibition
-- Heritage conservation easements prohibiting new construction
-- Provincially significant wetland no-encroachment policies
-- Source water protection zones with prohibited activities
-
-#### UTILITY INFRASTRUCTURE
-- Official utility company statements of "no capacity" or "not feasible"
-- No planned infrastructure improvements within 24-month horizon
-- No alternative service options available (onsite systems, etc.)
-
-### APPROVAL-REQUIRED CATEGORIES
-All other constraints require approval processes, not rejection:
-- Zoning by-law amendments (ZBA) or minor variances
-- Site plan approval processes
-- Heritage permits and conditions
-- Encroachment permits for right-of-way
-- Environmental permits and mitigation plans
-- Utility connection agreements and upgrades
-
-## EVIDENCE REQUIREMENTS
-Every analytical conclusion MUST be supported by:
-- Evidence ID reference (e.g., e003)
-- Source website URL
-- Specific document or policy citation
-- Clear connection between evidence and conclusion
-
-## OUTPUT STRUCTURE
-Provide two integrated components:
-
-### 1. STRUCTURED DECISION JSON
-```json
-{
-  "hard_blocks": [
-    {
-      "type": "environment_prohibition",
-      "evidence_ids": ["e003", "e007"],
-      "description": "Regulated floodway prohibits development",
-      "source_urls": ["waterloo.ca/floodplain-map", "conservation.ca/floodway-policy"]
-    }
-  ],
-  "approval_flags": [
-    {
-      "type": "needs_zba",
-      "evidence_ids": ["e012"],
-      "description": "Current zoning requires amendment",
-      "source_urls": ["waterloo.ca/zoning-bylaw"]
-    }
-  ],
-  "demand_metrics": {
-    "transit_frequency": "Every 15 minutes",
-    "traffic_volume": "8,500 AADT",
-    "parking_requirements": "1 space per unit"
-  },
-  "notes": ["Additional consultation required with conservation authority"]
-}
-```
-
-### 2. EXECUTIVE SUMMARY (Maximum 400 words)
-Professional brief including:
-- Executive summary of findings
-- Key constraints and opportunities
-- Required approvals and processes
-- Risk assessment and mitigation strategies
-- Timeline estimates for approval processes
-- Cost implications (where available)
-
-## CITATION FORMAT
-Use consistent citation format: [EvidenceID: WebsiteURL]
-Example: [e003: waterloo.ca/zoning-bylaw] or [e007: ontario.ca/official-plan]
-
-## QUALITY STANDARDS
-- Maintain professional, objective tone
-- Avoid speculation beyond evidence
-- Provide actionable recommendations
-- Ensure all claims are verifiable
-- Balance comprehensiveness with conciseness
-"""
-
 # ---------- Locale / authority ----------
 def parse_locale(question: str, answer: str, api_provider: str = "gemini") -> Dict:
-    model = get_model(api_provider)
-    if model:
-        try:
-            if api_provider == "gemini":
-            t = model.generate_content(PARSE_LOCALE_PROMPT.format(question=question, answer=answer)).text or "{}"
-            elif api_provider == "cohere":
-                response = model.generate(
-                    model="command",
-                    prompt=PARSE_LOCALE_PROMPT.format(question=question, answer=answer),
-                    max_tokens=500,
-                    temperature=0.1
-                )
-                t = response.generations[0].text or "{}"
-            
+    try:
+        prompt = fill_prompt(PARSE_LOCALE_PROMPT, {"question": question, "answer": answer})
+        if api_provider == "gemini" and HAVE_GEMINI and GEMINI_API_KEY:
+            client = google_genai.Client(api_key=GEMINI_API_KEY)
+            resp = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+            t = (getattr(resp, "text", None) or "")
+        elif api_provider == "cohere" and HAVE_COHERE and COHERE_API_KEY:
+            co = cohere.ClientV2(COHERE_API_KEY)
+            resp = co.chat(model="command-a-03-2025", messages=[{"role":"user","content": prompt}])
+            parts = getattr(getattr(resp, "message", None), "content", []) or []
+            t = "\n".join([getattr(p, "text", "") for p in parts if getattr(p, "type", "text") == "text"]) or ""
+        else:
+            t = ""
+        if t:
             js = json.loads(t[t.find("{"):t.rfind("}")+1])
             site = js.get("site") or answer
             city = js.get("city") or ""
@@ -462,8 +111,8 @@ def parse_locale(question: str, answer: str, api_provider: str = "gemini") -> Di
             country = js.get("country") or ""
             logging.info("[locale] site=%s, city=%s, region=%s, country=%s", site, city, region, country)
             return {"site":site, "city":city, "region":region, "country":country}
-        except Exception as e:
-            logging.exception("[locale] LLM parse failed: %s", e)
+    except Exception as e:
+        logging.exception("[locale] LLM parse failed: %s", e)
     # fallback: naive City, Region pattern
     m = re.search(r"\b([A-Z][a-zA-Z]+),\s*([A-Z][a-zA-Z]+)\b", answer)
     city = m.group(1) if m else ""
@@ -474,10 +123,24 @@ def parse_locale(question: str, answer: str, api_provider: str = "gemini") -> Di
 
 # ---------- HTTP / Extraction with loud debug ----------
 def tavily_search(query: str, max_results: int = 5) -> List[Dict]:
-    """Search via Tavily with loud debugging on failures and empties."""
+    """Search via Tavily SDK when available; fallback to HTTP."""
     if not TAVILY_API_KEY:
         logging.error("[tavily] MISSING_API_KEY: set TAVILY_API_KEY")
         return []
+    # Prefer SDK
+    if tavily_client is not None:
+        try:
+            response = tavily_client.search(query=query, search_depth="basic", max_results=max_results, include_answer=False)
+            results = [
+                {"url": r.get("url"), "title": r.get("title", ""), "description": r.get("description", "")}
+                for r in (response.get("results", []) if isinstance(response, dict) else getattr(response, "results", []))
+                if r.get("url")
+            ]
+            logging.info("[tavily] %d results query='%s' (SDK)", len(results), query)
+            return results
+        except Exception as e:
+            logging.warning("[tavily] SDK error, falling back to HTTP: %s", e)
+    # HTTP fallback
     try:
         r = requests.post(
             "https://api.tavily.com/search",
@@ -498,19 +161,25 @@ def tavily_search(query: str, max_results: int = 5) -> List[Dict]:
         logging.exception("[tavily] ERROR query='%s': %s", query, e)
         return []
 
-def fetch_html_jina(url: str) -> Tuple[str, str]:
-    """Fetch HTML via Jina Reader proxy; print debug on failure/short text."""
-    if url.lower().endswith(".pdf"):
-        return ("", "")
-    try:
-        r = requests.get(f"https://r.jina.ai/{url}", headers=HEADERS, timeout=30)
-        if r.ok and len(r.text) > 80:
-            title = url.split("/")[2]
-            return (title, r.text[:25000])
-        logging.warning("[jina] SHORT_OR_BAD status=%s url=%s", getattr(r, "status_code", None), url)
-    except Exception as e:
-        logging.exception("[jina] ERROR url=%s: %s", url, e)
-    return ("", "")
+def extract_with_jina(url_data: Dict, max_retries: int = 2) -> str:
+    """Retrying extractor using Jina Reader with Authorization header, fallback to Tavily metadata."""
+    url = url_data["url"]
+    for attempt in range(max_retries + 1):
+        try:
+            jina_url = f"https://r.jina.ai/{url}"
+            headers = {"Authorization": f"Bearer {JINA_API_KEY}"} if JINA_API_KEY else {}
+            response = requests.get(jina_url, headers=headers, timeout=30)
+            response.raise_for_status()
+            logging.info("[jina] Successfully extracted content from %s", url)
+            return response.text[:20000]
+        except Exception as e:
+            logging.warning("[jina] Attempt %d/%d - Error extracting content from %s: %s", attempt + 1, max_retries + 1, url, e)
+            if attempt < max_retries:
+                time.sleep(2)
+            else:
+                fallback_content = f"Title: {url_data.get('title', 'N/A')}\nDescription: {url_data.get('description', 'N/A')}"
+                logging.info("[jina] Using fallback content for %s", url)
+                return fallback_content if url_data.get("title") or url_data.get("description") else ""
 
 def fetch_pdf_text(url: str) -> Tuple[str, str]:
     """Fetch and parse first ~6 pages of a PDF; print debug on issues."""
@@ -532,17 +201,7 @@ def fetch_pdf_text(url: str) -> Tuple[str, str]:
         logging.exception("[pdf] ERROR url=%s: %s", url, e)
         return ("", "")
 
-# ---------- Slotting ----------
-SLOT_PATTERNS = {
-    "ownership_rights": r"(onland|parcel register|easement|right[- ]of[- ]way|covenant|title)",
-    "environment": r"(floodplain|flood way|regulated area|conservation|contaminat|brownfield|source water)",
-    "utilities": r"(wastewater|sanitary|watermain|water main|capacity|hydro|electric connection|transformer|utility)",
-    "zoning_landuse": r"(zoning|by-law|bylaw|permitted uses|official plan|use table)",
-    "approvals_precedent": r"(minor variance|rezoning|zba|site plan|approved|decision|committee of adjustment|cofa)",
-    "heritage_row": r"(heritage|designation|encroachment|right[- ]of[- ]way permit)",
-    "mobility_transit": r"(transit|bus|route|lrt|headway|every \d+ minutes|stop)",
-    "traffic_parking_safety": r"(aadt|traffic count|parking utilization|collision|speed study)",
-}
+# ---------- Slot patterns imported from config.py ----------
 
 def slot_for(text: str, title: str) -> Optional[str]:
     blob = (title + "\n" + text[:1500]).lower()
@@ -553,40 +212,27 @@ def slot_for(text: str, title: str) -> Optional[str]:
 
 # ---------- Plan / Search / Read / Evaluate / Reflect ----------
 def plan_queries(topic: str, site: str, city: str, region: str, country: str, api_provider: str = "gemini") -> List[str]:
-    model = get_model(api_provider)
-    if model:
-        try:
-            if api_provider == "gemini":
-            t = model.generate_content(PLANNER_PROMPT.format(topic=topic, site=site, city=city, region=region, country=country)).text or "[]"
-            elif api_provider == "cohere":
-                response = model.generate(
-                    model="command",
-                    prompt=PLANNER_PROMPT.format(topic=topic, site=site, city=city, region=region, country=country),
-                    max_tokens=2000,
-                    temperature=0.3
-                )
-                t = response.generations[0].text or "[]"
-            
+    try:
+        prompt = fill_prompt(PLANNER_PROMPT, {"topic": topic, "site": site, "city": city, "region": region, "country": country})
+        if api_provider == "gemini" and HAVE_GEMINI and GEMINI_API_KEY:
+            client = google_genai.Client(api_key=GEMINI_API_KEY)
+            resp = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+            t = (getattr(resp, "text", None) or "")
+        elif api_provider == "cohere" and HAVE_COHERE and COHERE_API_KEY:
+            co = cohere.ClientV2(COHERE_API_KEY)
+            resp = co.chat(model="command-a-03-2025", messages=[{"role":"user","content": prompt}])
+            parts = getattr(getattr(resp, "message", None), "content", []) or []
+            t = "\n".join([getattr(p, "text", "") for p in parts if getattr(p, "type", "text") == "text"]) or ""
+        else:
+            t = ""
+        if t:
             queries = json.loads(t[t.find("["):t.rfind("]")+1])
             logging.info("[plan] %d queries", len(queries))
             return queries
-        except Exception as e:
-            logging.exception("[plan] LLM failed: %s", e)
+    except Exception as e:
+        logging.exception("[plan] LLM failed: %s", e)
     # fallback templates
-    addr = site or (city + ", " + region)
-    queries = [
-        f"{city} zoning by-law permitted uses pdf",
-        f"{city} floodplain map conservation authority pdf",
-        f"{city} wastewater capacity report pdf",
-        f"{city} electric connection request",
-        f"{city} council minutes variance {site}",
-        f"{city} encroachment permit",
-        f"{city} heritage register {site}",
-        f"{city} transit route {site}",
-        f"{city} traffic counts AADT {site}",
-        f"{region} official plan pdf",
-        f"{addr} site plan agreement",
-    ]
+    queries = get_fallback_queries(site, city, region)
     logging.warning("[plan] Using fallback queries (%d)", len(queries))
     return queries
 
@@ -615,8 +261,8 @@ def read_and_slot(url_items: List[Dict], start_id: int = 1) -> List[Evidence]:
             t2,txt=fetch_pdf_text(url); loc="PDF p.1-6"
             title=title or t2
         else:
-            t2,txt=fetch_html_jina(url); loc="HTML (Jina)"
-            title=title or t2
+            txt = extract_with_jina(item); loc="HTML (Jina)"
+            title=title or (url.split("/")[2] if "/" in url else url)
         if not txt or len(txt)<60:
             logging.debug("[read] skip short text url=%s", url)
             return None
@@ -652,40 +298,36 @@ def evaluate(evs: List[Evidence]) -> Tuple[bool, List[str]]:
     return complete, notes
 
 def reflect_and_update(queries: List[str], evs: List[Evidence], site: str, city: str, api_provider: str = "gemini") -> Tuple[List[str], List[str]]:
-    model = get_model(api_provider)
     payload = {
         "coverage": coverage_status(evs),
         "have_slots": list({e.slot for e in evs}),
         "recent_queries": queries[-6:],
         "site": site, "city": city,
     }
-    if model:
-        try:
-            if api_provider == "gemini":
-                t = model.generate_content(REFLECT_PROMPT.format(coverage=json.dumps(payload))).text or "{}"
-            elif api_provider == "cohere":
-                response = model.generate(
-                    model="command",
-                    prompt=REFLECT_PROMPT.format(coverage=json.dumps(payload)),
-                    max_tokens=1500,
-                    temperature=0.2
-                )
-                t = response.generations[0].text or "{}"
-            
+    try:
+        prompt = fill_prompt(REFLECT_PROMPT, {"coverage": json.dumps(payload)})
+        if api_provider == "gemini" and HAVE_GEMINI and GEMINI_API_KEY:
+            client = google_genai.Client(api_key=GEMINI_API_KEY)
+            resp = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+            t = (getattr(resp, "text", None) or "")
+        elif api_provider == "cohere" and HAVE_COHERE and COHERE_API_KEY:
+            co = cohere.ClientV2(COHERE_API_KEY)
+            resp = co.chat(model="command-a-03-2025", messages=[{"role":"user","content": prompt}])
+            parts = getattr(getattr(resp, "message", None), "content", []) or []
+            t = "\n".join([getattr(p, "text", "") for p in parts if getattr(p, "type", "text") == "text"]) or ""
+        else:
+            t = ""
+        if t:
             js = json.loads(t[t.find("{"):t.rfind("}")+1])
             new_q = js.get("new_queries", [])
             notes = js.get("notes", [])
             merged=list(dict.fromkeys(queries + new_q))
             logging.info("[reflect] added %d new queries; total=%d", len(new_q), len(merged))
             return merged[:12], notes
-        except Exception as e:
-            logging.exception("[reflect] LLM failed: %s", e)
+    except Exception as e:
+        logging.exception("[reflect] LLM failed: %s", e)
     # fallback: add site-restricted queries for common official domains
-    extras=[]
-    if city:
-        extras.append(f'site:{city.lower()}.ca "permitted uses" {site}')
-        extras.append(f"site:{city.lower()}.ca floodway {site}")
-        extras.append(f"site:{city.lower()}.gov zoning {site}")
+    extras = get_site_restricted_queries(site, city)
     merged=list(dict.fromkeys(queries+extras))
     logging.warning("[reflect] fallback added %d queries; total=%d", len(extras), len(merged))
     return merged[:12], ["Added site-restricted queries (fallback)"]
@@ -694,30 +336,27 @@ def reflect_and_update(queries: List[str], evs: List[Evidence], site: str, city:
 def _sentences(text: str) -> List[str]:
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
 
-PROHIBIT_RX = re.compile(r"\b(prohibited|not permitted|shall not|connection (?:not )?feasible|denied)\b", re.I)
-SUBJECT_RX  = re.compile(r"\b(development|building|structure|connection|service)\b", re.I)
-NEGATION_RX = re.compile(r"\b(not\s+prohibit(?:ed)?|unless|except|subject to permit)\b", re.I)
+# ---------- Decision framework patterns imported from config.py ----------
+PROHIBIT_RX = re.compile(PROHIBIT_RX, re.I)
+SUBJECT_RX = re.compile(SUBJECT_RX, re.I)
+NEGATION_RX = re.compile(NEGATION_RX, re.I)
 
 def call_llm_yes_no(question: str, api_provider: str = "gemini") -> str:
     """Return 'YES' or 'NO'. If unclear or error, return 'NO' (abstain)."""
-    model = get_model(api_provider)
-    if not model:
-        logging.warning("[judge] LLM unavailable -> NO (abstain)")
-        return "NO"
     try:
         prompt = "Answer strictly YES or NO. If unclear, answer NO.\n" + question
-        if api_provider == "gemini":
-        resp = model.generate_content(prompt)
-        ans = (resp.text or "").strip().upper()
-        elif api_provider == "cohere":
-            response = model.generate(
-                model="command",
-                prompt=prompt,
-                max_tokens=10,
-                temperature=0.0
-            )
-            ans = (response.generations[0].text or "").strip().upper()
-        
+        if api_provider == "gemini" and HAVE_GEMINI and GEMINI_API_KEY:
+            client = google_genai.Client(api_key=GEMINI_API_KEY)
+            resp = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+            ans = (getattr(resp, "text", "") or "").strip().upper()
+        elif api_provider == "cohere" and HAVE_COHERE and COHERE_API_KEY:
+            co = cohere.ClientV2(COHERE_API_KEY)
+            resp = co.chat(model="command-a-03-2025", messages=[{"role":"user","content": prompt}])
+            parts = getattr(getattr(resp, "message", None), "content", []) or []
+            ans = ("\n".join([getattr(p, "text", "") for p in parts if getattr(p, "type", "text") == "text"]) or "").strip().upper()
+        else:
+            logging.warning("[judge] LLM unavailable -> NO (abstain)")
+            return "NO"
         return "YES" if ans.startswith("YES") else "NO"
     except Exception as e:
         logging.exception("[judge] LLM error: %s", e)
@@ -770,30 +409,28 @@ def decide_strict(evs: List[Evidence], api_provider: str = "gemini") -> Tuple[Di
 
 # ---------- Synthesis ----------
 def synthesize(topic, site, city, region, country, evs: List[Evidence], decision: Dict, demand: Dict, api_provider: str = "gemini") -> Tuple[str,str]:
-    model=get_model(api_provider)
     payload={"topic":topic, "site":site, "city":city, "region":region, "country":country,
              "evidence":[asdict(e) for e in evs], "decision":decision, "demand_metrics":demand}
-    if model:
-        try:
-            full_prompt = SYNTH_PROMPT+"\n\nINPUT JSON:\n"+json.dumps(payload)[:120000]
-            
-            if api_provider == "gemini":
-                t = model.generate_content(full_prompt).text or ""
-            elif api_provider == "cohere":
-                response = model.generate(
-                    model="command",
-                    prompt=full_prompt,
-                    max_tokens=3000,
-                    temperature=0.2
-                )
-                t = response.generations[0].text or ""
-            
+    try:
+        full_prompt = SYNTH_PROMPT+"\n\nINPUT JSON:\n"+json.dumps(payload)[:120000]
+        if api_provider == "gemini" and HAVE_GEMINI and GEMINI_API_KEY:
+            client = google_genai.Client(api_key=GEMINI_API_KEY)
+            resp = client.models.generate_content(model="gemini-2.5-flash", contents=full_prompt)
+            t = (getattr(resp, "text", None) or "")
+        elif api_provider == "cohere" and HAVE_COHERE and COHERE_API_KEY:
+            co = cohere.ClientV2(COHERE_API_KEY)
+            resp = co.chat(model="command-a-03-2025", messages=[{"role":"user","content": full_prompt}])
+            parts = getattr(getattr(resp, "message", None), "content", []) or []
+            t = "\n".join([getattr(p, "text", "") for p in parts if getattr(p, "type", "text") == "text"]) or ""
+        else:
+            t = ""
+        if t:
             jstart=t.find("{"); jend=t.rfind("}")+1
             js=t[jstart:jend] if jstart!=-1 else "{}"
             md=t[jend:].strip()
             return js, md
-        except Exception as e:
-            logging.exception("[synth] ERROR: %s", e)
+    except Exception as e:
+        logging.exception("[synth] ERROR: %s", e)
     logging.warning("[synth] LLM unavailable -> fallback brief")
     return json.dumps({"decision":decision,"demand_metrics":demand},indent=2), "# Brief unavailable"
 
@@ -832,16 +469,21 @@ def run_open_research(question: str, user_answer: str, topic: str, out_prefix: s
     decision, demand = decide_strict(all_evidence, api_provider)
     js, md = synthesize(topic, site, city, region, country, all_evidence, decision, demand, api_provider)
 
-    # Persist
-    out_dir = os.path.dirname(out_prefix) or "."
-    os.makedirs(out_dir, exist_ok=True)
-    with open(out_prefix + ".evidence.json","w",encoding="utf-8") as f:
+    # Persist - use current directory if no directory specified
+    if os.path.dirname(out_prefix):
+        out_dir = os.path.dirname(out_prefix)
+        os.makedirs(out_dir, exist_ok=True)
+        base_name = os.path.basename(out_prefix)
+    else:
+        out_dir = "."
+        base_name = out_prefix
+    with open(os.path.join(out_dir, base_name + ".evidence.json"),"w",encoding="utf-8") as f:
         json.dump([asdict(e) for e in all_evidence], f, indent=2)
-    with open(out_prefix + ".rounds.json","w",encoding="utf-8") as f:
+    with open(os.path.join(out_dir, base_name + ".rounds.json"),"w",encoding="utf-8") as f:
         json.dump([asdict(r) for r in rounds], f, indent=2)
-    with open(out_prefix + ".report.json","w",encoding="utf-8") as f:
+    with open(os.path.join(out_dir, base_name + ".report.json"),"w",encoding="utf-8") as f:
         f.write(js)
-    with open(out_prefix + ".report.md","w",encoding="utf-8") as f:
+    with open(os.path.join(out_dir, base_name + ".report.md"),"w",encoding="utf-8") as f:
         f.write(md)
 
     logging.info("[done] wrote %s.{evidence,rounds,report}.{json,md}", out_prefix)

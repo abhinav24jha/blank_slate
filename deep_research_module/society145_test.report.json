@@ -1,0 +1,60 @@
+{
+  "hard_blocks": [],
+  "approval_flags": [
+    {
+      "type": "environmental_permits_mitigation",
+      "evidence_ids": ["e001"],
+      "description": "Site requires detailed environmental assessment, particularly regarding potential flood risk zones under EU Directive 2007/60/CE, and may necessitate environmental permits and mitigation plans.",
+      "source_urls": ["https://sniambgeoogc.apambiente.pt/getogc/rest/services/SNIAmb/Diretiva200760CE_2c/MapServer"]
+    },
+    {
+      "type": "environmental_permits_mitigation",
+      "evidence_ids": ["e006"],
+      "description": "Compliance with local environmental policies and potential requirement for environmental permits and impact studies due to municipal focus on environmental indices.",
+      "source_urls": ["https://www.lisboa.pt/atualidade/noticias/detalhe/carta-municipal-de-desenvolvimento-local-divulga-indices-ambientais/"]
+    },
+    {
+      "type": "needs_urban_planning_permits",
+      "evidence_ids": ["e002", "e004"],
+      "description": "A 'Pedido de Informação Prévia' (Request for Prior Information) is essential to determine specific urbanistic requirements, permissible uses, and building parameters. General municipal urban planning regulations apply, necessitating compliance with the Plano Diretor Municipal (PDM) and specific zoning by-laws, which may lead to requirements for zoning amendments or site plan approval.",
+      "source_urls": [
+        "https://informacoeseservicos.lisboa.pt/servicos/detalhe/pedido-de-informacao-previa",
+        "https://informacoeseservicos.lisboa.pt/servicos/perguntas-frequentes/urbanismo"
+      ]
+    },
+    {
+      "type": "heritage_permits_conditions",
+      "evidence_ids": ["e003"],
+      "description": "Any proposed 'conservation works' or modifications may require a specific license under the Legal Regime for Urbanization and Building, potentially involving heritage assessments and specific conditions.",
+      "source_urls": ["https://informacoeseservicos.lisboa.pt/servicos/detalhe/obras-de-conservacao-licenca"]
+    },
+    {
+      "type": "site_plan_approval",
+      "evidence_ids": ["e012"],
+      "description": "Detailed 'Projetos de Especialidades' (specialty technical projects like structural, water, electrical) must be prepared and approved as part of the overall site plan and building permit process.",
+      "source_urls": ["https://informacoeseservicos.lisboa.pt/servicos/detalhe/projetos-de-especialidades"]
+    },
+    {
+      "type": "utility_connection_agreements",
+      "evidence_ids": ["e007", "e008", "e009", "e010", "e011"],
+      "description": "New water supply connections require adherence to EPAL's 'Manual de Redes Prediais,' submission of specific project elements, and obtaining a 'Certificado de Exploração da Instalação de Águas' (Certificate of Operation).",
+      "source_urls": [
+        "https://www.epal.pt/EPAL",
+        "https://epal.pt/EPAL/menu/clientes/novos-abastecimentos/certificado-de-explora%C3%A7%C3%A3o",
+        "https://www.epal.pt/EPAL/menu/clientes/novos-abastecimentos/projeto-de-redes-prediais/manual-de-redes-prediais",
+        "https://www.epal.pt/EPAL/menu/clientes/novos-abastecimentos/projeto-de-redes-prediais/elementos-de-um-processo-de-abastecimento",
+        "https://www.epal.pt/EPAL/menu/clientes/faq/novos-abastecimentos"
+      ]
+    }
+  ],
+  "demand_metrics": {
+    "transit_frequency": "Not available from evidence",
+    "traffic_volume": "Not available from evidence",
+    "parking_requirements": "Not available from evidence"
+  },
+  "notes": [
+    "No automatic rejection criteria met based on the provided evidence, specifically due to the lack of explicit prohibitions from primary sources in the snippets and all evidence items being flagged 'is_primary: false'.",
+    "Further detailed investigation into the site's specific zoning, the Plano Diretor Municipal (PDM) of Lisbon, and the Apambiente flood maps is crucial.",
+    "The 'Pedido de Informação Prévia' [e002] is the recommended initial step to clarify specific municipal requirements for the proposed land use."
+  ]
+}

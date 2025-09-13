@@ -1,0 +1,94 @@
+[
+  {
+    "round_id": 1,
+    "queries": [
+      "site:igeo.pt \"parcel\u00e1rio\" \"direitos de passagem\" \"servid\u00f5es\" Lisboa PDF",
+      "site:lisboa.pt \"registo predial\" \"informa\u00e7\u00e3o cadastral\" \"propriet\u00e1rio\" \"acesso\" PDF",
+      "site:apambiente.pt \"mapa de risco de inunda\u00e7\u00f5es\" \"carta de perigosidade\" Lisboa PDF",
+      "site:lisboa.pt \"carta de sensibilidade ambiental\" \"\u00e1reas protegidas\" \"impacto ambiental\" PDF",
+      "site:epal.pt \"capacidade rede \u00e1gua\" \"Lisboa\" \"pedido liga\u00e7\u00e3o\" \"condi\u00e7\u00f5es t\u00e9cnicas\" PDF",
+      "site:e-redes.pt \"capacidade rede el\u00e9trica\" \"Lisboa\" \"ponto de liga\u00e7\u00e3o\" \"estudo impacto\" PDF",
+      "site:lisboa.pt \"rede de saneamento\" \"esgotos\" \"capacidade\" \"viabilidade liga\u00e7\u00e3o\" \"licenciamento\" PDF",
+      "site:lisboa.pt \"Plano Diretor Municipal\" PDM \"zonamento\" \"usos permitidos\" PDF",
+      "site:lisboa.pt \"Regulamento Municipal de Urbaniza\u00e7\u00e3o e Edifica\u00e7\u00e3o\" RMUE \"padr\u00f5es de desenvolvimento\" PDF",
+      "site:lisboa.pt \"patrim\u00f3nio cultural\" \"zonas de prote\u00e7\u00e3o\" \"DGPC\" \"interven\u00e7\u00e3o em edif\u00edcios\" PDF",
+      "site:lisboa.pt \"Carris\" \"mapa de rede\" \"frequ\u00eancia de transportes\" \"acessibilidade\" PDF",
+      "site:lisboa.pt \"Delibera\u00e7\u00f5es da C\u00e2mara\" \"projetos aprovados\" \"altera\u00e7\u00e3o de uso\" \"pareceres\" minutos"
+    ],
+    "urls_fetched": 29,
+    "evidence_ids": [
+      "e001",
+      "e002",
+      "e003",
+      "e004",
+      "e005",
+      "e006",
+      "e007",
+      "e008",
+      "e009",
+      "e010",
+      "e011",
+      "e012"
+    ],
+    "reflect_notes": [
+      "Missing slot environment",
+      "Missing slot utilities",
+      "Missing slot zoning_landuse",
+      "Prioritize official municipal documents and utility provider websites for definitive information on capacity and environmental restrictions.",
+      "Ensure all retrieved regulatory documents are the most recent versions and confirm their applicability to the specific project site.",
+      "For definitive site-specific feasibility regarding water and electricity, direct consultation with EPAL (water) and E-REDES (electricity) is recommended after initial desktop research."
+    ]
+  },
+  {
+    "round_id": 2,
+    "queries": [
+      "site:igeo.pt \"parcel\u00e1rio\" \"direitos de passagem\" \"servid\u00f5es\" Lisboa PDF",
+      "site:lisboa.pt \"registo predial\" \"informa\u00e7\u00e3o cadastral\" \"propriet\u00e1rio\" \"acesso\" PDF",
+      "site:apambiente.pt \"mapa de risco de inunda\u00e7\u00f5es\" \"carta de perigosidade\" Lisboa PDF",
+      "site:lisboa.pt \"carta de sensibilidade ambiental\" \"\u00e1reas protegidas\" \"impacto ambiental\" PDF",
+      "site:epal.pt \"capacidade rede \u00e1gua\" \"Lisboa\" \"pedido liga\u00e7\u00e3o\" \"condi\u00e7\u00f5es t\u00e9cnicas\" PDF",
+      "site:e-redes.pt \"capacidade rede el\u00e9trica\" \"Lisboa\" \"ponto de liga\u00e7\u00e3o\" \"estudo impacto\" PDF",
+      "site:lisboa.pt \"rede de saneamento\" \"esgotos\" \"capacidade\" \"viabilidade liga\u00e7\u00e3o\" \"licenciamento\" PDF",
+      "site:lisboa.pt \"Plano Diretor Municipal\" PDM \"zonamento\" \"usos permitidos\" PDF",
+      "site:lisboa.pt \"Regulamento Municipal de Urbaniza\u00e7\u00e3o e Edifica\u00e7\u00e3o\" RMUE \"padr\u00f5es de desenvolvimento\" PDF",
+      "site:lisboa.pt \"patrim\u00f3nio cultural\" \"zonas de prote\u00e7\u00e3o\" \"DGPC\" \"interven\u00e7\u00e3o em edif\u00edcios\" PDF",
+      "site:lisboa.pt \"Carris\" \"mapa de rede\" \"frequ\u00eancia de transportes\" \"acessibilidade\" PDF",
+      "site:lisboa.pt \"Delibera\u00e7\u00f5es da C\u00e2mara\" \"projetos aprovados\" \"altera\u00e7\u00e3o de uso\" \"pareceres\" minutos"
+    ],
+    "urls_fetched": 0,
+    "evidence_ids": [],
+    "reflect_notes": [
+      "Missing slot environment",
+      "Missing slot utilities",
+      "Missing slot zoning_landuse",
+      "The 'coverage' counts being 0 for Environment, Utilities, and Zoning indicate that despite previous queries, no definitive information has been extracted or confirmed for these categories. Priority must be given to reviewing results from past queries and confirming coverage.",
+      "Prioritize securing official, site-specific documentation (e.g., urbanistic certificates, utility technical sheets) to definitively assess zoning, utility capacities, and environmental constraints.",
+      "Engage directly with municipal departments (Urbanismo) and utility companies (EPAL, E-REDES) for detailed, site-specific assessments where online information is insufficient.",
+      "Ensure environmental investigations specifically identify and map floodplain designations, potential contamination, and any protected ecological zones relevant to the site."
+    ]
+  },
+  {
+    "round_id": 3,
+    "queries": [
+      "site:igeo.pt \"parcel\u00e1rio\" \"direitos de passagem\" \"servid\u00f5es\" Lisboa PDF",
+      "site:lisboa.pt \"registo predial\" \"informa\u00e7\u00e3o cadastral\" \"propriet\u00e1rio\" \"acesso\" PDF",
+      "site:apambiente.pt \"mapa de risco de inunda\u00e7\u00f5es\" \"carta de perigosidade\" Lisboa PDF",
+      "site:lisboa.pt \"carta de sensibilidade ambiental\" \"\u00e1reas protegidas\" \"impacto ambiental\" PDF",
+      "site:epal.pt \"capacidade rede \u00e1gua\" \"Lisboa\" \"pedido liga\u00e7\u00e3o\" \"condi\u00e7\u00f5es t\u00e9cnicas\" PDF",
+      "site:e-redes.pt \"capacidade rede el\u00e9trica\" \"Lisboa\" \"ponto de liga\u00e7\u00e3o\" \"estudo impacto\" PDF",
+      "site:lisboa.pt \"rede de saneamento\" \"esgotos\" \"capacidade\" \"viabilidade liga\u00e7\u00e3o\" \"licenciamento\" PDF",
+      "site:lisboa.pt \"Plano Diretor Municipal\" PDM \"zonamento\" \"usos permitidos\" PDF",
+      "site:lisboa.pt \"Regulamento Municipal de Urbaniza\u00e7\u00e3o e Edifica\u00e7\u00e3o\" RMUE \"padr\u00f5es de desenvolvimento\" PDF",
+      "site:lisboa.pt \"patrim\u00f3nio cultural\" \"zonas de prote\u00e7\u00e3o\" \"DGPC\" \"interven\u00e7\u00e3o em edif\u00edcios\" PDF",
+      "site:lisboa.pt \"Carris\" \"mapa de rede\" \"frequ\u00eancia de transportes\" \"acessibilidade\" PDF",
+      "site:lisboa.pt \"Delibera\u00e7\u00f5es da C\u00e2mara\" \"projetos aprovados\" \"altera\u00e7\u00e3o de uso\" \"pareceres\" minutos"
+    ],
+    "urls_fetched": 0,
+    "evidence_ids": [],
+    "reflect_notes": [
+      "Missing slot environment",
+      "Missing slot utilities",
+      "Missing slot zoning_landuse"
+    ]
+  }
+]
