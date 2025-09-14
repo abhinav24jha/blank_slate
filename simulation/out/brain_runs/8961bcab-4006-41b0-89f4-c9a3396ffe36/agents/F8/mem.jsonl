@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:36:12Z", "kind": "persona", "persona": {"id": "F8", "role": "resident", "name": "Morgan Wilson", "traits": ["night-owl", "frugal", "health-conscious", "optimistic"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T09:37:34Z", "kind": "decision", "text": "Chose a quick trip to the grocery store before hitting the gym.", "tags": ["grocery"]}

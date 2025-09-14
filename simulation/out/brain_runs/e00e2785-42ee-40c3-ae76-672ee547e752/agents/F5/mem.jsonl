@@ -1,0 +1,16 @@
+{"ts": "2025-09-14T09:59:19Z", "kind": "persona", "persona": {"id": "F5", "role": "student", "name": "Morgan Garcia", "traits": ["optimistic", "curious", "early-riser", "extrovert"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegan", "mobility": "bike", "study_spot": "outdoors", "favorite": "grocery"}}}
+{"ts": "2025-09-14T10:00:06Z", "kind": "decision", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["grocery"]}
+{"ts": "2025-09-14T10:04:31Z", "kind": "chat", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:04:44Z", "kind": "chat", "text": "Chatted with Riley Garcia about a nearby spot", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:04:48Z", "kind": "chat", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:06:03Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:06:23Z", "kind": "chat", "text": "Chatted with Riley Garcia about a nearby spot", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:06:28Z", "kind": "chat", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:06:41Z", "kind": "chat", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:06:50Z", "kind": "chat", "text": "Chatted with Riley Garcia about a nearby spot", "tags": ["chat", "F14"]}
+{"ts": "2025-09-14T10:07:22Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:08:10Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:09:22Z", "kind": "decision", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["grocery"]}
+{"ts": "2025-09-14T10:09:39Z", "kind": "decision", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["grocery"]}
+{"ts": "2025-09-14T10:09:40Z", "kind": "decision", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["grocery"]}
+{"ts": "2025-09-14T10:09:44Z", "kind": "decision", "text": "Chose grocery store near campus to stock up on essentials.", "tags": ["grocery"]}

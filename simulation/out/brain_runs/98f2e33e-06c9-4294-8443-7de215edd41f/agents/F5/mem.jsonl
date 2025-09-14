@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T09:37:34Z", "kind": "persona", "persona": {"id": "F5", "role": "student", "name": "Morgan Garcia", "traits": ["optimistic", "curious", "early-riser", "extrovert"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegan", "mobility": "bike", "study_spot": "outdoors", "favorite": "grocery"}}}
+{"ts": "2025-09-14T09:39:06Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:42:57Z", "kind": "decision", "text": "Chose grocery near campus before class.", "tags": ["grocery"]}

@@ -1,2 +1,7 @@
 {"ts": "2025-09-14T09:26:12Z", "kind": "persona", "persona": {"id": "F11", "role": "student", "name": "Riley Martin", "traits": ["foodie", "bookish", "social", "planner"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "walk", "study_spot": "lively", "favorite": "restaurant"}}}
 {"ts": "2025-09-14T09:26:41Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:48Z", "kind": "chat", "text": "Chose a cafe near campus to wake up and study.", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T09:28:06Z", "kind": "chat", "text": "Chose a lively spot for studying today.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:28:24Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:28:38Z", "kind": "decision", "text": "Chose cafes near campus for studying; next step is to find a lively restaurant.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T09:29:05Z", "kind": "decision", "text": "Chose a cafe near campus for studying, next step is a lively restaurant.", "tags": ["restaurant"]}

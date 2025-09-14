@@ -1,0 +1,15 @@
+{"id": "F0", "next_intent": {"category": "cafe", "name": null}, "thought": "Optimistic and social, need a caffeine boost for class. Cafes are lively and close to campus.", "chat": null}
+{"id": "F1", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and I can grab a quick vegetarian-friendly coffee.", "chat": null}
+{"id": "F2", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and early riser, need a quick coffee to start the day.", "chat": null}
+{"id": "F3", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class to stay alert.", "chat": null}
+{"id": "F4", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are closer and more convenient than other options; perfect for a caffeine boost before class.", "chat": null}
+{"id": "F5", "next_intent": {"category": "grocery", "name": null}, "thought": "Morgan prefers vegan and needs a quick stop for groceries.", "chat": null}
+{"id": "F6", "next_intent": {"category": "cafe", "name": null}, "thought": "Punctual early-riser needs caffeine before class; cafe fits budget and study spot.", "chat": null}
+{"id": "F7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "F8", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine is crucial before class; cafe fits budget and study spot preference.", "chat": null}
+{"id": "F9", "next_intent": {"category": "cafe", "name": null}, "thought": "A quick coffee to stay alert for class.", "chat": null}
+{"id": "F10", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine needs high, cafe for a quick study spot.", "chat": null}
+{"id": "F11", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery is closest to campus and can provide a quick, healthy snack.", "chat": null}
+{"id": "F12", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes offer caffeine and are quiet, ideal for studying early in the day.", "chat": null}
+{"id": "F13", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed more than hunger or health, and I prefer grocery shopping for budget reasons.", "chat": null}
+{"id": "F14", "next_intent": {"category": "cafe", "name": null}, "thought": "Riley needs caffeine to stay alert for class. Cafe is the best option given the time and preferences.", "chat": null}

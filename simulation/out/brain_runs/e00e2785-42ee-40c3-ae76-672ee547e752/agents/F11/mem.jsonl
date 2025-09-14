@@ -1,0 +1,17 @@
+{"ts": "2025-09-14T09:59:19Z", "kind": "persona", "persona": {"id": "F11", "role": "student", "name": "Taylor Lee", "traits": ["punctual", "curious", "optimistic", "introvert"], "prefs": {"coffee": "low", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T10:00:28Z", "kind": "decision", "text": "Chose grocery near campus for pescatarian snacks.", "tags": ["grocery"]}
+{"ts": "2025-09-14T10:01:19Z", "kind": "chat", "text": "Visited grocery for snacks.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:01:28Z", "kind": "chat", "text": "Picked up pescatarian treats from grocery.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:01:32Z", "kind": "chat", "text": "Chatted with Riley Martin about a nearby spot", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:03:34Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:03:41Z", "kind": "chat", "text": "Visited grocery for snacks.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:03:44Z", "kind": "chat", "text": "Visited grocery for snacks.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:04:10Z", "kind": "chat", "text": "Visited grocery for snacks.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:04:13Z", "kind": "chat", "text": "Visited grocery for snacks.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T10:04:17Z", "kind": "decision", "text": "Chatted with Riley Martin about a nearby spot for coffee.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:04:35Z", "kind": "decision", "text": "Chose a cafe for caffeine before study session.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:06:12Z", "kind": "decision", "text": "Chatted with Riley Martin about a nearby spot for coffee.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:06:33Z", "kind": "decision", "text": "Visited grocery for snacks. Chatted with Riley Martin about a nearby spot for coffee.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:06:35Z", "kind": "decision", "text": "Visited grocery for snacks. Chatted with Riley Martin about a nearby spot for coffee.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:06:54Z", "kind": "decision", "text": "Chatted with Riley Martin about a nearby spot for coffee.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:18Z", "kind": "decision", "text": "Chatted with Riley Martin about a nearby spot for coffee.", "tags": ["cafe"]}

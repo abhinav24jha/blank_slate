@@ -1,0 +1,6 @@
+{"ts": "2025-09-14T09:59:19Z", "kind": "persona", "persona": {"id": "F13", "role": "student", "name": "Casey Nguyen", "traits": ["planner", "social", "introvert", "foodie"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T10:00:36Z", "kind": "decision", "text": "Chose cafe near campus to wake up before studying.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:06:59Z", "kind": "chat", "text": "Woke up early for caffeine fix before class.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:08:06Z", "kind": "chat", "text": "Woke up early for caffeine fix before class.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:10:38Z", "kind": "decision", "text": "Chose grocery for quick food shopping before class.", "tags": ["grocery"]}
+{"ts": "2025-09-14T10:12:20Z", "kind": "decision", "text": "Chose grocery for quick food shopping before class.", "tags": ["grocery"]}

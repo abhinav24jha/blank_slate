@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:52:08Z", "kind": "persona", "persona": {"id": "F0", "role": "worker", "name": "Taylor Garcia", "traits": ["optimistic", "social", "curious", "punctual"], "prefs": {"coffee": "low", "budget": "high", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T09:53:49Z", "kind": "decision", "text": "Chose cafe near park for caffeine fix before study session.", "tags": ["cafe"]}

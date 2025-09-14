@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T10:07:42Z", "kind": "persona", "persona": {"id": "F8", "role": "worker", "name": "Morgan Wilson", "traits": ["night-owl", "frugal", "health-conscious", "optimistic"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T10:13:05Z", "kind": "decision", "text": "Chose grocery store near home to get kosher groceries.", "tags": ["grocery"]}

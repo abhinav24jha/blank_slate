@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T10:19:49Z", "kind": "persona", "persona": {"id": "F13", "role": "resident", "name": "Casey Nguyen", "traits": ["planner", "social", "introvert", "foodie"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T10:20:44Z", "kind": "decision", "text": "Chose a cafe near grocery for caffeine before planning groceries.", "tags": ["cafe"]}

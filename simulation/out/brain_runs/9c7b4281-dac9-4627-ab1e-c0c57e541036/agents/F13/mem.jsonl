@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:54:58Z", "kind": "persona", "persona": {"id": "F13", "role": "student", "name": "Casey Nguyen", "traits": ["planner", "social", "introvert", "foodie"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T09:59:43Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}

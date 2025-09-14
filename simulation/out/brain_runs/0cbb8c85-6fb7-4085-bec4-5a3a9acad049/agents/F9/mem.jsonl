@@ -4,3 +4,6 @@
 {"ts": "2025-09-14T09:27:11Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["grocery"]}
 {"ts": "2025-09-14T09:27:25Z", "kind": "chat", "text": "Went with a quiet spot after choosing the right cafe.", "tags": ["chat", "F13"]}
 {"ts": "2025-09-14T09:27:28Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:28:19Z", "kind": "chat", "text": "Woke up early to avoid rush hour.", "tags": ["chat", "F8"]}
+{"ts": "2025-09-14T09:28:53Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:28:59Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

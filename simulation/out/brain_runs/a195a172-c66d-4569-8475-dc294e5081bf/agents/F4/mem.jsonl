@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:36:11Z", "kind": "persona", "persona": {"id": "F4", "role": "student", "name": "Jordan Garcia", "traits": ["introvert", "extrovert", "punctual", "tech-savvy"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T09:36:53Z", "kind": "decision", "text": "Chose cafe for early morning caffeine break.", "tags": ["cafe"]}

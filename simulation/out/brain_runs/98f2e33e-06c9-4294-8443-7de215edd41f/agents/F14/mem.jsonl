@@ -1,0 +1,9 @@
+{"ts": "2025-09-14T09:37:34Z", "kind": "persona", "persona": {"id": "F14", "role": "resident", "name": "Riley Garcia", "traits": ["early-riser", "health-conscious", "planner", "curious"], "prefs": {"coffee": "high", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "quiet", "favorite": "library"}}}
+{"ts": "2025-09-14T09:39:41Z", "kind": "decision", "text": "Chose a cafe near library for quiet caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:42:22Z", "kind": "chat", "text": "Chatted with Taylor Garcia about a nearby spot", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T09:42:28Z", "kind": "chat", "text": "Decided on quiet library for caffeine break.", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T09:42:31Z", "kind": "chat", "text": "Saw someone at library had similar needs.", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T09:42:40Z", "kind": "decision", "text": "Chose quiet coffee spot near library again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:42:42Z", "kind": "decision", "text": "Chose a quiet spot for caffeine before class.", "tags": ["coffee"]}
+{"ts": "2025-09-14T09:42:44Z", "kind": "decision", "text": "Chose cafe near library for quick caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:43:37Z", "kind": "decision", "text": "Chose cafe near library for quiet caffeine.", "tags": ["cafe"]}

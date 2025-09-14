@@ -1,0 +1,17 @@
+{"ts": "2025-09-14T09:59:19Z", "kind": "persona", "persona": {"id": "F6", "role": "student", "name": "Alex Nguyen", "traits": ["punctual", "early-riser", "curious", "night-owl"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "outdoors", "favorite": "park"}}}
+{"ts": "2025-09-14T10:00:09Z", "kind": "decision", "text": "Chose a pescatarian-friendly cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:05:39Z", "kind": "chat", "text": "Chose cafe near campus for caffeine fix before class.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:05:54Z", "kind": "chat", "text": "Chose a pescatarian cafe for caffeine fix.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:05:58Z", "kind": "chat", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:06:59Z", "kind": "chat", "text": "Chose pescatarian-friendly cafe near campus.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T10:07:19Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:07:35Z", "kind": "chat", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:07:40Z", "kind": "chat", "text": "Chose cafe near campus for caffeine fix before class.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:07:53Z", "kind": "chat", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:07:57Z", "kind": "chat", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T10:09:18Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["education"]}
+{"ts": "2025-09-14T10:09:47Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["education"]}
+{"ts": "2025-09-14T10:10:41Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:02Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:04Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:07Z", "kind": "decision", "text": "Chose pescatarian-friendly cafe near campus to wake up.", "tags": ["cafe"]}

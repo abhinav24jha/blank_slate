@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T09:42:23Z", "kind": "persona", "persona": {"id": "F4", "role": "student", "name": "Jordan Garcia", "traits": ["introvert", "extrovert", "punctual", "tech-savvy"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T09:42:59Z", "kind": "decision", "text": "Chose cafe for caffeine before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:45:58Z", "kind": "decision", "text": "Chose cafe near campus for caffeine before class.", "tags": ["cafe"]}

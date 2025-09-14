@@ -5,3 +5,9 @@
 {"ts": "2025-09-14T09:27:22Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["grocery"]}
 {"ts": "2025-09-14T09:27:34Z", "kind": "decision", "text": "Chatted with Taylor Garcia about a nearby spot", "tags": ["grocery"]}
 {"ts": "2025-09-14T09:27:42Z", "kind": "chat", "text": "Chose a cafe near campus to wake up; Chatted with Taylor Garcia about a nearby spot", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T09:27:53Z", "kind": "decision", "text": "Chose a cafe near campus to wake up. Chatted with Taylor Garcia about a nearby spot. Chose a cafe near campus to wake up.", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:27:59Z", "kind": "chat", "text": "Chatted about nearby study spots; chose a cafe near campus to wake up and study.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T09:28:02Z", "kind": "decision", "text": "Chose a cafe near campus to wake up; Chatted with Taylor Garcia about a nearby spot", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:28:09Z", "kind": "decision", "text": "Chose a cafe near campus to wake up; Chatted with Taylor Garcia about a nearby spot", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:28:28Z", "kind": "chat", "text": "Chose cafe near campus; noted it's quiet.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T09:28:32Z", "kind": "decision", "text": "Chose a cafe near campus to wake up; Chatted with Taylor Garcia about a nearby spot and chose a grocery store", "tags": ["grocery"]}

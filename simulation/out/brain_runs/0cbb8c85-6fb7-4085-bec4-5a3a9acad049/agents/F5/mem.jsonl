@@ -1,2 +1,3 @@
 {"ts": "2025-09-14T09:26:12Z", "kind": "persona", "persona": {"id": "F5", "role": "student", "name": "Taylor Nguyen", "traits": ["extrovert", "optimistic", "health-conscious", "night-owl"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegan", "mobility": "walk", "study_spot": "quiet", "favorite": "gym"}}}
 {"ts": "2025-09-14T09:26:27Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and catch up on studies.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:28:12Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

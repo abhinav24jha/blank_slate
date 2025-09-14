@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:54:58Z", "kind": "persona", "persona": {"id": "F12", "role": "visitor", "name": "Riley Patel", "traits": ["planner", "early-riser", "bookish", "gym-goer"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T09:59:31Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and prepare for my workout.", "tags": ["cafe"]}

@@ -1,0 +1,18 @@
+{"ts": "2025-09-14T09:59:19Z", "kind": "persona", "persona": {"id": "F7", "role": "student", "name": "Jamie Singh", "traits": ["health-conscious", "bookish", "early-riser", "extrovert"], "prefs": {"coffee": "low", "budget": "high", "diet": "omnivorous", "mobility": "walk", "study_spot": "outdoors", "favorite": "park"}}}
+{"ts": "2025-09-14T10:00:13Z", "kind": "decision", "text": "Chose outdoor study spot near campus.", "tags": ["education"]}
+{"ts": "2025-09-14T10:02:55Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:05:39Z", "kind": "chat", "text": "Chose outdoor study spot near campus.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:05:54Z", "kind": "chat", "text": "Chose outdoor study spot near campus.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:05:58Z", "kind": "chat", "text": "Chose outdoor study spot near campus.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:07:35Z", "kind": "chat", "text": "Chose cafe near campus for caffeine fix before class.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:07:40Z", "kind": "chat", "text": "Chose outdoor study spot near campus.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:07:53Z", "kind": "chat", "text": "Chose outdoor study spot near campus for caffeine fix.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:07:57Z", "kind": "chat", "text": "Chose outdoor study spot near campus.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T10:08:06Z", "kind": "chat", "text": "Chose cafe near campus for caffeine fix before class.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T10:08:16Z", "kind": "decision", "text": "Chose cafe near campus for study spot.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:09:56Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:10:28Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:24Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:40Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:41Z", "kind": "decision", "text": "Chose cafe near campus for study spot.", "tags": ["cafe"]}
+{"ts": "2025-09-14T10:11:43Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix again.", "tags": ["cafe"]}

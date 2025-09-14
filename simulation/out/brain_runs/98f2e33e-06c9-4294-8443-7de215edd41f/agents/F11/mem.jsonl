@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T09:37:34Z", "kind": "persona", "persona": {"id": "F11", "role": "worker", "name": "Taylor Lee", "traits": ["punctual", "curious", "optimistic", "introvert"], "prefs": {"coffee": "low", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T09:39:29Z", "kind": "decision", "text": "Chose grocery store near home to restock.", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:43:23Z", "kind": "decision", "text": "Chose grocery near home to restock.", "tags": ["grocery"]}

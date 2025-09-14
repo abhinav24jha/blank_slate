@@ -1,0 +1,7 @@
+{"ts": "2025-09-14T09:42:23Z", "kind": "persona", "persona": {"id": "F9", "role": "student", "name": "Avery Garcia", "traits": ["punctual", "impulsive", "frugal", "early-riser"], "prefs": {"coffee": "low", "budget": "low", "diet": "halal", "mobility": "walk", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T09:43:21Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:44:59Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T09:45:10Z", "kind": "chat", "text": "Chose a cafe near campus; now considering gym", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T09:45:46Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:45:49Z", "kind": "decision", "text": "Chose cafe near campus to wake up, now looking for quiet study spot.", "tags": ["education"]}
+{"ts": "2025-09-14T09:47:05Z", "kind": "decision", "text": "Chose cafe near campus to wake up, now looking for quiet study spot.", "tags": ["education"]}

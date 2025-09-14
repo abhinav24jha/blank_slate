@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T09:37:34Z", "kind": "persona", "persona": {"id": "F6", "role": "worker", "name": "Alex Nguyen", "traits": ["punctual", "early-riser", "curious", "night-owl"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "quiet", "favorite": "cafe"}}}
+{"ts": "2025-09-14T09:39:09Z", "kind": "decision", "text": "Chose cafe for morning coffee to wake up and find a quiet place.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:43:01Z", "kind": "decision", "text": "Chose cafe for morning coffee to wake up and find a quiet place.", "tags": ["cafe"]}

@@ -1,0 +1,22 @@
+{"ts": "2025-09-14T09:44:46Z", "kind": "persona", "persona": {"id": "F14", "role": "student", "name": "Riley Garcia", "traits": ["early-riser", "health-conscious", "planner", "curious"], "prefs": {"coffee": "high", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "quiet", "favorite": "library"}}}
+{"ts": "2025-09-14T09:47:58Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:49:31Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:49:45Z", "kind": "chat", "text": "Visited a few libraries before settling in.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:49:49Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:52:32Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:53:38Z", "kind": "chat", "text": "Visited a few libraries before settling in.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:53:44Z", "kind": "chat", "text": "Visited a few libraries before settling in; Chose a cafe near campus to wake up.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:53:55Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:53:58Z", "kind": "chat", "text": "Visited a few libraries before settling in.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:54:02Z", "kind": "chat", "text": "Visited a few libraries before settling in.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:54:12Z", "kind": "chat", "text": "Visited few libraries before settling in; Visited few libraries before settling in.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T09:55:08Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:55:10Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:56:02Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:56:08Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:56:10Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:56:14Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:56:27Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:56:29Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:57:00Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:57:49Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

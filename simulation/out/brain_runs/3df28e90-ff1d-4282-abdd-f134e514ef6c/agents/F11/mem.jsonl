@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:36:11Z", "kind": "persona", "persona": {"id": "F11", "role": "student", "name": "Taylor Lee", "traits": ["punctual", "curious", "optimistic", "introvert"], "prefs": {"coffee": "low", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T09:38:13Z", "kind": "decision", "text": "Chose grocery store near campus for pescatarian snacks.", "tags": ["grocery"]}

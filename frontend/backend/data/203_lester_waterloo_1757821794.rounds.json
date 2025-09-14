@@ -1,0 +1,76 @@
+[
+  {
+    "round_id": 1,
+    "queries": [
+      "site:ontario.ca '203 Lester Waterloo' land registry title search PDF",
+      "site:waterloo.ca '203 Lester Waterloo' easement right-of-way map development",
+      "site:grandriver.ca 'Waterloo' floodplain map 'Lester Street' PDF",
+      "site:waterloo.ca '203 Lester Waterloo' environmental impact assessment report",
+      "site:waterloo.ca 'Waterloo Region' water wastewater capacity commercial connection report",
+      "site:waterloohydro.com '203 Lester Waterloo' electrical service capacity commercial development",
+      "site:waterloo.ca '203 Lester Waterloo' zoning by-law permitted uses grocery store",
+      "site:waterloo.ca 'Waterloo Official Plan' commercial retail policies PDF",
+      "site:waterloo.ca 'Waterloo Heritage Register' '203 Lester' PDF",
+      "site:waterloo.ca 'Lester Street Waterloo' traffic volume AADT report PDF",
+      "site:grt.ca '203 Lester Waterloo' transit routes frequency service levels",
+      "site:waterloo.ca 'Committee of Adjustment' minutes 'Lester Street' commercial variance PDF"
+    ],
+    "urls_fetched": 0,
+    "evidence_ids": [],
+    "reflect_notes": [
+      "Insufficient evidence collected",
+      "Prioritize obtaining official utility capacity reports from the Region of Waterloo and Waterloo North Hydro.",
+      "Focus on finding the specific zoning by-law text and map that applies to 203 Lester Waterloo for complete development standards.",
+      "Verify the actual heritage designation status and any associated development restrictions, not just inclusion on a register.",
+      "Initial environmental queries should confirm if a Phase 1 Environmental Site Assessment (ESA) is warranted based on site history or public records."
+    ]
+  },
+  {
+    "round_id": 2,
+    "queries": [
+      "site:ontario.ca '203 Lester Waterloo' land registry title search PDF",
+      "site:waterloo.ca '203 Lester Waterloo' easement right-of-way map development",
+      "site:grandriver.ca 'Waterloo' floodplain map 'Lester Street' PDF",
+      "site:waterloo.ca '203 Lester Waterloo' environmental impact assessment report",
+      "site:waterloo.ca 'Waterloo Region' water wastewater capacity commercial connection report",
+      "site:waterloohydro.com '203 Lester Waterloo' electrical service capacity commercial development",
+      "site:waterloo.ca '203 Lester Waterloo' zoning by-law permitted uses grocery store",
+      "site:waterloo.ca 'Waterloo Official Plan' commercial retail policies PDF",
+      "site:waterloo.ca 'Waterloo Heritage Register' '203 Lester' PDF",
+      "site:waterloo.ca 'Lester Street Waterloo' traffic volume AADT report PDF",
+      "site:grt.ca '203 Lester Waterloo' transit routes frequency service levels",
+      "site:waterloo.ca 'Committee of Adjustment' minutes 'Lester Street' commercial variance PDF"
+    ],
+    "urls_fetched": 0,
+    "evidence_ids": [],
+    "reflect_notes": [
+      "Insufficient evidence collected",
+      "Crucially, no *evidence* was found despite previous queries, indicating a significant gap. Prioritize obtaining definitive documents.",
+      "Focus on official municipal and utility provider websites to retrieve site-specific zoning, official plan, and utility capacity reports.",
+      "Consult provincial (e.g., Ontario Environmental Site Registry) and conservation authority (e.g., Grand River Conservation Authority) sources for environmental and hazard information.",
+      "Verify all findings at the parcel level to ensure accuracy for 203 Lester Waterloo."
+    ]
+  },
+  {
+    "round_id": 3,
+    "queries": [
+      "site:ontario.ca '203 Lester Waterloo' land registry title search PDF",
+      "site:waterloo.ca '203 Lester Waterloo' easement right-of-way map development",
+      "site:grandriver.ca 'Waterloo' floodplain map 'Lester Street' PDF",
+      "site:waterloo.ca '203 Lester Waterloo' environmental impact assessment report",
+      "site:waterloo.ca 'Waterloo Region' water wastewater capacity commercial connection report",
+      "site:waterloohydro.com '203 Lester Waterloo' electrical service capacity commercial development",
+      "site:waterloo.ca '203 Lester Waterloo' zoning by-law permitted uses grocery store",
+      "site:waterloo.ca 'Waterloo Official Plan' commercial retail policies PDF",
+      "site:waterloo.ca 'Waterloo Heritage Register' '203 Lester' PDF",
+      "site:waterloo.ca 'Lester Street Waterloo' traffic volume AADT report PDF",
+      "site:grt.ca '203 Lester Waterloo' transit routes frequency service levels",
+      "site:waterloo.ca 'Committee of Adjustment' minutes 'Lester Street' commercial variance PDF"
+    ],
+    "urls_fetched": 0,
+    "evidence_ids": [],
+    "reflect_notes": [
+      "Insufficient evidence collected"
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+{"ts": "2025-09-14T09:44:46Z", "kind": "persona", "persona": {"id": "F4", "role": "resident", "name": "Jordan Garcia", "traits": ["introvert", "extrovert", "punctual", "tech-savvy"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T09:46:17Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:49:52Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:50:25Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:51:27Z", "kind": "decision", "text": "Chose grocery using bias-aware fallback.", "tags": ["grocery"]}

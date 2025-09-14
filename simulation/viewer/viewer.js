@@ -1334,6 +1334,31 @@
     });
   }
 
+  function setupCollapsibles(){
+    try{
+      const panels = [
+        { id:'metricsPanel', key:'ui_collapse_metrics' },
+        { id:'scenarioPanel', key:'ui_collapse_scenario' },
+        { id:'thoughtsPanel', key:'ui_collapse_thoughts' },
+        { id:'feedPanel', key:'ui_collapse_feed' },
+      ];
+      panels.forEach(({id, key})=>{
+        const el = document.getElementById(id); if (!el) return;
+        const header = el.querySelector('header');
+        const toggle = el.querySelector('.collapseToggle');
+        const body = el.querySelector('.body');
+        // Default collapsed unless explicitly saved open
+        const saved = localStorage.getItem(key);
+        const loadCollapsed = (saved === null) ? true : (saved === '1');
+        if (loadCollapsed){ el.classList.add('collapsed'); }
+        function setCollapsed(v){ if (v) el.classList.add('collapsed'); else el.classList.remove('collapsed'); localStorage.setItem(key, v ? '1' : '0'); }
+        function onClick(e){ if (e && e.target && e.target.closest('#thoughtsAgentSelect')) return; setCollapsed(!el.classList.contains('collapsed')); }
+        if (toggle) toggle.addEventListener('click', onClick);
+        if (header) header.addEventListener('dblclick', onClick);
+      });
+    } catch(e){ console.warn('setupCollapsibles failed', e); }
+  }
+
   // Search UI elements
   const searchBox = document.getElementById('searchBox');
   const searchResults = document.getElementById('searchResults');
@@ -1521,6 +1546,9 @@
       feedEl = document.getElementById('societyFeed');
       thoughtsSelect = document.getElementById('thoughtsAgentSelect');
       thoughtsContent = document.getElementById('thoughtsContent');
+
+      // Collapsible right-side panels
+      setupCollapsibles();
 
       // Start brain run (fire-and-forget). Use the actual scenario id so analytics can attribute correctly.
       const hypId = (currentScenario === 'baseline') ? 'baseline' : currentScenario;

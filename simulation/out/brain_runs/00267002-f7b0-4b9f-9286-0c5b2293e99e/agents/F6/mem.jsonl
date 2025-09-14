@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T10:19:49Z", "kind": "persona", "persona": {"id": "F6", "role": "resident", "name": "Alex Nguyen", "traits": ["punctual", "early-riser", "curious", "night-owl"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "quiet", "favorite": "cafe"}}}
+{"ts": "2025-09-14T10:20:18Z", "kind": "decision", "text": "Chose cafe for quick coffee before class.", "tags": ["cafe"]}
