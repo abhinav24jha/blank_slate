@@ -6,6 +6,64 @@ import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
 import { MapPin } from "lucide-react";
 
+// Modern Compass Logo Component
+const CompassLogo = () => (
+  <div className="relative h-8 w-8">
+    {/* Green blob background */}
+    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-lg" />
+    
+    {/* Compass SVG */}
+    <svg
+      className="absolute inset-1 h-6 w-6 text-white"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Compass circle */}
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        fill="none"
+      />
+      
+      {/* North arrow */}
+      <path
+        d="M12 2L14 8L12 6L10 8L12 2Z"
+        fill="currentColor"
+      />
+      
+      {/* South arrow */}
+      <path
+        d="M12 22L10 16L12 18L14 16L12 22Z"
+        fill="currentColor"
+      />
+      
+      {/* East arrow */}
+      <path
+        d="M22 12L16 10L18 12L16 14L22 12Z"
+        fill="currentColor"
+      />
+      
+      {/* West arrow */}
+      <path
+        d="M2 12L8 14L6 12L8 10L2 12Z"
+        fill="currentColor"
+      />
+      
+      {/* Center dot */}
+      <circle
+        cx="12"
+        cy="12"
+        r="1.5"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+);
+
 type Props = { onStart: (space: string, userInput: string, runPipeline: boolean) => void };
 
 export default function StartScreen({ onStart }: Props) {
@@ -56,7 +114,7 @@ export default function StartScreen({ onStart }: Props) {
       <header className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-lg bg-emerald-500" />
+            <CompassLogo />
             <span className="text-sm font-medium text-neutral-300">Blank Slate</span>
           </div>
           <span className="text-xs text-neutral-500">v0.1</span>

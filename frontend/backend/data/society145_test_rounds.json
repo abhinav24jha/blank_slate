@@ -1,0 +1,53 @@
+[
+  {
+    "round_id": 1,
+    "queries": [
+      "site:ontario.ca land registry title search process property ownership Waterloo",
+      "site:waterloo.ca property information 'society145' easements covenants right-of-way PDF",
+      "site:grandriver.ca floodplain map Waterloo 'society145' conservation areas PDF",
+      "site:waterloo.ca OR site:ontario.ca source water protection plan Waterloo contaminated sites 'society145'",
+      "site:waterloo.ca development services water wastewater capacity 'society145' connection requirements",
+      "site:waterloohydro.com OR site:epcor.com electrical service availability Waterloo 'society145' transformer capacity",
+      "site:waterloo.ca zoning by-law 'society145' community amenity permitted uses",
+      "site:waterloo.ca official plan policies 'community amenity' development standards Waterloo PDF",
+      "site:waterloo.ca heritage register 'society145' cultural significance inventory",
+      "site:grt.ca OR site:waterloo.ca transit routes 'society145' service frequency Waterloo",
+      "site:waterloo.ca traffic count AADT 'society145' parking requirements community amenity",
+      "site:waterloo.ca committee of adjustment minutes 'society145' variance approval 'community amenity'"
+    ],
+    "urls_fetched": 30,
+    "evidence_ids": [
+      "e001",
+      "e002",
+      "e003",
+      "e004",
+      "e005",
+      "e006",
+      "e007",
+      "e008",
+      "e009",
+      "e010",
+      "e011",
+      "e012",
+      "e013",
+      "e014",
+      "e015",
+      "e016",
+      "e017",
+      "e018",
+      "e019",
+      "e020",
+      "e021",
+      "e022",
+      "e023",
+      "e024",
+      "e025",
+      "e026",
+      "e027",
+      "e028",
+      "e029",
+      "e030"
+    ],
+    "reflect_notes": []
+  }
+]
