@@ -40,8 +40,24 @@
       .legend input[type="checkbox"] { width: 16px; height: 16px; margin: 0; border-radius: 4px; background: #1a1c1f; border: 1px solid rgba(255,255,255,0.1); }
       .legend .hint { font-size: 11px; opacity: 0.65; padding: 8px 12px 10px; border-top: 1px solid rgba(255,255,255,0.08); }
 
-      .hud { position: absolute; left: 16px; bottom: 16px; padding: 8px 10px; font-size: 12px; }
-      .hud code { color: #9ccaff; }
+      /* Old fixed HUD (kept but hidden; replaced by floating agent HUD) */
+      .hud { display:none; }
+      /* Floating agent HUD */
+      .agentHUD { position:absolute; min-width: 280px; max-width: 340px; padding: 10px 12px; font-size: 12px; pointer-events:none; }
+      .agentHUD .row { display:flex; align-items:center; justify-content:space-between; gap:10px; margin: 6px 0; }
+      .agentHUD .badge { font-size: 11px; padding: 3px 8px; border-radius: 999px; background: #1a1c1f; border: 1px solid rgba(255,255,255,0.08); color:#cbd5e1; }
+      .agentHUD .title { font-weight: 600; letter-spacing: 0.2px; }
+      .agentHUD .muted { opacity: 0.8; }
+      .agentHUD .bar { height: 6px; flex:1; background: #141518; border-radius: 999px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); }
+      .agentHUD .fill { height: 100%; background: linear-gradient(90deg,#60a5fa,#34d399); }
+      .agentHUD .mono { color: #9ccaff; }
+      .hud .row { display:flex; align-items:center; justify-content:space-between; gap:10px; margin: 6px 0; }
+      .hud .badge { font-size: 11px; padding: 3px 8px; border-radius: 999px; background: #1a1c1f; border: 1px solid rgba(255,255,255,0.08); color:#cbd5e1; }
+      .hud .title { font-weight: 600; letter-spacing: 0.2px; }
+      .hud .muted { opacity: 0.8; }
+      .hud .bar { height: 6px; flex:1; background: #141518; border-radius: 999px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); }
+      .hud .fill { height: 100%; background: linear-gradient(90deg,#60a5fa,#34d399); }
+      .hud .mono { color: #9ccaff; }
 
       /* Minimap */
       .minimap { position: absolute; right: 16px; bottom: 16px; padding: 8px; display: grid; gap: 8px; }
@@ -67,9 +83,15 @@
         <div class="btn" id="btnFit" title="Fit whole map">▢</div>
         <div class="label">Zoom: <code id="hudZoom">—</code> | Grid: <code id="hudTiles">—</code></div>
         <div class="search">
-          <input id="searchBox" type="text" placeholder="Search buildings, shops..." />
+          <input id="searchBox" type="text" placeholder="Search buildings, POIs… (Enter to confirm)" />
           <div id="searchResults"></div>
         </div>
+        <div class="label" style="margin-left:12px;">Speed:</div>
+        <div class="btn" id="speed1" title="1x">1×</div>
+        <div class="btn" id="speed2" title="2x">2×</div>
+        <div class="btn" id="speed4" title="4x">4×</div>
+        <div class="btn" id="speed10" title="10x">10×</div>
+        <div class="btn" id="speed100" title="100x">100×</div>
       </div>
 
       <div class="legend panel">

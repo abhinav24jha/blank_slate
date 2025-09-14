@@ -2,6 +2,9 @@
   const appDiv = document.getElementById('app');
   const hudTiles = document.getElementById('hudTiles');
   const hudZoom = document.getElementById('hudZoom');
+  const hudPanel = document.querySelector('.hud');
+  // Floating HUD element created on demand
+  let agentHudEl = null;
 
   const SEMANTIC_IMG_URL = '../out/society145_1km/semantic_preview.png';
   const POIS_URL = '../out/society145_1km/pois.json';
@@ -9,6 +12,45 @@
   const VENUES_URL = '../out/society145_1km/venues.json';
   const MAIN_POI_LON = -80.5381896;
   const MAIN_POI_LAT = 43.4765757;
+
+  // Brain server config
+  const BRAIN_URL = 'http://127.0.0.1:9000';
+  let runId = null;
+  const METRICS_FLUSH_MS = 8000;
+  let metricsBuffer = [];
+  let lastMetricsFlush = performance.now();
+
+  async function httpPostJson(url, body){
+    try{
+      const r = await fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify(body) });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return await r.json();
+    } catch(e){ console.warn('httpPostJson failed', url, e); return null; }
+  }
+
+  async function brainStartRun(hypothesisId, seed, speed){
+    const resp = await httpPostJson(`${BRAIN_URL}/start_run`, { hypothesisId, seed, speed });
+    return resp && resp.runId ? resp.runId : null;
+  }
+
+  async function brainDecide(agents, context){
+    if (!runId) return { decisions: [] };
+    const payload = { runId, agents, context: context || {} };
+    const resp = await httpPostJson(`${BRAIN_URL}/decide`, payload);
+    return resp || { decisions: [] };
+  }
+
+  async function brainSendMetrics(){
+    if (!runId || metricsBuffer.length === 0) return;
+    const batch = metricsBuffer.slice(); metricsBuffer.length = 0;
+    await httpPostJson(`${BRAIN_URL}/metrics`, { runId, samples: batch });
+  }
+
+  async function brainEndRun(){
+    if (!runId) return;
+    await brainSendMetrics();
+    await httpPostJson(`${BRAIN_URL}/end_run`, { runId });
+  }
 
   const app = new PIXI.Application({
     resizeTo: appDiv,
@@ -33,6 +75,517 @@
   let baseSprite = null;
   let gridW = 0, gridH = 0;
   let originX = 0, originY = 0, cellM = 1.5;
+
+  // Navgraph arrays
+  let walkableGrid = null; // Uint8Array length H*W
+  let costGrid = null;     // Uint8Array length H*W
+
+  // Pathfinding worker
+  let pathWorker = null;
+  let workerReady = false;
+  let pathReqId = 0;
+  const pendingPaths = new Map();
+
+  function initWorker(H, W){
+    if (pathWorker) return;
+    pathWorker = new Worker('path_worker.js', { type:'module' });
+    pathWorker.onmessage = (ev)=>{
+      const msg = ev.data;
+      if (msg.type === 'ready'){ workerReady = true; return; }
+      if (msg.type === 'path'){
+        const resolver = pendingPaths.get(msg.id);
+        pendingPaths.delete(msg.id);
+        if (resolver) resolver(msg);
+      }
+    };
+    // Send copies to keep local arrays available for spawning/snap
+    const wCopy = new Uint8Array(walkableGrid); const cCopy = new Uint8Array(costGrid);
+    pathWorker.postMessage({ type:'init', H, W, walkable: wCopy, cost: cCopy });
+  }
+
+  function requestPath(start, goal){
+    return new Promise((resolve)=>{
+      const id = ++pathReqId;
+      pendingPaths.set(id, resolve);
+      pathWorker.postMessage({ type:'path', id, start, goal });
+    });
+  }
+
+  // Agents
+  const agents = [];
+  let heroSeq = 0;
+  const agentLayer = new PIXI.Container();
+  world.addChild(agentLayer);
+  const speedMultipliers = [1,2,4,10,100];
+  let speedIdx = 0; // 1x by default
+  let selectedAgent = null;
+  let followMode = false;
+
+  // Needs system
+  const NEEDS = ['hunger', 'caffeine', 'groceries', 'health', 'education', 'leisure', 'social'];
+  const NEED_DECAY_RATES = { hunger: 0.3, caffeine: 0.5, groceries: 0.1, health: 0.05, education: 0.08, leisure: 0.2, social: 0.15 };
+  const POI_SATISFIES = {
+    grocery: ['hunger', 'groceries'], pharmacy: ['health'], cafe: ['caffeine', 'social'], 
+    restaurant: ['hunger', 'social'], transit: [], education: ['education'], 
+    health: ['health'], retail: ['leisure'], other: ['leisure']
+  };
+
+  // Agent roles (Waterloo university area demographics)
+  const AGENT_ROLES = {
+    student: { weight: 0.65, needWeights: { hunger: 1.2, caffeine: 1.5, education: 1.8, social: 1.3, groceries: 0.8, health: 0.9, leisure: 1.1 } },
+    resident: { weight: 0.20, needWeights: { hunger: 1.0, caffeine: 1.0, groceries: 1.5, health: 1.2, education: 0.3, social: 1.0, leisure: 1.0 } },
+    worker: { weight: 0.10, needWeights: { hunger: 1.1, caffeine: 1.8, groceries: 1.2, health: 1.0, education: 0.5, social: 0.8, leisure: 0.7 } },
+    visitor: { weight: 0.05, needWeights: { hunger: 1.3, caffeine: 1.2, groceries: 0.3, health: 0.8, education: 0.8, social: 1.4, leisure: 1.6 } }
+  };
+
+  function sampleRole(){
+    const r = Math.random();
+    let acc = 0;
+    for (const [role, data] of Object.entries(AGENT_ROLES)){
+      acc += data.weight;
+      if (r <= acc) return role;
+    }
+    return 'student';
+  }
+
+  function initNeeds(role){
+    const needs = {};
+    const weights = AGENT_ROLES[role].needWeights;
+    for (const need of NEEDS){
+      needs[need] = Math.random() * 0.6 * (weights[need] || 1.0);
+    }
+    return needs;
+  }
+
+  // Optional pixel-art people sprites (loaded as 4 separate PNG files)
+  let peopleSprites = null; // {characterType: {dir: [textures...]}}
+  async function loadPeopleSprites(){
+    // Try multiple character types
+    const characterTypes = [
+      'male_civillian',
+      'female_civillian', 
+      'male_uni_student'
+    ];
+    
+    peopleSprites = {};
+    
+    for (const charType of characterTypes) {
+      const base = `sprites/${charType}/`;
+      const variants = {
+        down:  [`${charType}_forward.png`],
+        up:    [`${charType}_backward.png`],
+        left:  [`${charType}_left.png`],
+        right: [`${charType}_right.png`]
+      };
+      async function loadFirst(urls){
+        for (const u of urls){
+          try { const res = await fetch(base + u, { method:'HEAD' }); if (res.ok) return base + u; } catch(_) {}
+        }
+        return null;
+      }
+      async function loadSingleSprite(url){
+        console.log(`Loading single sprite: ${url}`);
+        const tex = await PIXI.Assets.load(url);
+        console.log(`Single texture loaded: ${tex.width}x${tex.height}`);
+        
+        // Create a processed version with background removal
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = tex.width;
+        canvas.height = tex.height;
+        
+        // Draw original image
+        const img = tex.baseTexture.resource.source;
+        ctx.drawImage(img, 0, 0);
+        
+        // Get image data and remove white/light backgrounds
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imageData.data;
+        
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          
+          // Remove white and very light colors (typical AI background)
+          if (r > 240 && g > 240 && b > 240) {
+            data[i + 3] = 0; // Make transparent
+          }
+          // Also remove light gray backgrounds
+          else if (r > 220 && g > 220 && b > 220 && Math.abs(r-g) < 10 && Math.abs(g-b) < 10) {
+            data[i + 3] = 0;
+          }
+        }
+        
+        ctx.putImageData(imageData, 0, 0);
+        
+        // Create new texture from processed canvas
+        const processedTex = PIXI.Texture.from(canvas);
+        console.log(`Processed texture: ${processedTex.width}x${processedTex.height}`);
+        
+        // For single pose images, just duplicate the texture 4 times for animation
+        return [processedTex, processedTex, processedTex, processedTex];
+      }
+      
+      try {
+        const downUrl = await loadFirst(variants.down);
+        const upUrl   = await loadFirst(variants.up);
+        const leftUrl = await loadFirst(variants.left);
+        const rightUrl= await loadFirst(variants.right);
+        console.log(`Found sprite URLs for ${charType}:`, {downUrl, upUrl, leftUrl, rightUrl});
+        if (downUrl && upUrl && leftUrl && rightUrl) {
+          const [down, up, left, right] = await Promise.all([
+            loadSingleSprite(downUrl),
+            loadSingleSprite(upUrl),
+            loadSingleSprite(leftUrl),
+            loadSingleSprite(rightUrl)
+          ]);
+          peopleSprites[charType] = { down, up, left, right };
+          console.log(`Sprites loaded for ${charType}`);
+        } else {
+          console.warn(`Missing sprite files for ${charType}`);
+        }
+      } catch(e){ console.warn(`Sprite load failed for ${charType}:`, e); }
+    }
+    
+    const loadedTypes = Object.keys(peopleSprites);
+    if (loadedTypes.length > 0) {
+      console.log('All sprites loaded successfully:', loadedTypes);
+      return true;
+    } else {
+      console.warn('No sprite types loaded, falling back to vector graphics');
+      return false;
+    }
+  }
+
+  // ---- Walkable helpers ----
+  function inBounds(ix, iy){ return 0<=ix && ix<gridW && 0<=iy && iy<gridH; }
+  function isWalkable(ix, iy){ if (!walkableGrid) return true; if (!inBounds(ix,iy)) return false; return walkableGrid[iy*gridW + ix] === 1; }
+  function sampleWalkableNear(cx, cy, maxR=40){
+    for (let r=0;r<=maxR;r++){
+      const y0 = Math.max(0, cy-r), y1 = Math.min(gridH-1, cy+r);
+      const x0 = Math.max(0, cx-r), x1 = Math.min(gridW-1, cx+r);
+      for (let y=y0;y<=y1;y+=2){ for (let x=x0;x<=x1;x+=2){ if (isWalkable(x,y)) return { ix:x, iy:y }; }}
+    }
+    return { ix: Math.max(0, Math.min(gridW-1, cx)), iy: Math.max(0, Math.min(gridH-1, cy)) };
+  }
+  function snapToWalkable(ix, iy, maxR=30){ const res = sampleWalkableNear(ix, iy, maxR); return [res.iy, res.ix]; }
+
+  function createAgent(ix, iy, color=0xffffff, isHero=true){
+    const role = sampleRole();
+    const needs = initNeeds(role);
+    const sprite = new PIXI.Container();
+    let footL = null, footR = null, anim = null, charType = null;
+    
+    // Trail for hero agents
+    const trail = isHero ? new PIXI.Graphics() : null;
+    if (trail) {
+      trail.alpha = 0.6;
+      agentLayer.addChildAt(trail, 0); // behind agent
+    }
+    
+    if (peopleSprites && Object.keys(peopleSprites).length > 0){
+      // Randomly pick a character type
+      const availableTypes = Object.keys(peopleSprites);
+      charType = availableTypes[Math.floor(Math.random() * availableTypes.length)];
+      const charSprites = peopleSprites[charType];
+      const textures = charSprites.down || Object.values(charSprites)[0];
+      anim = new PIXI.AnimatedSprite(textures); anim.animationSpeed = 0.18; anim.play();
+      const targetSize = 6; // world cells
+      const scale = targetSize / Math.max(anim.texture.width, anim.texture.height);
+      anim.scale.set(scale, scale);
+      anim.anchor.set(0.5, 0.82);
+      sprite.addChild(anim);
+    } else {
+      // Vector fallback
+      const body = new PIXI.Graphics();
+      body.lineStyle(1.2, 0x111111, 0.95);
+      body.beginFill(color, 0.96);
+      body.drawRoundedRect(-2.2, -3.0, 4.4, 6.0, 1.2);
+      body.endFill();
+      footL = new PIXI.Graphics(); footL.beginFill(0x111111, 0.95); footL.drawCircle(-1.2, 3.2, 0.8); footL.endFill();
+      footR = new PIXI.Graphics(); footR.beginFill(0x111111, 0.95); footR.drawCircle( 1.2, 3.2, 0.8); footR.endFill();
+      sprite.addChild(body); sprite.addChild(footL); sprite.addChild(footR);
+    }
+    
+    sprite.x = ix + 0.5; sprite.y = iy + 0.5;
+    // Make ALL agents clickable (heroes and background). Improves UX when they look identical.
+    sprite.eventMode = 'static';
+    sprite.cursor = 'pointer';
+    // Generous hit area for tiny sprites
+    sprite.hitArea = new PIXI.Circle(0, 0, 4.5);
+    sprite.on('pointertap', () => selectAgent(sprite.__agent));
+    agentLayer.addChild(sprite);
+    
+    const agent = { 
+      sprite, ix, iy, tx: ix, ty: iy, path: [], progress: 0, speed: 1.4, 
+      phase: Math.random()*Math.PI*2, footL, footR, anim, charType, idle:0,
+      role, needs, isHero, trail, trailPoints: [], lastNeedCheck: 0, currentGoal: null,
+      id: isHero ? `H${heroSeq++}` : `B${Math.floor(Math.random()*1e6)}`,
+      lastThought: null, lastIntent: null, _trip: null
+    };
+    sprite.__agent = agent;
+    return agent;
+  }
+
+  function setAgentPath(agent, path){
+    agent.path = path || []; agent.progress = 0;
+  }
+
+  function headingToDir(dx, dy){
+    if (!peopleSprites) return 'right';
+    const ang = Math.atan2(dy, dx);
+    const a = ((ang + Math.PI*2) % (Math.PI*2));
+    if (a > Math.PI*7/4 || a <= Math.PI/4) return 'right';
+    if (a <= Math.PI*3/4) return 'up';
+    if (a <= Math.PI*5/4) return 'left';
+    return 'down';
+  }
+
+  function selectAgent(agent){
+    selectedAgent = agent;
+    followMode = true;
+    // Highlight selected agent
+    for (const a of agents) {
+      if (a.sprite) a.sprite.alpha = (a === agent) ? 1.0 : 0.7;
+    }
+    console.log(`Selected ${agent.role}: needs=`, agent.needs);
+    updateSelectionHUD();
+  }
+
+  function topNeeds(needs, k=3){
+    const arr = Object.entries(needs||{}).sort((a,b)=> b[1]-a[1]);
+    return arr.slice(0,k).map(([n,v])=> `${n}:${v.toFixed(2)}`).join('  ');
+  }
+
+  function updateSelectionHUD(){
+    // Use floating HUD near the selected agent; remove if no selection
+    if (!selectedAgent){ if (agentHudEl && agentHudEl.remove) agentHudEl.remove(); agentHudEl = null; return; }
+    const a = selectedAgent;
+    const goalTxt = a.currentGoal && a.currentGoal.loc ? (a.currentGoal.poi?.name || a.currentGoal.poi?.type || a.lastIntent || '—') : (a.lastIntent || '—');
+    const thought = a.lastThought ? `“${a.lastThought}”` : '—';
+
+    // Build top-3 needs with bars
+    const sorted = Object.entries(a.needs||{}).sort((x,y)=>y[1]-x[1]).slice(0,3);
+    const needRows = sorted.map(([k,v])=>{
+      const pct = Math.max(0, Math.min(1, v)) * 100;
+      return `<div class="row"><div class="badge">${k}</div><div class="bar"><div class="fill" style="width:${pct.toFixed(0)}%"></div></div><div class="muted" style="width:30px; text-align:right;">${v.toFixed(2)}</div></div>`;
+    }).join('');
+
+    // Create element if needed
+    if (!agentHudEl){ agentHudEl = document.createElement('div'); agentHudEl.className = 'agentHUD panel'; document.body.appendChild(agentHudEl); }
+    agentHudEl.innerHTML = `
+      <div class="row" style="margin-bottom:8px; pointer-events:none;">
+        <div class="title">${a.id}</div>
+        <div class="badge">${a.role}</div>
+        <div class="badge" style="background:${a.isHero?'#0b1220':'#191b1e'}; border-color:rgba(96,165,250,0.35); color:#93c5fd;">${a.isHero?'hero':'bg'}</div>
+      </div>
+      ${needRows}
+      <div class="row"><div class="muted">Goal</div><div class="mono" style="flex:1; text-align:right;">${goalTxt}</div></div>
+      <div class="row" style="align-items:flex-start;"><div class="muted">Thought</div><div style="flex:1; text-align:right; opacity:0.9;">${thought}</div></div>
+    `;
+
+    // Position HUD near agent in screen coords with offset, clamped to viewport
+    const screen = toScreen(a.sprite.x, a.sprite.y);
+    const offsetX = 18, offsetY = -18;
+    const rect = { w: (agentHudEl.offsetWidth||300), h: (agentHudEl.offsetHeight||160) };
+    let left = screen.x + offsetX; let top = screen.y + offsetY - rect.h;
+    const vw = window.innerWidth, vh = window.innerHeight;
+    if (left + rect.w > vw - 12) left = vw - rect.w - 12;
+    if (left < 12) left = 12;
+    if (top < 12) top = screen.y + offsetY + 8; // place below if not enough room above
+    agentHudEl.style.left = `${left}px`;
+    agentHudEl.style.top  = `${top}px`;
+    agentHudEl.style.backdropFilter = 'blur(4px)';
+    agentHudEl.style.background = 'rgba(18,19,20,0.6)';
+    agentHudEl.style.border = '1px solid rgba(255,255,255,0.08)';
+    agentHudEl.style.borderRadius = '10px';
+    agentHudEl.style.boxShadow = '0 6px 18px rgba(0,0,0,0.35)';
+  }
+
+  // Lightweight meeting detection (heroes within 3m for >2s)
+  const MEET_DIST = 2.0; // in grid cells (~meters)
+  const MEET_TIME = 2.0; // seconds
+  const meetClock = new Map(); // key: 'i-j' -> seconds together
+  function detectMeetings(dt){
+    const heroes = agents.filter(a => a.isHero);
+    for (let i=0;i<heroes.length;i++){
+      for (let j=i+1;j<heroes.length;j++){
+        const a = heroes[i], b = heroes[j];
+        const dx = a.sprite.x - b.sprite.x; const dy = a.sprite.y - b.sprite.y;
+        const d2 = dx*dx + dy*dy;
+        const key = `${i}-${j}`;
+        if (d2 <= MEET_DIST*MEET_DIST){
+          meetClock.set(key, (meetClock.get(key)||0) + dt);
+        } else {
+          meetClock.delete(key);
+        }
+      }
+    }
+    const events = [];
+    for (const [key, t] of meetClock){ if (t >= MEET_TIME){ events.push(key); meetClock.set(key, 0); } }
+    return events; // array of pairs 'i-j'
+  }
+
+  function findBestPOI(agent){
+    // Find POI that best satisfies current highest need
+    let maxNeed = 0; let bestNeedType = null;
+    for (const [need, value] of Object.entries(agent.needs)){
+      if (value > maxNeed){ maxNeed = value; bestNeedType = need; }
+    }
+    if (!bestNeedType || maxNeed < 0.3) return null;
+    
+    // Find POIs that satisfy this need
+    const candidates = [];
+    for (const poi of pois){
+      const satisfies = POI_SATISFIES[poi.type] || [];
+      if (satisfies.includes(bestNeedType)){
+        const loc = poi.snapped || poi;
+        if (loc && typeof loc.ix === 'number' && typeof loc.iy === 'number'){
+          const dist = Math.abs(loc.ix - agent.sprite.x) + Math.abs(loc.iy - agent.sprite.y);
+          candidates.push({ poi, loc, dist, need: bestNeedType });
+        }
+      }
+    }
+    if (candidates.length === 0) return null;
+    
+    // Pick closest
+    candidates.sort((a,b) => a.dist - b.dist);
+    return candidates[0];
+  }
+
+  function stepAgents(dt){
+    if (!agents || !Array.isArray(agents)) return;
+    const s = speedMultipliers[speedIdx];
+    for (const a of agents){
+      // Update needs over time
+      a.lastNeedCheck += dt;
+      if (a.lastNeedCheck > 2.0){ // check every 2 seconds
+        for (const need of NEEDS){
+          a.needs[need] = Math.min(1.0, a.needs[need] + (NEED_DECAY_RATES[need] || 0.1) * dt * 2.0);
+        }
+        a.lastNeedCheck = 0;
+      }
+      
+      if (!a.path || a.path.length<2){ 
+        a.idle += dt; 
+        // Update trail
+        if (a.trail && a.isHero){
+          a.trailPoints.push({ x: a.sprite.x, y: a.sprite.y, time: performance.now() });
+          if (a.trailPoints.length > 20) a.trailPoints.shift();
+          a.trail.clear();
+          if (a.trailPoints.length > 1){
+            a.trail.lineStyle(2, 0x3b82f6, 0.4);
+            a.trail.moveTo(a.trailPoints[0].x, a.trailPoints[0].y);
+            for (let i=1; i<a.trailPoints.length; i++){
+              a.trail.lineTo(a.trailPoints[i].x, a.trailPoints[i].y);
+            }
+          }
+        }
+        continue; 
+      }
+      
+      const stepSpeed = a.speed * s;
+      // Move along polyline in grid space
+      let i0 = Math.floor(a.progress);
+      let i1 = i0 + 1;
+      if (i1 >= a.path.length){ a.path = []; continue; }
+      const p0 = a.path[i0]; const p1 = a.path[i1];
+      if (!p0 || !p1 || !Array.isArray(p0) || !Array.isArray(p1)) { a.path = []; continue; }
+      const [y0,x0] = p0; const [y1,x1] = p1;
+      const t = a.progress - i0;
+      const gx = x0 + (x1 - x0) * t;
+      const gy = y0 + (y1 - y0) * t;
+      a.sprite.x = gx + 0.5; a.sprite.y = gy + 0.5;
+      
+      // Update trail
+      if (a.trail && a.isHero){
+        a.trailPoints.push({ x: a.sprite.x, y: a.sprite.y, time: performance.now() });
+        if (a.trailPoints.length > 20) a.trailPoints.shift();
+        a.trail.clear();
+        if (a.trailPoints.length > 1){
+          a.trail.lineStyle(2, 0x3b82f6, 0.4);
+          a.trail.moveTo(a.trailPoints[0].x, a.trailPoints[0].y);
+          for (let i=1; i<a.trailPoints.length; i++){
+            a.trail.lineTo(a.trailPoints[i].x, a.trailPoints[i].y);
+          }
+        }
+      }
+      
+      // Heading
+      const ang = Math.atan2((y1 - y0), (x1 - x0));
+      a.sprite.rotation = peopleSprites ? 0 : ang;
+      if (a.anim && peopleSprites && a.charType){
+        const dir = headingToDir((x1-x0), (y1-y0));
+        const charSprites = peopleSprites[a.charType];
+        if (charSprites) {
+          const tex = charSprites[dir]; 
+          if (tex && a.anim.textures !== tex){ a.anim.textures = tex; a.anim.play(); }
+        }
+      }
+      // Feet bobbing
+      if (a.footL && a.footR){
+        a.phase += dt * stepSpeed * 6.0;
+        const off = Math.sin(a.phase) * 0.35;
+        a.footL.position.y = 3.2 + off;
+        a.footR.position.y = 3.2 - off;
+      }
+      // Advance
+      a.progress += stepSpeed * dt;
+      if (a.progress >= a.path.length-1){ 
+        // Reached destination - satisfy needs if at POI
+        if (a.currentGoal && a.currentGoal.need){
+          a.needs[a.currentGoal.need] = Math.max(0, a.needs[a.currentGoal.need] - 0.4);
+        }
+        a.path = []; a.currentGoal = null;
+      }
+      a.idle = 0;
+    }
+    
+    // Follow mode camera
+    if (followMode && selectedAgent && selectedAgent.sprite){
+      const padding = 0.3;
+      const targetX = selectedAgent.sprite.x - app.renderer.width/(2*zoom);
+      const targetY = selectedAgent.sprite.y - app.renderer.height/(2*zoom);
+      cameraX += (targetX - cameraX) * padding;
+      cameraY += (targetY - cameraY) * padding;
+      applyCamera();
+    }
+
+    // Meetings detection and decision requests (heroes only)
+    const meetPairs = detectMeetings(dt);
+    if (meetPairs.length && runId){
+      const heroes = agents.filter(x=>x.isHero);
+      const idxSet = new Set(meetPairs.flatMap(k => k.split('-').map(n => parseInt(n,10))));
+      const snapshots = Array.from(idxSet).map(idx => {
+        const a = heroes[idx];
+        return { id: a.id, role: a.role, pos: [a.sprite.x, a.sprite.y], needs: a.needs, time_of_day: null };
+      });
+      brainDecide(snapshots, { meeting: true }).then(resp => {
+        for (const d of (resp.decisions||[])){
+          const hero = heroes.find(h => h.id === d.id); if (!hero) continue;
+          hero.lastThought = d.thought || hero.lastThought;
+          hero.lastIntent = d.next_intent && d.next_intent.category || hero.lastIntent;
+          if (selectedAgent === hero) updateSelectionHUD();
+          const cat = d.next_intent && d.next_intent.category; if (!cat) continue;
+          let best = null; let bestDist = 1e9;
+          for (const p of pois){ if (p.type !== cat) continue; const loc = p.snapped||p; if (!loc) continue; const dx = (loc.ix+0.5) - hero.sprite.x; const dy = (loc.iy+0.5) - hero.sprite.y; const d2 = dx*dx+dy*dy; if (d2 < bestDist){ bestDist = d2; best = loc; } }
+          if (best){
+            const cur = [Math.round(hero.sprite.y-0.5), Math.round(hero.sprite.x-0.5)];
+            const goal = [best.iy, best.ix];
+            requestPath(cur, goal).then(res=>{ if (res && res.ok) setAgentPath(hero, res.path); });
+          }
+        }
+      }).catch(()=>{});
+    }
+  }
+
+  // UI speed buttons
+  function wireSpeedButtons(){
+    const map = { 'speed1':'1x', 'speed2':'2x', 'speed4':'4x', 'speed10':'10x', 'speed100':'100x' };
+    const ids = Object.keys(map);
+    ids.forEach((id, idx)=>{ const el = document.getElementById(id); if (el) el.onclick = ()=>{ speedIdx = idx; }; });
+  }
 
   // POIs
   let pois = [];
@@ -570,6 +1123,83 @@
       try { const resp = await fetch(POIS_URL); if (resp.ok) { pois = await resp.json(); } } catch (e) { console.warn('POIs load failed', e); }
       try { const respL = await fetch(LABELS_URL); if (respL.ok) { const raw = await respL.json(); labels = raw.map((L, i) => ({ id:i, ...L })); buildLabelIndex(); } } catch (e) { console.warn('labels load failed', e); }
       try { const respV = await fetch(VENUES_URL); if (respV.ok) { venues = await respV.json(); } } catch (e) { console.warn('venues load failed', e); }
+      // Load navgraph for physics
+      try {
+        const resp = await fetch('../out/society145_1km/navgraph.npz');
+        if (resp.ok){
+          // npz is zipped; we do not parse zip here. Instead, also allow raw arrays exported by step3
+          // Fallback to separate .npy-equivalent JSON if present (not required for initial demo)
+          console.warn('navgraph.npz fetch ok but parsing not implemented; using walkable/cost from labels/pois context if available');
+        }
+      } catch(e){ console.warn('navgraph load failed', e); }
+
+      // Minimal arrays: request walkable/cost via separate endpoints if provided; else synthesize walkable from semantic colors (roads/sidewalks/plaza)
+      // For now, fetch direct dumps if available
+      try {
+        const w = await fetch('../out/society145_1km/walkable.npy');
+        const c = await fetch('../out/society145_1km/cost.npy');
+        if (w.ok && c.ok){
+          const wb = new Uint8Array(await w.arrayBuffer());
+          const cb = new Uint8Array(await c.arrayBuffer());
+          walkableGrid = wb; costGrid = cb;
+        }
+      } catch(e){ console.warn('grid fetch failed', e); }
+      if (!walkableGrid || !costGrid){
+        // Graceful fallback: create permissive small-cost grid based on image size
+        const N = gridW*gridH; walkableGrid = new Uint8Array(N); costGrid = new Uint8Array(N);
+        walkableGrid.fill(1); costGrid.fill(12);
+      }
+
+      initWorker(gridH, gridW);
+      try {
+        await loadPeopleSprites();
+      } catch(e) {
+        console.warn('Sprite loading failed, using fallback graphics:', e);
+        peopleSprites = null;
+      }
+      // Helper: build goals list of walkable points near POIs/venues
+      const goals = [];
+      for (const p of pois){ const loc = p.snapped || p; if (loc && typeof loc.ix==='number' && typeof loc.iy==='number'){ const snap = snapToWalkable(loc.ix, loc.iy, 20); goals.push(snap); } }
+      // Spawn HERO agents (10–20)
+      const center = lonlatToGrid(MAIN_POI_LON, MAIN_POI_LAT);
+      const baseStart = sampleWalkableNear(Math.round(center.x), Math.round(center.y), 40);
+      const heroCount = 15;
+      console.log('Spawning hero agents, workerReady:', workerReady, 'goals:', goals.length);
+      
+      // Wait for worker to be ready
+      while (!workerReady) {
+        await new Promise(resolve => setTimeout(resolve, 50));
+      }
+      
+      for (let i=0;i<heroCount;i++){
+        const jitter = sampleWalkableNear(baseStart.ix + Math.round((Math.random()-0.5)*20), baseStart.iy + Math.round((Math.random()-0.5)*20), 20);
+        const a = createAgent(jitter.ix, jitter.iy, 0xffffff, true);
+        agents.push(a);
+        // Give initial need-driven goal
+        const bestPOI = findBestPOI(a);
+        if (bestPOI) {
+          const start = [jitter.iy, jitter.ix];
+          const goal = [bestPOI.loc.iy, bestPOI.loc.ix];
+          const res = await requestPath(start, goal);
+          if (res && res.ok) {
+            setAgentPath(a, res.path);
+            a.currentGoal = bestPOI;
+          }
+        }
+      }
+
+      // Spawn BACKGROUND extras using same visuals to be indistinguishable
+      const extras = 60;
+      for (let i=0;i<extras;i++){
+        const s0 = sampleWalkableNear(baseStart.ix + Math.round((Math.random()-0.5)*80), baseStart.iy + Math.round((Math.random()-0.5)*80), 30);
+        const a = createAgent(s0.ix, s0.iy, 0xe7f0ff, false);
+        a.speed = 0.9 + Math.random()*0.6;
+        agents.push(a);
+        const g = goals[(Math.random()*goals.length)|0] || [s0.iy, s0.ix];
+        const start = [s0.iy, s0.ix];
+        const res = await requestPath(start, g);
+        if (res && res.ok) setAgentPath(a, res.path);
+      }
       renderPOIs();
       renderVenues();
       hideLoading();
@@ -591,6 +1221,47 @@
       if (btnOut) btnOut.onclick = () => onWheel({ preventDefault(){}, deltaY: 240, clientX: app.view.width/2, clientY: app.view.height/2 });
       if (btnCenter) btnCenter.onclick = () => { centerOnPOI(); };
       if (btnFit) btnFit.onclick = () => { const padding=40; const zx=(app.renderer.width-padding*2)/gridW; const zy=(app.renderer.height-padding*2)/gridH; zoom=Math.min(1.0,Math.max(0.2,Math.min(zx,zy))); cameraX=gridW/2-(app.renderer.width/(2*zoom)); cameraY=gridH/2-(app.renderer.height/(2*zoom)); applyCamera(); updateHUD(); updateMinimap(); updateScaleBar(); };
+      wireSpeedButtons();
+
+      // Start brain run (fire-and-forget). If server not running, runId stays null and JS-only logic continues.
+      try { runId = await brainStartRun('base', 12345, speedMultipliers[speedIdx]); } catch(_) { runId = null; }
+
+      // Ticker for agents
+      let last = performance.now();
+      const tick = (now)=>{
+        const dt = Math.min(0.05, (now - last)/1000); last = now;
+        stepAgents(dt);
+        // Flush metrics periodically
+        if (performance.now() - lastMetricsFlush > METRICS_FLUSH_MS){ lastMetricsFlush = performance.now(); brainSendMetrics(); }
+        // Replan idle agents based on needs
+        if (agents && Array.isArray(agents)) {
+          for (const a of agents){
+            if (a.idle > 1.2 && workerReady){
+              const cur = [Math.round(a.sprite.y-0.5), Math.round(a.sprite.x-0.5)];
+              let goal = null;
+              
+              if (a.isHero) {
+                // Hero agents use needs-driven goals
+                const bestPOI = findBestPOI(a);
+                if (bestPOI) {
+                  goal = [bestPOI.loc.iy, bestPOI.loc.ix];
+                  a.currentGoal = bestPOI;
+                }
+              }
+              
+              if (!goal) {
+                // Fallback to random goal
+                goal = goals[(Math.random()*goals.length)|0] || cur;
+              }
+              
+              requestPath(cur, goal).then(res=>{ if (res && res.ok) setAgentPath(a, res.path); });
+              a.idle = 0;
+            }
+          }
+        }
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
       // Legend filters
       const set = (k, v) => { poiFilters[k] = v; updatePOIMarkerStyles(); };
       const cb = (id, key) => { const el = document.getElementById(id); if (el) el.onchange = e => set(key, e.target.checked); };
