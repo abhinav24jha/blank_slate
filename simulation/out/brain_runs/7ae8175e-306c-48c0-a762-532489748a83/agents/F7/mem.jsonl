@@ -1,0 +1,10 @@
+{"ts": "2025-09-14T05:22:33Z", "kind": "persona", "persona": {"id": "F7", "role": "resident", "name": "Drew Nguyen", "traits": ["gym-goer", "optimistic", "introvert", "tech-savvy"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:22:34Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T05:26:01Z", "kind": "chat", "text": "Wanted healthy options for lunch.", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T05:26:15Z", "kind": "chat", "text": "Wanted healthy options for lunch; chose restaurant after considering needs.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:26:21Z", "kind": "decision", "text": "Woke up early to grab a vegetarian coffee before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:26:30Z", "kind": "chat", "text": "Chatted with Casey Martin about a nearby spot", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:26:43Z", "kind": "chat", "text": "Wanted healthy options for lunch; chose restaurant after considering needs.", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T05:27:08Z", "kind": "chat", "text": "Woke up early to grab a vegetarian coffee before class.", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T05:27:19Z", "kind": "chat", "text": "Woke up early to grab a vegetarian coffee before class.", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T05:28:11Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}

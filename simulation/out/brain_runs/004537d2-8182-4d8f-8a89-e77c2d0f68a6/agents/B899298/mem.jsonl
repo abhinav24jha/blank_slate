@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B899298", "role": "student", "name": "Sam Garcia", "traits": ["frugal", "introvert", "social", "tech-savvy"], "prefs": {"coffee": "low", "budget": "high", "diet": "vegan", "mobility": "bus", "study_spot": "outdoors", "favorite": "grocery"}}}
+{"ts": "2025-09-14T05:01:00Z", "kind": "decision", "text": "Chose grocery store near campus to get vegan ingredients.", "tags": ["grocery"]}

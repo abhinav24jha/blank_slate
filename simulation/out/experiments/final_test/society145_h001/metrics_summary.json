@@ -1,0 +1,12 @@
+{
+  "run_id": "0d4cc04d-ac8f-4baf-8905-e24f6e868492",
+  "scenario": "society145_h001",
+  "agent_count": 2,
+  "decisions": 2,
+  "by_category": {
+    "cafe": 2
+  },
+  "avg_distance_saved_steps": {
+    "cafe": 0.0
+  }
+}

@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B488047", "role": "worker", "name": "Jamie Patel", "traits": ["extrovert", "impulsive", "social", "introvert"], "prefs": {"coffee": "med", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T05:00:25Z", "kind": "decision", "text": "Chose a lively cafe near campus to wake up and meet up.", "tags": ["cafe"]}

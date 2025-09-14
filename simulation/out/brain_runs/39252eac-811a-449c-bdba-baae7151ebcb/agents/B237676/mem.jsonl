@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B237676", "role": "worker", "name": "Morgan Martin", "traits": ["foodie", "optimistic", "introvert", "health-conscious"], "prefs": {"coffee": "med", "budget": "med", "diet": "omnivorous", "mobility": "bus", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

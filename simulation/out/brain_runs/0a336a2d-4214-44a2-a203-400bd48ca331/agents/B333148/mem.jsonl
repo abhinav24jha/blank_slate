@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "B333148", "role": "student", "name": "Jamie Martin", "traits": ["curious", "impulsive", "introvert", "social"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegan", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T05:00:51Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

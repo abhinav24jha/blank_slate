@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B201067", "role": "resident", "name": "Avery Patel", "traits": ["tech-savvy", "bookish", "extrovert", "social"], "prefs": {"coffee": "high", "budget": "med", "diet": "vegetarian", "mobility": "bike", "study_spot": "lively", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T04:54:17Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

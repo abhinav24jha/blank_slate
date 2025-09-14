@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "H14", "role": "resident", "name": "Taylor Patel", "traits": ["tech-savvy", "bookish", "introvert", "gym-goer"], "prefs": {"coffee": "med", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T05:01:32Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:05:38Z", "kind": "decision", "text": "Chose cafe near gym for pre-workout boost.", "tags": ["cafe"]}

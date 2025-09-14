@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "H5", "role": "student", "name": "Morgan Hernandez", "traits": ["frugal", "introvert", "punctual", "health-conscious"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "outdoors", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:50:14Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
+{"ts": "2025-09-14T04:52:49Z", "kind": "decision", "text": "Chose cafe for quick coffee before class.", "tags": ["cafe"]}

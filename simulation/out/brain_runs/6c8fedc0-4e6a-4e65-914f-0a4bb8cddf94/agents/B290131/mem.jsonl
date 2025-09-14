@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B290131", "role": "resident", "name": "Alex Hernandez", "traits": ["tech-savvy", "foodie", "punctual", "social"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegan", "mobility": "walk", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T04:59:50Z", "kind": "decision", "text": "Chose a vegan-friendly cafe near library for study break.", "tags": ["cafe"]}

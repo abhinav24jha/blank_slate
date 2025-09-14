@@ -1,0 +1,5 @@
+{"ts": "2025-09-14T05:32:12Z", "kind": "persona", "persona": {"id": "F13", "role": "student", "name": "Alex Patel", "traits": ["planner", "curious", "extrovert", "health-conscious"], "prefs": {"coffee": "low", "budget": "low", "diet": "vegetarian", "mobility": "bike", "study_spot": "outdoors", "favorite": "grocery"}}}
+{"ts": "2025-09-14T05:32:47Z", "kind": "decision", "text": "Decided on grocery for health-conscious vegetarian student.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:37:42Z", "kind": "decision", "text": "Chose grocery for health-conscious vegetarian student.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:39:17Z", "kind": "decision", "text": "Chose grocery for health-conscious vegetarian student.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:39:27Z", "kind": "decision", "text": "Chose grocery for quick healthy snacks before studying outdoors.", "tags": ["grocery"]}

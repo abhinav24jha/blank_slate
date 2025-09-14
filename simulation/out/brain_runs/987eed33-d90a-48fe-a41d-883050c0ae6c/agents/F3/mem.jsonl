@@ -1,0 +1,39 @@
+{"ts": "2025-09-14T05:39:30Z", "kind": "persona", "persona": {"id": "F3", "role": "worker", "name": "Jordan Hernandez", "traits": ["optimistic", "tech-savvy", "gym-goer", "health-conscious"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T05:40:52Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:42:17Z", "kind": "chat", "text": "Chose a quiet cafe near campus.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:42:20Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:42:33Z", "kind": "chat", "text": "Chose a cafe near campus to study and relax.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:42:47Z", "kind": "decision", "text": "Chose a cafe near campus to study and relax.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:19Z", "kind": "chat", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:43:26Z", "kind": "decision", "text": "Chose a cafe near campus to study and relax.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:34Z", "kind": "decision", "text": "Chose a cafe near campus to study and relax.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:59Z", "kind": "chat", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:44:30Z", "kind": "decision", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:44:42Z", "kind": "chat", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:45:04Z", "kind": "decision", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:45:17Z", "kind": "chat", "text": "Chose quiet cafe near campus to study and relax.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:45:21Z", "kind": "decision", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:45:51Z", "kind": "chat", "text": "Chatted with Alex Garcia about a nearby spot", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:45:54Z", "kind": "decision", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:46:15Z", "kind": "chat", "text": "Chose quiet cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:46:24Z", "kind": "decision", "text": "Chose quiet cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:46:46Z", "kind": "chat", "text": "Chose cafe near campus to study, then chose another spot.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:46:52Z", "kind": "decision", "text": "Chose quiet cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:47:25Z", "kind": "chat", "text": "Chose quiet cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:47:28Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:47:59Z", "kind": "chat", "text": "Chose cafe near campus to study, then chose another spot.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:48:05Z", "kind": "decision", "text": "Chose cafe near campus to study, then chose another spot.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:48:30Z", "kind": "chat", "text": "Chose cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:48:35Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:49:13Z", "kind": "chat", "text": "Chatted with Alex Garcia about a nearby spot", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:49:16Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:49:51Z", "kind": "chat", "text": "Chose cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:49:56Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:50:32Z", "kind": "chat", "text": "Chatted about study spots; chose cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:50:38Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:51:15Z", "kind": "chat", "text": "Chose cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:51:20Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:51:57Z", "kind": "chat", "text": "Chatted about study spots; chose cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:52:03Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:52:49Z", "kind": "chat", "text": "Chose cafe near campus to study again.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T05:52:52Z", "kind": "decision", "text": "Chose cafe near campus to study again.", "tags": ["cafe"]}

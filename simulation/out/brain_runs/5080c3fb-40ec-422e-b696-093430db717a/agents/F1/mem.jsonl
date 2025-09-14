@@ -1,0 +1,25 @@
+{"ts": "2025-09-14T07:06:10Z", "kind": "persona", "persona": {"id": "F1", "role": "student", "name": "Jamie Patel", "traits": ["health-conscious", "planner", "tech-savvy", "frugal"], "prefs": {"coffee": "low", "budget": "med", "diet": "halal", "mobility": "bus", "study_spot": "quiet", "favorite": "cafe"}}}
+{"ts": "2025-09-14T07:06:19Z", "kind": "decision", "text": "Chose cafe near campus for study spot and caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:08:18Z", "kind": "decision", "text": "Chose cafe for quick caffeine break before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:08:32Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:08:45Z", "kind": "chat", "text": "Chose cafe for coffee break and study.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:08:59Z", "kind": "decision", "text": "Chose cafe near campus for study spot and caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:09:07Z", "kind": "chat", "text": "Chose cafe for quiet study and caffeine break.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:09:13Z", "kind": "decision", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:09:21Z", "kind": "chat", "text": "Chose cafe for study and caffeine break.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:09:54Z", "kind": "chat", "text": "Chose cafe for quiet study and caffeine break.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:10:07Z", "kind": "chat", "text": "Chose cafe for study and caffeine break.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:11:32Z", "kind": "chat", "text": "Chose cafe for study and caffeine break.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:11:36Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:11:52Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:11:58Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:12:42Z", "kind": "chat", "text": "Chose cafe for study and caffeine break.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:12:47Z", "kind": "chat", "text": "Chose cafe for study and caffeine break.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:12:52Z", "kind": "decision", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:12:58Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:13:02Z", "kind": "chat", "text": "Chatted with Riley Patel about a nearby spot", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:13:06Z", "kind": "decision", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:13:37Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:13:43Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:13:55Z", "kind": "chat", "text": "Chose cafe for study and caffeine break.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:14:03Z", "kind": "chat", "text": "Chose cafe for study and caffeine break, reminded by Alex about its quiet spot.", "tags": ["chat", "F13"]}

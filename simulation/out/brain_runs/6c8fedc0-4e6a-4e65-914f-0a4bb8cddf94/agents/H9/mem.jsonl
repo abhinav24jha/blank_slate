@@ -1,0 +1,6 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "H9", "role": "resident", "name": "Drew Patel", "traits": ["foodie", "optimistic", "social", "impulsive"], "prefs": {"coffee": "low", "budget": "high", "diet": "vegan", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:46:50Z", "kind": "decision", "text": "Drew chose a vibrant cafe for his caffeine fix in the morning.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:48:32Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:49:06Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:49:12Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:51:20Z", "kind": "decision", "text": "Chose a vibrant cafe for my coffee fix after studying.", "tags": ["cafe"]}

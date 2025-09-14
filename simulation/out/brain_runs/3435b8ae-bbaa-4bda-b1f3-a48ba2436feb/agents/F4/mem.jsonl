@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T06:47:23Z", "kind": "persona", "persona": {"id": "F4", "role": "visitor", "name": "Alex Brown", "traits": ["early-riser", "night-owl", "introvert", "health-conscious"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegan", "mobility": "walk", "study_spot": "lively", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T06:52:53Z", "kind": "decision", "text": "Chose a vegan-friendly cafe near home for a quick coffee before class.", "tags": ["cafe"]}

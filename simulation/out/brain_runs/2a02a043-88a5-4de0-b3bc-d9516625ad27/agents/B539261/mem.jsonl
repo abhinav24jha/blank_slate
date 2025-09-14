@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B539261", "role": "student", "name": "Alex Kim", "traits": ["extrovert", "foodie", "frugal", "introvert"], "prefs": {"coffee": "med", "budget": "low", "diet": "omnivorous", "mobility": "walk", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T04:49:37Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

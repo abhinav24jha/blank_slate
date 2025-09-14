@@ -1,0 +1,39 @@
+{"ts": "2025-09-14T05:39:30Z", "kind": "persona", "persona": {"id": "F7", "role": "resident", "name": "Alex Garcia", "traits": ["curious", "social", "early-riser", "frugal"], "prefs": {"coffee": "med", "budget": "med", "diet": "omnivorous", "mobility": "walk", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:41:17Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:42:17Z", "kind": "chat", "text": "Also needing caffeine to start the day.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:42:33Z", "kind": "chat", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:42:39Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:42:57Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:19Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:43:53Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:59Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:44:03Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:44:42Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:44:48Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:45:17Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:45:28Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:45:41Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:45:51Z", "kind": "chat", "text": "Chatted with Jordan Hernandez about a nearby spot", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:46:15Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:46:18Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:46:46Z", "kind": "chat", "text": "Visited cafe near campus for socializing, then also visited library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:46:49Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:47:17Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:47:25Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:47:50Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:47:59Z", "kind": "chat", "text": "Visited cafe near campus for socializing, then also visited library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:48:26Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:48:30Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:48:55Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:49:13Z", "kind": "chat", "text": "Chatted with Jordan Hernandez about a nearby spot", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:49:33Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:49:51Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:50:14Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:50:32Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:50:56Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:51:15Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:51:38Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:51:57Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:52:25Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:52:49Z", "kind": "chat", "text": "Also needed coffee for socializing at library.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T05:53:15Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and socialize.", "tags": ["cafe"]}

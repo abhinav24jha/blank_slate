@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B768512", "role": "resident", "name": "Alex Lee", "traits": ["foodie", "night-owl", "introvert", "gym-goer"], "prefs": {"coffee": "high", "budget": "low", "diet": "vegan", "mobility": "walk", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:31:00Z", "kind": "decision", "text": "Chose vegan-friendly cafe for caffeine fix after workout.", "tags": ["cafe"]}

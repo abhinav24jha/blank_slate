@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:38:25Z", "kind": "persona", "persona": {"id": "F6", "role": "resident", "name": "Jordan Patel", "traits": ["punctual", "gym-goer", "tech-savvy", "planner"], "prefs": {"coffee": "high", "budget": "med", "diet": "pescatarian", "mobility": "bike", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T05:41:01Z", "kind": "decision", "text": "Chose a lively cafe near campus to wake up.", "tags": ["cafe"]}

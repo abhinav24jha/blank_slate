@@ -1,0 +1,9 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "H10", "role": "student", "name": "Casey Kim", "traits": ["foodie", "optimistic", "early-riser", "health-conscious"], "prefs": {"coffee": "med", "budget": "low", "diet": "omnivorous", "mobility": "bike", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:47:51Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
+{"ts": "2025-09-14T04:49:12Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
+{"ts": "2025-09-14T04:50:06Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
+{"ts": "2025-09-14T04:51:10Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
+{"ts": "2025-09-14T04:51:12Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
+{"ts": "2025-09-14T04:52:00Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:52:20Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:52:32Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

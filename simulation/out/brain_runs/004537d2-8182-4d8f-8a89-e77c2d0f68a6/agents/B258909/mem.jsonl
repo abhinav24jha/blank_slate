@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B258909", "role": "resident", "name": "Avery Patel", "traits": ["punctual", "introvert", "optimistic", "extrovert"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegan", "mobility": "bike", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:50:27Z", "kind": "decision", "text": "Chose a lively vegan café near campus to relax.", "tags": ["cafe"]}

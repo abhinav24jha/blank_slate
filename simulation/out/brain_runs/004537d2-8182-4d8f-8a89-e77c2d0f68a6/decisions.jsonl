@@ -1,0 +1,199 @@
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B928277", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe for caffeine and a quiet study spot.", "chat": null}
+{"id": "B258909", "next_intent": {"category": "cafe", "name": null}, "thought": "Introverted but need a cafe for some downtime and caffeine.", "chat": null}
+{"id": "B420304", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B751804", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost for class tomorrow.", "chat": null}
+{"id": "B592778", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "B806028", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "B862336", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B14519", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "B775557", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B620571", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B634955", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H4", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H4", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H6", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H6", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H6", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H4", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H11", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H6", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H14", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H11", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H14", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H6", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H0", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H1", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H6", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H9", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H14", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H10", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and caffeine needs are high, but cafe is a good compromise for both.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine fix before class. My diet allows for coffee.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H4", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H11", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H14", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H8", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost before heading to the gym.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H10", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Grocery store was last choice, need something different now.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "High caffeine needs and social preferences point to cafe, despite recent choices.", "chat": null}
+{"id": "H9", "next_intent": {"category": "cafe", "name": null}, "thought": "My diet is vegan and I prefer a lively study spot. A cafe seems like the best fit.", "chat": null}
+{"id": "H8", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H13", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H6", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H14", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H4", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H10", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H2", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine break before class. My diet is pescatarian and I prefer coffee.", "chat": null}
+{"id": "H9", "next_intent": {"category": "cafe", "name": null}, "thought": "Hungry and need a quick caffeine fix, my diet allows for coffee.", "chat": null}
+{"id": "H0", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H1", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H9", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H14", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine needs high, cafe choice consistent with preferences and role.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs caffeine and a quiet place, cafeteria not ideal. Cafe fits budget and study spot preference.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before starting my day.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine boost before heading to the gym.", "chat": null}
+{"id": "H0", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H1", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H9", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H14", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine needs high, social interaction low; cafe fits best.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Grocery is too far. Cafe will provide a quick caffeine boost for class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and introverted, need a quiet place to start the day with coffee.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine fix before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "Need caffeine to stay alert for work tomorrow.", "chat": null}
+{"id": "H0", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H1", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H2", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H9", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H14", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs caffeine and a study spot, cafe fits best.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee to boost focus before studying; cafe fits quiet and budget.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine fix before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine fix before heading to the gym.", "chat": null}
+{"id": "H0", "next_intent": {"category": "cafe", "name": null}, "thought": "I need caffeine and a quiet place to study before class.", "chat": null}
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet is kosher, and I prefer med caffeine levels.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Jamie needs healthy food for classes and gym, and the grocery store is a good place to find that.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to refuel and prepare for gym.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H6", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H7", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H9", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "H10", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class. My diet allows for it and I prefer a lively study spot.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class to stay alert.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine boost before hitting the gym.", "chat": null}
+{"id": "H14", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "B288401", "next_intent": {"category": "cafe", "name": null}, "thought": "coffee to start the day and stay energized for studying.", "chat": null}
+{"id": "B224736", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine fix to stay alert for class.", "chat": null}
+{"id": "B663259", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost for my study session. Near the gym is a good spot.", "chat": null}
+{"id": "B67262", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet is kosher, so I'll choose a cafe nearby.", "chat": null}
+{"id": "B881169", "next_intent": {"category": "cafe", "name": null}, "thought": "Punctual student needs caffeine for study spot, cafe offers quick coffee and is lively.", "chat": null}
+{"id": "B547384", "next_intent": {"category": "cafe", "name": null}, "thought": "Impulsive and hungry, cafe seems like a good quick stop to grab a vegetarian-friendly meal.", "chat": null}
+{"id": "B704831", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to my study spot and I need caffeine for focus.", "chat": null}
+{"id": "B865467", "next_intent": {"category": "cafe", "name": null}, "thought": "Impulsive, choose a cafe for quick caffeine and social interaction.", "chat": null}
+{"id": "B262649", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery is the most pressing need with low hunger and frugal traits.", "chat": null}
+{"id": "B914146", "next_intent": {"category": "cafe", "name": null}, "thought": "Planning to meet up with colleagues for a quick coffee and catch-up.", "chat": null}
+{"id": "B3564", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are a good spot for caffeine and social interaction, fitting my needs.", "chat": null}
+{"id": "B904940", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B257975", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "B855273", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "B48294", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "B587783", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B189670", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "B818719", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "B898707", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B862607", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B124718", "next_intent": {"category": "pharmacy", "name": null}, "thought": "Heading to pharmacy.", "chat": null}
+{"id": "B813083", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B522994", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B967206", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "B459379", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "B835946", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "B192791", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "B230553", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B746394", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to boost my energy before class.", "chat": null}
+{"id": "B709192", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class. My favorite spot is near campus and I prefer kosher options.", "chat": null}
+{"id": "B593361", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs study spot, but cafe near library is lively and fits budget.", "chat": null}
+{"id": "B555036", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "B998629", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "B468641", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest and affordable, fits my budget. It's also quiet enough for studying.", "chat": null}
+{"id": "B899298", "next_intent": {"category": "grocery", "name": null}, "thought": "Sam needs groceries for his vegan diet and is frugal. Grocery store aligns with these needs.", "chat": null}
+{"id": "B566300", "next_intent": {"category": "cafe", "name": null}, "thought": "Tech-savvy and health-conscious, choosing a cafe for caffeine and quiet study spot.", "chat": null}
+{"id": "B201654", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class as I'm an early riser and social.", "chat": null}
+{"id": "B328007", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. Early riser and foodie, cafe near campus fits best.", "chat": null}
+{"id": "B913197", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine fix before class starts.", "chat": null}
+{"id": "B451708", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs quiet study spot, tech-savvy student prefers cafe.", "chat": null}
+{"id": "B685771", "next_intent": {"category": "cafe", "name": null}, "thought": "Impulsive choice to grab a quick coffee and socialize before class.", "chat": null}
+{"id": "B58404", "next_intent": {"category": "cafe", "name": null}, "thought": "Optimistic and social, need a caffeine boost for the day.", "chat": null}
+{"id": "B860514", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost before class and have time for social interaction.", "chat": null}
+{"id": "B591802", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "B980468", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "B379082", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B822949", "next_intent": {"category": "grocery", "name": null}, "thought": "Heading to grocery.", "chat": null}
+{"id": "B688567", "next_intent": {"category": "education", "name": null}, "thought": "Heading to education.", "chat": null}
+{"id": "B935092", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}

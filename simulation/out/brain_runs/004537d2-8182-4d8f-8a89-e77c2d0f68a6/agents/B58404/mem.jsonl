@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B58404", "role": "resident", "name": "Jordan Singh", "traits": ["optimistic", "extrovert", "early-riser", "social"], "prefs": {"coffee": "low", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T05:05:19Z", "kind": "decision", "text": "Chose cafe near campus to wake up and network.", "tags": ["cafe"]}

@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B592778", "role": "student", "name": "Casey Brown", "traits": ["night-owl", "impulsive", "punctual", "early-riser"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegan", "mobility": "walk", "study_spot": "outdoors", "favorite": "library"}}}
+{"ts": "2025-09-14T04:52:26Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

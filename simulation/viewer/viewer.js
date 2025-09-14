@@ -3,19 +3,38 @@
   const hudTiles = document.getElementById('hudTiles');
   const hudZoom = document.getElementById('hudZoom');
   const hudPanel = document.querySelector('.hud');
-  // Floating HUD element created on demand
+  // Docked HUD container (below scale bar)
+  const agentHudDock = document.getElementById('agentHUDDock');
+  const scaleBarEl = document.querySelector('.scalebar');
   let agentHudEl = null;
+  // Metrics + feed elements (will be available after DOM loads)
+  let elTrips = null;
+  let elAvgTime = null;
+  let elAvgDist = null;
+  let elByCat = null;
+  let feedEl = null;
+  let thoughtsSelect = null;
+  let thoughtsContent = null;
+  let feedFilterMode = 'all'; // 'all', 'chats', 'decisions'
 
   const SEMANTIC_IMG_URL = '../out/society145_1km/semantic_preview.png';
-  const POIS_URL = '../out/society145_1km/pois.json';
-  const LABELS_URL = '../out/society145_1km/labels.json';
-  const VENUES_URL = '../out/society145_1km/venues.json';
+  const BASELINE_DIR = '../out/society145_1km';
+  let currentScenario = 'baseline';
+  function scenarioAssetsDir(){
+    if (currentScenario === 'baseline') return BASELINE_DIR;
+    // Viewer experiments: from /simulation/viewer/, go up twice to reach root, then down to experiments
+    return `../../simulation/out/experiments/exp_viewer/${currentScenario}/assets`;
+  }
+  function poisUrl(){ return `${scenarioAssetsDir()}/pois.json`; }
+  function labelsUrl(){ return `${scenarioAssetsDir()}/labels.json`; }
+  function venuesUrl(){ return `${scenarioAssetsDir()}/venues.json`; }
   const MAIN_POI_LON = -80.5381896;
   const MAIN_POI_LAT = 43.4765757;
 
   // Brain server config
   const BRAIN_URL = 'http://127.0.0.1:9000';
   let runId = null;
+  let orchestrator = null; // will be set after start_run
   const METRICS_FLUSH_MS = 8000;
   let metricsBuffer = [];
   let lastMetricsFlush = performance.now();
@@ -33,9 +52,24 @@
     return resp && resp.runId ? resp.runId : null;
   }
 
+  function getCurrentScenarioBiases(){
+    const biasMap = {
+      'h001': {'grocery': 0.5, 'pharmacy': 0.4, 'cafe': 0.6},
+      'h002': {'education': 0.2, 'leisure': 0.5, 'other': 0.5},
+      'h003': {'restaurant': 0.5, 'cafe': 0.4, 'other': 0.3},
+      'h004': {'restaurant': 0.6, 'cafe': 0.2, 'other': 0.2}
+    };
+    return biasMap[currentScenario] || {};
+  }
+
   async function brainDecide(agents, context){
     if (!runId) return { decisions: [] };
-    const payload = { runId, agents, context: context || {} };
+    const scenarioContext = {
+      scenario_id: currentScenario !== 'baseline' ? currentScenario : undefined,
+      biases: getCurrentScenarioBiases(),
+      ...context
+    };
+    const payload = { runId, agents, context: scenarioContext };
     const resp = await httpPostJson(`${BRAIN_URL}/decide`, payload);
     return resp || { decisions: [] };
   }
@@ -113,13 +147,18 @@
 
   // Agents
   const agents = [];
+  const idToAgent = new Map();
   let heroSeq = 0;
   const agentLayer = new PIXI.Container();
   world.addChild(agentLayer);
+  const intentLayer = new PIXI.Container(); // overlay labels above agents
+  world.addChild(intentLayer);
   const speedMultipliers = [1,2,4,10,100];
   let speedIdx = 0; // 1x by default
   let selectedAgent = null;
   let followMode = false;
+  // Intent chips are only shown for the selected agent when enabled
+  let showIntents = true;
 
   // Needs system
   const NEEDS = ['hunger', 'caffeine', 'groceries', 'health', 'education', 'leisure', 'social'];
@@ -164,7 +203,7 @@
     const characterTypes = [
       'male_civillian',
       'female_civillian', 
-      'male_uni_student'
+      'female_uni_student'
     ];
     
     peopleSprites = {};
@@ -172,10 +211,10 @@
     for (const charType of characterTypes) {
       const base = `sprites/${charType}/`;
       const variants = {
-        down:  [`${charType}_forward.png`],
-        up:    [`${charType}_backward.png`],
-        left:  [`${charType}_left.png`],
-        right: [`${charType}_right.png`]
+        down:  [`${charType}_forward.png`, `${charType.replace('_uni_', '_')}_forward.png`],
+        up:    [`${charType}_backward.png`, `${charType.replace('_uni_', '_')}_backward.png`],
+        left:  [`${charType}_left.png`, `${charType.replace('_uni_', '_')}_left.png`],
+        right: [`${charType}_right.png`, `${charType.replace('_uni_', '_')}_right.png`]
       };
       async function loadFirst(urls){
         for (const u of urls){
@@ -271,14 +310,14 @@
   }
   function snapToWalkable(ix, iy, maxR=30){ const res = sampleWalkableNear(ix, iy, maxR); return [res.iy, res.ix]; }
 
-  function createAgent(ix, iy, color=0xffffff, isHero=true){
+  function createAgent(ix, iy, color=0xffffff, isFullAgent=true){
     const role = sampleRole();
     const needs = initNeeds(role);
     const sprite = new PIXI.Container();
     let footL = null, footR = null, anim = null, charType = null;
     
-    // Trail for hero agents
-    const trail = isHero ? new PIXI.Graphics() : null;
+    // Trail for full agents
+    const trail = isFullAgent ? new PIXI.Graphics() : null;
     if (trail) {
       trail.alpha = 0.6;
       agentLayer.addChildAt(trail, 0); // behind agent
@@ -316,20 +355,45 @@
     sprite.hitArea = new PIXI.Circle(0, 0, 4.5);
     sprite.on('pointertap', () => selectAgent(sprite.__agent));
     agentLayer.addChild(sprite);
+
+    // Intent chip (overlay)
+    const chip = new PIXI.Container();
+    const bg = new PIXI.Graphics();
+    const txt = new PIXI.Text('—', new PIXI.TextStyle({ fontFamily:'Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial', fontSize: 10, fill: 0xffffff, stroke: 0x000000, strokeThickness: 2 }));
+    txt.anchor.set(0.5, 1.4);
+    chip.addChild(bg); chip.addChild(txt);
+    chip.visible = showIntents && isFullAgent;
+    intentLayer.addChild(chip);
     
     const agent = { 
       sprite, ix, iy, tx: ix, ty: iy, path: [], progress: 0, speed: 1.4, 
       phase: Math.random()*Math.PI*2, footL, footR, anim, charType, idle:0,
-      role, needs, isHero, trail, trailPoints: [], lastNeedCheck: 0, currentGoal: null,
-      id: isHero ? `H${heroSeq++}` : `B${Math.floor(Math.random()*1e6)}`,
-      lastThought: null, lastIntent: null, _trip: null
+      role, needs, isFullAgent, trail, trailPoints: [], lastNeedCheck: 0, currentGoal: null,
+      id: isFullAgent ? `F${heroSeq++}` : `S${Math.floor(Math.random()*1e6)}`,
+      lastThought: null, lastIntent: null, _trip: null,
+      _chip: { wrap: chip, bg, txt }
     };
     sprite.__agent = agent;
+    idToAgent.set(agent.id, agent);
     return agent;
   }
 
   function setAgentPath(agent, path){
     agent.path = path || []; agent.progress = 0;
+    // Start trip metrics
+    if (agent.path && agent.path.length > 1){
+      const [sy,sx] = agent.path[0];
+      agent._trip = { 
+        startTime: performance.now(), 
+        start: [sy,sx], 
+        last: [sy,sx], 
+        dist: 0, 
+        category: (agent.currentGoal && agent.currentGoal.poi && agent.currentGoal.poi.type) || agent.lastIntent || 'unknown' 
+      };
+      console.log(`TRIP START: ${agent.id} -> ${agent._trip.category}, path length: ${agent.path.length}`);
+      // Update intent chip text immediately
+      if (agent._chip && agent._chip.txt){ agent._chip.txt.text = agent._trip.category; }
+    }
   }
 
   function headingToDir(dx, dy){
@@ -348,6 +412,8 @@
     // Highlight selected agent
     for (const a of agents) {
       if (a.sprite) a.sprite.alpha = (a === agent) ? 1.0 : 0.7;
+      // Only show intent chip for selected agent
+      if (a._chip && a._chip.wrap) a._chip.wrap.visible = showIntents && (a === agent);
     }
     console.log(`Selected ${agent.role}: needs=`, agent.needs);
     updateSelectionHUD();
@@ -362,8 +428,9 @@
     // Use floating HUD near the selected agent; remove if no selection
     if (!selectedAgent){ if (agentHudEl && agentHudEl.remove) agentHudEl.remove(); agentHudEl = null; return; }
     const a = selectedAgent;
-    const goalTxt = a.currentGoal && a.currentGoal.loc ? (a.currentGoal.poi?.name || a.currentGoal.poi?.type || a.lastIntent || '—') : (a.lastIntent || '—');
-    const thought = a.lastThought ? `“${a.lastThought}”` : '—';
+    const goalTxt = a.currentGoal && a.currentGoal.loc ? ((a.currentGoal.poi && (a.currentGoal.poi.name || a.currentGoal.poi.type)) || a.lastIntent || '—') : (a.lastIntent || '—');
+    const thought = a.lastThought ? `"${a.lastThought}"` : '—';
+    console.log(`HUD UPDATE for ${a.id}: goal="${goalTxt}", intent="${a.lastIntent}", thought="${a.lastThought}"`);
 
     // Build top-3 needs with bars
     const sorted = Object.entries(a.needs||{}).sort((x,y)=>y[1]-x[1]).slice(0,3);
@@ -373,29 +440,38 @@
     }).join('');
 
     // Create element if needed
-    if (!agentHudEl){ agentHudEl = document.createElement('div'); agentHudEl.className = 'agentHUD panel'; document.body.appendChild(agentHudEl); }
+    if (!agentHudEl){ agentHudEl = document.createElement('div'); agentHudEl.className = 'agentHUD panel'; (document.body).appendChild(agentHudEl); }
     agentHudEl.innerHTML = `
       <div class="row" style="margin-bottom:8px; pointer-events:none;">
         <div class="title">${a.id}</div>
         <div class="badge">${a.role}</div>
-        <div class="badge" style="background:${a.isHero?'#0b1220':'#191b1e'}; border-color:rgba(96,165,250,0.35); color:#93c5fd;">${a.isHero?'hero':'bg'}</div>
+        <div class="badge" style="background:${a.isFullAgent?'#0b1220':'#191b1e'}; border-color:rgba(96,165,250,0.35); color:#93c5fd;">${a.isFullAgent?'full':'sim'}</div>
       </div>
       ${needRows}
       <div class="row"><div class="muted">Goal</div><div class="mono" style="flex:1; text-align:right;">${goalTxt}</div></div>
+      <div class="row"><div class="muted">Intent</div><div class="mono" style="flex:1; text-align:right;">${a.lastIntent || '—'}</div></div>
       <div class="row" style="align-items:flex-start;"><div class="muted">Thought</div><div style="flex:1; text-align:right; opacity:0.9;">${thought}</div></div>
     `;
 
-    // Position HUD near agent in screen coords with offset, clamped to viewport
-    const screen = toScreen(a.sprite.x, a.sprite.y);
-    const offsetX = 18, offsetY = -18;
-    const rect = { w: (agentHudEl.offsetWidth||300), h: (agentHudEl.offsetHeight||160) };
-    let left = screen.x + offsetX; let top = screen.y + offsetY - rect.h;
-    const vw = window.innerWidth, vh = window.innerHeight;
-    if (left + rect.w > vw - 12) left = vw - rect.w - 12;
-    if (left < 12) left = 12;
-    if (top < 12) top = screen.y + offsetY + 8; // place below if not enough room above
+    // If dock exists, let CSS place it; otherwise fall back to floating next to the agent
+    // Dock the HUD near the scale bar with smart placement (prefer ABOVE, else BELOW)
+    const vw = window.innerWidth; const vh = window.innerHeight;
+    const cardW = agentHudEl.offsetWidth || 320; const cardH = agentHudEl.offsetHeight || 170;
+    let left = 16, top = vh - cardH - 16;
+    if (scaleBarEl){
+      const r = scaleBarEl.getBoundingClientRect();
+      // Try above scale bar first
+      if (r.top - 12 - cardH >= 12){
+        top = r.top - 12 - cardH;
+      } else {
+        top = Math.min(vh - cardH - 16, r.bottom + 12);
+      }
+      left = Math.max(12, Math.min(vw - cardW - 12, r.left));
+    }
+    agentHudEl.style.position = 'fixed';
     agentHudEl.style.left = `${left}px`;
     agentHudEl.style.top  = `${top}px`;
+    agentHudEl.style.zIndex = 6;
     agentHudEl.style.backdropFilter = 'blur(4px)';
     agentHudEl.style.background = 'rgba(18,19,20,0.6)';
     agentHudEl.style.border = '1px solid rgba(255,255,255,0.08)';
@@ -403,15 +479,15 @@
     agentHudEl.style.boxShadow = '0 6px 18px rgba(0,0,0,0.35)';
   }
 
-  // Lightweight meeting detection (heroes within 3m for >2s)
-  const MEET_DIST = 2.0; // in grid cells (~meters)
-  const MEET_TIME = 2.0; // seconds
+  // Aggressive meeting detection for demo (heroes within 6m for >0.5s)
+  const MEET_DIST = 6.0; // in grid cells (~meters) - very permissive for demo
+  const MEET_TIME = 0.5; // seconds - very fast to trigger chats
   const meetClock = new Map(); // key: 'i-j' -> seconds together
   function detectMeetings(dt){
-    const heroes = agents.filter(a => a.isHero);
-    for (let i=0;i<heroes.length;i++){
-      for (let j=i+1;j<heroes.length;j++){
-        const a = heroes[i], b = heroes[j];
+    const fullAgents = agents.filter(a => a.isFullAgent);
+    for (let i=0;i<fullAgents.length;i++){
+      for (let j=i+1;j<fullAgents.length;j++){
+        const a = fullAgents[i], b = fullAgents[j];
         const dx = a.sprite.x - b.sprite.x; const dy = a.sprite.y - b.sprite.y;
         const d2 = dx*dx + dy*dy;
         const key = `${i}-${j}`;
@@ -454,6 +530,26 @@
     return candidates[0];
   }
 
+  // --- Metrics UI aggregation ---
+  const metricsAgg = { trips:0, sumMs:0, sumDist:0, byCat:{} };
+  function fmtMs(ms){ if (!ms && ms!==0) return '—'; const s = ms/1000; return s>=60? `${(s/60).toFixed(1)} min` : `${s.toFixed(1)} s`; }
+  function fmtDistCells(c){ const m = c*cellM; return m>=1000? `${(m/1000).toFixed(2)} km` : `${Math.round(m)} m`; }
+  function updateMetricsUI(evt){
+    if (evt && evt.add){
+      metricsAgg.trips++;
+      metricsAgg.sumMs += evt.add.ms;
+      metricsAgg.sumDist += evt.add.dist;
+      const k = evt.add.cat || 'unknown'; metricsAgg.byCat[k] = (metricsAgg.byCat[k]||0)+1;
+    }
+    if (elTrips) elTrips.textContent = String(metricsAgg.trips);
+    if (elAvgTime) elAvgTime.textContent = metricsAgg.trips? fmtMs(metricsAgg.sumMs/metricsAgg.trips) : '—';
+    if (elAvgDist) elAvgDist.textContent = metricsAgg.trips? fmtDistCells(metricsAgg.sumDist/metricsAgg.trips) : '—';
+    if (elByCat) {
+      const parts = Object.entries(metricsAgg.byCat).sort((a,b)=>b[1]-a[1]).slice(0,4).map(([k,v])=>`${k}:${v}`);
+      elByCat.textContent = parts.join('  ');
+    }
+  }
+
   function stepAgents(dt){
     if (!agents || !Array.isArray(agents)) return;
     const s = speedMultipliers[speedIdx];
@@ -470,7 +566,7 @@
       if (!a.path || a.path.length<2){ 
         a.idle += dt; 
         // Update trail
-        if (a.trail && a.isHero){
+        if (a.trail && a.isFullAgent){
           a.trailPoints.push({ x: a.sprite.x, y: a.sprite.y, time: performance.now() });
           if (a.trailPoints.length > 20) a.trailPoints.shift();
           a.trail.clear();
@@ -480,6 +576,15 @@
             for (let i=1; i<a.trailPoints.length; i++){
               a.trail.lineTo(a.trailPoints[i].x, a.trailPoints[i].y);
             }
+          }
+        }
+        // If idle full agents have a strong need, nudge them to move so metrics accumulate
+        if (a.isFullAgent && a.idle > 2.0 && workerReady){
+          const bestPOI = findBestPOI(a);
+          if (bestPOI){
+            const cur = [Math.round(a.sprite.y-0.5), Math.round(a.sprite.x-0.5)];
+            const goal = [bestPOI.loc.iy, bestPOI.loc.ix];
+            requestPath(cur, goal).then(res=>{ if (res && res.ok) { setAgentPath(a, res.path); a.currentGoal = bestPOI; a.lastIntent = bestPOI.poi?.type || a.lastIntent; if (a._chip && a._chip.txt && a.lastIntent) a._chip.txt.text = a.lastIntent; a.idle = 0; if (selectedAgent===a) updateSelectionHUD(); } });
           }
         }
         continue; 
@@ -499,7 +604,7 @@
       a.sprite.x = gx + 0.5; a.sprite.y = gy + 0.5;
       
       // Update trail
-      if (a.trail && a.isHero){
+      if (a.trail && a.isFullAgent){
         a.trailPoints.push({ x: a.sprite.x, y: a.sprite.y, time: performance.now() });
         if (a.trailPoints.length > 20) a.trailPoints.shift();
         a.trail.clear();
@@ -532,10 +637,33 @@
       }
       // Advance
       a.progress += stepSpeed * dt;
+      // Position intent chip above agent
+      if (a._chip && a._chip.wrap){ a._chip.wrap.x = a.sprite.x; a._chip.wrap.y = a.sprite.y - 6.5; a._chip.wrap.visible = showIntents && (selectedAgent === a); }
+      // Track distance while moving
+      if (a._trip && a.path && a.path.length > 1){
+        const i0b = Math.max(0, Math.floor(a.progress)-1);
+        const pA = a.path[i0b]; const pB = a.path[i0b+1] || pA;
+        if (Array.isArray(pA) && Array.isArray(pB)){
+          const dy = pB[0]-pA[0], dx = pB[1]-pA[1];
+          a._trip.dist += Math.hypot(dx, dy);
+          a._trip.last = pB;
+        }
+      }
       if (a.progress >= a.path.length-1){ 
         // Reached destination - satisfy needs if at POI
         if (a.currentGoal && a.currentGoal.need){
           a.needs[a.currentGoal.need] = Math.max(0, a.needs[a.currentGoal.need] - 0.4);
+        }
+        // Close trip metrics
+        if (a._trip){
+          const dt_ms = performance.now() - a._trip.startTime;
+          const meters = a._trip.dist * cellM;
+          console.log(`TRIP COMPLETE: ${a.id} -> ${a._trip.category} in ${(dt_ms/1000).toFixed(1)}s, ${meters.toFixed(0)}m`);
+          metricsBuffer.push({ kind:'trip', agent:a.id, role:a.role, cat:a._trip.category, ms: Math.round(dt_ms), dist_m: Math.round(meters) });
+          updateMetricsUI({ add: { ms: dt_ms, dist: a._trip.dist, cat: a._trip.category } });
+          // Immediately flush small batches so the UI updates live
+          if (metricsBuffer.length >= 1) brainSendMetrics();
+          a._trip = null;
         }
         a.path = []; a.currentGoal = null;
       }
@@ -552,31 +680,16 @@
       applyCamera();
     }
 
-    // Meetings detection and decision requests (heroes only)
+    // Meetings detection and chat requests (via orchestrator)
     const meetPairs = detectMeetings(dt);
-    if (meetPairs.length && runId){
-      const heroes = agents.filter(x=>x.isHero);
+    if (meetPairs.length && orchestrator){
+      console.log(`MEETING DETECTED: ${meetPairs.length} pairs`);
+      const fullAgents = agents.filter(x=>x.isFullAgent);
+      const chatPairs = meetPairs.map(k => { const [i,j] = k.split('-').map(n=>parseInt(n,10)); return { aId: fullAgents[i].id, bId: fullAgents[j].id }; });
+      // Schedule meeting participants for immediate decisions and request chats
       const idxSet = new Set(meetPairs.flatMap(k => k.split('-').map(n => parseInt(n,10))));
-      const snapshots = Array.from(idxSet).map(idx => {
-        const a = heroes[idx];
-        return { id: a.id, role: a.role, pos: [a.sprite.x, a.sprite.y], needs: a.needs, time_of_day: null };
-      });
-      brainDecide(snapshots, { meeting: true }).then(resp => {
-        for (const d of (resp.decisions||[])){
-          const hero = heroes.find(h => h.id === d.id); if (!hero) continue;
-          hero.lastThought = d.thought || hero.lastThought;
-          hero.lastIntent = d.next_intent && d.next_intent.category || hero.lastIntent;
-          if (selectedAgent === hero) updateSelectionHUD();
-          const cat = d.next_intent && d.next_intent.category; if (!cat) continue;
-          let best = null; let bestDist = 1e9;
-          for (const p of pois){ if (p.type !== cat) continue; const loc = p.snapped||p; if (!loc) continue; const dx = (loc.ix+0.5) - hero.sprite.x; const dy = (loc.iy+0.5) - hero.sprite.y; const d2 = dx*dx+dy*dy; if (d2 < bestDist){ bestDist = d2; best = loc; } }
-          if (best){
-            const cur = [Math.round(hero.sprite.y-0.5), Math.round(hero.sprite.x-0.5)];
-            const goal = [best.iy, best.ix];
-            requestPath(cur, goal).then(res=>{ if (res && res.ok) setAgentPath(hero, res.path); });
-          }
-        }
-      }).catch(()=>{});
+      for (const idx of idxSet){ orchestrator.schedule(fullAgents[idx].id, 'event'); }
+      orchestrator.chat(chatPairs);
     }
   }
 
@@ -931,14 +1044,72 @@
     }
   }
 
+  let showBaselinePOIs = true;
+
   function createPoiMarker(poi, idx){
     const p = poi.snapped || poi; if (!p || typeof p.ix !== 'number' || typeof p.iy !== 'number') return null;
+    
+    // Check if this is an added POI (exact name match)
+    const isAddedPOI = poi._isAdded === true || (poi.name && ['Society 145 Convenience','Front RX','Lot Cafe','Market Bites 1','Market Bites 2','Plaza Cafe','Food Hall Vendor A','Food Hall Vendor B','Food Hall Vendor C'].includes(poi.name));
+    
+    // In scenario mode, hide baseline POIs unless explicitly shown
+    if (currentScenario !== 'baseline' && !isAddedPOI && !showBaselinePOIs) {
+      return null; // Don't render baseline POIs in scenario mode
+    }
+    
     const color = poiColors[poi.type] || 0xDDDDDD;
-    const icon = createPoiIcon(poi.type, color);
     const c = new PIXI.Container();
-    c.addChild(icon);
+    
+    if (isAddedPOI && currentScenario !== 'baseline') {
+      // NEW POI: Large, prominent, clearly labeled
+      const bg = new PIXI.Graphics();
+      bg.beginFill(0x22c55e, 0.2);
+      bg.lineStyle(3, 0x22c55e, 1.0);
+      bg.drawRoundedRect(-15, -15, 30, 30, 8);
+      bg.endFill();
+      c.addChild(bg);
+      
+      // Large icon
+      const icon = createPoiIcon(poi.type, color);
+      icon.scale.set(1.5);
+      c.addChild(icon);
+      
+      // Clear label above
+      const labelText = poi.name || poi.type;
+      const label = new PIXI.Text(labelText, new PIXI.TextStyle({
+        fontSize: 12,
+        fill: 0xffffff,
+        stroke: 0x000000,
+        strokeThickness: 3,
+        fontWeight: 'bold'
+      }));
+      label.anchor.set(0.5, 1.2);
+      label.y = -20;
+      c.addChild(label);
+      
+      // NEW badge
+      const newBadge = new PIXI.Text('NEW', new PIXI.TextStyle({
+        fontSize: 8,
+        fill: 0xffffff,
+        backgroundColor: 0x22c55e,
+        padding: 2
+      }));
+      newBadge.anchor.set(0.5, 0.5);
+      newBadge.x = 12;
+      newBadge.y = -12;
+      c.addChild(newBadge);
+      
+    } else {
+      // BASELINE POI: Normal size, dimmed if in scenario mode
+      const icon = createPoiIcon(poi.type, color);
+      c.addChild(icon);
+      if (currentScenario !== 'baseline') {
+        c.alpha = 0.3; // Dim baseline POIs in scenario mode
+      }
+    }
+    
     c.x = p.ix + 0.5; c.y = p.iy + 0.5; c.interactive = true; c.cursor = 'pointer';
-    c.hitArea = new PIXI.Circle(0,0,6);
+    c.hitArea = new PIXI.Circle(0,0,isAddedPOI ? 20 : 6);
     const title = poi.name || poi.tags?.name || poi.type;
     c.on('pointerover', (e)=>{ const r = app.view.getBoundingClientRect(); showTooltip(title, e.data.global.x + r.left, e.data.global.y + r.top); c.scale.set(1.2); });
     c.on('pointerout', ()=> { hideTooltip(); c.scale.set(1.0); });
@@ -1014,13 +1185,103 @@
     // arrow
     bg.moveTo(0, -arrow); bg.lineTo(-arrow, 0); bg.lineTo(arrow, 0); bg.closePath(); bg.endFill();
     bg.x = t.x; bg.y = t.y - t.height/2 - 2;
-    bg.filters = [new PIXI.filters.DropShadowFilter({ alpha:0.4, blur:2, distance:2, color:0x000000 })];
+    try { bg.filters = [new PIXI.filters.DropShadowFilter({ alpha:0.4, blur:2, distance:2, color:0x000000 })]; } catch(_) {}
 
     hoverLabel = new PIXI.Container(); hoverLabel.alpha = 0; hoverLabel.addChild(bg); hoverLabel.addChild(t); labelContainer.addChild(hoverLabel);
     // Fade in
     const fade = () => { hoverLabel.alpha += 0.12; if (hoverLabel && hoverLabel.alpha < 1) requestAnimationFrame(fade); }; fade();
   }
   function hideHoverLabel(){ if (hoverLabel && hoverLabel.parent) { hoverLabel.parent.removeChild(hoverLabel); } hoverLabel = null; currentHoverId = null; }
+
+  // Speech bubble (for hero chats)
+  function showSpeechBubble(wx, wy, text){
+    const style = new PIXI.TextStyle({ fontFamily: 'Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial', fontSize: 12, fill: 0xffffff, stroke: 0x131518, strokeThickness: 2, wordWrap: true, wordWrapWidth: 220 });
+    const t = new PIXI.Text(text, style); t.anchor.set(0.5, 1.2); t.x = wx; t.y = wy;
+    const w = Math.ceil(t.width) + 16, h = Math.ceil(t.height) + 12; const arrow = 8;
+    const bg = new PIXI.Graphics();
+    bg.beginFill(0x17191d, 0.96); bg.lineStyle(1, 0x2a2d32, 0.9);
+    bg.drawRoundedRect(-w/2, -h - arrow, w, h, 8);
+    bg.moveTo(0, -arrow); bg.lineTo(-arrow, 0); bg.lineTo(arrow, 0); bg.closePath(); bg.endFill();
+    bg.x = t.x; bg.y = t.y - t.height/2 - 2; try { bg.filters = [new PIXI.filters.DropShadowFilter({ alpha:0.4, blur:2, distance:2, color:0x000000 })]; } catch(_){ }
+    const wrap = new PIXI.Container(); wrap.addChild(bg); wrap.addChild(t); labelContainer.addChild(wrap); wrap.alpha = 0;
+    // fade then auto-remove
+    const start = performance.now();
+    function anim(ts){ const k = Math.min(1, (ts-start)/200); wrap.alpha = k; if (k<1) requestAnimationFrame(anim); else setTimeout(()=>{ labelContainer.removeChild(wrap); }, 2800); }
+    requestAnimationFrame(anim);
+  }
+
+  function appendFeed(entry){
+    if (!feedEl) return;
+    const div = document.createElement('div');
+    div.className = 'item';
+    div.dataset.type = entry.type || 'chat'; // 'chat' or 'decision'
+    const who = document.createElement('div'); who.className = 'who'; who.textContent = entry.who;
+    const content = document.createElement('div'); content.className = entry.type === 'decision' ? 'decision' : 'chat'; content.textContent = entry.text;
+    div.appendChild(who); div.appendChild(content); 
+    
+    // Apply filter
+    const shouldShow = feedFilterMode === 'all' || 
+                      (feedFilterMode === 'chats' && entry.type === 'chat') ||
+                      (feedFilterMode === 'decisions' && entry.type === 'decision');
+    div.style.display = shouldShow ? 'block' : 'none';
+    
+    feedEl.prepend(div);
+    // Trim
+    while (feedEl.children.length > 60) feedEl.removeChild(feedEl.lastChild);
+  }
+
+  function updateFeedFilter(){
+    if (!feedEl) return;
+    for (const item of feedEl.children){
+      const type = item.dataset.type || 'chat';
+      const shouldShow = feedFilterMode === 'all' || 
+                        (feedFilterMode === 'chats' && type === 'chat') ||
+                        (feedFilterMode === 'decisions' && type === 'decision');
+      item.style.display = shouldShow ? 'block' : 'none';
+    }
+  }
+
+  // Store agent thought history for the thoughts panel
+  const agentThoughtHistory = new Map(); // agentId -> [{time, thought, intent}, ...]
+
+  function addAgentThought(agentId, thought, intent){
+    if (!agentThoughtHistory.has(agentId)) agentThoughtHistory.set(agentId, []);
+    const history = agentThoughtHistory.get(agentId);
+    history.push({ time: Date.now(), thought, intent });
+    if (history.length > 10) history.shift(); // Keep last 10
+  }
+
+  function updateThoughtsPanel(){
+    if (!thoughtsContent || !thoughtsSelect) return;
+    const selectedId = thoughtsSelect.value;
+    if (!selectedId){
+      thoughtsContent.innerHTML = '<div style="opacity:0.6; font-style:italic;">Select an agent to view their thoughts</div>';
+      return;
+    }
+    const agent = idToAgent.get(selectedId);
+    if (!agent){
+      thoughtsContent.innerHTML = '<div style="opacity:0.6; color:#f88;">Agent not found</div>';
+      return;
+    }
+    
+    const history = agentThoughtHistory.get(selectedId) || [];
+    if (history.length === 0){
+      thoughtsContent.innerHTML = '<div style="opacity:0.6; font-style:italic;">No thoughts yet... waiting for LLM decisions</div>';
+      return;
+    }
+    
+    // Show recent thoughts in reverse chronological order
+    const entries = history.slice(-5).reverse().map(entry => {
+      const timeStr = new Date(entry.time).toLocaleTimeString();
+      return `<div style="margin:4px 0; padding:6px 8px; background:#17191d; border-radius:6px; border:1px solid rgba(255,255,255,0.06);">
+        <div style="font-size:10px; opacity:0.6; margin-bottom:3px;">${timeStr}</div>
+        <div style="font-style:italic;">💭 "${entry.thought}"</div>
+        ${entry.intent ? `<div style="margin-top:3px; opacity:0.8;">🎯 ${entry.intent}</div>` : ''}
+      </div>`;
+    }).join('');
+    
+    thoughtsContent.innerHTML = entries;
+  }
 
   function labelsNear(ix, iy){
     const bx = Math.floor(ix / LABEL_BUCKET_SIZE); const by = Math.floor(iy / LABEL_BUCKET_SIZE);
@@ -1120,9 +1381,9 @@
       baseSprite = new PIXI.Sprite(tex); baseSprite.x = 0; baseSprite.y = 0; baseSprite.scale.set(1, 1); world.addChildAt(baseSprite, 0);
       gridW = tex.width; gridH = tex.height;
       await initMinimap();
-      try { const resp = await fetch(POIS_URL); if (resp.ok) { pois = await resp.json(); } } catch (e) { console.warn('POIs load failed', e); }
-      try { const respL = await fetch(LABELS_URL); if (respL.ok) { const raw = await respL.json(); labels = raw.map((L, i) => ({ id:i, ...L })); buildLabelIndex(); } } catch (e) { console.warn('labels load failed', e); }
-      try { const respV = await fetch(VENUES_URL); if (respV.ok) { venues = await respV.json(); } } catch (e) { console.warn('venues load failed', e); }
+      try { const resp = await fetch(poisUrl()); if (resp.ok) { pois = await resp.json(); } else { const r2 = await fetch(`${BASELINE_DIR}/pois.json`); if (r2.ok) pois = await r2.json(); } } catch (e) { console.warn('POIs load failed', e); }
+      try { const respL = await fetch(labelsUrl()); if (respL.ok) { const raw = await respL.json(); labels = raw.map((L, i) => ({ id:i, ...L })); buildLabelIndex(); } else { const r2 = await fetch(`${BASELINE_DIR}/labels.json`); if (r2.ok) { const raw = await r2.json(); labels = raw.map((L, i) => ({ id:i, ...L })); buildLabelIndex(); } } } catch (e) { console.warn('labels load failed', e); }
+      try { const respV = await fetch(venuesUrl()); if (respV.ok) { venues = await respV.json(); } else { const r2 = await fetch(`${BASELINE_DIR}/venues.json`); if (r2.ok) venues = await r2.json(); } } catch (e) { console.warn('venues load failed', e); }
       // Load navgraph for physics
       try {
         const resp = await fetch('../out/society145_1km/navgraph.npz');
@@ -1157,48 +1418,54 @@
         console.warn('Sprite loading failed, using fallback graphics:', e);
         peopleSprites = null;
       }
-      // Helper: build goals list of walkable points near POIs/venues
-      const goals = [];
-      for (const p of pois){ const loc = p.snapped || p; if (loc && typeof loc.ix==='number' && typeof loc.iy==='number'){ const snap = snapToWalkable(loc.ix, loc.iy, 20); goals.push(snap); } }
-      // Spawn HERO agents (10–20)
+      // Helper: build goal POIs list with snapped walkable locs so we can preserve category/name
+      const goalPOIs = [];
+      for (const p of pois){
+        const loc = p.snapped || p;
+        if (loc && typeof loc.ix==='number' && typeof loc.iy==='number'){
+          const [iy, ix] = snapToWalkable(loc.ix, loc.iy, 20);
+          goalPOIs.push({ poi: p, loc: { iy, ix } });
+        }
+      }
+      // Spawn agents with configurable percentage of full-LLM agents
       const center = lonlatToGrid(MAIN_POI_LON, MAIN_POI_LAT);
       const baseStart = sampleWalkableNear(Math.round(center.x), Math.round(center.y), 40);
-      const heroCount = 15;
-      console.log('Spawning hero agents, workerReady:', workerReady, 'goals:', goals.length);
+      const totalAgents = 50; // Reduced for performance
+      const fullAgentPercentage = 0.3; // 30% get full LLM treatment
+      const fullAgentCount = Math.floor(totalAgents * fullAgentPercentage);
+      console.log('Spawning hero agents, workerReady:', workerReady, 'goalPOIs:', goalPOIs.length);
       
       // Wait for worker to be ready
       while (!workerReady) {
         await new Promise(resolve => setTimeout(resolve, 50));
       }
       
-      for (let i=0;i<heroCount;i++){
-        const jitter = sampleWalkableNear(baseStart.ix + Math.round((Math.random()-0.5)*20), baseStart.iy + Math.round((Math.random()-0.5)*20), 20);
-        const a = createAgent(jitter.ix, jitter.iy, 0xffffff, true);
-        agents.push(a);
-        // Give initial need-driven goal
-        const bestPOI = findBestPOI(a);
-        if (bestPOI) {
-          const start = [jitter.iy, jitter.ix];
-          const goal = [bestPOI.loc.iy, bestPOI.loc.ix];
-          const res = await requestPath(start, goal);
-          if (res && res.ok) {
-            setAgentPath(a, res.path);
-            a.currentGoal = bestPOI;
-          }
-        }
-      }
-
-      // Spawn BACKGROUND extras using same visuals to be indistinguishable
-      const extras = 60;
-      for (let i=0;i<extras;i++){
-        const s0 = sampleWalkableNear(baseStart.ix + Math.round((Math.random()-0.5)*80), baseStart.iy + Math.round((Math.random()-0.5)*80), 30);
-        const a = createAgent(s0.ix, s0.iy, 0xe7f0ff, false);
+      const regList = [];
+      // Force some convergence: pick 3-4 popular destinations for clustering
+      const popularDests = goalPOIs.filter(gp => ['cafe','restaurant','grocery','transit'].includes(gp.poi.type)).slice(0, 4);
+      
+      for (let i=0;i<totalAgents;i++){
+        const isFullAgent = i < fullAgentCount; // First N agents get full LLM treatment
+        const jitter = sampleWalkableNear(baseStart.ix + Math.round((Math.random()-0.5)*60), baseStart.iy + Math.round((Math.random()-0.5)*60), 30);
+        const a = createAgent(jitter.ix, jitter.iy, 0xffffff, isFullAgent);
         a.speed = 0.9 + Math.random()*0.6;
         agents.push(a);
-        const g = goals[(Math.random()*goals.length)|0] || [s0.iy, s0.ix];
-        const start = [s0.iy, s0.ix];
-        const res = await requestPath(start, g);
-        if (res && res.ok) setAgentPath(a, res.path);
+        
+        // Only register full agents with the brain server (to reduce load)
+        if (isFullAgent) regList.push({ id: a.id, role: a.role });
+        
+        // 70% chance to pick a popular destination (force convergence), 30% random
+        const gp = (Math.random() < 0.7 && popularDests.length) ? 
+          popularDests[Math.floor(Math.random() * popularDests.length)] :
+          goalPOIs[(Math.random()*goalPOIs.length)|0];
+        const target = gp ? gp.loc : { iy: jitter.iy, ix: jitter.ix };
+        const start = [jitter.iy, jitter.ix];
+        const res = await requestPath(start, [target.iy, target.ix]);
+        if (res && res.ok) {
+          a.currentGoal = gp ? { poi: gp.poi, loc: gp.loc } : null;
+          if (gp && gp.poi && gp.poi.type){ a.lastIntent = gp.poi.type; if (a._chip && a._chip.txt) a._chip.txt.text = a.lastIntent; }
+          setAgentPath(a, res.path);
+        }
       }
       renderPOIs();
       renderVenues();
@@ -1222,15 +1489,78 @@
       if (btnCenter) btnCenter.onclick = () => { centerOnPOI(); };
       if (btnFit) btnFit.onclick = () => { const padding=40; const zx=(app.renderer.width-padding*2)/gridW; const zy=(app.renderer.height-padding*2)/gridH; zoom=Math.min(1.0,Math.max(0.2,Math.min(zx,zy))); cameraX=gridW/2-(app.renderer.width/(2*zoom)); cameraY=gridH/2-(app.renderer.height/(2*zoom)); applyCamera(); updateHUD(); updateMinimap(); updateScaleBar(); };
       wireSpeedButtons();
+      const btnIntents = qi('btnIntents'); if (btnIntents) btnIntents.onclick = ()=>{ showIntents = !showIntents; if (!showIntents){ intentLayer.children.forEach(c=>c.visible=false); } else if (selectedAgent && selectedAgent._chip) { selectedAgent._chip.wrap.visible = true; } };
+
+      // Initialize DOM elements BEFORE orchestrator setup
+      elTrips = document.getElementById('mTrips');
+      elAvgTime = document.getElementById('mAvgTime');
+      elAvgDist = document.getElementById('mAvgDist');
+      elByCat = document.getElementById('mByCat');
+      feedEl = document.getElementById('societyFeed');
+      thoughtsSelect = document.getElementById('thoughtsAgentSelect');
+      thoughtsContent = document.getElementById('thoughtsContent');
 
       // Start brain run (fire-and-forget). If server not running, runId stays null and JS-only logic continues.
       try { runId = await brainStartRun('base', 12345, speedMultipliers[speedIdx]); } catch(_) { runId = null; }
+      if (runId && window.AgentOrchestrator){
+        orchestrator = new window.AgentOrchestrator({
+          brainUrl: BRAIN_URL,
+          runId,
+          getSnapshot: (id)=>{ const a = idToAgent.get(id); if (!a) return null; return { id:a.id, role:a.role, pos:[a.sprite.x, a.sprite.y], needs:a.needs, time_of_day:null }; },
+          applyDecision: (d)=>{
+            const a = idToAgent.get(d.id); if (!a) return;
+            console.log(`APPLY DECISION for ${d.id}: thought="${d.thought}", intent="${d.next_intent?.category}"`);
+            a.lastThought = d.thought || a.lastThought;
+            a.lastIntent = (d.next_intent && d.next_intent.category) || a.lastIntent;
+            if (a._chip && a._chip.txt && a.lastIntent) a._chip.txt.text = a.lastIntent;
+            if (selectedAgent === a) updateSelectionHUD();
+            // Store thought in history
+            if (d.thought) addAgentThought(a.id, d.thought, a.lastIntent);
+            // Log decision to feed
+            if (d.thought) appendFeed({ who: a.id, text: d.thought, type: 'decision' });
+            // Update thoughts panel if this agent is selected
+            if (thoughtsSelect && thoughtsSelect.value === a.id) updateThoughtsPanel();
+            // choose nearest POI by category and replan
+            const cat = d.next_intent && d.next_intent.category; if (!cat) return;
+            let best = null; let bestDist = 1e9;
+            for (const p of pois){ if (p.type !== cat) continue; const loc = p.snapped||p; if (!loc) continue; const dx = (loc.ix+0.5) - a.sprite.x; const dy = (loc.iy+0.5) - a.sprite.y; const d2 = dx*dx+dy*dy; if (d2 < bestDist){ bestDist = d2; best = loc; } }
+            if (best){ const cur = [Math.round(a.sprite.y-0.5), Math.round(a.sprite.x-0.5)]; const goal = [best.iy, best.ix]; requestPath(cur, goal).then(res=>{ if (res && res.ok){ setAgentPath(a, res.path); a.currentGoal = { poi:{ type: cat }, loc:{ iy: best.iy, ix: best.ix } }; }}); }
+          },
+          onChats: (pairLines)=>{ for (const p of pairLines){ const a = idToAgent.get(p.aId); const b = idToAgent.get(p.bId); if (a) { showSpeechBubble(a.sprite.x, a.sprite.y, p.a_line); appendFeed({ who: a.id, text: p.a_line, type: 'chat' }); } if (b) { showSpeechBubble(b.sprite.x, b.sprite.y, p.b_line); appendFeed({ who: b.id, text: p.b_line, type: 'chat' }); } }
+          },
+          onError: (e)=> console.warn('orchestrator error', e)
+        });
+        // Register all agents with brain
+        await fetch(`${BRAIN_URL}/register_agents`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ runId, agents: regList }) });
+
+        // PRIME: immediately request one decision for all full agents so UI has thoughts/feed right away
+        try {
+          const fulls = agents.filter(x => x.isFullAgent);
+          const snaps = fulls.map(a => ({ id:a.id, role:a.role, pos:[a.sprite.x, a.sprite.y], needs:a.needs, time_of_day:null }));
+          const prime = await brainDecide(snaps, {});
+          if (prime && Array.isArray(prime.decisions)){
+            prime.decisions.forEach(d => {
+              const a = idToAgent.get(d.id); if (!a) return;
+              a.lastThought = d.thought || a.lastThought;
+              a.lastIntent = (d.next_intent && d.next_intent.category) || a.lastIntent;
+              if (a._chip && a._chip.txt && a.lastIntent) a._chip.txt.text = a.lastIntent;
+              if (d.thought) { addAgentThought(a.id, d.thought, a.lastIntent); appendFeed({ who: a.id, text: d.thought, type: 'decision' }); }
+            });
+            // Refresh panel if needed
+            if (thoughtsSelect && thoughtsSelect.value) updateThoughtsPanel();
+          }
+        } catch(e){ console.warn('prime decide failed', e); }
+
+        // Initial schedule for full agents only (to reduce server load)
+        for (const a of agents.filter(x => x.isFullAgent)){ orchestrator.schedule(a.id, 'event'); }
+      }
 
       // Ticker for agents
       let last = performance.now();
       const tick = (now)=>{
         const dt = Math.min(0.05, (now - last)/1000); last = now;
         stepAgents(dt);
+        if (orchestrator) orchestrator.tick();
         // Flush metrics periodically
         if (performance.now() - lastMetricsFlush > METRICS_FLUSH_MS){ lastMetricsFlush = performance.now(); brainSendMetrics(); }
         // Replan idle agents based on needs
@@ -1240,8 +1570,8 @@
               const cur = [Math.round(a.sprite.y-0.5), Math.round(a.sprite.x-0.5)];
               let goal = null;
               
-              if (a.isHero) {
-                // Hero agents use needs-driven goals
+              if (a.isFullAgent) {
+                // Full agents use needs-driven goals
                 const bestPOI = findBestPOI(a);
                 if (bestPOI) {
                   goal = [bestPOI.loc.iy, bestPOI.loc.ix];
@@ -1250,8 +1580,10 @@
               }
               
               if (!goal) {
-                // Fallback to random goal
-                goal = goals[(Math.random()*goals.length)|0] || cur;
+                // Fallback to random goal from POIs so HUD/intent have category
+                const gp = goalPOIs[(Math.random()*goalPOIs.length)|0];
+                if (gp) { goal = [gp.loc.iy, gp.loc.ix]; a.currentGoal = { poi: gp.poi, loc: gp.loc }; }
+                else { goal = cur; }
               }
               
               requestPath(cur, goal).then(res=>{ if (res && res.ok) setAgentPath(a, res.path); });
@@ -1278,6 +1610,36 @@
       if (btnNone) btnNone.onclick = () => { for (const k in poiFilters) poiFilters[k] = false; syncLegendCheckboxes(); updatePOIMarkerStyles(); };
       // Apply colors to legend from poiColors
       syncLegendColors();
+      
+      // Populate agent dropdown with ALL agents (since they all have brains now)
+      if (thoughtsSelect){
+        thoughtsSelect.innerHTML = '<option value="">Select agent...</option>';
+        for (const a of agents.filter(x => x.isFullAgent)){
+          const opt = document.createElement('option');
+          opt.value = a.id;
+          opt.textContent = `${a.id} (${a.role})`;
+          thoughtsSelect.appendChild(opt);
+        }
+        thoughtsSelect.onchange = updateThoughtsPanel;
+      }
+      
+      // Wire feed filters
+      const btnFilterAll = document.getElementById('feedFilterAll');
+      const btnFilterChats = document.getElementById('feedFilterChats');
+      const btnFilterDecisions = document.getElementById('feedFilterDecisions');
+      if (btnFilterAll) btnFilterAll.onclick = () => { feedFilterMode = 'all'; updateFeedFilter(); setActiveFilter(btnFilterAll); };
+      if (btnFilterChats) btnFilterChats.onclick = () => { feedFilterMode = 'chats'; updateFeedFilter(); setActiveFilter(btnFilterChats); };
+      if (btnFilterDecisions) btnFilterDecisions.onclick = () => { feedFilterMode = 'decisions'; updateFeedFilter(); setActiveFilter(btnFilterDecisions); };
+      
+      function setActiveFilter(activeBtn){
+        [btnFilterAll, btnFilterChats, btnFilterDecisions].forEach(btn => {
+          if (btn) btn.style.background = btn === activeBtn ? '#2563eb' : '#1a1c1f';
+        });
+      }
+      setActiveFilter(btnFilterAll); // Default to "All"
+      
+      // Initialize metrics display
+      updateMetricsUI();
       // Keyboard shortcuts
       window.addEventListener('keydown', (e)=>{
         if (e.repeat) return;
@@ -1296,6 +1658,161 @@
       const err = document.createElement('div'); err.style.position = 'absolute'; err.style.bottom = '8px'; err.style.left = '8px'; err.style.color = '#f88'; err.style.fontFamily = 'monospace'; err.textContent = `Error: ${e}`; document.body.appendChild(err);
     }
   }
+
+  // Scenario selector wiring (UI controls exist in index.html)
+  window.addEventListener('DOMContentLoaded', ()=>{
+    console.log('🔧 Setting up scenario controls...');
+    
+    const sel = document.getElementById('scenarioSelect');
+    const btn = document.getElementById('btnLoadScenario');
+    const btnToggle = document.getElementById('btnToggleBaseline');
+    const status = document.getElementById('scenarioStatus');
+    
+    console.log('Scenario elements found:', { 
+      select: !!sel, 
+      button: !!btn, 
+      status: !!status 
+    });
+    
+    if (sel && btn){
+      console.log('✅ Wiring scenario controls');
+      
+      // Add immediate visual feedback
+      btn.onclick = async ()=>{
+        const chosen = sel.value || 'baseline';
+        console.log(`🔄 Loading scenario: ${chosen}`);
+        
+        if (status) status.textContent = 'Loading...';
+        btn.textContent = '⏳';
+        btn.disabled = true;
+        
+        const oldScenario = currentScenario;
+        currentScenario = chosen;
+        
+        console.log(`📂 Checking assets at: ${poisUrl()}`);
+        
+        // Try HEAD to confirm; if not present, stay on baseline
+        try {
+          const r = await fetch(poisUrl(), { method:'HEAD' });
+          if (!r.ok) {
+            console.warn(`❌ Scenario assets not found for ${chosen}, falling back to baseline`);
+            currentScenario = 'baseline';
+            if (status) status.textContent = 'Fallback to baseline';
+          } else {
+            console.log(`✅ Scenario assets found for ${chosen}`);
+            if (status) status.textContent = 'Assets found';
+          }
+        } catch(e) { 
+          console.warn(`❌ Asset check failed for ${chosen}:`, e);
+          currentScenario = 'baseline';
+          if (status) status.textContent = 'Error - using baseline';
+        }
+        
+        const oldPoiCount = pois.length;
+        
+        // Reload POIs/labels/venues and re-render
+        try { 
+          const rp = await fetch(poisUrl()); 
+          if (rp.ok) { 
+            pois = await rp.json(); 
+            console.log(`📍 Loaded ${pois.length} POIs (was ${oldPoiCount})`);
+            if (status) status.textContent = `${pois.length} POIs loaded`;
+          } 
+        } catch(e){ console.warn('POI reload failed:', e); }
+        
+        try { 
+          const rl = await fetch(labelsUrl()); 
+          if (rl.ok) { 
+            const raw = await rl.json(); 
+            labels = raw.map((L,i)=>({id:i, ...L})); 
+            buildLabelIndex(); 
+            console.log(`🏷️  Loaded ${labels.length} labels`);
+          } 
+        } catch(e){ console.warn('Labels reload failed:', e); }
+        
+        try { 
+          const rv = await fetch(venuesUrl()); 
+          if (rv.ok) { 
+            venues = await rv.json(); 
+            console.log(`🏢 Loaded ${venues.length} venues`);
+          } 
+        } catch(e){ console.warn('Venues reload failed:', e); }
+        
+        // Force re-render everything
+        console.log(`🎨 Re-rendering POIs and map...`);
+        renderPOIs(); 
+        updatePOIMarkerStyles(); 
+        updateMinimap();
+
+        // Mark likely added POIs for this scenario to enable consistent highlighting
+        if (currentScenario !== 'baseline'){
+          const addedNames = currentScenario === 'h001' ? ['Society 145 Convenience','Front RX','Lot Cafe'] : (currentScenario==='h003' ? ['Market','Plaza','Food'] : []);
+          for (const p of pois){ if (p.name && addedNames.some(n => p.name.includes(n.split(' ')[0]))){ p._isAdded = true; } }
+        }
+
+        // Build scenario changes panel
+        try {
+          const panelBody = document.getElementById('scenarioPanelBody');
+          const summary = document.getElementById('scenarioSummary');
+          if (panelBody && summary){
+            panelBody.innerHTML = '';
+            const added = (pois || []).filter(p => p && p.name && ['Society 145 Convenience','Front RX','Lot Cafe','Market Bites 1','Market Bites 2','Plaza Cafe','Food Hall Vendor A','Food Hall Vendor B','Food Hall Vendor C'].includes(p.name));
+            summary.textContent = currentScenario === 'baseline' ? 'Baseline environment' : `Active: ${currentScenario} • Added POIs: ${added.length}`;
+            if (added.length){
+              const ul = document.createElement('ul'); ul.style.margin='6px 0 0 16px'; ul.style.padding='0';
+              for (const p of added){ const li = document.createElement('li'); li.textContent = `${p.name} (${p.type})`; ul.appendChild(li); }
+              panelBody.appendChild(ul);
+            } else {
+              panelBody.textContent = 'No detected new POIs (this scenario may add non-labeled changes).';
+            }
+          }
+          const btnZoom = document.getElementById('btnZoomScenario');
+          if (btnZoom){
+            btnZoom.onclick = ()=>{
+              // Zoom to the centroid of added POIs, or do nothing if none
+              const added = (pois || []).filter(p => p && p.name && ['Society 145 Convenience','Front RX','Lot Cafe','Market Bites 1','Market Bites 2','Plaza Cafe','Food Hall Vendor A','Food Hall Vendor B','Food Hall Vendor C'].includes(p.name));
+              if (!added.length) return;
+              let sx=0, sy=0, k=0; for (const p of added){ const loc=p.snapped||p; if (loc){ sx+=loc.ix; sy+=loc.iy; k++; } }
+              if (k>0){ const cx = (sx/k)|0, cy = (sy/k)|0; centerOnGrid(cx, cy); setZoomToRadiusMeters(60); updateMinimap(); updateScaleBar(); }
+            };
+          }
+        } catch(e){ console.warn('Scenario side panel update failed', e); }
+        
+        console.log(`✅ Scenario switch complete: ${oldScenario} → ${currentScenario}`);
+        
+        // Show user feedback
+        btn.textContent = '🔄 LOAD';
+        btn.disabled = false;
+        if (status) status.textContent = `Active: ${currentScenario}`;
+        
+        // Flash the button to show it worked
+        btn.style.background = '#22c55e';
+        setTimeout(() => { btn.style.background = '#3b82f6'; }, 1000);
+      };
+
+      // Baseline POI visibility toggle
+      if (btnToggle){
+        btnToggle.onclick = ()=>{
+          showBaselinePOIs = !showBaselinePOIs;
+          btnToggle.textContent = showBaselinePOIs ? '👁️ Show All' : '🎯 Changes Only';
+          btnToggle.style.background = showBaselinePOIs ? '#6b7280' : '#f59e0b';
+          renderPOIs(); 
+          updatePOIMarkerStyles();
+        };
+      }
+      
+      // Add debugging button click
+      btn.addEventListener('click', () => {
+        console.log('🖱️ Load button clicked!');
+      });
+      
+    } else {
+      console.error('❌ Scenario selector elements not found!', {
+        select: sel,
+        button: btn
+      });
+    }
+  });
 
   main().catch(err => console.error(err));
 })();

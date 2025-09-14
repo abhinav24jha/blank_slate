@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scenario Switcher Test</title>
+    <style>
+        body { font-family: system-ui; margin: 20px; background: #1a1c1f; color: #e6e7e8; }
+        .test-section { margin: 20px 0; padding: 15px; background: #2a2c2f; border-radius: 8px; }
+        button { background: #3b82f6; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; margin: 5px; }
+        pre { background: #0f1011; padding: 10px; border-radius: 6px; overflow-x: auto; }
+        .status { font-weight: bold; }
+        .success { color: #22c55e; }
+        .error { color: #ef4444; }
+        .warning { color: #f59e0b; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Scenario Viewer Test</h1>
+    
+    <div class="test-section">
+        <h3>Asset Loading Test</h3>
+        <button onclick="testAssetLoading()">Test Asset URLs</button>
+        <div id="assetResults"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>POI Comparison Test</h3>
+        <button onclick="comparePOIs()">Compare Baseline vs H001</button>
+        <div id="poiResults"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Scenario Function Test</h3>
+        <button onclick="testScenarioFunctions()">Test Scenario Functions</button>
+        <div id="functionResults"></div>
+    </div>
+
+    <script>
+        async function testAssetLoading() {
+            const results = document.getElementById('assetResults');
+            results.innerHTML = '<p>Testing asset URLs...</p>';
+            
+            const urls = [
+                '../out/society145_1km/pois.json',
+                '../simulation/out/experiments/exp_viewer/h001/assets/pois.json',
+                '../simulation/out/experiments/exp_viewer/h003/assets/pois.json'
+            ];
+            
+            let html = '';
+            for (const url of urls) {
+                try {
+                    const response = await fetch(url, { method: 'HEAD' });
+                    const scenario = url.includes('h001') ? 'H001' : url.includes('h003') ? 'H003' : 'Baseline';
+                    if (response.ok) {
+                        html += `<p class="status success">✅ ${scenario}: ${url}</p>`;
+                    } else {
+                        html += `<p class="status error">❌ ${scenario}: ${response.status} - ${url}</p>`;
+                    }
+                } catch (e) {
+                    const scenario = url.includes('h001') ? 'H001' : url.includes('h003') ? 'H003' : 'Baseline';
+                    html += `<p class="status error">❌ ${scenario}: ${e.message}</p>`;
+                }
+            }
+            results.innerHTML = html;
+        }
+        
+        async function comparePOIs() {
+            const results = document.getElementById('poiResults');
+            results.innerHTML = '<p>Comparing POIs...</p>';
+            
+            try {
+                const baselineResp = await fetch('../out/society145_1km/pois.json');
+                const h001Resp = await fetch('../simulation/out/experiments/exp_viewer/h001/assets/pois.json');
+                
+                if (!baselineResp.ok || !h001Resp.ok) {
+                    results.innerHTML = '<p class="status error">❌ Failed to fetch POI files</p>';
+                    return;
+                }
+                
+                const baselinePOIs = await baselineResp.json();
+                const h001POIs = await h001Resp.json();
+                
+                const diff = h001POIs.length - baselinePOIs.length;
+                
+                let html = `<p class="status success">✅ Baseline: ${baselinePOIs.length} POIs</p>`;
+                html += `<p class="status success">✅ H001: ${h001POIs.length} POIs</p>`;
+                html += `<p class="status ${diff > 0 ? 'success' : 'warning'}">Difference: +${diff} POIs</p>`;
+                
+                // Show added POIs
+                const addedNames = ['Society 145 Convenience', 'Front RX', 'Lot Cafe'];
+                html += '<h4>Added POIs in H001:</h4>';
+                const found = h001POIs.filter(poi => addedNames.includes(poi.name));
+                
+                if (found.length > 0) {
+                    html += '<ul>';
+                    found.forEach(poi => {
+                        html += `<li><strong>${poi.name}</strong> (${poi.type}) at (${poi.iy}, ${poi.ix})</li>`;
+                    });
+                    html += '</ul>';
+                } else {
+                    html += '<p class="status warning">⚠️ No added POIs found with expected names</p>';
+                }
+                
+                results.innerHTML = html;
+                
+            } catch (e) {
+                results.innerHTML = `<p class="status error">❌ Error: ${e.message}</p>`;
+            }
+        }
+        
+        async function testScenarioFunctions() {
+            const results = document.getElementById('functionResults');
+            results.innerHTML = '<p>Testing scenario functions...</p>';
+            
+            // Test the viewer's scenario functions (if available)
+            let html = '';
+            
+            // Mock the viewer functions for testing
+            const BASELINE_DIR = '../out/society145_1km';
+            let currentScenario = 'baseline';
+            
+            function scenarioAssetsDir(){
+                if (currentScenario === 'baseline') return BASELINE_DIR;
+                return `../simulation/out/experiments/exp_viewer/${currentScenario}/assets`;
+            }
+            
+            function poisUrl(){ return `${scenarioAssetsDir()}/pois.json`; }
+            
+            // Test different scenarios
+            const scenarios = ['baseline', 'h001', 'h003'];
+            
+            for (const scenario of scenarios) {
+                currentScenario = scenario;
+                const url = poisUrl();
+                
+                try {
+                    const response = await fetch(url, { method: 'HEAD' });
+                    if (response.ok) {
+                        html += `<p class="status success">✅ ${scenario}: ${url}</p>`;
+                    } else {
+                        html += `<p class="status error">❌ ${scenario}: ${response.status}</p>`;
+                    }
+                } catch (e) {
+                    html += `<p class="status error">❌ ${scenario}: ${e.message}</p>`;
+                }
+            }
+            
+            results.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

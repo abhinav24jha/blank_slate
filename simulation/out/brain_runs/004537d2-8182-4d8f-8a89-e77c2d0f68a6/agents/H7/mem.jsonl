@@ -1,0 +1,13 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "H7", "role": "resident", "name": "Avery Nguyen", "traits": ["early-riser", "introvert", "bookish", "health-conscious"], "prefs": {"coffee": "low", "budget": "med", "diet": "halal", "mobility": "bike", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:53:49Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:54:23Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:55:09Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:56:11Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:56:51Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:56:51Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:57:31Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:58:11Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:58:51Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:01:21Z", "kind": "decision", "text": "Chose cafe for study break after grocery shopping.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:01:23Z", "kind": "decision", "text": "Chose cafe near home for quick caffeine fix before study session.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:01:25Z", "kind": "decision", "text": "Chose cafe for caffeine and study spot near campus.", "tags": ["cafe"]}

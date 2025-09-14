@@ -1,0 +1,22 @@
+{"ts": "2025-09-14T05:39:30Z", "kind": "persona", "persona": {"id": "F9", "role": "resident", "name": "Avery Wilson", "traits": ["night-owl", "foodie", "health-conscious", "gym-goer"], "prefs": {"coffee": "low", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T05:41:31Z", "kind": "decision", "text": "Chose a quiet cafe for caffeine and a quick meal near the park.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:03Z", "kind": "decision", "text": "Chose cafe near park for energy before workout.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:48:49Z", "kind": "chat", "text": "Chose quiet cafe for energy before workout.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:49:07Z", "kind": "chat", "text": "Chose a quiet cafe for energy before workout.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T05:49:10Z", "kind": "decision", "text": "Chose cafe near park for energy before workout.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:49:30Z", "kind": "chat", "text": "Chose quiet cafe for energy before workout.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:49:48Z", "kind": "chat", "text": "Chose quiet cafe for energy before workout.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T05:49:54Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:50:09Z", "kind": "chat", "text": "Chose cafe near campus to wake up and meet.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:50:26Z", "kind": "chat", "text": "Consistent study break routine at this place.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T05:50:35Z", "kind": "decision", "text": "Chose cafe near campus to wake up and meet.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:50:50Z", "kind": "chat", "text": "Chose cafe near campus to wake up and meet.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:51:08Z", "kind": "chat", "text": "Consistent study break routine at this place.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T05:51:17Z", "kind": "decision", "text": "Chose quiet cafe for energy before workout.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:51:32Z", "kind": "chat", "text": "Consistent study break routine at this place.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:51:50Z", "kind": "chat", "text": "Consistent study break routine at the park.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T05:52:00Z", "kind": "decision", "text": "Chose quiet cafe for energy before workout.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:52:18Z", "kind": "chat", "text": "Consistent study break routine at this place.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:52:41Z", "kind": "chat", "text": "Consistent study break routine at this place.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T05:53:09Z", "kind": "decision", "text": "Chose quiet cafe for energy before workout.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:53:21Z", "kind": "decision", "text": "Chose quiet cafe for energy before workout.", "tags": ["cafe"]}

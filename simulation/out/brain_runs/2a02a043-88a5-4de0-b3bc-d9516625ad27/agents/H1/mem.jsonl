@@ -1,0 +1,7 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "H1", "role": "student", "name": "Alex Kim", "traits": ["bookish", "tech-savvy", "introvert", "night-owl"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "walk", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:40:57Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:41:31Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:42:17Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:45:21Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:45:21Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:46:01Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

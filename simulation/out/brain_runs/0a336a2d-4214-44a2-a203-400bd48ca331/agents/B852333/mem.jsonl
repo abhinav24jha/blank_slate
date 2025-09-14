@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "B852333", "role": "resident", "name": "Riley Wilson", "traits": ["tech-savvy", "extrovert", "health-conscious", "introvert"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegetarian", "mobility": "bike", "study_spot": "quiet", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

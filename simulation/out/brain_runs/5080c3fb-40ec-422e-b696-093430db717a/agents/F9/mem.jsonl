@@ -1,0 +1,17 @@
+{"ts": "2025-09-14T07:06:10Z", "kind": "persona", "persona": {"id": "F9", "role": "student", "name": "Riley Patel", "traits": ["night-owl", "early-riser", "tech-savvy", "impulsive"], "prefs": {"coffee": "low", "budget": "high", "diet": "omnivorous", "mobility": "walk", "study_spot": "outdoors", "favorite": "gym"}}}
+{"ts": "2025-09-14T07:07:01Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:09:07Z", "kind": "chat", "text": "Woke up early, needed to get some work done.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:09:21Z", "kind": "chat", "text": "Chose cafe for quick caffeine break before class.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:11:02Z", "kind": "decision", "text": "Chose cafe for quick caffeine break before class.", "tags": ["education"]}
+{"ts": "2025-09-14T07:11:16Z", "kind": "decision", "text": "Chose cafe for quick caffeine break before class.", "tags": ["education"]}
+{"ts": "2025-09-14T07:12:42Z", "kind": "chat", "text": "Woke up early, needed to get some work done.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:12:47Z", "kind": "chat", "text": "Woke up early, needed to get some work done.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:12:58Z", "kind": "chat", "text": "Woke up early, needed to get some work done.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:13:02Z", "kind": "chat", "text": "Chatted with Jamie Patel about a nearby spot", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:13:18Z", "kind": "chat", "text": "Early riser, gotta hit the grind.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:13:32Z", "kind": "chat", "text": "Woke up early to meet you at the cafe.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:15:05Z", "kind": "decision", "text": "Woke up early to meet you at the cafe.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:15:24Z", "kind": "decision", "text": "Chatted with Jamie Patel about a nearby spot to get some work done.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:15:44Z", "kind": "chat", "text": "Woke up early for work, needed coffee but budget tight.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:16:00Z", "kind": "chat", "text": "Woke up early for some work.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:16:30Z", "kind": "decision", "text": "Woke up early to meet you at the cafe for education.", "tags": ["cafe"]}

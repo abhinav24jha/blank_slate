@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B420304", "role": "worker", "name": "Morgan Brown", "traits": ["optimistic", "early-riser", "health-conscious", "planner"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegan", "mobility": "walk", "study_spot": "quiet", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T04:51:07Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}

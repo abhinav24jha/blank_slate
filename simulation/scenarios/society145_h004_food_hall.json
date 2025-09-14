@@ -1,0 +1,15 @@
+{
+  "id": "society145_h004",
+  "title": "Mixed-use Food Hall",
+  "description": "Food hall with multiple vendors and shared seating.",
+  "poi_add": [
+    { "type": "restaurant", "name": "Food Hall Vendor A", "anchor": {"name": "frontage_center", "dx": -4, "dy": 0}, "attrs": {"spend": 18, "quality": 0.82} },
+    { "type": "restaurant", "name": "Food Hall Vendor B", "anchor": {"name": "frontage_center", "dx":  0, "dy": 0}, "attrs": {"spend": 18, "quality": 0.82} },
+    { "type": "restaurant", "name": "Food Hall Vendor C", "anchor": {"name": "frontage_center", "dx":  4, "dy": 0}, "attrs": {"spend": 18, "quality": 0.82} },
+    { "type": "other",      "name": "Food Hall Seating", "anchor": {"name": "frontage_center", "dx":  0, "dy": -2}, "attrs": {"class": "plaza_venue"} }
+  ],
+  "poi_update": [],
+  "tags": {"bias": {"restaurant": 0.6, "cafe": 0.2, "other": 0.2}}
+}
+
+

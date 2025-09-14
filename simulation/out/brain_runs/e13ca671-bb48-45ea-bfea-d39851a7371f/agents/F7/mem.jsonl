@@ -1,0 +1,13 @@
+{"ts": "2025-09-14T06:35:56Z", "kind": "persona", "persona": {"id": "F7", "role": "student", "name": "Casey Lee", "traits": ["curious", "impulsive", "optimistic", "punctual"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T06:36:54Z", "kind": "decision", "text": "Chose a cafe near campus for caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:38:36Z", "kind": "chat", "text": "Café near campus for caffeine break; loves parks for relaxation.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T06:38:49Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T06:38:52Z", "kind": "chat", "text": "Needed energy after early wake-up.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T06:39:02Z", "kind": "chat", "text": "Chose a cafe near campus for caffeine break.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T06:39:24Z", "kind": "chat", "text": "Chose a cafe near campus to catch up with friends.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T06:39:28Z", "kind": "chat", "text": "Likewise; needed caffeine break after class.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T06:40:05Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:40:07Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:40:19Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:40:23Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:40:40Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

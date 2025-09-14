@@ -1,0 +1,302 @@
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious student needs caffeine and a quiet spot, cafe fits best.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Early riser, need a coffee and some social interaction before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed for my diet, and I prefer the grocery store near campus.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious student needs caffeine and a quiet place to study. Cafe fits budget and is close to campus.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Riley needs a coffee to wake up and prepare for class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class to stay alert.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Morgan needs caffeine and a quiet place for studying before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and can provide a caffeine boost for studying.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class and some study materials.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee and some social interaction before heading to the gym.", "chat": null}
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed as I'm low on ingredients for my study recipes.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are quiet and can provide caffeine, aligning with my study needs and preferences.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need caffeine and a quiet spot to study before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes offer a good caffeine fix and study spot, aligning with my needs and role.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs caffeine and a quiet study spot, but cafe fits best.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus for another study break.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up.", "chat": null}
+{"id": "H10", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet allows for it and I prefer lively study spots.", "chat": null}
+{"id": "B383195", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine boost before class.", "chat": null}
+{"id": "B458530", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. I can find one near campus that fits my vegetarian diet and budget.", "chat": null}
+{"id": "B13000", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed for meals, aligning with education and health needs.", "chat": null}
+{"id": "B786448", "next_intent": {"category": "cafe", "name": null}, "thought": "Riley needs a quick coffee before class to stay alert.", "chat": null}
+{"id": "B768512", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine needs high, gym-goer and night-owl traits make cafe a priority.", "chat": null}
+{"id": "B372459", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine is needed for studying, and the cafe near campus fits my diet preference.", "chat": null}
+{"id": "B881828", "next_intent": {"category": "cafe", "name": null}, "thought": "Early riser, pescatarian, and budget-conscious; cafe seems best for caffeine fix and social interaction.", "chat": null}
+{"id": "B827803", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to energize before hitting the library.", "chat": null}
+{"id": "B975499", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet is pescatarian and I prefer a lively study spot.", "chat": null}
+{"id": "B973931", "next_intent": {"category": "cafe", "name": null}, "thought": "Sam needs caffeine and a study spot before class. Cafes are good for both.", "chat": null}
+{"id": "B786943", "next_intent": {"category": "cafe", "name": null}, "thought": "A coffee to start the day, aligning with my health-conscious nature and study spot preference.", "chat": null}
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose a cafe near campus to continue studying and socializing.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is my usual spot for caffeine and study, fits all needs.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are close to campus, and I can use the caffeine there before class. They also offer a good study spot if needed.", "chat": null}
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, and I prefer this place.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closer and I've already chosen this place for my caffeine fix.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class and to refuel.", "chat": null}
+{"id": "H6", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery shopping aligns with my vegetarian diet and needs for caffeine.", "chat": null}
+{"id": "H7", "next_intent": {"category": "coffee", "name": null}, "thought": "I need a coffee to stay alert for class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up. Hunger is still high, but I need a quick coffee.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, and I prefer a lively study spot near campus.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are close to campus, and I need caffeine before class. They also offer a quiet spot for studying.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe near campus for caffeine and studying.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "education", "name": null}, "thought": "Health-conscious student needs a quiet study spot.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet is pescatarian and I prefer med coffee; cafes are best for that.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, and I prefer the same store for quick shopping.", "chat": null}
+{"id": "H7", "next_intent": {"category": "health", "name": null}, "thought": "Need a quick health check-up after studying.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "education", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, and I prefer the same store.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are a good choice for caffeine and social interaction, aligning with my recent needs.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are still needed, and I prefer the same store near campus.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries needed again, choosing a different store for variety.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are consistently needed, and I've been to this store multiple times.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Need caffeine and a quiet place to study.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Need caffeine and study spot, cafe near campus is most convenient.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. I've been here too many times already.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are typically quieter and closer to campus, aligning with my study spot preference.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Need to restock groceries for the week.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My memory is running low on caffeine.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, and I prefer this option due to my budget constraints.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, and I prefer the same store near campus.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. I've been here so many times, it's familiar and quiet.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. I've been here too many times already.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus for caffeine and studying.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "B194956", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are a good spot for caffeine and socializing, fitting my needs.", "chat": null}
+{"id": "B380329", "next_intent": {"category": "cafe", "name": null}, "thought": "Early morning coffee to fuel my study session.", "chat": null}
+{"id": "B246860", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "B944465", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine is high priority, and cafe fits budget & study spot preferences.", "chat": null}
+{"id": "B182151", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest and I can grab a quick coffee before heading to the library.", "chat": null}
+{"id": "B440532", "next_intent": {"category": "cafe", "name": null}, "thought": "Sam needs a caffeine boost for classes and is health-conscious.", "chat": null}
+{"id": "B105186", "next_intent": {"category": "cafe", "name": null}, "thought": "Impulsive night-owl needs caffeine and a quiet study spot, cafes fit best.", "chat": null}
+{"id": "B458390", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes offer caffeine and a social spot, fitting my needs and role.", "chat": null}
+{"id": "B309628", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee is needed for studying, and cafes are a good study spot.", "chat": null}
+{"id": "B621466", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes offer caffeine and a quiet spot for studying, fitting my needs.", "chat": null}
+{"id": "B930719", "next_intent": {"category": "cafe", "name": null}, "thought": "Education top need, cafe near campus for caffeine and study spot.", "chat": null}
+{"id": "B33456", "next_intent": {"category": "cafe", "name": null}, "thought": "I need caffeine and a quiet spot to study before class.", "chat": null}
+{"id": "B233109", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is the best option for caffeine and a quiet study spot near campus.", "chat": null}
+{"id": "B522966", "next_intent": {"category": "cafe", "name": null}, "thought": "Tech-savvy student needs caffeine and a study spot before class; cafe fits best.", "chat": null}
+{"id": "B911551", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and I can get a kosher coffee for my caffeine needs.", "chat": null}
+{"id": "B938004", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to boost my mood and focus.", "chat": null}
+{"id": "B441781", "next_intent": {"category": "cafe", "name": null}, "thought": "Riley needs caffeine and a study spot before class. Cafes are good for that.", "chat": null}
+{"id": "B237162", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious student needs caffeine, cafe is best for a quick study break.", "chat": null}
+{"id": "B156252", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and extrovert, need caffeine to boost energy for the day.", "chat": null}
+{"id": "B292886", "next_intent": {"category": "cafe", "name": null}, "thought": "Early morning caffeine fix and a study spot at the same place.", "chat": null}
+{"id": "B160546", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs caffeine and a quiet study spot, cafe fits best.", "chat": null}
+{"id": "B658699", "next_intent": {"category": "cafe", "name": null}, "thought": "Morgan needs a quick coffee to study outdoors; cafe fits budget and social needs.", "chat": null}
+{"id": "B787488", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes offer a good caffeine fix and are usually lively, fitting my needs.", "chat": null}
+{"id": "B336484", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee and caffeine are top needs, and cafes near study spots fit best.", "chat": null}
+{"id": "B111504", "next_intent": {"category": "cafe", "name": null}, "thought": "I need caffeine and a study spot before class. My favorite cafe is near campus.", "chat": null}
+{"id": "B296686", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "B965835", "next_intent": {"category": "cafe", "name": null}, "thought": "Early morning caffeine to keep up with studies.", "chat": null}
+{"id": "B153986", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and I can grab a quick halal coffee.", "chat": null}
+{"id": "B356546", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine is high on my list and I prefer a place that matches my social nature.", "chat": null}
+{"id": "B897226", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert needs caffeine and a quiet place to study before class.", "chat": null}
+{"id": "B613020", "next_intent": {"category": "cafe", "name": null}, "thought": "Impulsive but budget-conscious, Drew prefers a lively cafe near campus for caffeine and social interaction.", "chat": null}
+{"id": "B612280", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to my study spot and I can grab a vegetarian-friendly coffee here.", "chat": null}
+{"id": "H0", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. Campus cafe is quiet and budget-friendly.", "chat": null}
+{"id": "H1", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class to stay alert.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are still needed, and I prefer this option over cafe for now.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is the best choice for a quick caffeine hit and some social interaction.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet is halal and I prefer a lively study spot.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are a good choice for caffeine and study spot. I can get coffee and plan to study outside.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Introvert and budget-conscious, need caffeine before night study; cafe fits all criteria.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up.", "chat": null}
+{"id": "H9", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are lively and can be a good study spot for students. I need caffeine to stay alert.", "chat": null}
+{"id": "H10", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost for class ahead.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe near campus might offer a good spot for caffeine and leisure.", "chat": null}
+{"id": "B176228", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine is needed for studying, and a cafe near campus fits all preferences.", "chat": null}
+{"id": "B330610", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are convenient for a quick caffeine boost and study spot; best fits my needs.", "chat": null}
+{"id": "B586060", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are closer and more convenient than other options given my health-consciousness and caffeine needs.", "chat": null}
+{"id": "B958256", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery shopping aligns with my health-conscious nature and budget constraints.", "chat": null}
+{"id": "B301564", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are lively and can provide caffeine. They align with my study spot preference near campus.", "chat": null}
+{"id": "B192528", "next_intent": {"category": "cafe", "name": null}, "thought": "My study spot is lively, and I prefer a cafe for that vibe. Plus, I can grab a coffee there.", "chat": null}
+{"id": "B400535", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "B720345", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are a good choice for caffeine and social interaction. I can also use it as a study spot.", "chat": null}
+{"id": "B236513", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quiet place to study and recharge before class.", "chat": null}
+{"id": "B691567", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet is kosher and I prefer lively study spots.", "chat": null}
+{"id": "B247151", "next_intent": {"category": "cafe", "name": null}, "thought": "Morgan is an early riser and needs caffeine before class; cafe near campus fits best.", "chat": null}
+{"id": "B83121", "next_intent": {"category": "grocery", "name": null}, "thought": "Health-conscious and budget-conscious, need to restock groceries.", "chat": null}
+{"id": "B449738", "next_intent": {"category": "cafe", "name": null}, "thought": "Drew needs caffeine to stay alert for class. Cafes are a good spot for that.", "chat": null}
+{"id": "B220018", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is a good spot for caffeine and study, aligning with my introverted social needs.", "chat": null}
+{"id": "B715838", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee is my priority; I need a caffeine boost before studying.", "chat": null}
+{"id": "B384626", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for work.", "chat": null}
+{"id": "B435488", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee and a quick study session are top needs with planner traits.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up. Needs met; no new social interactions needed.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery stores are consistently needed for quick shopping. I need to restock my diet-friendly items.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Chose grocery store again for quick shopping.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus for quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick caffeine boost before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. Introvert and night-owl, but cafeteria options are limited.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Groceries are needed again, as I've been shopping here frequently.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "I need groceries again, but I haven't been to the grocery store near campus.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "I need groceries again, as I've been frequenting the same store.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Need caffeine and a quiet place to study.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up. Hunger is still high but I prefer this for variety and social interaction.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Chose grocery store again for quick shopping.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My caffeine needs are still high.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "Morgan needs caffeine and a study spot before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "grocery", "name": null}, "thought": "I need groceries for my vegetarian diet and study spot needs.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus for more caffeine and study spot.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "My grocery shopping needs are high, and I've already visited one today. Next stop could be another for variety or different items.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H3", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes are quiet and can provide caffeine, aligning with my needs.", "chat": null}
+{"id": "H5", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H2", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery stores are frequent, but I need more variety and a study spot.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus for more studying sessions.", "chat": null}
+{"id": "H8", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H14", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H6", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "I need to restock my groceries as I've been using the same store.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H8", "next_intent": {"category": "restaurant", "name": null}, "thought": "Heading to restaurant.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery needs are high and I've been there recently.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery stores are my usual stop, and I prefer them for quick shopping.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "Chose cafe near campus to wake up.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "grocery", "name": null}, "thought": "Grocery stores are frequent, but I need something new.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and introverted, preferring quiet study spots. Cafe near campus is the best option.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "My top need is social, and I've already had coffee here. Next stop should be a cafe for more interaction.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious student needs caffeine and a quiet study spot, cafe fits best.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My health-conscious needs are met by choosing the cafe.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My cafe choice worked well last time.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H2", "next_intent": {"category": "retail", "name": null}, "thought": "Heading to retail.", "chat": null}
+{"id": "H4", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H12", "next_intent": {"category": "cafe", "name": null}, "thought": "Heading to cafe.", "chat": null}
+{"id": "H13", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H7", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and introverted, need caffeine to stay alert for studying. Chose cafe near campus.", "chat": null}
+{"id": "H8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "H11", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class. My diet allows for a pescatarian option.", "chat": null}

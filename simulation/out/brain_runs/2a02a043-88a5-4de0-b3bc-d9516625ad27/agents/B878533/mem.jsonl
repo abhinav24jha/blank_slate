@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B878533", "role": "student", "name": "Casey Wilson", "traits": ["early-riser", "optimistic", "punctual", "foodie"], "prefs": {"coffee": "high", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T04:58:57Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

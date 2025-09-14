@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B356546", "role": "worker", "name": "Morgan Brown", "traits": ["social", "foodie", "introvert", "punctual"], "prefs": {"coffee": "med", "budget": "high", "diet": "halal", "mobility": "walk", "study_spot": "lively", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T04:37:01Z", "kind": "decision", "text": "Decided on a cafe for a caffeine boost before work.", "tags": ["cafe"]}

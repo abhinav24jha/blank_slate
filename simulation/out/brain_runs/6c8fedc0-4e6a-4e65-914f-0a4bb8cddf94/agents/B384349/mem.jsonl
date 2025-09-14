@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B384349", "role": "student", "name": "Jamie Patel", "traits": ["gym-goer", "tech-savvy", "optimistic", "social"], "prefs": {"coffee": "high", "budget": "low", "diet": "halal", "mobility": "walk", "study_spot": "outdoors", "favorite": "gym"}}}
+{"ts": "2025-09-14T05:05:22Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

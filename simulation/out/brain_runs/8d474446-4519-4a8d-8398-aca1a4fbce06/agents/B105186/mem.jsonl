@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B105186", "role": "resident", "name": "Avery Lee", "traits": ["impulsive", "introvert", "optimistic", "night-owl"], "prefs": {"coffee": "low", "budget": "low", "diet": "kosher", "mobility": "bus", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:31:22Z", "kind": "decision", "text": "Chose cafe for caffeine and study spot near home.", "tags": ["cafe"]}

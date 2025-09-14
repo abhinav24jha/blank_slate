@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B684697", "role": "student", "name": "Riley Hernandez", "traits": ["early-riser", "impulsive", "extrovert", "optimistic"], "prefs": {"coffee": "high", "budget": "med", "diet": "pescatarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:51:27Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

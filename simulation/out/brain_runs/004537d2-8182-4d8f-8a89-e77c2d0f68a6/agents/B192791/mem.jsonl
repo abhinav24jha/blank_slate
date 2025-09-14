@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B192791", "role": "worker", "name": "Alex Brown", "traits": ["bookish", "frugal", "curious", "night-owl"], "prefs": {"coffee": "high", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "quiet", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:55:49Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

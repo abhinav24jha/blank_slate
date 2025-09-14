@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B74928", "role": "student", "name": "Taylor Hernandez", "traits": ["punctual", "bookish", "health-conscious", "social"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegetarian", "mobility": "bike", "study_spot": "outdoors", "favorite": "grocery"}}}
+{"ts": "2025-09-14T04:50:54Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

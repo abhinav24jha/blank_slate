@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B355407", "role": "resident", "name": "Drew Kim", "traits": ["tech-savvy", "bookish", "night-owl", "social"], "prefs": {"coffee": "med", "budget": "med", "diet": "vegetarian", "mobility": "bike", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T04:47:59Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}

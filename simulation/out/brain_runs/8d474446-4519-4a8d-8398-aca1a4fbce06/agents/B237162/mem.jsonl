@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B237162", "role": "student", "name": "Sam Martin", "traits": ["social", "health-conscious", "introvert", "extrovert"], "prefs": {"coffee": "med", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "outdoors", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:33:47Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study outdoors.", "tags": ["cafe"]}

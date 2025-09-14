@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B150529", "role": "resident", "name": "Alex Garcia", "traits": ["early-riser", "introvert", "planner", "social"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "bike", "study_spot": "lively", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T04:55:33Z", "kind": "decision", "text": "Chose a lively cafe near study spot to get caffeine.", "tags": ["cafe"]}

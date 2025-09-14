@@ -1,0 +1,11 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "H10", "role": "resident", "name": "Casey Kim", "traits": ["foodie", "optimistic", "early-riser", "health-conscious"], "prefs": {"coffee": "med", "budget": "low", "diet": "omnivorous", "mobility": "bike", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:53:09Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:56:11Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:56:11Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:56:23Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:57:48Z", "kind": "decision", "text": "Chose cafe near campus to wake up and grab a coffee before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:59:29Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T04:59:31Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:03:48Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T05:03:49Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T05:03:51Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}

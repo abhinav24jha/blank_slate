@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B898707", "role": "student", "name": "Taylor Nguyen", "traits": ["curious", "planner", "introvert", "extrovert"], "prefs": {"coffee": "high", "budget": "med", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T04:50:29Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

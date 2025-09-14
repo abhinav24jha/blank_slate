@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:17:52Z", "kind": "persona", "persona": {"id": "F13", "role": "worker", "name": "Jordan Brown", "traits": ["gym-goer", "tech-savvy", "introvert", "health-conscious"], "prefs": {"coffee": "med", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T05:22:33Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}

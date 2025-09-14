@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "H8", "role": "visitor", "name": "Riley Hernandez", "traits": ["bookish", "extrovert", "early-riser", "optimistic"], "prefs": {"coffee": "low", "budget": "high", "diet": "omnivorous", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:59:32Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:02:09Z", "kind": "decision", "text": "Chose cafe near campus to wake up and recharge before class.", "tags": ["cafe"]}

@@ -1,0 +1,5 @@
+{"ts": "2025-09-14T05:22:33Z", "kind": "persona", "persona": {"id": "F6", "role": "student", "name": "Avery Garcia", "traits": ["impulsive", "foodie", "social", "introvert"], "prefs": {"coffee": "high", "budget": "high", "diet": "halal", "mobility": "walk", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T05:22:34Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:27:27Z", "kind": "chat", "text": "I prefer the gym more often.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T05:27:29Z", "kind": "chat", "text": "Just got done with my run.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T05:27:51Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

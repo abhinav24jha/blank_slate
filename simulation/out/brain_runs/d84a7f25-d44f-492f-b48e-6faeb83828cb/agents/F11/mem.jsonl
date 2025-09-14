@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:17:52Z", "kind": "persona", "persona": {"id": "F11", "role": "student", "name": "Morgan Brown", "traits": ["planner", "early-riser", "social", "introvert"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegan", "mobility": "walk", "study_spot": "outdoors", "favorite": "library"}}}
+{"ts": "2025-09-14T05:22:33Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

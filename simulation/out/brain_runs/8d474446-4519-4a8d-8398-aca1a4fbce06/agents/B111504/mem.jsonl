@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B111504", "role": "student", "name": "Avery Brown", "traits": ["impulsive", "health-conscious", "curious", "frugal"], "prefs": {"coffee": "high", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:35:45Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and find a lively study spot.", "tags": ["cafe"]}

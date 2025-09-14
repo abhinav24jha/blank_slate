@@ -1,0 +1,7 @@
+{"kind": "trip", "agent": "H14", "role": "student", "cat": "unknown", "ms": 14342, "dist_m": 236, "ts": "2025-09-14T04:47:12Z"}
+{"kind": "trip", "agent": "H4", "role": "student", "cat": "cafe", "ms": 315, "dist_m": 9, "ts": "2025-09-14T04:47:12Z"}
+{"kind": "trip", "agent": "B984949", "role": "resident", "cat": "transit", "ms": 10009, "dist_m": 340, "ts": "2025-09-14T04:47:12Z"}
+{"kind": "trip", "agent": "B355426", "role": "worker", "cat": "transit", "ms": 7502, "dist_m": 494, "ts": "2025-09-14T04:47:12Z"}
+{"kind": "trip", "agent": "B864954", "role": "student", "cat": "retail", "ms": 10249, "dist_m": 550, "ts": "2025-09-14T04:47:12Z"}
+{"kind": "trip", "agent": "H14", "role": "student", "cat": "transit", "ms": 1171, "dist_m": 56, "ts": "2025-09-14T04:47:12Z"}
+{"kind": "trip", "agent": "B536401", "role": "resident", "cat": "transit", "ms": 1223, "dist_m": 66, "ts": "2025-09-14T04:47:12Z"}

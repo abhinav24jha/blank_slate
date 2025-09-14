@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B76706", "role": "student", "name": "Jamie Garcia", "traits": ["frugal", "bookish", "punctual", "optimistic"], "prefs": {"coffee": "low", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T04:45:26Z", "kind": "decision", "text": "Chose grocery near campus to save time.", "tags": ["grocery"]}

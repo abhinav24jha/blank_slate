@@ -1,0 +1,14 @@
+{
+  "id": "society145_h003",
+  "title": "Neighborhood Market Square",
+  "description": "Pedestrian plaza with food vendors, kiosks, seating.",
+  "poi_add": [
+    { "type": "restaurant", "name": "Market Bites 1", "iy": 655, "ix": 665, "attrs": {"spend": 16, "quality": 0.8} },
+    { "type": "restaurant", "name": "Market Bites 2", "iy": 655, "ix": 675, "attrs": {"spend": 16, "quality": 0.8} },
+    { "type": "cafe",       "name": "Plaza Cafe",    "iy": 655, "ix": 685, "attrs": {"spend": 7,  "quality": 0.75} }
+  ],
+  "poi_update": [],
+  "tags": {"bias": {"restaurant": 0.5, "cafe": 0.4, "other": 0.3}}
+}
+
+

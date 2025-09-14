@@ -1,0 +1,15 @@
+{"id": "F0", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee is needed for studying, and the cafe near campus fits budget and preferences.", "chat": null}
+{"id": "F1", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious student needs a quiet study spot and caffeine before class.", "chat": null}
+{"id": "F2", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "F3", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class.", "chat": null}
+{"id": "F4", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and I can grab a vegan-friendly coffee there.", "chat": null}
+{"id": "F5", "next_intent": {"category": "cafe", "name": null}, "thought": "Jamie needs caffeine and a quiet spot for studying before class.", "chat": null}
+{"id": "F6", "next_intent": {"category": "cafe", "name": null}, "thought": "Punctuality and health-consciousness lead to choosing a cafe for caffeine.", "chat": null}
+{"id": "F7", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee to boost study mood and energy.", "chat": null}
+{"id": "F8", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine needs high, gym routine requires caffeine; choosing a cafe nearby for a quick coffee and workout break.", "chat": null}
+{"id": "F9", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a caffeine boost before class; cafes are convenient and affordable.", "chat": null}
+{"id": "F10", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and can provide a quick caffeine fix for my vegetarian diet.", "chat": null}
+{"id": "F11", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee is needed for morning energy and I prefer a quiet study spot near campus.", "chat": null}
+{"id": "F12", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee and social are top needs, cafe fits budget and mobility.", "chat": null}
+{"id": "F13", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafes often have good coffee and quiet spots, perfect for studying.", "chat": null}
+{"id": "F14", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to my study spot and aligns with my coffee preference.", "chat": null}

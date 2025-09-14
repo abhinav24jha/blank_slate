@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B105571", "role": "student", "name": "Morgan Singh", "traits": ["tech-savvy", "punctual", "planner", "night-owl"], "prefs": {"coffee": "high", "budget": "med", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:00:15Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

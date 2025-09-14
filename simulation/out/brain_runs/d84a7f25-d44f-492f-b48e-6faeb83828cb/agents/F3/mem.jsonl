@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:17:52Z", "kind": "persona", "persona": {"id": "F3", "role": "student", "name": "Sam Martin", "traits": ["social", "bookish", "foodie", "gym-goer"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:20:01Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}

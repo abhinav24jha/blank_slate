@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T07:03:33Z", "kind": "persona", "persona": {"id": "F6", "role": "resident", "name": "Jordan Nguyen", "traits": ["punctual", "gym-goer", "health-conscious", "extrovert"], "prefs": {"coffee": "low", "budget": "med", "diet": "pescatarian", "mobility": "bus", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T07:04:58Z", "kind": "decision", "text": "Chose a quiet cafe near campus to wake up.", "tags": ["cafe"]}

@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B700918", "role": "student", "name": "Jordan Singh", "traits": ["impulsive", "introvert", "night-owl", "tech-savvy"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T04:52:52Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

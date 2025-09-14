@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T06:40:39Z", "kind": "persona", "persona": {"id": "F10", "role": "resident", "name": "Sam Patel", "traits": ["frugal", "curious", "early-riser", "health-conscious"], "prefs": {"coffee": "high", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "quiet", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T06:42:56Z", "kind": "decision", "text": "Chose cafe near home for caffeine fix before studying.", "tags": ["cafe"]}

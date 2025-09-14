@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B526553", "role": "student", "name": "Alex Wilson", "traits": ["tech-savvy", "gym-goer", "extrovert", "bookish"], "prefs": {"coffee": "med", "budget": "med", "diet": "vegetarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "park"}}}
+{"ts": "2025-09-14T05:05:32Z", "kind": "decision", "text": "Chose a cafe near campus to wake up, study, and meet friends.", "tags": ["cafe"]}

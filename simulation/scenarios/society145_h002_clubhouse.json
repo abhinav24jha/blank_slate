@@ -1,0 +1,12 @@
+{
+  "id": "society145_h002",
+  "title": "Community Clubhouse",
+  "description": "Multi-purpose clubhouse with meeting rooms and recreation.",
+  "poi_add": [
+    { "type": "other", "name": "Society 145 Clubhouse", "anchor": {"name": "frontage_center", "dx": 0, "dy": -3}, "attrs": {"amenity": "community_centre", "quality": 0.85} }
+  ],
+  "poi_update": [],
+  "tags": {"bias": {"education": 0.2, "leisure": 0.5, "other": 0.5}}
+}
+
+

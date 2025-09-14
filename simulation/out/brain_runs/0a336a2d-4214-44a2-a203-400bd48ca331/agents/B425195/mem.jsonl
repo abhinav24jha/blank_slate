@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "B425195", "role": "student", "name": "Drew Brown", "traits": ["bookish", "foodie", "punctual", "introvert"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "walk", "study_spot": "quiet", "favorite": "library"}}}
+{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

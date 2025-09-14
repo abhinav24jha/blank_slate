@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "B527414", "role": "student", "name": "Sam Hernandez", "traits": ["social", "impulsive", "optimistic", "tech-savvy"], "prefs": {"coffee": "high", "budget": "med", "diet": "vegan", "mobility": "bus", "study_spot": "quiet", "favorite": "cafe"}}}
+{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

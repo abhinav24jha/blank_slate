@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:38:25Z", "kind": "persona", "persona": {"id": "F12", "role": "resident", "name": "Avery Kim", "traits": ["social", "extrovert", "gym-goer", "foodie"], "prefs": {"coffee": "low", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T05:41:42Z", "kind": "decision", "text": "Chose cafe near park to fuel up and enjoy time outdoors.", "tags": ["cafe"]}

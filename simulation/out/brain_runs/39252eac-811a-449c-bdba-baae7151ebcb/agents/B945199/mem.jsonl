@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B945199", "role": "student", "name": "Taylor Garcia", "traits": ["curious", "tech-savvy", "night-owl", "health-conscious"], "prefs": {"coffee": "med", "budget": "med", "diet": "vegan", "mobility": "bike", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:52:12Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

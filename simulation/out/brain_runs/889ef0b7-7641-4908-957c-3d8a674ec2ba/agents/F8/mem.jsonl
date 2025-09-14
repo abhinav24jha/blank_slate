@@ -1,0 +1,37 @@
+{"ts": "2025-09-14T05:09:53Z", "kind": "persona", "persona": {"id": "F8", "role": "student", "name": "Jordan Lee", "traits": ["health-conscious", "planner", "extrovert", "early-riser"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "cafe"}}}
+{"ts": "2025-09-14T05:10:02Z", "kind": "chat", "text": "Thought you might appreciate some company.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T05:10:08Z", "kind": "chat", "text": "Jordan's planning to bike to the gym tomorrow; we might run into each other there.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T05:10:11Z", "kind": "chat", "text": "Met Jordan again, hoping to coordinate a group run.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T05:10:16Z", "kind": "decision", "text": "Chose cafe near campus for quick caffeine break before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:10:22Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:10:56Z", "kind": "chat", "text": "Met Jordan again, hoping to coordinate a group run.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T05:11:06Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:11:15Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:11:43Z", "kind": "chat", "text": "Met Jordan again, hoping to coordinate a group run.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T05:12:17Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:12:27Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:13:09Z", "kind": "chat", "text": "Chatted with Morgan Hernandez about a nearby spot", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:13:13Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:13:21Z", "kind": "chat", "text": "Met up again to plan our runs.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T05:13:31Z", "kind": "chat", "text": "Met Jordan again for group run.", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:14:02Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:14:52Z", "kind": "chat", "text": "Chose cafe near campus to wake up and meet up again.", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:14:57Z", "kind": "decision", "text": "Chose cafe near campus to wake up again for more coffee and planning.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:01Z", "kind": "chat", "text": "Met Jordan again for group run.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T05:15:18Z", "kind": "chat", "text": "Met up again to plan our runs.", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:15:29Z", "kind": "decision", "text": "Chose cafe near campus to wake up and meet up again for planning.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:43Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:43Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:43Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:43Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:44Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:15:44Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:15:44Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:15:44Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:15:48Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:49Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:15:50Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T05:15:50Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:15:51Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T05:15:52Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:17:16Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}

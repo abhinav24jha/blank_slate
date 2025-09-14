@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "H7", "role": "student", "name": "Avery Nguyen", "traits": ["early-riser", "introvert", "bookish", "health-conscious"], "prefs": {"coffee": "low", "budget": "med", "diet": "halal", "mobility": "bike", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:54:08Z", "kind": "decision", "text": "Chose a cafe near campus for coffee break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:56:55Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

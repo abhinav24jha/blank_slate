@@ -1,0 +1,19 @@
+{"ts": "2025-09-14T07:06:10Z", "kind": "persona", "persona": {"id": "F6", "role": "resident", "name": "Jordan Nguyen", "traits": ["punctual", "gym-goer", "health-conscious", "extrovert"], "prefs": {"coffee": "low", "budget": "med", "diet": "pescatarian", "mobility": "bus", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T07:06:45Z", "kind": "decision", "text": "Chose a cafe near campus for a quick energizing drink.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:08:32Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:08:45Z", "kind": "chat", "text": "Chose same spot for quick energizing drink.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:09:44Z", "kind": "decision", "text": "Picked up coffee, chose cafe for energy, need more nutrients.", "tags": ["health"]}
+{"ts": "2025-09-14T07:10:00Z", "kind": "decision", "text": "Chose cafe near campus for study spot.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:11:32Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:11:36Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:11:52Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:11:58Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:13:10Z", "kind": "decision", "text": "Chose cafe near campus for study spot.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:13:18Z", "kind": "chat", "text": "Picked up coffee, hitting my routine.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:13:32Z", "kind": "chat", "text": "Picked up coffee for quick boost again.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:13:49Z", "kind": "decision", "text": "Chose cafe near campus for study spot, now looking for something healthier.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:14:09Z", "kind": "decision", "text": "Chose cafe near campus for energy and study spot.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:14:27Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:14:46Z", "kind": "chat", "text": "Picked up coffee, hitting my routine.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:16:40Z", "kind": "chat", "text": "Picked up coffee at nearby place for quick boost.", "tags": ["chat", "F13"]}
+{"ts": "2025-09-14T07:16:44Z", "kind": "chat", "text": "Picking up coffee near campus.", "tags": ["chat", "F13"]}

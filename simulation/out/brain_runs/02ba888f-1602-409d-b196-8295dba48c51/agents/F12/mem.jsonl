@@ -1,0 +1,7 @@
+{"ts": "2025-09-14T06:41:19Z", "kind": "persona", "persona": {"id": "F12", "role": "student", "name": "Riley Lee", "traits": ["night-owl", "curious", "social", "foodie"], "prefs": {"coffee": "med", "budget": "low", "diet": "kosher", "mobility": "bike", "study_spot": "quiet", "favorite": "library"}}}
+{"ts": "2025-09-14T06:43:35Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:47:55Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T06:48:20Z", "kind": "chat", "text": "Chatted with Casey Lee about a nearby spot", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T06:48:43Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T06:50:13Z", "kind": "decision", "text": "Visited cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:53:07Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B407342", "role": "student", "name": "Drew Singh", "traits": ["tech-savvy", "impulsive", "introvert", "frugal"], "prefs": {"coffee": "med", "budget": "high", "diet": "omnivorous", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T05:05:25Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

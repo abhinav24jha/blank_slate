@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T07:03:33Z", "kind": "persona", "persona": {"id": "F7", "role": "resident", "name": "Casey Lee", "traits": ["curious", "impulsive", "optimistic", "punctual"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T07:05:09Z", "kind": "decision", "text": "Chose a cafe near campus to wake up before class.", "tags": ["cafe"]}

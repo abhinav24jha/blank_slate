@@ -1,0 +1,15 @@
+{"id": "F0", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class. Frugal and pescatarian diet allows this choice.", "chat": null}
+{"id": "F1", "next_intent": {"category": "cafe", "name": null}, "thought": "Tech-savvy resident needs a quiet study spot, but also prefers coffee and is health-conscious.", "chat": null}
+{"id": "F2", "next_intent": {"category": "cafe", "name": null}, "thought": "Punctual and frugal, coffee is needed before class. Gym-goer, cafe fits budget and preference for vegan options.", "chat": null}
+{"id": "F3", "next_intent": {"category": "cafe", "name": null}, "thought": "Punctual for class, need a quick coffee to stay alert.", "chat": null}
+{"id": "F4", "next_intent": {"category": "cafe", "name": null}, "thought": "Caffeine is important for studying, and cafes are a good spot to read outdoors.", "chat": null}
+{"id": "F5", "next_intent": {"category": "cafe", "name": null}, "thought": "I need caffeine and a quiet spot to study before class.", "chat": null}
+{"id": "F6", "next_intent": {"category": "cafe", "name": null}, "thought": "Punctual and health-conscious, coffee is needed before class; gym-goer but caffeine preference low.", "chat": null}
+{"id": "F7", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "F8", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to stay alert for class.", "chat": null}
+{"id": "F9", "next_intent": {"category": "cafe", "name": null}, "thought": "Impulsive and tech-savvy, choosing a cafe for caffeine and leisure before class.", "chat": null}
+{"id": "F10", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee before class to stay alert.", "chat": null}
+{"id": "F11", "next_intent": {"category": "cafe", "name": null}, "thought": "Coffee is needed to boost energy for gym, and cafe is closest option.", "chat": null}
+{"id": "F12", "next_intent": {"category": "cafe", "name": null}, "thought": "I need a quick coffee to boost my energy before heading to the library.", "chat": null}
+{"id": "F13", "next_intent": {"category": "cafe", "name": null}, "thought": "Cafe is closest to campus and I can grab a coffee for studying.", "chat": null}
+{"id": "F14", "next_intent": {"category": "cafe", "name": null}, "thought": "Health-conscious and foodie, need a caffeine boost before studying. Chose cafe for quiet study spot and coffee.", "chat": null}

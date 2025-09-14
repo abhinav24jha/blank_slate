@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B965835", "role": "student", "name": "Alex Garcia", "traits": ["punctual", "gym-goer", "foodie", "early-riser"], "prefs": {"coffee": "low", "budget": "med", "diet": "omnivorous", "mobility": "bus", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:36:22Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

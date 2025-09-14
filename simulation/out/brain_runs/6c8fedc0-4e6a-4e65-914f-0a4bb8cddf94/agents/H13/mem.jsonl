@@ -1,0 +1,9 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "H13", "role": "resident", "name": "Casey Garcia", "traits": ["extrovert", "night-owl", "impulsive", "planner"], "prefs": {"coffee": "low", "budget": "med", "diet": "halal", "mobility": "walk", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:48:31Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:48:32Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T04:50:30Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:50:32Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:52:03Z", "kind": "decision", "text": "Chose cafe for quick energy before workout.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:53:58Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:54:20Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:54:32Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}

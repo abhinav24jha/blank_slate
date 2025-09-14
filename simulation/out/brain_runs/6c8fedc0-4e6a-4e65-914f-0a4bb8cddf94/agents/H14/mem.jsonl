@@ -1,0 +1,10 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "H14", "role": "student", "name": "Taylor Patel", "traits": ["tech-savvy", "bookish", "introvert", "gym-goer"], "prefs": {"coffee": "med", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:48:22Z", "kind": "chat", "text": "Just hit the gym.", "tags": ["chat", "H11"]}
+{"ts": "2025-09-14T04:48:32Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:49:10Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:49:12Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:51:12Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:52:40Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:54:38Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:55:00Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:55:12Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

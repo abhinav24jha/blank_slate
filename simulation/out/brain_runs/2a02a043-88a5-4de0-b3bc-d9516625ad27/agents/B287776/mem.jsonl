@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B287776", "role": "student", "name": "Taylor Lee", "traits": ["foodie", "social", "curious", "health-conscious"], "prefs": {"coffee": "high", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "quiet", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T04:44:25Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study.", "tags": ["cafe"]}

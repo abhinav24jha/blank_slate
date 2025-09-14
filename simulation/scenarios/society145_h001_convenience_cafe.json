@@ -1,0 +1,14 @@
+{
+  "id": "society145_h001",
+  "title": "Convenience + Pharmacy + Cafe",
+  "description": "Small commercial strip replacing part of parking: convenience store, pharmacy, cafe.",
+  "poi_add": [
+    { "type": "grocery",   "name": "Society 145 Convenience", "iy": 650, "ix": 670, "attrs": {"spend": 18, "quality": 0.7} },
+    { "type": "pharmacy",  "name": "Front RX",                 "iy": 650, "ix": 680, "attrs": {"spend": 14, "quality": 0.8} },
+    { "type": "cafe",      "name": "Lot Cafe",                 "iy": 650, "ix": 690, "attrs": {"spend": 6,  "quality": 0.75} }
+  ],
+  "poi_update": [],
+  "tags": {"bias": {"grocery": 0.5, "pharmacy": 0.4, "cafe": 0.6}}
+}
+
+

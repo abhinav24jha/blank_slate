@@ -1,0 +1,31 @@
+{"ts": "2025-09-14T05:32:12Z", "kind": "persona", "persona": {"id": "F4", "role": "resident", "name": "Riley Martin", "traits": ["optimistic", "frugal", "punctual", "early-riser"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T05:32:26Z", "kind": "decision", "text": "Chose grocery store early in the day for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:32:57Z", "kind": "chat", "text": "Visited early to stock up on fresh, organic produce.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:33:04Z", "kind": "chat", "text": "Early morning at the grocery store for fresh produce.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:33:07Z", "kind": "chat", "text": "Grocery store early for affordable fruits.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:33:16Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:33:17Z", "kind": "decision", "text": "Chose grocery -> chose cafe near campus.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:33:52Z", "kind": "chat", "text": "Chose grocery -> chose cafe near campus.", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:34:03Z", "kind": "chat", "text": "Chatted with Alex Kim about a nearby spot", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:34:06Z", "kind": "chat", "text": "Chose cafe near campus to wake up.", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:34:09Z", "kind": "decision", "text": "Chose grocery -> chose cafe near campus.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:34:13Z", "kind": "chat", "text": "Chose grocery -> chose cafe near campus.", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:34:23Z", "kind": "chat", "text": "Chose grocery store early for fresh produce.", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:34:29Z", "kind": "chat", "text": "Chatted with Taylor Hernandez about a nearby spot", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:35:03Z", "kind": "chat", "text": "Chose grocery -> chose cafe near campus.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:35:19Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:35:28Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:35:33Z", "kind": "chat", "text": "chose cafe near campus for energy.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:36:17Z", "kind": "chat", "text": "Chose grocery -> chose cafe near campus.", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:36:28Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:36:39Z", "kind": "chat", "text": "Chose cafe near campus to wake up.", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:36:48Z", "kind": "chat", "text": "Chatted with Alex Kim about a nearby spot", "tags": ["chat", "F10"]}
+{"ts": "2025-09-14T05:37:12Z", "kind": "chat", "text": "Chatted with Taylor Hernandez about a nearby spot", "tags": ["chat", "F11"]}
+{"ts": "2025-09-14T05:37:32Z", "kind": "chat", "text": "Chatted with Casey Kim about a nearby spot", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:38:06Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:38:20Z", "kind": "chat", "text": "Chatted with Casey Kim about a nearby spot", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:38:27Z", "kind": "chat", "text": "Chatted with Taylor Hernandez about a nearby spot", "tags": ["chat", "F0"]}
+{"ts": "2025-09-14T05:39:03Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:39:14Z", "kind": "decision", "text": "Chose grocery store early for fresh produce.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:39:33Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T05:40:07Z", "kind": "chat", "text": "Chose grocery after considering needs.", "tags": ["chat", "F10"]}

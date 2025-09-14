@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:38:25Z", "kind": "persona", "persona": {"id": "F9", "role": "student", "name": "Avery Wilson", "traits": ["night-owl", "foodie", "health-conscious", "gym-goer"], "prefs": {"coffee": "low", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T05:41:20Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

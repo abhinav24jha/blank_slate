@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B289848", "role": "resident", "name": "Taylor Lee", "traits": ["tech-savvy", "introvert", "impulsive", "planner"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:57:37Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}

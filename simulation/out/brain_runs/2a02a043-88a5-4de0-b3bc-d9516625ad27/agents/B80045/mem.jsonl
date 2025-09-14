@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B80045", "role": "student", "name": "Morgan Garcia", "traits": ["punctual", "impulsive", "health-conscious", "introvert"], "prefs": {"coffee": "med", "budget": "med", "diet": "pescatarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T04:59:17Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

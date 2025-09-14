@@ -1,0 +1,14 @@
+{"ts": "2025-09-14T06:54:13Z", "kind": "persona", "persona": {"id": "F12", "role": "student", "name": "Riley Lee", "traits": ["night-owl", "curious", "social", "foodie"], "prefs": {"coffee": "med", "budget": "low", "diet": "kosher", "mobility": "bike", "study_spot": "quiet", "favorite": "library"}}}
+{"ts": "2025-09-14T06:56:34Z", "kind": "decision", "text": "Chose a kosher cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:57:56Z", "kind": "chat", "text": "Chatted with Jordan Nguyen about a nearby spot", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T06:58:31Z", "kind": "chat", "text": "Chatted with Jordan about nearby spots.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T06:58:36Z", "kind": "decision", "text": "Chose a kosher cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T06:59:20Z", "kind": "chat", "text": "Chose kosher cafe near campus to wake up.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:00:01Z", "kind": "chat", "text": "Chatted with Jordan about nearby spots.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T07:00:09Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:00:36Z", "kind": "chat", "text": "Chose cafe near campus to wake up and study.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:02:15Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:02:48Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:02:53Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:02:58Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:04:18Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}

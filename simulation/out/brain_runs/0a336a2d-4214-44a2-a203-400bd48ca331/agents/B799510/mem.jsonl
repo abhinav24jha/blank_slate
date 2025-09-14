@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "B799510", "role": "resident", "name": "Sam Nguyen", "traits": ["extrovert", "tech-savvy", "foodie", "curious"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "grocery"}}}
+{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}

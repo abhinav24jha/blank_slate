@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B98215", "role": "student", "name": "Taylor Patel", "traits": ["gym-goer", "tech-savvy", "frugal", "extrovert"], "prefs": {"coffee": "low", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:56:17Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

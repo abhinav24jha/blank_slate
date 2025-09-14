@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:38:25Z", "kind": "persona", "persona": {"id": "F1", "role": "resident", "name": "Morgan Lee", "traits": ["extrovert", "social", "bookish", "health-conscious"], "prefs": {"coffee": "low", "budget": "high", "diet": "vegan", "mobility": "bike", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T05:39:44Z", "kind": "decision", "text": "Chose cafe near study spot for vegan coffee and snacks.", "tags": ["cafe"]}

@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "H0", "role": "worker", "name": "Jamie Lee", "traits": ["early-riser", "extrovert", "introvert", "frugal"], "prefs": {"coffee": "low", "budget": "low", "diet": "kosher", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T04:49:34Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
+{"ts": "2025-09-14T04:49:34Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}

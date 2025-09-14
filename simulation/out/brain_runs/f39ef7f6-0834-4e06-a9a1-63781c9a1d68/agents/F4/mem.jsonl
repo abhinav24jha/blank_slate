@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:18:27Z", "kind": "persona", "persona": {"id": "F4", "role": "student", "name": "Alex Singh", "traits": ["introvert", "punctual", "gym-goer", "bookish"], "prefs": {"coffee": "high", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:20:50Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}

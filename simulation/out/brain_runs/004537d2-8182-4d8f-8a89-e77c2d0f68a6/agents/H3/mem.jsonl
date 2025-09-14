@@ -1,0 +1,11 @@
+{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "H3", "role": "student", "name": "Jordan Hernandez", "traits": ["foodie", "extrovert", "curious", "gym-goer"], "prefs": {"coffee": "high", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "quiet", "favorite": "library"}}}
+{"ts": "2025-09-14T04:51:43Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:54:29Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:55:50Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:56:11Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:56:51Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:00:08Z", "kind": "decision", "text": "Chose cafe near library for caffeine break before studying.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:00:10Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:00:11Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:00:38Z", "kind": "decision", "text": "Chose cafe near campus for quick caffeine break.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:00:51Z", "kind": "decision", "text": "Chose cafe near campus to wake up for studying.", "tags": ["cafe"]}

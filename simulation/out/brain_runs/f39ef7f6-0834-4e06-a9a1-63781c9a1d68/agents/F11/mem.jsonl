@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:18:27Z", "kind": "persona", "persona": {"id": "F11", "role": "resident", "name": "Morgan Brown", "traits": ["planner", "early-riser", "social", "introvert"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegan", "mobility": "walk", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:22:33Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

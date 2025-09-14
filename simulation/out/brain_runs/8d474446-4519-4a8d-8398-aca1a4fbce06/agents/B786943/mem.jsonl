@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B786943", "role": "student", "name": "Avery Hernandez", "traits": ["bookish", "introvert", "health-conscious", "early-riser"], "prefs": {"coffee": "med", "budget": "med", "diet": "halal", "mobility": "walk", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T04:32:19Z", "kind": "decision", "text": "Chose a quiet cafe near campus for a morning caffeine fix.", "tags": ["cafe"]}

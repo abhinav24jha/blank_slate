@@ -1,0 +1,13 @@
+{"ts": "2025-09-14T07:06:10Z", "kind": "persona", "persona": {"id": "F0", "role": "student", "name": "Riley Brown", "traits": ["optimistic", "punctual", "frugal", "introvert"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "outdoors", "favorite": "grocery"}}}
+{"ts": "2025-09-14T07:06:14Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:07:45Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["grocery"]}
+{"ts": "2025-09-14T07:07:47Z", "kind": "decision", "text": "Chose a cafe near campus to wake up. Need groceries before class.", "tags": ["grocery"]}
+{"ts": "2025-09-14T07:07:53Z", "kind": "chat", "text": "Chose a cafe near campus for quick coffee and study spot.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T07:07:58Z", "kind": "decision", "text": "Chose grocery near campus to get pescatarian groceries before class.", "tags": ["grocery"]}
+{"ts": "2025-09-14T07:08:05Z", "kind": "chat", "text": "Chose cafe near campus for early start.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T07:10:20Z", "kind": "chat", "text": "Chose cafe near campus for quick coffee and study spot.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T07:10:24Z", "kind": "chat", "text": "Chose cafe near campus for quick coffee and study spot.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T07:10:30Z", "kind": "decision", "text": "Chose grocery near campus to get pescatarian groceries before class.", "tags": ["grocery"]}
+{"ts": "2025-09-14T07:10:37Z", "kind": "chat", "text": "Chose cafe near campus for quick coffee and study spot.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T07:10:42Z", "kind": "chat", "text": "Chose cafe near campus for early start.", "tags": ["chat", "F5"]}
+{"ts": "2025-09-14T07:10:53Z", "kind": "decision", "text": "Chose grocery near campus to get pescatarian groceries before class.", "tags": ["grocery"]}

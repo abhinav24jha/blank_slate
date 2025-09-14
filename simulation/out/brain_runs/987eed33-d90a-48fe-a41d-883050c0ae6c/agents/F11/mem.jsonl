@@ -1,0 +1,7 @@
+{"ts": "2025-09-14T05:39:30Z", "kind": "persona", "persona": {"id": "F11", "role": "resident", "name": "Taylor Hernandez", "traits": ["foodie", "early-riser", "tech-savvy", "introvert"], "prefs": {"coffee": "high", "budget": "low", "diet": "pescatarian", "mobility": "bike", "study_spot": "quiet", "favorite": "grocery"}}}
+{"ts": "2025-09-14T05:41:46Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:43:07Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:46:03Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T05:46:21Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:46:28Z", "kind": "chat", "text": "Chose same cafe to wake up; saw familiar bookmarks.", "tags": ["chat", "F2"]}
+{"ts": "2025-09-14T05:46:55Z", "kind": "decision", "text": "Chose same cafe to wake up; saw familiar bookmarks.", "tags": ["cafe"]}

@@ -1,0 +1,18 @@
+{"ts": "2025-09-14T07:06:10Z", "kind": "persona", "persona": {"id": "F13", "role": "student", "name": "Alex Garcia", "traits": ["frugal", "curious", "gym-goer", "planner"], "prefs": {"coffee": "high", "budget": "low", "diet": "omnivorous", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
+{"ts": "2025-09-14T07:07:19Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study quietly.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:09:54Z", "kind": "chat", "text": "Chose cafe near campus for coffee break and study.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:10:07Z", "kind": "chat", "text": "Chose a cafe for quiet study.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:12:14Z", "kind": "decision", "text": "Chose cafe near campus for coffee break and study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:12:30Z", "kind": "decision", "text": "Chose cafe near campus for quiet study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:13:38Z", "kind": "chat", "text": "Chose cafe near campus for study and caffeine break.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:13:43Z", "kind": "chat", "text": "Chose cafe near campus for quiet study.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:13:55Z", "kind": "chat", "text": "Chose a cafe for quiet study.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:14:03Z", "kind": "chat", "text": "Chatted with Jamie about café's new halal menu.", "tags": ["chat", "F1"]}
+{"ts": "2025-09-14T07:14:27Z", "kind": "chat", "text": "Chose cafe near campus for quiet study.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:14:46Z", "kind": "chat", "text": "Chose cafe near campus for quiet study.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:15:44Z", "kind": "chat", "text": "Chose this place coz it's cheap and close to campus.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:16:00Z", "kind": "chat", "text": "Chatted with Jamie about study spots.", "tags": ["chat", "F9"]}
+{"ts": "2025-09-14T07:16:13Z", "kind": "decision", "text": "Chose cafe near campus for quiet study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:16:26Z", "kind": "decision", "text": "Chose cafe near campus for quiet study.", "tags": ["cafe"]}
+{"ts": "2025-09-14T07:16:40Z", "kind": "chat", "text": "Chatted with Jamie about study spots.", "tags": ["chat", "F6"]}
+{"ts": "2025-09-14T07:16:44Z", "kind": "chat", "text": "Chose this place coz it's cheap and close to campus.", "tags": ["chat", "F6"]}

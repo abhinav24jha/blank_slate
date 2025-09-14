@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T07:09:57Z", "kind": "persona", "persona": {"id": "F3", "role": "resident", "name": "Sam Wilson", "traits": ["early-riser", "punctual", "social", "planner"], "prefs": {"coffee": "med", "budget": "high", "diet": "halal", "mobility": "bike", "study_spot": "quiet", "favorite": "gym"}}}
+{"ts": "2025-09-14T07:14:33Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

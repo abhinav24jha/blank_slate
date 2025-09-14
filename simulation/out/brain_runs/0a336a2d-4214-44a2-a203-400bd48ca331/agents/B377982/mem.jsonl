@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "B377982", "role": "worker", "name": "Riley Brown", "traits": ["social", "introvert", "gym-goer", "night-owl"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:38:25Z", "kind": "persona", "persona": {"id": "F3", "role": "student", "name": "Jordan Hernandez", "traits": ["optimistic", "tech-savvy", "gym-goer", "health-conscious"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "walk", "study_spot": "outdoors", "favorite": "cafe"}}}
+{"ts": "2025-09-14T05:40:40Z", "kind": "decision", "text": "Chose cafe near campus for caffeine and study spot.", "tags": ["cafe"]}

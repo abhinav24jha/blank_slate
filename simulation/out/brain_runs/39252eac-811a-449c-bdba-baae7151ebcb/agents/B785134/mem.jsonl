@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B785134", "role": "student", "name": "Drew Kim", "traits": ["impulsive", "social", "foodie", "optimistic"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegan", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T04:58:45Z", "kind": "decision", "text": "Chose cafe for quick coffee and social interaction near library.", "tags": ["cafe"]}

@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B408385", "role": "student", "name": "Drew Kim", "traits": ["social", "health-conscious", "tech-savvy", "punctual"], "prefs": {"coffee": "low", "budget": "low", "diet": "halal", "mobility": "bus", "study_spot": "outdoors", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T05:02:29Z", "kind": "decision", "text": "Chose cafe near campus for quick study spot.", "tags": ["cafe"]}

@@ -1,0 +1,9 @@
+{"ts": "2025-09-14T05:09:53Z", "kind": "persona", "persona": {"id": "F9", "role": "student", "name": "Taylor Kim", "traits": ["impulsive", "extrovert", "gym-goer", "frugal"], "prefs": {"coffee": "high", "budget": "high", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T05:12:51Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T05:17:15Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:17:28Z", "kind": "chat", "text": "Chatted with Alex Brown about a nearby spot", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T05:17:31Z", "kind": "chat", "text": "Chatted with Alex Brown about a nearby spot", "tags": ["chat", "F12"]}
+{"ts": "2025-09-14T05:17:32Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:22:30Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:22:33Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}
+{"ts": "2025-09-14T05:22:33Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

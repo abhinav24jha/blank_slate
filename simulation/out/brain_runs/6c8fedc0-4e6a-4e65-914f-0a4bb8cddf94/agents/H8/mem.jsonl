@@ -1,0 +1,9 @@
+{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "H8", "role": "worker", "name": "Riley Hernandez", "traits": ["bookish", "extrovert", "early-riser", "optimistic"], "prefs": {"coffee": "low", "budget": "high", "diet": "omnivorous", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
+{"ts": "2025-09-14T04:47:51Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T04:48:31Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T04:48:32Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T04:48:32Z", "kind": "decision", "text": "Chose pharmacy after considering needs.", "tags": ["pharmacy"]}
+{"ts": "2025-09-14T04:49:26Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T04:50:41Z", "kind": "decision", "text": "Chose cafe to wake up and find a lively study environment.", "tags": ["cafe"]}
+{"ts": "2025-09-14T04:51:40Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}
+{"ts": "2025-09-14T04:51:52Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}

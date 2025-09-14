@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T05:17:22Z", "kind": "persona", "persona": {"id": "F9", "role": "student", "name": "Avery Nguyen", "traits": ["extrovert", "bookish", "planner", "night-owl"], "prefs": {"coffee": "high", "budget": "med", "diet": "pescatarian", "mobility": "bike", "study_spot": "quiet", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T05:22:14Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}
