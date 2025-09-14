@@ -1,0 +1,8 @@
+{
+  "run_id": "run_society145_h001_1757835478",
+  "scenario": "society145_h001",
+  "agent_count": 15,
+  "duration": 0.0030012130737304688,
+  "steps": 20,
+  "metrics_aggregator": "attached"
+}

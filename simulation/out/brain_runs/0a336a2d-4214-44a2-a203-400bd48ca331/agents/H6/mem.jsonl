@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:56:11Z", "kind": "persona", "persona": {"id": "H6", "role": "student", "name": "Morgan Nguyen", "traits": ["introvert", "gym-goer", "tech-savvy", "night-owl"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T05:00:51Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

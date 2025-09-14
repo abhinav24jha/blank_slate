@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B977900", "role": "student", "name": "Alex Nguyen", "traits": ["night-owl", "frugal", "impulsive", "health-conscious"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegan", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
-{"ts": "2025-09-14T04:55:37Z", "kind": "decision", "text": "Chose restaurant after considering needs.", "tags": ["restaurant"]}

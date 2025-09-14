@@ -153,7 +153,7 @@
   world.addChild(agentLayer);
   const intentLayer = new PIXI.Container(); // overlay labels above agents
   world.addChild(intentLayer);
-  const speedMultipliers = [1,2,4,10,100];
+  const speedMultipliers = [1,2,4,100];
   let speedIdx = 0; // 1x by default
   let selectedAgent = null;
   let followMode = false;
@@ -695,9 +695,31 @@
 
   // UI speed buttons
   function wireSpeedButtons(){
-    const map = { 'speed1':'1x', 'speed2':'2x', 'speed4':'4x', 'speed10':'10x', 'speed100':'100x' };
-    const ids = Object.keys(map);
-    ids.forEach((id, idx)=>{ const el = document.getElementById(id); if (el) el.onclick = ()=>{ speedIdx = idx; }; });
+    const speedButtons = [
+      { id: 'speed1', idx: 0 },   // 1x
+      { id: 'speed2', idx: 1 },   // 2x  
+      { id: 'speed4', idx: 2 },   // 4x
+      { id: 'speed100', idx: 3 }  // 100x
+    ];
+    
+    speedButtons.forEach(({id, idx}) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.onclick = () => {
+          speedIdx = idx;
+          // Update visual state
+          speedButtons.forEach(({id: btnId}) => {
+            const btn = document.getElementById(btnId);
+            if (btn) btn.classList.remove('active');
+          });
+          el.classList.add('active');
+        };
+      }
+    });
+    
+    // Set initial active state
+    const initialBtn = document.getElementById('speed1');
+    if (initialBtn) initialBtn.classList.add('active');
   }
 
   // POIs
@@ -1500,8 +1522,9 @@
       thoughtsSelect = document.getElementById('thoughtsAgentSelect');
       thoughtsContent = document.getElementById('thoughtsContent');
 
-      // Start brain run (fire-and-forget). If server not running, runId stays null and JS-only logic continues.
-      try { runId = await brainStartRun('base', 12345, speedMultipliers[speedIdx]); } catch(_) { runId = null; }
+      // Start brain run (fire-and-forget). Use the actual scenario id so analytics can attribute correctly.
+      const hypId = (currentScenario === 'baseline') ? 'baseline' : currentScenario;
+      try { runId = await brainStartRun(hypId, 12345, speedMultipliers[speedIdx]); } catch(_) { runId = null; }
       if (runId && window.AgentOrchestrator){
         orchestrator = new window.AgentOrchestrator({
           brainUrl: BRAIN_URL,
@@ -1513,6 +1536,36 @@
             a.lastThought = d.thought || a.lastThought;
             a.lastIntent = (d.next_intent && d.next_intent.category) || a.lastIntent;
             if (a._chip && a._chip.txt && a.lastIntent) a._chip.txt.text = a.lastIntent;
+            
+            // MOVEMENT: Find nearest POI of the decided category and move there
+            if (a.lastIntent && pois && pois.length > 0) {
+              const targetPOIs = pois.filter(p => p.type === a.lastIntent);
+              if (targetPOIs.length > 0) {
+                // Find closest POI
+                let closest = targetPOIs[0];
+                let minDist = Math.hypot(a.sprite.x - closest.ix, a.sprite.y - closest.iy);
+                for (const poi of targetPOIs) {
+                  const dist = Math.hypot(a.sprite.x - poi.ix, a.sprite.y - poi.iy);
+                  if (dist < minDist) {
+                    closest = poi;
+                    minDist = dist;
+                  }
+                }
+                // Start pathfinding to closest POI
+                console.log(`${d.id} moving to ${closest.name || closest.type} at (${closest.ix}, ${closest.iy})`);
+                requestPath(
+                  { x: Math.round(a.sprite.x), y: Math.round(a.sprite.y) },
+                  { x: closest.ix, y: closest.iy },
+                  (path) => {
+                    if (path && path.length > 1) {
+                      a.path = path.slice(1); // Remove first point (current position)
+                      a.pathIndex = 0;
+                      console.log(`${d.id} got path with ${a.path.length} steps`);
+                    }
+                  }
+                );
+              }
+            }
             if (selectedAgent === a) updateSelectionHUD();
             // Store thought in history
             if (d.thought) addAgentThought(a.id, d.thought, a.lastIntent);

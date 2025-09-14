@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B332997", "role": "student", "name": "Jordan Kim", "traits": ["foodie", "frugal", "punctual", "curious"], "prefs": {"coffee": "med", "budget": "med", "diet": "pescatarian", "mobility": "bike", "study_spot": "outdoors", "favorite": "gym"}}}
-{"ts": "2025-09-14T04:51:34Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

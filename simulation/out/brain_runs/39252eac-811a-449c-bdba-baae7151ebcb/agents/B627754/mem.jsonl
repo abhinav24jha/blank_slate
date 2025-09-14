@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B627754", "role": "student", "name": "Jamie Garcia", "traits": ["introvert", "optimistic", "planner", "tech-savvy"], "prefs": {"coffee": "high", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "gym"}}}
-{"ts": "2025-09-14T04:58:06Z", "kind": "decision", "text": "Chose cafe to wake up and find a quiet spot.", "tags": ["cafe"]}

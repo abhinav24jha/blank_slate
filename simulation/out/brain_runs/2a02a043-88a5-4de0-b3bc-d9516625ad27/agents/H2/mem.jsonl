@@ -1,7 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "H2", "role": "resident", "name": "Jamie Kim", "traits": ["bookish", "curious", "gym-goer", "impulsive"], "prefs": {"coffee": "low", "budget": "low", "diet": "kosher", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:42:11Z", "kind": "decision", "text": "Chose a grocery store near home to satisfy dietary preferences.", "tags": ["grocery"]}
-{"ts": "2025-09-14T04:45:05Z", "kind": "decision", "text": "Chose grocery near home to satisfy dietary preferences.", "tags": ["grocery"]}
-{"ts": "2025-09-14T04:45:07Z", "kind": "decision", "text": "Chose grocery store near home to satisfy dietary preferences.", "tags": ["grocery"]}
-{"ts": "2025-09-14T04:45:18Z", "kind": "decision", "text": "Chose grocery near home to satisfy dietary preferences.", "tags": ["grocery"]}
-{"ts": "2025-09-14T04:45:21Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:45:21Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

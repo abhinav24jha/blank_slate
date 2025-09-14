@@ -1,0 +1,7 @@
+{"ts": "2025-09-14T09:26:12Z", "kind": "persona", "persona": {"id": "F4", "role": "student", "name": "Sam Singh", "traits": ["gym-goer", "frugal", "punctual", "introvert"], "prefs": {"coffee": "med", "budget": "high", "diet": "pescatarian", "mobility": "walk", "study_spot": "quiet", "favorite": "grocery"}}}
+{"ts": "2025-09-14T09:26:24Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:03Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T09:27:15Z", "kind": "chat", "text": "Chatted with Taylor Garcia about a nearby spot", "tags": ["chat", "F3"]}
+{"ts": "2025-09-14T09:27:22Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:27:34Z", "kind": "decision", "text": "Chatted with Taylor Garcia about a nearby spot", "tags": ["grocery"]}
+{"ts": "2025-09-14T09:27:42Z", "kind": "chat", "text": "Chose a cafe near campus to wake up; Chatted with Taylor Garcia about a nearby spot", "tags": ["chat", "F3"]}

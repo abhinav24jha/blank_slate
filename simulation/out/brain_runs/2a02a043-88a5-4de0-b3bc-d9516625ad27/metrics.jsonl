@@ -1,4 +1,0 @@
-{"kind": "trip", "agent": "B701356", "role": "student", "cat": "transit", "ms": 18788, "dist_m": 730, "ts": "2025-09-14T04:44:41Z"}
-{"kind": "trip", "agent": "H10", "role": "resident", "cat": "health", "ms": 99, "dist_m": 13, "ts": "2025-09-14T04:44:41Z"}
-{"kind": "trip", "agent": "B926035", "role": "student", "cat": "transit", "ms": 5637, "dist_m": 437, "ts": "2025-09-14T04:44:41Z"}
-{"kind": "trip", "agent": "B352493", "role": "student", "cat": "transit", "ms": 8444, "dist_m": 765, "ts": "2025-09-14T04:44:42Z"}

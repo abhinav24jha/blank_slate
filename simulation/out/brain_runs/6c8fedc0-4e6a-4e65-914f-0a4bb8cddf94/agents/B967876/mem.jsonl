@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B967876", "role": "student", "name": "Jordan Hernandez", "traits": ["extrovert", "health-conscious", "social", "frugal"], "prefs": {"coffee": "low", "budget": "low", "diet": "omnivorous", "mobility": "walk", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:47:19Z", "kind": "decision", "text": "Chose grocery store near campus for healthy snacks.", "tags": ["grocery"]}

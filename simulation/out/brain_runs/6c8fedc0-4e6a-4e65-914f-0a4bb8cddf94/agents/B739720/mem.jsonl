@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B739720", "role": "resident", "name": "Taylor Lee", "traits": ["curious", "night-owl", "impulsive", "gym-goer"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "bike", "study_spot": "lively", "favorite": "gym"}}}
-{"ts": "2025-09-14T04:45:33Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

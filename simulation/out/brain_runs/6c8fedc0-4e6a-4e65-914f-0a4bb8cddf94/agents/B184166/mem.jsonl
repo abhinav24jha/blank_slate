@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B184166", "role": "resident", "name": "Jamie Brown", "traits": ["tech-savvy", "frugal", "optimistic", "early-riser"], "prefs": {"coffee": "low", "budget": "low", "diet": "omnivorous", "mobility": "bike", "study_spot": "quiet", "favorite": "library"}}}
-{"ts": "2025-09-14T05:04:50Z", "kind": "decision", "text": "Chose cafe near library to wake up.", "tags": ["cafe"]}

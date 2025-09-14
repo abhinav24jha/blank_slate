@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B514780", "role": "student", "name": "Casey Wilson", "traits": ["introvert", "night-owl", "frugal", "health-conscious"], "prefs": {"coffee": "low", "budget": "high", "diet": "halal", "mobility": "bus", "study_spot": "quiet", "favorite": "cafe"}}}
-{"ts": "2025-09-14T04:56:09Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study.", "tags": ["cafe"]}

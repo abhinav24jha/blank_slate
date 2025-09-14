@@ -1,6 +1,0 @@
-{"ts": "2025-09-14T06:34:21Z", "kind": "persona", "persona": {"id": "F0", "role": "student", "name": "Riley Brown", "traits": ["optimistic", "punctual", "frugal", "introvert"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T06:34:23Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T06:34:58Z", "kind": "decision", "text": "Riley Brown chose grocery to manage budget and dietary preferences before classes.", "tags": ["grocery"]}
-{"ts": "2025-09-14T06:35:22Z", "kind": "chat", "text": "Chose coffee shop near campus to start day optimistically.", "tags": ["chat", "F12"]}
-{"ts": "2025-09-14T06:35:27Z", "kind": "decision", "text": "Chose grocery near campus after waking up.", "tags": ["grocery"]}
-{"ts": "2025-09-14T06:36:00Z", "kind": "chat", "text": "Chose cafe near campus to manage budget and dietary preferences before classes.", "tags": ["chat", "F12"]}

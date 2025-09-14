@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B440532", "role": "student", "name": "Sam Singh", "traits": ["punctual", "foodie", "curious", "health-conscious"], "prefs": {"coffee": "low", "budget": "high", "diet": "kosher", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
-{"ts": "2025-09-14T04:31:09Z", "kind": "decision", "text": "Chose a kosher cafe near campus to wake up.", "tags": ["cafe"]}

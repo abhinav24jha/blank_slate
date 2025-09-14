@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B954419", "role": "resident", "name": "Riley Singh", "traits": ["planner", "foodie", "social", "curious"], "prefs": {"coffee": "high", "budget": "med", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
-{"ts": "2025-09-14T04:42:44Z", "kind": "decision", "text": "Chose a coffee spot near library for study break.", "tags": ["cafe"]}

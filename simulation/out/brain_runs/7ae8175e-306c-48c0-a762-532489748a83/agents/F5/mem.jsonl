@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T05:22:33Z", "kind": "persona", "persona": {"id": "F5", "role": "visitor", "name": "Sam Hernandez", "traits": ["bookish", "curious", "frugal", "planner"], "prefs": {"coffee": "med", "budget": "high", "diet": "omnivorous", "mobility": "bike", "study_spot": "lively", "favorite": "library"}}}
-{"ts": "2025-09-14T05:22:34Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

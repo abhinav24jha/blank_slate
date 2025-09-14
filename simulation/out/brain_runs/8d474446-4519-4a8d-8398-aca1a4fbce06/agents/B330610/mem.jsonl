@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B330610", "role": "student", "name": "Morgan Hernandez", "traits": ["optimistic", "introvert", "health-conscious", "impulsive"], "prefs": {"coffee": "med", "budget": "low", "diet": "halal", "mobility": "walk", "study_spot": "outdoors", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T04:33:37Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study outdoors.", "tags": ["cafe"]}

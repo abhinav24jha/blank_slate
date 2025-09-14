@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B194956", "role": "student", "name": "Jordan Brown", "traits": ["social", "planner", "foodie", "frugal"], "prefs": {"coffee": "med", "budget": "high", "diet": "vegetarian", "mobility": "bike", "study_spot": "lively", "favorite": "park"}}}
-{"ts": "2025-09-14T04:30:06Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and meet friends.", "tags": ["cafe"]}

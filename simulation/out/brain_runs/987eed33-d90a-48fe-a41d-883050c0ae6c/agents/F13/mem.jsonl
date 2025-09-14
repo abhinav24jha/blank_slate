@@ -1,7 +1,0 @@
-{"ts": "2025-09-14T05:39:30Z", "kind": "persona", "persona": {"id": "F13", "role": "student", "name": "Alex Patel", "traits": ["planner", "curious", "extrovert", "health-conscious"], "prefs": {"coffee": "low", "budget": "low", "diet": "vegetarian", "mobility": "bike", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T05:41:59Z", "kind": "decision", "text": "Decided on grocery store to stock up.", "tags": ["grocery"]}
-{"ts": "2025-09-14T05:43:12Z", "kind": "decision", "text": "Decided on grocery store to stock up.", "tags": ["grocery"]}
-{"ts": "2025-09-14T05:44:34Z", "kind": "chat", "text": "Decided on grocery store to stock up.", "tags": ["chat", "F1"]}
-{"ts": "2025-09-14T05:44:51Z", "kind": "decision", "text": "Chose grocery store near campus to stock up again.", "tags": ["grocery"]}
-{"ts": "2025-09-14T05:45:12Z", "kind": "chat", "text": "Decided on grocery store near campus to stock up.", "tags": ["chat", "F10"]}
-{"ts": "2025-09-14T05:45:31Z", "kind": "decision", "text": "Chose grocery store near campus again for groceries.", "tags": ["grocery"]}

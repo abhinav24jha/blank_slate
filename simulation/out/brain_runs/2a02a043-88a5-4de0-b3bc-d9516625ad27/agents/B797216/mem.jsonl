@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B797216", "role": "resident", "name": "Casey Martin", "traits": ["curious", "gym-goer", "night-owl", "introvert"], "prefs": {"coffee": "high", "budget": "low", "diet": "kosher", "mobility": "walk", "study_spot": "lively", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T04:43:48Z", "kind": "decision", "text": "Chose a coffee-friendly cafe near campus.", "tags": ["cafe"]}

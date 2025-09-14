@@ -1,3 +1,0 @@
-{"ts": "2025-09-14T06:54:13Z", "kind": "persona", "persona": {"id": "F8", "role": "resident", "name": "Jamie Nguyen", "traits": ["gym-goer", "impulsive", "foodie", "punctual"], "prefs": {"coffee": "med", "budget": "high", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "gym"}}}
-{"ts": "2025-09-14T06:56:14Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and grab a coffee.", "tags": ["cafe"]}
-{"ts": "2025-09-14T07:03:08Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

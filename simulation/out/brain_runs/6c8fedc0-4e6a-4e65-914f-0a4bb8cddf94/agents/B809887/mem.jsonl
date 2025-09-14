@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B809887", "role": "resident", "name": "Jamie Kim", "traits": ["health-conscious", "punctual", "curious", "impulsive"], "prefs": {"coffee": "high", "budget": "med", "diet": "kosher", "mobility": "bus", "study_spot": "lively", "favorite": "park"}}}
-{"ts": "2025-09-14T04:51:17Z", "kind": "decision", "text": "Chose cafe near lively study spot for caffeine fix.", "tags": ["cafe"]}

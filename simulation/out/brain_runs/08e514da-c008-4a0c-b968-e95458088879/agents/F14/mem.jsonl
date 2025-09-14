@@ -1,4 +1,0 @@
-{"ts": "2025-09-14T05:32:12Z", "kind": "persona", "persona": {"id": "F14", "role": "resident", "name": "Morgan Wilson", "traits": ["optimistic", "impulsive", "punctual", "health-conscious"], "prefs": {"coffee": "high", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "quiet", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T05:32:49Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}
-{"ts": "2025-09-14T05:38:02Z", "kind": "decision", "text": "Chose cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T05:40:20Z", "kind": "decision", "text": "Chose cafe near campus to wake up and study.", "tags": ["cafe"]}

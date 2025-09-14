@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T06:59:54Z", "kind": "persona", "persona": {"id": "F13", "role": "student", "name": "Alex Garcia", "traits": ["frugal", "curious", "gym-goer", "planner"], "prefs": {"coffee": "high", "budget": "low", "diet": "omnivorous", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
-{"ts": "2025-09-14T07:05:25Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

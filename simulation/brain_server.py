@@ -164,7 +164,20 @@ def start_run(req: StartRunReq = Body(...)):
         "samples": 0,
         "decisions": 0,
     }
-    _ensure_run_dirs(run_id)
+    files = _ensure_run_dirs(run_id)
+    # Persist run metadata immediately for external watchers (live analytics)
+    run_dir = os.path.dirname(files["metrics"]) if isinstance(files, dict) else os.path.join(ROOT_OUT, "brain_runs", run_id)
+    try:
+        with open(os.path.join(run_dir, "run_meta.json"), "w", encoding="utf-8") as f:
+            json.dump({
+                "runId": run_id,
+                "hypothesisId": req.hypothesisId,
+                "seed": req.seed,
+                "speed": req.speed,
+                "started_at": RUNS[run_id]["started_at"],
+            }, f, indent=2)
+    except Exception as e:
+        logging.warning(f"Failed to write run_meta.json for run {run_id}: {e}")
     logging.info("[run] start id=%s hyp=%s seed=%s", run_id, req.hypothesisId, req.seed)
     return StartRunResp(runId=run_id)
 
@@ -211,17 +224,31 @@ def decide(req: DecideReq = Body(...)):
             logging.info(f"LLM SUCCESS for {ag.id}: thought='{thought}', category={category}")
         except Exception as e:
             logging.warning(f"LLM FAILED for {ag.id}: {e}")
-            best_need, best_val = None, -1.0
-            for k, v in (ag.needs or {}).items():
-                if v is None: continue
-                if v > best_val: best_need, best_val = k, v
-            category = NEED_TO_CATEGORY.get(best_need or "leisure", "retail")
-            thought = f"Heading to {category}."
-            mem = f"Chose {category} after considering needs."
+            # Bias-aware fallback: prefer categories present in context.biases
+            biases = (context or {}).get("biases") or {}
+            try:
+                if biases:
+                    cats = list(biases.keys())
+                    weights = [max(0.01, float(biases.get(c, 0.1))) for c in cats]
+                    import random as _r
+                    category = _r.choices(cats, weights=weights, k=1)[0]
+                    thought = f"Trying {category} (scenario bias)."
+                else:
+                    best_need, best_val = None, -1.0
+                    for k, v in (ag.needs or {}).items():
+                        if v is None: continue
+                        if v > best_val: best_need, best_val = k, v
+                    category = NEED_TO_CATEGORY.get(best_need or "leisure", "retail")
+                    thought = f"Heading to {category}."
+                mem = f"Chose {category} using bias-aware fallback."
+            except Exception:
+                category = "retail"
+                thought = "Fallback to retail."
+                mem = "Fallback path."
         append_memory(req.runId, ag.id, MemoryEvent(ts=_now_iso(), kind="decision", text=mem, tags=[category]))
         out.append(Decision(id=ag.id, next_intent=NextIntent(category=category), thought=thought, chat=None))
         # Small delay to prevent overwhelming Ollama with concurrent requests
-        time.sleep(0.1)
+        time.sleep(0.02)
 
     # Append decisions to file
     files = _ensure_run_dirs(req.runId)

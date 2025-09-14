@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T06:59:54Z", "kind": "persona", "persona": {"id": "F12", "role": "student", "name": "Riley Lee", "traits": ["night-owl", "curious", "social", "foodie"], "prefs": {"coffee": "med", "budget": "low", "diet": "kosher", "mobility": "bike", "study_spot": "quiet", "favorite": "library"}}}
-{"ts": "2025-09-14T07:05:14Z", "kind": "decision", "text": "Chose cafe near campus for caffeine break and study spot.", "tags": ["cafe"]}

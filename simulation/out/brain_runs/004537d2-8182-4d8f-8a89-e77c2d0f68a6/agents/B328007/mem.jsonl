@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B328007", "role": "student", "name": "Riley Brown", "traits": ["foodie", "early-riser", "impulsive", "planner"], "prefs": {"coffee": "high", "budget": "low", "diet": "omnivorous", "mobility": "bike", "study_spot": "outdoors", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T05:02:52Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix.", "tags": ["cafe"]}

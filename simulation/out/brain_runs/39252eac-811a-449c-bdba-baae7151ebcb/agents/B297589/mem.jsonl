@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B297589", "role": "student", "name": "Avery Singh", "traits": ["night-owl", "foodie", "planner", "social"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "bike", "study_spot": "quiet", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:53:32Z", "kind": "decision", "text": "Chose grocery store near campus to save time and budget.", "tags": ["grocery"]}

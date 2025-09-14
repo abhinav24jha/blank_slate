@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B913197", "role": "student", "name": "Morgan Kim", "traits": ["gym-goer", "early-riser", "extrovert", "impulsive"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T05:03:31Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

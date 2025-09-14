@@ -1,8 +1,0 @@
-{"ts": "2025-09-14T06:54:13Z", "kind": "persona", "persona": {"id": "F0", "role": "student", "name": "Riley Brown", "traits": ["optimistic", "punctual", "frugal", "introvert"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T06:54:28Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T06:57:18Z", "kind": "decision", "text": "Riley Brown chose grocery near campus after studying outdoors.", "tags": ["grocery"]}
-{"ts": "2025-09-14T06:57:41Z", "kind": "chat", "text": "Chose a cozy corner by the window to study.", "tags": ["chat", "F9"]}
-{"ts": "2025-09-14T06:58:07Z", "kind": "decision", "text": "Chose grocery near campus after studying outdoors.", "tags": ["grocery"]}
-{"ts": "2025-09-14T06:59:47Z", "kind": "chat", "text": "Chose cozy corner by window to study; reminded of shared memories.", "tags": ["chat", "F9"]}
-{"ts": "2025-09-14T06:59:54Z", "kind": "decision", "text": "Chose grocery near campus after studying outdoors.", "tags": ["grocery"]}
-{"ts": "2025-09-14T07:00:49Z", "kind": "chat", "text": "Chose a cozy corner by the window to study.", "tags": ["chat", "F9"]}

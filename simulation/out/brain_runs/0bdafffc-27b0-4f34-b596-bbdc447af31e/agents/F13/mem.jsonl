@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T05:38:25Z", "kind": "persona", "persona": {"id": "F13", "role": "worker", "name": "Alex Patel", "traits": ["planner", "curious", "extrovert", "health-conscious"], "prefs": {"coffee": "low", "budget": "low", "diet": "vegetarian", "mobility": "bike", "study_spot": "lively", "favorite": "library"}}}
-{"ts": "2025-09-14T05:41:49Z", "kind": "decision", "text": "Chose a lively cafe near library for caffeine and education.", "tags": ["cafe"]}

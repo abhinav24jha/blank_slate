@@ -1,5 +1,0 @@
-{"ts": "2025-09-14T05:39:30Z", "kind": "persona", "persona": {"id": "F4", "role": "student", "name": "Riley Martin", "traits": ["optimistic", "frugal", "punctual", "early-riser"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T05:40:58Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T05:42:50Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["grocery"]}
-{"ts": "2025-09-14T05:45:58Z", "kind": "decision", "text": "Chose a cafe near campus to wake up. Need groceries before starting classes.", "tags": ["grocery"]}
-{"ts": "2025-09-14T05:46:03Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F11"]}

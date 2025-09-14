@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B771276", "role": "student", "name": "Casey Nguyen", "traits": ["night-owl", "punctual", "gym-goer", "optimistic"], "prefs": {"coffee": "low", "budget": "low", "diet": "kosher", "mobility": "walk", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:55:29Z", "kind": "decision", "text": "Chose grocery store near campus for quick supplies.", "tags": ["grocery"]}

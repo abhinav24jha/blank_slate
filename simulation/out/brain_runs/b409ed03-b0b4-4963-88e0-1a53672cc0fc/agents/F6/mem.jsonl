@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T05:17:22Z", "kind": "persona", "persona": {"id": "F6", "role": "student", "name": "Drew Lee", "traits": ["frugal", "health-conscious", "optimistic", "introvert"], "prefs": {"coffee": "high", "budget": "med", "diet": "omnivorous", "mobility": "bus", "study_spot": "lively", "favorite": "library"}}}
-{"ts": "2025-09-14T05:20:57Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}

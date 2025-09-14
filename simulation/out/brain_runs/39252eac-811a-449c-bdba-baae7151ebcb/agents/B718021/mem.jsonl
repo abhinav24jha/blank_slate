@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B718021", "role": "student", "name": "Avery Singh", "traits": ["gym-goer", "early-riser", "planner", "bookish"], "prefs": {"coffee": "low", "budget": "med", "diet": "omnivorous", "mobility": "bus", "study_spot": "outdoors", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}

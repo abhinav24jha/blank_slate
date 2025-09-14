@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B524283", "role": "student", "name": "Morgan Lee", "traits": ["extrovert", "early-riser", "bookish", "punctual"], "prefs": {"coffee": "low", "budget": "high", "diet": "omnivorous", "mobility": "bus", "study_spot": "outdoors", "favorite": "library"}}}
-{"ts": "2025-09-14T04:48:35Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B289790", "role": "student", "name": "Avery Lee", "traits": ["optimistic", "impulsive", "foodie", "health-conscious"], "prefs": {"coffee": "low", "budget": "med", "diet": "halal", "mobility": "bus", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

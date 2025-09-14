@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B544676", "role": "student", "name": "Morgan Wilson", "traits": ["curious", "introvert", "impulsive", "early-riser"], "prefs": {"coffee": "high", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "outdoors", "favorite": "park"}}}
-{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

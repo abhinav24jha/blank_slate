@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B311326", "role": "student", "name": "Casey Lee", "traits": ["gym-goer", "punctual", "social", "night-owl"], "prefs": {"coffee": "high", "budget": "low", "diet": "pescatarian", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:58:17Z", "kind": "decision", "text": "Chose retail after considering needs.", "tags": ["retail"]}

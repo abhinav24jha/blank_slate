@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T05:17:52Z", "kind": "persona", "persona": {"id": "F7", "role": "student", "name": "Sam Lee", "traits": ["social", "gym-goer", "optimistic", "punctual"], "prefs": {"coffee": "med", "budget": "low", "diet": "kosher", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T05:21:41Z", "kind": "decision", "text": "Chose retail.", "tags": ["retail"]}

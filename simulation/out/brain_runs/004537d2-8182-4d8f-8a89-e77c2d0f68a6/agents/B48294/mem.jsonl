@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B48294", "role": "resident", "name": "Taylor Martin", "traits": ["bookish", "introvert", "foodie", "night-owl"], "prefs": {"coffee": "low", "budget": "low", "diet": "kosher", "mobility": "walk", "study_spot": "quiet", "favorite": "park"}}}
-{"ts": "2025-09-14T05:05:53Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}

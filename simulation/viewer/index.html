@@ -15,6 +15,7 @@
       .toolbar .btn { width: 36px; height: 36px; display: grid; place-items: center; background: #1a1c1f; border: 1px solid rgba(255,255,255,0.08); color: #e6e7e8; border-radius: 8px; cursor: pointer; transition: background 120ms ease, transform 80ms ease; }
       .toolbar .btn:hover { background: #22252a; }
       .toolbar .btn:active { transform: translateY(1px); }
+      .toolbar .btn.active { background: #2563eb; border-color: #3b82f6; color: #ffffff; }
       .toolbar .label { padding: 0 8px; opacity: 0.8; font-size: 12px; }
 
       /* Search */
@@ -106,7 +107,6 @@
         <div class="btn" id="speed1" title="1x">1×</div>
         <div class="btn" id="speed2" title="2x">2×</div>
         <div class="btn" id="speed4" title="4x">4×</div>
-        <div class="btn" id="speed10" title="10x">10×</div>
         <div class="btn" id="speed100" title="100x">100×</div>
         <div class="label" style="margin-left:12px;">Overlays:</div>
         <div class="btn" id="btnIntents" title="Toggle intent chips">INT</div>

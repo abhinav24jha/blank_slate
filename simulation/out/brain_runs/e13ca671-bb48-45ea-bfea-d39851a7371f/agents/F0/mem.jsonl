@@ -1,3 +1,0 @@
-{"ts": "2025-09-14T06:35:56Z", "kind": "persona", "persona": {"id": "F0", "role": "student", "name": "Riley Brown", "traits": ["optimistic", "punctual", "frugal", "introvert"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "outdoors", "favorite": "grocery"}}}
-{"ts": "2025-09-14T06:36:17Z", "kind": "decision", "text": "Chose cafe near campus for caffeine fix.", "tags": ["cafe"]}
-{"ts": "2025-09-14T06:37:27Z", "kind": "decision", "text": "Chose grocery near campus to fuel up on a budget.", "tags": ["grocery"]}

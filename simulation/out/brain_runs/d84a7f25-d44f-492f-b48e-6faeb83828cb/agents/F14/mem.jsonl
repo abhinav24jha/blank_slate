@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T05:17:52Z", "kind": "persona", "persona": {"id": "F14", "role": "worker", "name": "Alex Nguyen", "traits": ["health-conscious", "impulsive", "night-owl", "gym-goer"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "walk", "study_spot": "lively", "favorite": "park"}}}
-{"ts": "2025-09-14T05:22:33Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

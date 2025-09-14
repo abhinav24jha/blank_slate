@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "H9", "role": "student", "name": "Drew Patel", "traits": ["foodie", "optimistic", "social", "impulsive"], "prefs": {"coffee": "low", "budget": "high", "diet": "vegan", "mobility": "bus", "study_spot": "lively", "favorite": "cafe"}}}
-{"ts": "2025-09-14T04:32:05Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and find a good study spot.", "tags": ["cafe"]}

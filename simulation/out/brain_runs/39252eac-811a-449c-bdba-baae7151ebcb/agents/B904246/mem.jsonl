@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B904246", "role": "visitor", "name": "Sam Lee", "traits": ["extrovert", "social", "bookish", "health-conscious"], "prefs": {"coffee": "high", "budget": "med", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
-{"ts": "2025-09-14T05:04:53Z", "kind": "decision", "text": "Chose cafe near campus for coffee break.", "tags": ["cafe"]}

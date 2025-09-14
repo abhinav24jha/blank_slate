@@ -1,7 +1,0 @@
-{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "H1", "role": "student", "name": "Alex Kim", "traits": ["bookish", "tech-savvy", "introvert", "night-owl"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "walk", "study_spot": "lively", "favorite": "gym"}}}
-{"ts": "2025-09-14T04:30:13Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:30:14Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:30:21Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:31:07Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:31:56Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:33:17Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

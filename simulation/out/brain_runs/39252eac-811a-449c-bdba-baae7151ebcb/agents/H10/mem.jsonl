@@ -1,3 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "H10", "role": "student", "name": "Casey Kim", "traits": ["foodie", "optimistic", "early-riser", "health-conscious"], "prefs": {"coffee": "med", "budget": "low", "diet": "omnivorous", "mobility": "bike", "study_spot": "quiet", "favorite": "park"}}}
-{"ts": "2025-09-14T04:54:55Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}
-{"ts": "2025-09-14T04:56:05Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

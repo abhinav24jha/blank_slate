@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:49:09Z", "kind": "persona", "persona": {"id": "B547384", "role": "student", "name": "Casey Brown", "traits": ["impulsive", "gym-goer", "night-owl", "foodie"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegetarian", "mobility": "bike", "study_spot": "quiet", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T05:02:49Z", "kind": "decision", "text": "Chose a nearby cafe for caffeine and food.", "tags": ["cafe"]}

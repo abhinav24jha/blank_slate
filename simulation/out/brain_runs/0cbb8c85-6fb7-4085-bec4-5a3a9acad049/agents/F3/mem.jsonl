@@ -1,0 +1,10 @@
+{"ts": "2025-09-14T09:26:12Z", "kind": "persona", "persona": {"id": "F3", "role": "resident", "name": "Taylor Garcia", "traits": ["optimistic", "tech-savvy", "health-conscious", "social"], "prefs": {"coffee": "high", "budget": "low", "diet": "halal", "mobility": "walk", "study_spot": "lively", "favorite": "library"}}}
+{"ts": "2025-09-14T09:26:22Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:03Z", "kind": "chat", "text": "Chose a cafe near campus to wake up.", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T09:27:07Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:15Z", "kind": "chat", "text": "Chatted with Sam Singh about a nearby spot", "tags": ["chat", "F4"]}
+{"ts": "2025-09-14T09:27:17Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:32Z", "kind": "chat", "text": "Chose a cafe near campus to wake up. Chatted with Sam Singh about a nearby spot.", "tags": ["chat", "F7"]}
+{"ts": "2025-09-14T09:27:37Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:38Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:42Z", "kind": "chat", "text": "Chose a cafe near campus to wake up; Chatted with Sam Singh about a nearby spot", "tags": ["chat", "F4"]}

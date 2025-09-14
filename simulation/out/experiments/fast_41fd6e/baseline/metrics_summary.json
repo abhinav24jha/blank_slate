@@ -1,0 +1,8 @@
+{
+  "run_id": "run_baseline_1757840658",
+  "scenario": "baseline",
+  "agent_count": 15,
+  "duration": 0.0016260147094726562,
+  "steps": 20,
+  "metrics_aggregator": "attached"
+}

@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:30:00Z", "kind": "persona", "persona": {"id": "B613020", "role": "resident", "name": "Drew Nguyen", "traits": ["impulsive", "planner", "extrovert", "tech-savvy"], "prefs": {"coffee": "high", "budget": "high", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "cafe"}}}
-{"ts": "2025-09-14T04:37:37Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and study in a vibrant setting.", "tags": ["cafe"]}

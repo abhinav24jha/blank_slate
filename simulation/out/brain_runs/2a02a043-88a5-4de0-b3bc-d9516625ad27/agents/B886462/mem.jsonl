@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B886462", "role": "student", "name": "Drew Singh", "traits": ["tech-savvy", "extrovert", "foodie", "introvert"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegetarian", "mobility": "bus", "study_spot": "quiet", "favorite": "library"}}}
-{"ts": "2025-09-14T04:40:55Z", "kind": "decision", "text": "Chose education after considering needs.", "tags": ["education"]}

@@ -1,0 +1,3 @@
+{"ts": "2025-09-14T09:26:12Z", "kind": "persona", "persona": {"id": "F1", "role": "student", "name": "Jamie Hernandez", "traits": ["social", "health-conscious", "planner", "curious"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegetarian", "mobility": "bus", "study_spot": "lively", "favorite": "park"}}}
+{"ts": "2025-09-14T09:26:17Z", "kind": "decision", "text": "Chose a cafe near campus to wake up and relax before class.", "tags": ["cafe"]}
+{"ts": "2025-09-14T09:27:05Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

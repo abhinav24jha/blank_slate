@@ -1,3 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "H6", "role": "visitor", "name": "Morgan Nguyen", "traits": ["introvert", "gym-goer", "tech-savvy", "night-owl"], "prefs": {"coffee": "med", "budget": "low", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:50:54Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
-{"ts": "2025-09-14T04:53:28Z", "kind": "decision", "text": "Chose grocery for a quick shopping trip before heading to the gym.", "tags": ["grocery"]}

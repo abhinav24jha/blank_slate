@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B146971", "role": "worker", "name": "Casey Wilson", "traits": ["introvert", "bookish", "curious", "frugal"], "prefs": {"coffee": "high", "budget": "med", "diet": "vegetarian", "mobility": "walk", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T05:02:55Z", "kind": "decision", "text": "Chose grocery store near home for quick caffeine fix.", "tags": ["grocery"]}

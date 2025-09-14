@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T06:40:39Z", "kind": "persona", "persona": {"id": "F5", "role": "resident", "name": "Jamie Wilson", "traits": ["extrovert", "tech-savvy", "curious", "night-owl"], "prefs": {"coffee": "low", "budget": "high", "diet": "pescatarian", "mobility": "walk", "study_spot": "quiet", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T06:41:54Z", "kind": "decision", "text": "Chose a cafe near campus for caffeine and a quiet spot before class.", "tags": ["cafe"]}

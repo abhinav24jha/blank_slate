@@ -1,0 +1,2 @@
+{"ts": "2025-09-14T09:26:12Z", "kind": "persona", "persona": {"id": "F10", "role": "student", "name": "Morgan Martin", "traits": ["gym-goer", "impulsive", "bookish", "night-owl"], "prefs": {"coffee": "low", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "restaurant"}}}
+{"ts": "2025-09-14T09:26:39Z", "kind": "decision", "text": "Chose a lively campus cafe for study spot.", "tags": ["cafe"]}

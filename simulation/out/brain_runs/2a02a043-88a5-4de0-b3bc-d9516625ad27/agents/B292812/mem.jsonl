@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:40:15Z", "kind": "persona", "persona": {"id": "B292812", "role": "student", "name": "Alex Hernandez", "traits": ["extrovert", "health-conscious", "night-owl", "optimistic"], "prefs": {"coffee": "med", "budget": "high", "diet": "omnivorous", "mobility": "bike", "study_spot": "lively", "favorite": "grocery"}}}
-{"ts": "2025-09-14T04:50:09Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

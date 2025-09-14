@@ -1,3 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "H11", "role": "resident", "name": "Drew Patel", "traits": ["impulsive", "punctual", "tech-savvy", "extrovert"], "prefs": {"coffee": "med", "budget": "low", "diet": "pescatarian", "mobility": "bus", "study_spot": "lively", "favorite": "gym"}}}
-{"ts": "2025-09-14T04:51:34Z", "kind": "decision", "text": "Chose grocery after considering needs.", "tags": ["grocery"]}
-{"ts": "2025-09-14T04:56:45Z", "kind": "decision", "text": "Chose cafe for morning coffee break near campus.", "tags": ["cafe"]}

@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B617650", "role": "student", "name": "Morgan Nguyen", "traits": ["extrovert", "planner", "gym-goer", "punctual"], "prefs": {"coffee": "low", "budget": "low", "diet": "omnivorous", "mobility": "bike", "study_spot": "outdoors", "favorite": "park"}}}
-{"ts": "2025-09-14T04:45:32Z", "kind": "decision", "text": "Chose a cafe near campus to wake up before class.", "tags": ["cafe"]}

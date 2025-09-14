@@ -1,4 +1,0 @@
-{"ts": "2025-09-14T06:54:13Z", "kind": "persona", "persona": {"id": "F14", "role": "resident", "name": "Drew Singh", "traits": ["health-conscious", "foodie", "optimistic", "night-owl"], "prefs": {"coffee": "high", "budget": "high", "diet": "omnivorous", "mobility": "walk", "study_spot": "quiet", "favorite": "cafe"}}}
-{"ts": "2025-09-14T06:56:44Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T07:02:26Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T07:04:41Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

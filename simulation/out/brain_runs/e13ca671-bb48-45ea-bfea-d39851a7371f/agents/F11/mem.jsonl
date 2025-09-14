@@ -1,3 +1,0 @@
-{"ts": "2025-09-14T06:35:56Z", "kind": "persona", "persona": {"id": "F11", "role": "worker", "name": "Taylor Garcia", "traits": ["early-riser", "gym-goer", "optimistic", "impulsive"], "prefs": {"coffee": "med", "budget": "med", "diet": "omnivorous", "mobility": "bike", "study_spot": "quiet", "favorite": "restaurant"}}}
-{"ts": "2025-09-14T06:37:13Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}
-{"ts": "2025-09-14T06:41:29Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

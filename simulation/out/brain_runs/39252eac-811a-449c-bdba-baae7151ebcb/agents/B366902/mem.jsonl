@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B366902", "role": "student", "name": "Casey Singh", "traits": ["extrovert", "curious", "optimistic", "impulsive"], "prefs": {"coffee": "med", "budget": "med", "diet": "kosher", "mobility": "bike", "study_spot": "outdoors", "favorite": "library"}}}
-{"ts": "2025-09-14T04:56:49Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}

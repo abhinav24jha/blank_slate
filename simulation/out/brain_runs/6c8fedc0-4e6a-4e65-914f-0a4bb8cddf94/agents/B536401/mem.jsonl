@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B536401", "role": "resident", "name": "Jordan Singh", "traits": ["health-conscious", "tech-savvy", "social", "planner"], "prefs": {"coffee": "low", "budget": "med", "diet": "pescatarian", "mobility": "bike", "study_spot": "lively", "favorite": "cafe"}}}
-{"ts": "2025-09-14T04:50:35Z", "kind": "decision", "text": "Chose a lively cafe near campus for caffeine and company.", "tags": ["cafe"]}

@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:44:53Z", "kind": "persona", "persona": {"id": "B155897", "role": "student", "name": "Jamie Nguyen", "traits": ["optimistic", "gym-goer", "night-owl", "frugal"], "prefs": {"coffee": "low", "budget": "med", "diet": "vegetarian", "mobility": "bus", "study_spot": "quiet", "favorite": "library"}}}
-{"ts": "2025-09-14T04:47:15Z", "kind": "decision", "text": "Chose a cafe near campus to wake up.", "tags": ["cafe"]}

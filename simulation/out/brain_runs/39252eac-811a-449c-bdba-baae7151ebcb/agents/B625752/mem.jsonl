@@ -1,2 +1,0 @@
-{"ts": "2025-09-14T04:47:30Z", "kind": "persona", "persona": {"id": "B625752", "role": "worker", "name": "Taylor Nguyen", "traits": ["tech-savvy", "curious", "bookish", "early-riser"], "prefs": {"coffee": "low", "budget": "med", "diet": "halal", "mobility": "bus", "study_spot": "lively", "favorite": "park"}}}
-{"ts": "2025-09-14T04:54:51Z", "kind": "decision", "text": "Chose cafe after considering needs.", "tags": ["cafe"]}
